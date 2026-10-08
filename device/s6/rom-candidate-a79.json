@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "candidate_id": "A79-X710-EZH3-T860-UI85-FCM4-SDK30-MAINLINE",
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "stage": "/var/tmp/ui85-a79-mainline-stage-v1/stage",
+  "inventory_sha256": "014d7cb7152fe484a7e53a4157421059da2cfd2f67fbb4f55bd8268dd8817e9a",
+  "policy_report_sha256": "22566eb3d56b7aee19ef60860f7342e25b3716a2803343cc64f0e1262b972207",
+  "runtime_new_rom": "COMPOSED_SOURCE_NOT_IMAGE_BOOT_TESTED",
+  "full_checkvintf": "NOT_PASSED",
+  "preserved_hardware": {
+    "boot": {
+      "block": "/dev/block/sda20",
+      "bytes": 67108864,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+    },
+    "vendor": {
+      "block": "/dev/block/sda25",
+      "bytes": 1379926016,
+      "sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af"
+    }
+  },
+  "known_unresolved": [
+    "A79 updated-loader JIT initialization patch is installed and factory boot observed; actual updated pair activation/BPF/DNS/traffic/second reboot remain NOT_PASSED.",
+    "Samsung platform 600-second rollback was observed; independent 900-second Recovery fallback remains NOT_EXERCISED.",
+    "New composed full images/ZIP have not been generated, installed, restored or boot tested.",
+    "Initial v0.48.1 UI8 DATA upgrade remains NOT_PASSED; current migrated UI85 DATA cannot substitute.",
+    "FCM4/SDK30 actual installed major VINTF checks passed on A74; full release checkvintf and new composed-image verification remain NOT_PASSED.",
+    "Physical touch/S Pen/audio output/automatic brightness/DeX/multiwindow/keyboard/licensed DRM playback and complete Samsung feature matrix remain incompletely verified.",
+    "Fabric daemon unsupported autostart is disabled with daemon/clients retained; full Kmx error propagation and security feature validation remain incomplete.",
+    "Stable release cleanup and full installer integration remain necessary."
+  ],
+  "reason_document": "docs/MAINLINE_NATIVE_REBASE_A78.md",
+  "inventory_entries": 8129,
+  "vendor_adaptation": {
+    "profiles": [
+      "device/s6/media-c2-seccomp-ui85.json",
+      "device/s6/vendor-system-sdk30-ui85-a74.json"
+    ],
+    "scope": "TWO_EXISTING_S6_TEXT_CONFIGS_ONLY",
+    "full_donor_vendor_replacement": false,
+    "normal_upgrade_states": [
+      "SDK28_BASELINE",
+      "SDK28_ADAPTED",
+      "SDK30_BASELINE",
+      "SDK30_ADAPTED"
+    ],
+    "full_guard_entries": 2768,
+    "new_install_runtime": "NOT_TESTED"
+  },
+  "included_incremental_adaptations": [
+    "A50-A61 boot and SDK28 device compatibility fixes",
+    "A66 S6 optical fingerprint software illumination",
+    "A68 Wi-Fi telephony capability RRO and official Clock preinstall",
+    "A69 actual XAR US country property",
+    "A70 stock S6 corner geometry and SystemUI resource gate, exact Samsung preload registration",
+    "A73 FCM4 system XML + A74 fixed-vendor SDK30 config transaction; process-local diagnostic only",
+    "A75 CACHE capture and Mainline failure recovery window",
+    "A76 unsupported Fabric daemon lifecycle only",
+    "A77 full native capture before bind",
+    "A78 exact paired factory/update native views and actual loader supervisor",
+    "A79 S6 interpreter JIT initialization purpose reapplied to signed update loader itself"
+  ],
+  "a79_integration": {
+    "baseline_inventory_sha256": "bf2f94d72b890db7397605f518800169cd9680424d0c366722f6db7a42fb4931",
+    "report_sha256": "ff1575c20a05bd6d2072cf22073154d2271fb183997029f5ea53c9d9b473aceb",
+    "profile_sha256": "58dbecac69cf7b4cf0a0709504eb2dcb72482a67697a103a49c86aaa779bb3bc",
+    "candidate_report_sha256": "2a1b592dd1138344e23b588dd515704d8a6bb6b0cb3840f16255b6e0c215efa2",
+    "fabric_manifest_sha256": "f9e2e373ff3329315fc76e0ceb7a8b254def77a1ff0fdaad053f8eff39d9fdd4",
+    "stage_builder_sha256": "d14bb752f7f73eea7e8326fde15f72dafb0263b1ffe3fdcebc1c3cece7ba1b56",
+    "inventory_helper_sha256": "9dba3310b9c60734fd65554f119293ab569bdc6344269990341f1961cb1ca712",
+    "legacy_image_helper_sha256": "724012dfe113f6328c154be71fa94f52d35aae2ffcaddfd97e473f180dc7e16e"
+  }
+}

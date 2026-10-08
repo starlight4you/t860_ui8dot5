@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "device": "SM-T860",
+  "kind": "hidl_mask_backend_candidate_only",
+  "input": "out/audit-probes/A43-display-light-inputs-v3/new/surfaceflinger",
+  "input_sha256": "ac471fca160754aafbb306182ca49d6aa9c705d40d8ab394f4db69090e33466f",
+  "input_size": 10081976,
+  "classification": [
+    "DEVICE_REQUIRED",
+    "VERSION_SPECIFIC"
+  ],
+  "reason_document": "docs/FINGERPRINT_HIDL_REBASE_AUDIT.md",
+  "functions": [
+    {
+      "va": 5672216,
+      "file_offset": 5672216,
+      "size": 276,
+      "sha256": "2c58acc90e555026437dbe7f14dfbdf9145f8e5f7f41a543755eec7a18de1c96",
+      "fde_va": 1401804,
+      "cie_va": 1017376,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+    },
+    {
+      "va": 5681120,
+      "file_offset": 5681120,
+      "size": 208,
+      "sha256": "e7757e761d17b6b347a601491bd605ea4cd8926a187d4a9a29277d337df884fe",
+      "fde_va": 1405792,
+      "cie_va": 1017376,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+    },
+    {
+      "va": 5681328,
+      "file_offset": 5681328,
+      "size": 244,
+      "sha256": "18fc0cb48510f70ddb87c19325698be1a42a0eb7fbde548dfecab4eeeb79db30",
+      "fde_va": 1405836,
+      "cie_va": 1017376,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+    },
+    {
+      "va": 5681572,
+      "file_offset": 5681572,
+      "size": 48,
+      "sha256": "8efb6f1c5350f059b56e14af8e916b4b19627ad0c43292c503a1a98e67755308",
+      "fde_va": 1405884,
+      "cie_va": 1017376,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+    },
+    {
+      "va": 5681620,
+      "file_offset": 5681620,
+      "size": 612,
+      "sha256": "703dc3c3a4b80cb47f2a92b95bbe48300417f897cb092592753cd6fec688cf8b",
+      "fde_va": 1405928,
+      "cie_va": 1017376,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+    },
+    {
+      "va": 5682476,
+      "file_offset": 5682476,
+      "size": 1520,
+      "sha256": "5afa9cab65badef541b12fe9b0b38442ddf60cadf549da39499c075392bdf15c",
+      "fde_va": 1406048,
+      "cie_va": 1017376,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+    },
+    {
+      "va": 5692432,
+      "file_offset": 5692432,
+      "size": 112,
+      "sha256": "355c17c3c44d31ae7c760009eef4a48b8b10458a030e27c9403c8b45c58f205e",
+      "fde_va": 1408016,
+      "cie_va": 1017376,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+    }
+  ],
+  "null_table_base": 9209696,
+  "null_address_point": 9209712,
+  "real_address_point": 9210432,
+  "object_size": 536,
+  "code_changes": [
+    {
+      "va": 5672460,
+      "before_hex": "00028052",
+      "after_hex": "00438052",
+      "reason": "Allocate the actual S9 536-byte extension storage only in Null branch"
+    },
+    {
+      "va": 5672468,
+      "before_hex": "881c00b0f40300aa08c147f908410091084c00a9edffff17",
+      "after_hex": "f40300aa72080094081b009008c11d91880200f9edffff17",
+      "reason": "Original S9 constructor then existing Null address point; ADRP fixed by encode below"
+    },
+    {
+      "va": 5681664,
+      "before_hex": "830e00b4",
+      "after_hex": "6f000014",
+      "reason": "Return after SF/interface assignments; skip private QTI feature discovery"
+    },
+    {
+      "va": 5682512,
+      "before_hex": "40d7fff0",
+      "after_hex": "c3000014",
+      "reason": "Enter original HIDL Create block after full original prologue"
+    },
+    {
+      "va": 5683388,
+      "before_hex": "9effff17",
+      "after_hex": "12000014",
+      "reason": "HIDL failure returns original object with null client, skipping replacement and binder cleanup"
+    },
+    {
+      "va": 5683892,
+      "before_hex": "20ffff17",
+      "after_hex": "94ffff17",
+      "reason": "HIDL success returns original initialized object, skipping unrelated QTI features"
+    }
+  ],
+  "relative_pointer_changes": [
+    {
+      "slot": 0,
+      "va": 9209712,
+      "before": 4256824,
+      "after": 5681328,
+      "source_va": 9210432
+    },
+    {
+      "slot": 8,
+      "va": 9209720,
+      "before": 4796560,
+      "after": 5681572,
+      "source_va": 9210440
+    },
+    {
+      "slot": 16,
+      "va": 9209728,
+      "before": 4256824,
+      "after": 5681620,
+      "source_va": 9210448
+    },
+    {
+      "slot": 24,
+      "va": 9209736,
+      "before": 4256824,
+      "after": 5682476,
+      "source_va": 9210456
+    },
+    {
+      "slot": 304,
+      "va": 9210016,
+      "before": 4256824,
+      "after": 5692432,
+      "source_va": 9210736
+    }
+  ],
+  "runtime": "NOT_TESTED",
+  "fingerprint_dispatch": "NOT_IMPLEMENTED",
+  "install_to_stage": false,
+  "metadata": {
+    "path": "system/bin/surfaceflinger",
+    "uid": 0,
+    "gid": 2000,
+    "mode": "0755",
+    "selinux": "u:object_r:surfaceflinger_exec:s0"
+  }
+}

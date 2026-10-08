@@ -1,0 +1,30 @@
+{
+  "id": "A69-CSC-COUNTRY",
+  "reason": "docs/AI_NOTES_SUMMARY_UI85_A69.md",
+  "classification": "DEVICE_REQUIRED CSC country identity",
+  "partition": "SYSTEM",
+  "stage_path": "system/system/build.prop",
+  "before_sha256": "432c694a87fa80e2addf243a054c15f36360117af0a71c71231dda055855d718",
+  "after_sha256": "992248836a952f878b560ed2806bad893f7299c70ddcbe9eba316e482bb535d2",
+  "before_size": 10935,
+  "after_size": 11031,
+  "added_properties": {
+    "ro.csc.countryiso_code": "US"
+  },
+  "baseline_inventory_sha256": "5a5157766b0552d0d1c202c9be1fbeb9db49861f788169fdca02aaed3d53db91",
+  "entries": 8094,
+  "rollback": {
+    "remove_exact_added_suffix": true
+  },
+  "runtime": "PASS_BOOT_ENFORCING_ENGLISH_AND_ORIGINAL_CHINESE_PDF_SUMMARY",
+  "scope_note": "Only restore confirmed US country, not sales_code/init triggers, locale, identity model, credentials, APKs or framework.",
+  "evidence": [
+    "t860-ui8/scripts/build-v0.24-feature-foundation-in-linux.sh:178",
+    "t860-ui8/out/v0.44/logs/runtime/post-unlock-clean/getprop.txt:721",
+    "official X710 XAR HOME_CSC optics/configs/carriers/single/XAR/conf/customer.xml",
+    "A69 SemSystemProperties.getCountryIso and SIS LlmClientInterceptor disassembly"
+  ],
+  "live_write": "PASS_EXACT_READBACK_AND_OTHER_SYSTEM_CONTENTS_METADATA_IDENTICAL",
+  "boot_vendor_unchanged": true,
+  "current_stage_inventory_sha256": "60781b040f0c9507800a5114dff3c5c788ac2b0cd8409fdd8f30571a85f4b15a"
+}

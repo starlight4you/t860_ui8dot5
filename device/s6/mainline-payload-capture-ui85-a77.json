@@ -1,0 +1,27 @@
+{
+  "id": "A77_EXACT_RESOLVER_PAYLOAD_CAPTURE",
+  "input_sha256": "cfd400a6d8e6216fab99567db23cf44cdba4195d4ba6555f600c0e50e2d9fce4",
+  "output_sha256": "61311a06ad386f9aebe6269ab8f6f7ff303bc306a5ca559f6524fb734c4974c9",
+  "target": "system/etc/init/hw/init.rc",
+  "reason": "docs/MAINLINE_PAYLOAD_CAPTURE_A77.md",
+  "device_mutations": false,
+  "network_compatibility": "NOT_PASSED",
+  "scope": "Exact 372038020 resolver copy only; guard and DATA unchanged",
+  "classification": [
+    "WORKAROUND"
+  ],
+  "purpose": "Preserve exact signed DNS payload alongside A75 Tethering evidence before rollback; no compatibility bypass",
+  "input_system_sha256": "7e18cbc579809face552080953277491625438c41688469d421438b6d5b8be91",
+  "runtime_tested": true,
+  "flashable_rom": false,
+  "rollback": "Original init backup plus independently pinned restore after transaction",
+  "risk": "medium",
+  "installed": true,
+  "current_system_sha256": "7b523d0f7bbaeecf0a68abf9d798957f0cddfc08ea78d107deda1bd2982a9124",
+  "independent_state_verification": "docs/audit/mainline-capture-independent-live-ui85-a77-v3.json",
+  "original_transaction": "INTERRUPTED",
+  "baseline_boot_observation": "out/audit-probes/A77-capture-baseline-first-boot-v1/result.json",
+  "baseline_boot_id": "124d87a4-b2f2-4646-9403-89cc1cf3b374",
+  "updated_payload_capture": "PASSED_EXACT_SHA",
+  "capture_runtime_evidence": "docs/audit/mainline-capture-runtime-ui85-a77-v1.json"
+}

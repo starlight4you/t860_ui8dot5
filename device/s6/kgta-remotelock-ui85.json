@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "id": "A59",
+  "kind": "kgta_unavailable_remote_lock_compat",
+  "reason_record": "docs/KGTA_REMOTELOCK_REBASE_A59.md",
+  "input_sha256": "d47261aa9913d8013dc876210dba48c2c4eab924390acaf8dbd8e10290f6d3e6",
+  "target_class": "Lcom/samsung/android/knoxguard/service/utils/Utils;",
+  "target_method": "setRemoteLockToLockscreen",
+  "target_descriptor": "(Landroid/content/Context;IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;IJIZLandroid/os/Bundle;Z)V",
+  "before_code_sha256": "078b40e8e950053b8b6e06dd33c5f217dbf6a7f32d44e67beaee677364816657",
+  "init_backend_error": -1006,
+  "boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "vendor_sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af",
+  "runtime": "NOT_TESTED",
+  "legacy_kg_vaultkeeper_validation": "NOT_PASSED",
+  "release": "NOT_PASSED",
+  "output_sha256": "91e2a7ce17f25a84c36e70a958aa523274eb394c7f3da4f30051364871f23d22",
+  "baseline_inventory_sha256": "17de3b4768380bebac1a1b92665ed9e440b31a360dc1025224da5bf8c3555ea5"
+}

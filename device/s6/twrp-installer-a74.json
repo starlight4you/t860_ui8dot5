@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "A74_TWO_CONFIG_INSTALLER_CANDIDATE_V1",
+  "candidate_id": "A74-X710-EZH3-T860-UI85-FCM4-SDK30",
+  "format": "3",
+  "adaptation": "A74_TWO_S6_CONFIGS",
+  "support": {
+    "vendor-guard-sdk28": {
+      "path": "device/s6/prebuilts/installer-a74/vendor-guard-sdk28",
+      "bytes": 2694200,
+      "sha256": "db7da35d2f1a7450cf255fe1e1400ba4328a8d8eee054b3636f7ff992180a7cf"
+    },
+    "vendor-guard-sdk30": {
+      "path": "device/s6/prebuilts/installer-a74/vendor-guard-sdk30",
+      "bytes": 2694200,
+      "sha256": "b53e4e4da577f416c7c4892b93e97f391c0b675c57edcbed43c187c9712e5ccc"
+    },
+    "vendor-config-recovery-guard": {
+      "path": "device/s6/prebuilts/installer-a74/vendor-config-recovery-guard",
+      "bytes": 2695456,
+      "sha256": "dd9ff7512f202c85beaf0056ce8639bcf8958f3c95e80ab02db6e4f745744a7d"
+    },
+    "mainline-guard": {
+      "path": "device/s6/prebuilts/installer-a74/mainline-guard",
+      "bytes": 2237192,
+      "sha256": "402e84d1c6e60087db2c78ab6869581e51dd3bdf7a5adcca3a521d57dd7b4081"
+    },
+    "vendor-before-policy": {
+      "path": "device/s6/prebuilts/installer-a74/vendor-before-policy",
+      "bytes": 1869,
+      "sha256": "e529d80729976c2ef41f6831820da5f387b7cdbd44f8b1b33d0e7cf9cd1462b8"
+    },
+    "vendor-after-policy": {
+      "path": "device/s6/prebuilts/installer-a74/vendor-after-policy",
+      "bytes": 1882,
+      "sha256": "efae1217c1fd598fb80f390a510c857d7adc3ff8018dc3a2571c7d32e7e3bfcc"
+    },
+    "vendor-matrix28": {
+      "path": "device/s6/prebuilts/installer-a74/vendor-matrix28",
+      "bytes": 3435,
+      "sha256": "da6aa90c2c2bdc06208ec8f3342735df0358836ddddb72d6e183b49bff8a79ee"
+    },
+    "vendor-matrix30": {
+      "path": "device/s6/prebuilts/installer-a74/vendor-matrix30",
+      "bytes": 3435,
+      "sha256": "d3b80d5fa526f1cf005e0dcfd3c1747bb10e351664d648cc3c18690134129258"
+    },
+    "apex-factory.tsv": {
+      "path": "device/s6/prebuilts/installer-a74/apex-factory.tsv",
+      "bytes": 1349,
+      "sha256": "3db9c6be68d3310e1cad7af3848a675dfef9a225504ad93c830e3ecbffb3c02a"
+    }
+  },
+  "source_inventory_sha256": "bf2f94d72b890db7397605f518800169cd9680424d0c366722f6db7a42fb4931",
+  "evidence": {
+    "docs/audit/vendor-sdk-guard-pair-build-ui85-a74.json": "15359ca262a32b05677b9ffe27ad5a2ee2e702c621b695a0a4ef81c4cc21868e",
+    "docs/audit/vendor-sdk-guard-pair-tests-ui85-a74.json": "5a40bad3e2d3584212bac3c4ba1e62508dcf9b5ae7df6b823b6fe05b64c2a198",
+    "docs/audit/vendor-config-recovery-guard-build-ui85-a74.json": "e3cf426c95c9b511c3bbe99ed74965067236de3648deb566b47578b3e6376adc",
+    "docs/audit/vendor-config-transaction-ui85-a74.json": "bf4f46a81e37a825aadc6174376c5abbddb2725f7a47e7595cc8c13a7015a087",
+    "docs/audit/native-target-retry-ui85-a71-v2.json": "de0c9cf7f4c7d90a5dc6248696cd11360b016b1550e9080f9bf7adbecd3eb5df",
+    "docs/audit/sdk30-matrix-live-shadow-ui85-a74.json": "91e89d2f6330fa273c59c3d30434c7296befe6dcc0af32f136454e66a441f944",
+    "docs/audit/fcm4-remount-ui85-a74.json": "5b10dd46eec18abd888148e96634150203afc221ee60dd0d24995ca612376c61"
+  },
+  "library_sources": {
+    "installer/libupgrade.sh": "d6f291730c8604f1a3e28d5f71bc5b3b58fcbd98e82a17de4d5028c3593862b7",
+    "installer/libupgrade-a71.sh": "498d72fd8b751d3e7696ee5daba7bca30b5a8c579b9e8a2cfaf737dcfdf5c35d",
+    "installer/libvendor-a74.sh": "021c4f51bb7c2e84343f130e074613059902b721fb337e70bc76a87d713ec554",
+    "installer/librestore-a70.sh": "303f61d08d6174fee1bf9d0c7ede87f03378039a935c5df1b882f9f8de89c27f"
+  },
+  "mainline_policy": "REFUSE_ALL_UNVERIFIED_ACTIVE_APEX_OR_STAGED_SESSIONS",
+  "data_policy": "PRESERVE_NO_MOUNT_NO_FORMAT_NO_DELETE",
+  "recovery_guard_role": "INDEPENDENT_RESTORE_ONLY_FOR_TWO_CONFIG_CONTENTS; never accepted as normal upgrade source",
+  "full_vendor_guard_entries": 2768,
+  "whole_zip_entry_tests": "NOT_TESTED",
+  "actual_device_upgrade": "NOT_TESTED",
+  "release": "NOT_PASSED"
+}

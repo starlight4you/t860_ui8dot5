@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "kind": "fingerprint_output_dispatch_candidate",
+  "classification": [
+    "DEVICE_REQUIRED",
+    "VERSION_SPECIFIC"
+  ],
+  "input": "out/patch-probes/F04-HIDL-BACKEND-v2/system/bin/surfaceflinger",
+  "input_sha256": "a8af98cb4af682ba839a1acea02afe15435dcee05d717052f8b6f9bf312203a5",
+  "input_size": 10081976,
+  "reason_document": "docs/FINGERPRINT_HIDL_REBASE_AUDIT.md",
+  "prefix": "FP Maskview",
+  "strncmp_plt": 9115448,
+  "cie": 1017376,
+  "install_to_stage": false,
+  "calls": [
+    {
+      "va": 5742704,
+      "file_offset": 5742704,
+      "size": 552,
+      "sha256": "2e8acb94852ebe5d1282c947583765a13632bc5390873e324aa82d9185f5550c",
+      "fde_va": 1422924,
+      "cie_va": 1017376,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00",
+      "id": 1,
+      "callsite": 5743024,
+      "call_before_hex": "62dd0c94",
+      "mask_setup": 5743112,
+      "mask_setup_before_hex": "c80240f995d248a9e00316aa083940f9",
+      "cfa_register": 29,
+      "cfa_offset": 64,
+      "saved_register_offsets": {
+        "19": -8,
+        "20": -16,
+        "21": -24,
+        "22": -32,
+        "23": -40,
+        "24": -48,
+        "29": -64,
+        "30": -56
+      },
+      "ra_signed": true
+    },
+    {
+      "va": 5752432,
+      "file_offset": 5752432,
+      "size": 952,
+      "sha256": "0d1e299c6d04ea6b7d68211a9b83c4eefcbee8a6f412695d4acd6039c9d0b55f",
+      "fde_va": 1425204,
+      "cie_va": 1017376,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00",
+      "id": 2,
+      "callsite": 5752984,
+      "call_before_hex": "a8d30c94",
+      "mask_setup": 5753044,
+      "mask_setup_before_hex": "880240f975da48a9e00314aa083940f9",
+      "cfa_register": 29,
+      "cfa_offset": 80,
+      "saved_register_offsets": {
+        "19": -8,
+        "20": -16,
+        "21": -24,
+        "22": -32,
+        "23": -40,
+        "24": -48,
+        "25": -56,
+        "26": -64,
+        "29": -80,
+        "30": -72
+      },
+      "ra_signed": true
+    }
+  ]
+}

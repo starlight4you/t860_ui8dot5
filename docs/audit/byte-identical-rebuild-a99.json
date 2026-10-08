@@ -1,0 +1,17 @@
+{
+  "kind": "public_source_byte_identical_release_rebuild",
+  "zip_sha256": "8128e7e9d42ae8b5d1071d04721d1bce52ffaf2b502f25598bd792a86ddde91a",
+  "zip_bytes": 4242041251,
+  "process_exit": 0,
+  "complete_archive_identical": true,
+  "script_sha256": "8b2ada783676e7ba04a8fa9a2e7bc62d4601bfc0d91d5cbc942dd61921d127d6",
+  "payload_encoder_source_sha256": "ae1f8d0058c59570141a4e6d68eaf415b5d6f193e51a26cdddd788b24201f432",
+  "environment": {
+    "python": "3.14.4",
+    "zlib": "1.3.1",
+    "7zip": "26.01",
+    "system": "Linux aarch64"
+  },
+  "raw_inputs_modified": false,
+  "device_access": false
+}

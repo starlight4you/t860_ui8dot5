@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "A82_PRIVATE_DATA_METADATA_CANDIDATE",
+  "status": "PREPARED_NOT_DEPLOYED",
+  "backing_path": "/data/unencrypted/t860-metadata",
+  "canonical_path": "/metadata",
+  "source_fstab_sha256": "cae5e60aada5b9e7e7abaf028fda9d6730ea95cb8d256709a2d1135a083d3c94",
+  "files": [
+    {
+      "path": "system/etc/init/hw/init.rc",
+      "before_sha256": "07ec56fea68a373cae3eceb212cdcb8cfdce2e173e5788b88acac7171a0adc41",
+      "after_sha256": "2ef037d378169aab802d671476752c8555469660f59c3928f80f5beafd4e098c",
+      "bytes": 183023,
+      "preserve_original_owner_mode_xattrs": true
+    },
+    {
+      "path": "system/etc/init/aconfigd.rc",
+      "before_sha256": "d82ec599ff109fa5e175c273fcc741957338ef367637dbe50666df6dbcea7feb",
+      "after_sha256": "1046bc5c930fae8830d4fccc3e6f8f31c191d680514c7d2ac1197a7aa715de5a",
+      "bytes": 786,
+      "preserve_original_owner_mode_xattrs": true
+    },
+    {
+      "path": "system/etc/init/gsid.rc",
+      "before_sha256": "891aa13d00c847784594e2f24ed25763a1778a3a57fae8fff5d25cd81759992f",
+      "after_sha256": "801c83f3d322e0617844ba626e16bb9eb1758170fe951cb499488001e7990741",
+      "bytes": 805,
+      "preserve_original_owner_mode_xattrs": true
+    },
+    {
+      "path": "system/etc/selinux/plat_file_contexts",
+      "before_sha256": "88eca410b4a60335136189a1b785ec405210602e643c89ea88e9f08b6f5f2ef7",
+      "after_sha256": "c338a65907c63d397b7257421c5740a25786eae2515c6f92fe9ce4dcf166cc34",
+      "bytes": 55022,
+      "preserve_original_owner_mode_xattrs": true
+    }
+  ],
+  "canonical_context_aliases": 20,
+  "native_and_framework_bytes_changed": false,
+  "compiled_policy_changed": false,
+  "device_mutations": false,
+  "metadata_copied": false,
+  "runtime": "NOT_TESTED",
+  "source_stage": "A81",
+  "source_inventory_sha256": "fe2db1a7dd4b777f6c644b2527f18177a5e308d67ae512376b7aed06a9713424",
+  "migration_required_before_boot": true,
+  "existing_metadata_must_be_preserved": true,
+  "limits": [
+    "Only reviewed S6 ICE DATA fstab without metadata encryption/checkpoints",
+    "Recovery accessibility and metadata bytes/labels require actual preflight",
+    "CACHE wipe cannot remove new backing; full userdata format will",
+    "Original state backup and independent restoration required before activation",
+    "New donor or DSU boot requires renewed early-consumer review"
+  ],
+  "generator_sha256": "c96c1b90062455b14569cfdf596a142ab8bf4b35965dd12f4c85daf1a1f991e3",
+  "flashable": false,
+  "reason_document": "docs/METADATA_PERSISTENCE_A82.md",
+  "hardware_boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "hardware_vendor_sha256": "609f5098f0bc469bf3377555beef3ed7e64be6df61dbc260d42f2f4d6f6a0e18",
+  "candidate_report_sha256": "0fa61c20bc46e0e4b05ceb6995bc9fe1fc44d60c67cae8680237d56b710338f7",
+  "classification": [
+    "DEVICE_REQUIRED",
+    "VERSION_SPECIFIC"
+  ]
+}

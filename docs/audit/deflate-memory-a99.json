@@ -1,0 +1,12 @@
+{
+  "kind": "release_payload_encoder_memory_regression",
+  "source_sha256": "ae1f8d0058c59570141a4e6d68eaf415b5d6f193e51a26cdddd788b24201f432",
+  "python_version": "3.14.4",
+  "cyclic_gc_disabled": true,
+  "blocks": 128,
+  "uncompressed_bytes": 1073741824,
+  "peak_rss_kib": 34032,
+  "maximum_rss_kib": 204800,
+  "pass": true,
+  "device_access": false
+}

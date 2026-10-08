@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "status": "candidate_only_nonflash",
+  "source": "system/app/OCRDataProvider",
+  "apk": "OCRDataProvider.apk",
+  "apk_sha256": "a1a3fac5c955450814ccdfa107d2ef6c9862d7c700699e5948f97577368f65fc",
+  "reason": "Retain original X710 OCR service while kept Camera, Gallery and SmartCapture reference its package"
+}

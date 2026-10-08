@@ -1,0 +1,393 @@
+{
+  "id": "A99_DUAL_INSTALLER_TESTS",
+  "all_passed": true,
+  "case_count": 47,
+  "cases": [
+    {
+      "case": "success-baseline",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 2,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "success-adapted",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 2,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "success-a46-source",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 2,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "success-a70-source",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 2,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "preflight-baseline",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "preflight-adapted",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "wrong-device",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "bad-source-hash",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "duplicate-oneui",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "bad-sdk",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "bad-oneui",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "retry-product",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 1,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "bad-retry-hash",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "bad-boot",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "bad-vendor",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "bad-payload",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "missing-support",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "corrupt-support",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "staged-session",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "data-not-mounted",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "wrong-data-mount-root",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "wrong-data-block",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "wrong-cache-type",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "mount-probe-tool-error",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "duplicate-cache-mount",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "invalid-mode",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "policy-write-error",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "policy-readback-error",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "interrupt-policy-write",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "system-write-error",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 1,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "system-readback-error",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 1,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "product-write-error",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 2,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "success-sdk30-baseline",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 2,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "success-sdk30-adapted",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 2,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "preflight-sdk30",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "bad-matrix",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "matrix-write-error",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "matrix-readback-error",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "interrupt-matrix-write",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "success-a71-source",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 2,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "retry-product-sdk30",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 1,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "success-clean-data-target-system",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 1,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "success-clean-system",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 2,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "preflight-clean-system",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "ui8-active-module-backup",
+      "pass": true,
+      "exit": 0,
+      "partition_write_calls": 2,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "clean-system-with-data-refused",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    },
+    {
+      "case": "metadata-checkpoint-refused",
+      "pass": true,
+      "exit": 1,
+      "partition_write_calls": 0,
+      "policy_changed_on_success_only": true,
+      "hardware_userdata_modules_sessions_preserved": true
+    }
+  ],
+  "library_sha256": "13d1f72bfaed47d013a557a96e88ba0662351665e67cd17ee0390a55ca9d822d",
+  "production_library_sha256": "9871c69f3f91cc2cde67b9da08755bb32296ed717eb182f3a3096d9aede862d6",
+  "operation": "upgrade",
+  "fixture_restore_target_constants": false,
+  "fixture_a71_source_constant": true,
+  "scope": "original TWRP tools/Linux namespace; real ZIP/SHA/dd/Mainline guard and policy transaction on fixtures; VENDOR inventory/block/mount discovery and fscrypt ioctl discovery modeled",
+  "recovery_sha256": "cbc6e03563a9229b7034dd775964ef412af94a7074f50b519ce1ccc1fd4f2e16",
+  "test_source_sha256": "13a477ee718a3090e4a37c1720e854feb413790e2be2fa3bd2822b7faf710ca0",
+  "actual_device_upgrade": "NOT_TESTED",
+  "device_writes": false
+}

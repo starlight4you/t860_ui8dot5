@@ -1,0 +1,2589 @@
+{
+  "zip_sha256": "8128e7e9d42ae8b5d1071d04721d1bce52ffaf2b502f25598bd792a86ddde91a",
+  "zip_bytes": 4242041251,
+  "partition_sha256": {
+    "system": "c2c249d94e4028ba3c550bb4a51fe2c3397bf80f4f8b9f82ad8236f3ed2340a8",
+    "product": "bd1e4f1598ccfc8b24890e97b3562e1941ebd27c17b284491c8965981db45aa7",
+    "boot": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+    "vendor": "609f5098f0bc469bf3377555beef3ed7e64be6df61dbc260d42f2f4d6f6a0e18",
+    "dtbo": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec",
+    "vbmeta": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54"
+  },
+  "payload_chunks": 138,
+  "entries": [
+    {
+      "name": "META-INF/com/google/android/update-binary",
+      "bytes": 1802,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2179792896,
+      "sha256": "235f640e099d89353ffbf562df6b8c70ced65ba211d4a005c962e7d390e6676b"
+    },
+    {
+      "name": "META-INF/com/google/android/updater-script",
+      "bytes": 58,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "4bc070300f85068ab1912c504462caca3b3cfd983ac306308f531cdbc5057b88"
+    },
+    {
+      "name": "rom/libupgrade.sh",
+      "bytes": 34130,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "9904fbe2fef1e87c776063035f786ffa649916f2852b685996e6c19da6d4677c"
+    },
+    {
+      "name": "rom/support/vendor-guard-sdk28",
+      "bytes": 2694200,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "db7da35d2f1a7450cf255fe1e1400ba4328a8d8eee054b3636f7ff992180a7cf"
+    },
+    {
+      "name": "rom/support/vendor-guard-sdk30",
+      "bytes": 2694200,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "b53e4e4da577f416c7c4892b93e97f391c0b675c57edcbed43c187c9712e5ccc"
+    },
+    {
+      "name": "rom/support/vendor-config-recovery-guard",
+      "bytes": 2695456,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2179792896,
+      "sha256": "dd9ff7512f202c85beaf0056ce8639bcf8958f3c95e80ab02db6e4f745744a7d"
+    },
+    {
+      "name": "rom/support/mainline-guard",
+      "bytes": 2242016,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2179792896,
+      "sha256": "4f3f04af10250a0522b4bf2805fe0567fef975da1aea9e24024d86eba8ca8176"
+    },
+    {
+      "name": "rom/support/vendor-before-policy",
+      "bytes": 1869,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "e529d80729976c2ef41f6831820da5f387b7cdbd44f8b1b33d0e7cf9cd1462b8"
+    },
+    {
+      "name": "rom/support/vendor-after-policy",
+      "bytes": 1882,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "efae1217c1fd598fb80f390a510c857d7adc3ff8018dc3a2571c7d32e7e3bfcc"
+    },
+    {
+      "name": "rom/support/vendor-matrix28",
+      "bytes": 3435,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "da6aa90c2c2bdc06208ec8f3342735df0358836ddddb72d6e183b49bff8a79ee"
+    },
+    {
+      "name": "rom/support/vendor-matrix30",
+      "bytes": 3435,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "d3b80d5fa526f1cf005e0dcfd3c1747bb10e351664d648cc3c18690134129258"
+    },
+    {
+      "name": "rom/support/apex-factory.tsv",
+      "bytes": 1349,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "3db9c6be68d3310e1cad7af3848a675dfef9a225504ad93c830e3ecbffb3c02a"
+    },
+    {
+      "name": "rom/support/fscrypt-readonly-probe",
+      "bytes": 2220224,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "575f5670928c27118139e43a21163c675e56049708390b0c4c1767f2f5663d22"
+    },
+    {
+      "name": "payload/system/0000.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 0,
+      "sha256": "71ec6ffa49905815a43bd7ff98ee8fd5a11181b81b7a7c8dd2bd95596537fe5b"
+    },
+    {
+      "name": "payload/system/0001.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 67108864,
+      "sha256": "8fdd16f44fb059f92779aa65ab8737979effa4d020d2542793d2b8160112a977"
+    },
+    {
+      "name": "payload/system/0002.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 134217728,
+      "sha256": "58bf7e3c5dc6b122f177ceef615804778a8ed01bc845b279f851c173f304b903"
+    },
+    {
+      "name": "payload/system/0003.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 201326592,
+      "sha256": "773a2fd68bbed9127f332285ba550e8b039e72f5bffa7c00b918800a22bad7e4"
+    },
+    {
+      "name": "payload/system/0004.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 268435456,
+      "sha256": "d02ad7962576b8b7f30de2fbf4e3a8ac2f0aecdfde7367a245441b5cd1e0f812"
+    },
+    {
+      "name": "payload/system/0005.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 335544320,
+      "sha256": "81da931a1dd8e0e2ef44d38fa4347c2b7c10e381867ad140435766fad6b97f18"
+    },
+    {
+      "name": "payload/system/0006.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 402653184,
+      "sha256": "1b79e58597844ea05d35189b3318de9c72256ed08eed27f7cd4acb75a76faed4"
+    },
+    {
+      "name": "payload/system/0007.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 469762048,
+      "sha256": "f91489d21692fd4fc42d15038920666c4e9e061a5d4b7c71504214731f4821b9"
+    },
+    {
+      "name": "payload/system/0008.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 536870912,
+      "sha256": "0b19724ff300ffd45d6904ec0f6ba5e0f7b18f0a19e3eb474aca2e35c57ff5b8"
+    },
+    {
+      "name": "payload/system/0009.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 603979776,
+      "sha256": "f9937d5e53d6a911d226c22b1b184d7db9aaf339349e8bc4af9077b3ac645746"
+    },
+    {
+      "name": "payload/system/0010.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 671088640,
+      "sha256": "ccf3fcdac7ac011f5acdbb838117002e5fec3fbcbbab389f42540efe970a7cbe"
+    },
+    {
+      "name": "payload/system/0011.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 738197504,
+      "sha256": "071c32232ac56767b5e8b856bb12981075fb0b4953e9859496d333dd691efbd8"
+    },
+    {
+      "name": "payload/system/0012.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 805306368,
+      "sha256": "f0c40bf1aec14d06cf5c477f2c6e6370cacb8ae178c5e3ace81370555f86fb6a"
+    },
+    {
+      "name": "payload/system/0013.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 872415232,
+      "sha256": "f6b3b561044abbfe1a9e8883e82d1bfe1cc15a13158bd26dd5c8fcb907d525cb"
+    },
+    {
+      "name": "payload/system/0014.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 939524096,
+      "sha256": "6bb0f335f5f547d5b344c45b27d8c51c9e650393eca5538cf22bea3d52f3ad49"
+    },
+    {
+      "name": "payload/system/0015.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1006632960,
+      "sha256": "316df5244d927071acc65516e82c0129512250d8f339242bdf81671d3639eeaf"
+    },
+    {
+      "name": "payload/system/0016.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1073741824,
+      "sha256": "0db24ff3ee859579d0c5341f5e9bab74bd0b9aa4a8ad8a7e23afb144de75fc1d"
+    },
+    {
+      "name": "payload/system/0017.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1140850688,
+      "sha256": "240cd768bf07f50c0dc494c98c74edb1d9b52072971c70d908d84e2c7a3601cd"
+    },
+    {
+      "name": "payload/system/0018.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1207959552,
+      "sha256": "274899f88bc5258d121e764a6c165b662ad58ea42b3e3b0c4fdeed1537708a2b"
+    },
+    {
+      "name": "payload/system/0019.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1275068416,
+      "sha256": "7b7e89d9dab7e937ab4cf83f519204ba6a274a33bc9a58088660d7c5751eecd5"
+    },
+    {
+      "name": "payload/system/0020.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1342177280,
+      "sha256": "bb15db36135561e35feb116bbbd21cb65c5868d30513111fb0829d1045babdc4"
+    },
+    {
+      "name": "payload/system/0021.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1409286144,
+      "sha256": "4a2d439e0bbab9bbe72ccbc0afff59c4784f0d00ab1cc5b16d3d8dcb1cd11a77"
+    },
+    {
+      "name": "payload/system/0022.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1476395008,
+      "sha256": "ada23a0c827f3fff67749ae1feb9f13655ddb21a19bb55c31c4797ed6cbc49f7"
+    },
+    {
+      "name": "payload/system/0023.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1543503872,
+      "sha256": "292e005b5180a7883fa97bb9f2490a705afc94c096bffafcee84bcf2243b4fb1"
+    },
+    {
+      "name": "payload/system/0024.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1610612736,
+      "sha256": "65ff3cfc08a07dd6535833b705e2851aced02bc26be606a10113ee42e9f51495"
+    },
+    {
+      "name": "payload/system/0025.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1677721600,
+      "sha256": "4af9f0dcaa194a79d3c8f21e86fd66841d4f1e1b1e208256e365d3df65ba29d8"
+    },
+    {
+      "name": "payload/system/0026.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1744830464,
+      "sha256": "2124979507b2de60ed516693be5e638c0a790c99f0ddaead8667d85c1d2b793f"
+    },
+    {
+      "name": "payload/system/0027.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1811939328,
+      "sha256": "90da9d014e6f75e977189709e26f6943a4726bebdaa2639bdb976ca64e707759"
+    },
+    {
+      "name": "payload/system/0028.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1879048192,
+      "sha256": "2973df838b854866d57b71f78ffa0a1e62eb19eec2b63525b9e5f7648b56daae"
+    },
+    {
+      "name": "payload/system/0029.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1946157056,
+      "sha256": "c94dffa3dbcb20c9c63758c24648fd82f20a1b0235672c5dc996f4a1b9420665"
+    },
+    {
+      "name": "payload/system/0030.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2013265920,
+      "sha256": "eeeef9546d63c180f24ae0110485b4b79f422abec14f18cc650215243369284b"
+    },
+    {
+      "name": "payload/system/0031.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2080374784,
+      "sha256": "9a09e23d60b30aa07d25750190f0241a5387d46c224b4adc4e9bb0c3b1579fd5"
+    },
+    {
+      "name": "payload/system/0032.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2147483648,
+      "sha256": "798fa97b6763034873c04e8a60a7d7635c4a4bce3071719e6ee694a87bec2ea7"
+    },
+    {
+      "name": "payload/system/0033.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2214592512,
+      "sha256": "0622d4ee9fd3faa68a87bfd7a70bc139923c2a03dbcde33e7f7d8266e53cedb7"
+    },
+    {
+      "name": "payload/system/0034.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2281701376,
+      "sha256": "e511a524aa9b5a398a51aebe92e3c3b87364df238d02b1f8db668dfd81cf0940"
+    },
+    {
+      "name": "payload/system/0035.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2348810240,
+      "sha256": "ff525082eb905c98fadf35b3baa702e94a755260519bd3d8946d60969d2d31a9"
+    },
+    {
+      "name": "payload/system/0036.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2415919104,
+      "sha256": "1bec6a1dae56374f409be2213e47ea856cfde9461fea8ddb599208303b7f5503"
+    },
+    {
+      "name": "payload/system/0037.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2483027968,
+      "sha256": "84a81dcce1bc19c0a73849b672726cd5217d1ddc6d879fd08061fe25f1d08836"
+    },
+    {
+      "name": "payload/system/0038.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2550136832,
+      "sha256": "3e10225f5e2ce1e90ce6c23f662c5bfb9b6269cec553353ffa0d466594e132c8"
+    },
+    {
+      "name": "payload/system/0039.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2617245696,
+      "sha256": "9e87dbb21d89aea56fc0228723cd56b6ecb55e65a4a97696e57464dd78b1a19d"
+    },
+    {
+      "name": "payload/system/0040.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2684354560,
+      "sha256": "c6c90cabce5923a5250466a718b8e52c1049dd1a5d1f80bf3ac9eeb41e20d07c"
+    },
+    {
+      "name": "payload/system/0041.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2751463424,
+      "sha256": "45bb51ee10441aa0c1107a439bb35d4056df86961a74269e6bd7e0103d269f15"
+    },
+    {
+      "name": "payload/system/0042.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2818572288,
+      "sha256": "a05ac0dad327176e92a3468fd0b5cf5cc95eb9e97e3acb51ff4b0113f4cc8312"
+    },
+    {
+      "name": "payload/system/0043.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2885681152,
+      "sha256": "893322e8ede810344f38c1f9875253bc2157037e9c307036dfc98dc4b7432f02"
+    },
+    {
+      "name": "payload/system/0044.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 2952790016,
+      "sha256": "a91f72c16fc5b8c060c05e0506870411b717a5bfef9073efb137a7a0c089f5f6"
+    },
+    {
+      "name": "payload/system/0045.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3019898880,
+      "sha256": "a2eb89f702d5bbb8112c6a18070c53265990e2627c804a6ca5954f9ffbee2667"
+    },
+    {
+      "name": "payload/system/0046.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3087007744,
+      "sha256": "3fbbcd143247f481e3c4355e77dfa18f5a409819af83c72dade2be63327d57e5"
+    },
+    {
+      "name": "payload/system/0047.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3154116608,
+      "sha256": "3ddc59b4177e32d9eb305ed79ffcf17c514e888d8e0ae20f960caf2483c05b02"
+    },
+    {
+      "name": "payload/system/0048.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3221225472,
+      "sha256": "71f182af3e857140db5c4c04282893fd44dad76fec139e4ac44396e570a50696"
+    },
+    {
+      "name": "payload/system/0049.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3288334336,
+      "sha256": "bf8936e1d58905faf284508397fa2501eec41887b22d4edcb189fbf0a44c57ec"
+    },
+    {
+      "name": "payload/system/0050.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3355443200,
+      "sha256": "8cda03d903d6f91609fe09b0785693c4ab5c66b904bf148059dff5b43ff19b88"
+    },
+    {
+      "name": "payload/system/0051.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3422552064,
+      "sha256": "d6497f0f67cf8aa70bad9991f88c8e2c8e9d8080f6fbc66c953dd90716279360"
+    },
+    {
+      "name": "payload/system/0052.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3489660928,
+      "sha256": "71ebb83da77baf8329e853ec0d0fd4ea1568edfe171bb388a279c48aa811c9c0"
+    },
+    {
+      "name": "payload/system/0053.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3556769792,
+      "sha256": "b6bf329212a88bea8394a634e4137e7c3e4e077ce99737999d2c52aca734b7a7"
+    },
+    {
+      "name": "payload/system/0054.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3623878656,
+      "sha256": "76b177dca116d3bb8375d18bd971519f31fab54c898bc28f224af211f2d3951f"
+    },
+    {
+      "name": "payload/system/0055.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3690987520,
+      "sha256": "3f6091bb4487207c514ed7b60afba822e1346d853db6ba8508e2a48ba7a516ad"
+    },
+    {
+      "name": "payload/system/0056.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3758096384,
+      "sha256": "29e7b4cdf05a54572b83ef4bc0159d79d6c3484c9ddaf287f811cbb0bee10847"
+    },
+    {
+      "name": "payload/system/0057.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3825205248,
+      "sha256": "1999c2df31b3b5db556c49e59da8583a3727084c2d7f8d341382bde00d8cc7ea"
+    },
+    {
+      "name": "payload/system/0058.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3892314112,
+      "sha256": "96d0ea872de1530d24d6c4edd2c51b303fc400c018672b0ad3289cfb293adc1f"
+    },
+    {
+      "name": "payload/system/0059.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 3959422976,
+      "sha256": "aafeb9197cb51001dee0e900c6cf8a93cdb087442ed8d5385e5a7f1e25f837ec"
+    },
+    {
+      "name": "payload/system/0060.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4026531840,
+      "sha256": "77450e64074f9a1178bc8ca87d97f1c88e05be59656fb670e714b8fd3c60087e"
+    },
+    {
+      "name": "payload/system/0061.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4093640704,
+      "sha256": "6c349bda5e87cf1696bb36e67a29982789a96a84c64b6532586bc1833bdef8b2"
+    },
+    {
+      "name": "payload/system/0062.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4160749568,
+      "sha256": "7b0ba9ed68bbf0fb988c14e5cbdff1b46bf9ab44f4e9ca8a918487ba79b1d143"
+    },
+    {
+      "name": "payload/system/0063.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4227858432,
+      "sha256": "8d0926745f99e85eb03077329eeb120c1542d7ea670b9909e72a4f94f08048f0"
+    },
+    {
+      "name": "payload/system/0064.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4294967296,
+      "sha256": "5185f555d8982471d0d8e158c2106d1d72cfdfe6b26fd93fb9e691c4ed88f4f7"
+    },
+    {
+      "name": "payload/system/0065.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4362076160,
+      "sha256": "4a5239ce55f7865838057c3797872c6393a17db8721894b1baa1a947a2c0a4cf"
+    },
+    {
+      "name": "payload/system/0066.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4429185024,
+      "sha256": "dbcde9847de1bdfeda035a3e6121db79b0c9764d9fdb978762df083a3cf3e763"
+    },
+    {
+      "name": "payload/system/0067.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4496293888,
+      "sha256": "63fccbce2550da33e55ff4940b780c0c5eb467914fec030f9ebf2f958a551451"
+    },
+    {
+      "name": "payload/system/0068.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4563402752,
+      "sha256": "3e1ec10d3758021c6b5b86e7ba3cd6079578da690b81054dbdb29571faf588df"
+    },
+    {
+      "name": "payload/system/0069.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4630511616,
+      "sha256": "d6e4c437634e7f8f695e047616511a963bb7c591b41a3561716f2705467a09fe"
+    },
+    {
+      "name": "payload/system/0070.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4697620480,
+      "sha256": "7000294ba190d0108abbc3c2353a17fc985025dc4178bf03c221c005504d408b"
+    },
+    {
+      "name": "payload/system/0071.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4764729344,
+      "sha256": "7e70239d15e589d790b5740e2f0c44b62b5bab92f9637e4bfe31d9c736e487b0"
+    },
+    {
+      "name": "payload/system/0072.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4831838208,
+      "sha256": "0085edaafa5c9f535c7fe007dc8848288dbfb12acb8b5597a6d9bbbb88958b99"
+    },
+    {
+      "name": "payload/system/0073.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4898947072,
+      "sha256": "df5ef1960ebc0bbd3ac5fd69a344c4ca688726e61cb536e6a641130782e93510"
+    },
+    {
+      "name": "payload/system/0074.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 4966055936,
+      "sha256": "837b84bacf925a3673461713862d7f52a29126a11beb97eb513c435337dda068"
+    },
+    {
+      "name": "payload/system/0075.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5033164800,
+      "sha256": "733b047a4747499ed73ede44b4fb26722f1c03a32d88c9ab23a55e4a1040ba6d"
+    },
+    {
+      "name": "payload/system/0076.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5100273664,
+      "sha256": "6411f6dcb3516e85f5a3dba6c0853078dcd8de601f55c031fce4fe5e25e3d259"
+    },
+    {
+      "name": "payload/system/0077.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5167382528,
+      "sha256": "a5e2933d71002f41ef69c7186dfc4400303745125c35e04ac1fb868858d79a9f"
+    },
+    {
+      "name": "payload/system/0078.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5234491392,
+      "sha256": "8186b63107bf86d1a2145088bb4aaf0058bc2f43ce1a9d952d8241a063c0e419"
+    },
+    {
+      "name": "payload/system/0079.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5301600256,
+      "sha256": "61d3d36f3fe829ecc3c7d662ab57b4ba996a8a63c1213b73b70bf844c136e846"
+    },
+    {
+      "name": "payload/system/0080.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5368709120,
+      "sha256": "2bc1a67975845cfef0358d6c4f86fa06df60f295680d34389b27df06c114e789"
+    },
+    {
+      "name": "payload/system/0081.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5435817984,
+      "sha256": "58bf344deaad681b3fed7ca49140cd069ed033b7967991545cef5625f3e1c8c9"
+    },
+    {
+      "name": "payload/system/0082.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5502926848,
+      "sha256": "fd61effee767e3527761fe6b3d46368e0168c643cf5047afc6bc822ea4dc2a9e"
+    },
+    {
+      "name": "payload/system/0083.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5570035712,
+      "sha256": "45923062f00722df1b8bae4352724f9f3dc4064d7e30d634e5f345a7f8ddb89e"
+    },
+    {
+      "name": "payload/system/0084.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5637144576,
+      "sha256": "41980b6a9a7cf9a63299527685db676bf8d9e361268d9952eeb2a995d19dcebb"
+    },
+    {
+      "name": "payload/system/0085.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5704253440,
+      "sha256": "85f61a9e44786095398ee87b2406ad82a5b766cec7855731369de7835c04bc62"
+    },
+    {
+      "name": "payload/system/0086.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5771362304,
+      "sha256": "a51995a57d982e12c76c6abdbd23f52ea7de96d2b5ea62984400565ac29e40af"
+    },
+    {
+      "name": "payload/system/0087.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5838471168,
+      "sha256": "eefe1bf4418983b76ea1c421f6681f49599d8a5b38bb69675db1ebf6c35809eb"
+    },
+    {
+      "name": "payload/system/0088.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5905580032,
+      "sha256": "5113c8f847da9e42bc45099bb7bf0d00d010b292af967f7f2d32c01d8e9429b2"
+    },
+    {
+      "name": "payload/system/0089.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 5972688896,
+      "sha256": "b8e07015d932d253887b26f8c2390465d5d4e988f55b2575da3a00a1c8fb0db2"
+    },
+    {
+      "name": "payload/system/0090.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 6039797760,
+      "sha256": "91b53bd8ee627c4062f13deaa40a07db3663c969b6172ebfa1fc3ed20b8204ad"
+    },
+    {
+      "name": "payload/system/0091.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 6106906624,
+      "sha256": "d8b273aeed91f00943a011a777e97aa8531625a6504be76034f5eada3f40b557"
+    },
+    {
+      "name": "payload/system/0092.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 6174015488,
+      "sha256": "1ca0205ae10f33c4821d3af69ee22afd227d5453a82b6d65b4c3f0d472e77900"
+    },
+    {
+      "name": "payload/system/0093.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 6241124352,
+      "sha256": "418fd134df69fb422a4e66295d3c8f06e28cbd22a358dc7380ac6abc8aaf88f3"
+    },
+    {
+      "name": "payload/system/0094.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 6308233216,
+      "sha256": "53ea2d99df5646472fea93d27668e930c8656a52c5108233c343d82ab1ea6e44"
+    },
+    {
+      "name": "payload/system/0095.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 6375342080,
+      "sha256": "bd931266e7fe4113160ddb92f2f5f97ee0f5d9c501db41e3a9360ea9fbaec9a4"
+    },
+    {
+      "name": "payload/system/0096.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 6442450944,
+      "sha256": "eef28e4b5f0996ac9b93948de17c40277c6789094592ef58f12a4d286d473468"
+    },
+    {
+      "name": "payload/system/0097.img",
+      "bytes": 25165824,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 6509559808,
+      "sha256": "95aeaae03b56c171cf88753c821630a3c24f1fcf406cec3e17d56781aa3f8369"
+    },
+    {
+      "name": "rom/system.chunks",
+      "bytes": 10599,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "467bc07468c764c8c0c9071c067f9cb09f8c1751ef06a2e9a0ad33b42c61a34f"
+    },
+    {
+      "name": "payload/product/0000.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 0,
+      "sha256": "1af6429b976fd229b6b3911fe015dc16caa9a4371338919ebec12862d05fba9c"
+    },
+    {
+      "name": "payload/product/0001.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 67108864,
+      "sha256": "39b266cf1cfbca71445abeae123c2504a981f6d447fd5715ecf3096152e4bcf1"
+    },
+    {
+      "name": "payload/product/0002.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 134217728,
+      "sha256": "d7f3399623d80388cdd6dc5a3ac981f61ed9f2936578e2fe69d9be1c00cce735"
+    },
+    {
+      "name": "payload/product/0003.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 201326592,
+      "sha256": "b11aaae59b1aa546485fe3df0a233fc78be0eba1d6d99408a6f4c2e07ebedcb3"
+    },
+    {
+      "name": "payload/product/0004.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 268435456,
+      "sha256": "4cd938dc2e3b3bfc44de4d6b109c16822a6bfe784870f37d8df830c25aaa261a"
+    },
+    {
+      "name": "payload/product/0005.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 335544320,
+      "sha256": "b46c606b5291a0032c597795285ee3afda0bf713775c2305e8720d82f4ab21d7"
+    },
+    {
+      "name": "payload/product/0006.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 402653184,
+      "sha256": "6eab76ccd740cbb09141a5aebd1d5f2f490cf700a54bd1355aa61bd6ff743fd8"
+    },
+    {
+      "name": "payload/product/0007.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 469762048,
+      "sha256": "6f9d965dd21a748c6df8629f3c8dfba14cb3054a3f9f597a7acdbf28dbbbd85a"
+    },
+    {
+      "name": "payload/product/0008.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 536870912,
+      "sha256": "5145d899ce14246bd30623c3395dabbc331548bcb571de293fe8cbe9affc2867"
+    },
+    {
+      "name": "payload/product/0009.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 603979776,
+      "sha256": "3e142887bcd393c3a218d7a8554a2d99812d2f772732be1f826248d8ba2639fb"
+    },
+    {
+      "name": "payload/product/0010.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 671088640,
+      "sha256": "7f8444238f5df7bb85526d71bb0789da1e442565f3a602c2b51682de354758e3"
+    },
+    {
+      "name": "payload/product/0011.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 738197504,
+      "sha256": "48cb5cdd29b655a62c573ecd2644a91e937c9ee84f8025a6514580dc81da95bc"
+    },
+    {
+      "name": "payload/product/0012.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 805306368,
+      "sha256": "47509f08dde7022b736eb69466f8ef2346297a6242d6e0b4058239c865a8fc9f"
+    },
+    {
+      "name": "payload/product/0013.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 872415232,
+      "sha256": "da12d233cf5b02a0430169656587893e6ff2c081bac2050a3575bd0890cd4793"
+    },
+    {
+      "name": "payload/product/0014.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 939524096,
+      "sha256": "e03e0504ba7d193ba15cf1279d40163439ee14f4b9165c245d585bd36136bcbf"
+    },
+    {
+      "name": "payload/product/0015.img",
+      "bytes": 41943040,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1006632960,
+      "sha256": "80a3721188e40218b08b26776bc53bdae81e4784fff71d71450a197319cba113"
+    },
+    {
+      "name": "rom/product.chunks",
+      "bytes": 1723,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "2038edff7923f92c84c47f5eaaafa954481dba5e20a9e9fdc5b7a03a1e710c1b"
+    },
+    {
+      "name": "payload/boot/0000.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 0,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+    },
+    {
+      "name": "rom/boot.chunks",
+      "bytes": 100,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "10eb9b7f2c62ca211de6a4f0c374d6370d4fcfed1c93dff43a2912c1e4304995"
+    },
+    {
+      "name": "payload/vendor/0000.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 0,
+      "sha256": "f6ba678a17ab9b270a6e140675fd61fdd5774e5eb96ff28b845d3fca8047a1e2"
+    },
+    {
+      "name": "payload/vendor/0001.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 67108864,
+      "sha256": "3b6a07d0d404fab4e23b6d34bc6696a6a312dd92821332385e5af7c01c421351"
+    },
+    {
+      "name": "payload/vendor/0002.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 134217728,
+      "sha256": "606211ada30bf9a57e386e4c818673c6a47f010548fb995ff889d7e02d71ca90"
+    },
+    {
+      "name": "payload/vendor/0003.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 201326592,
+      "sha256": "ae98380f3a6ec7d85bde4daf2e2ecbd12105ecdd5bcf895f25d892aca76bd2de"
+    },
+    {
+      "name": "payload/vendor/0004.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 268435456,
+      "sha256": "320e8f95f3c762d5b30db345430b7993362f47078a0817024e858b3a57c391ba"
+    },
+    {
+      "name": "payload/vendor/0005.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 335544320,
+      "sha256": "23bd204af94b89cc3fd2c281a212dc1d162395b74cb82d45aa305aa5fa3f4132"
+    },
+    {
+      "name": "payload/vendor/0006.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 402653184,
+      "sha256": "07f7570d51c3b33437c991ec96d0bead065dbe0fba9ec80bd1a2ced4a5d40b85"
+    },
+    {
+      "name": "payload/vendor/0007.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 469762048,
+      "sha256": "704b99e44f987c33576718af6904e1b729f56b46635cc83b10684672cc6d1bfa"
+    },
+    {
+      "name": "payload/vendor/0008.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 536870912,
+      "sha256": "8cb9bd936f04b7dbd910876ef0a6ef4c188a4634e4f018fb6fc2f6bc8e45d0d2"
+    },
+    {
+      "name": "payload/vendor/0009.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 603979776,
+      "sha256": "d7915cadd2cbb9ab6a20a7e9e0734176c7100ed3383186e34ff7156eb7c48c76"
+    },
+    {
+      "name": "payload/vendor/0010.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 671088640,
+      "sha256": "a817b8c8d2015f66b7650b8e37d1f77c392384631fda91b179230c001d4ebcee"
+    },
+    {
+      "name": "payload/vendor/0011.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 738197504,
+      "sha256": "82dc0ac07583194bda025fe6b1d429a6041b35cfe03f8f14528c9a4c5c1fb33a"
+    },
+    {
+      "name": "payload/vendor/0012.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 805306368,
+      "sha256": "0e1a8cb30349501e65039142355c6fd3768a0728c7c366a46777b994a124a48b"
+    },
+    {
+      "name": "payload/vendor/0013.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 872415232,
+      "sha256": "c4ef8207d162ac0b77705cf528e0c866ed16f41760796604a324c159fa7b81dd"
+    },
+    {
+      "name": "payload/vendor/0014.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 939524096,
+      "sha256": "dc1ea4477dc819cddb8798b8ebfac20b4437a01cb304cd167815ce219ad7d68d"
+    },
+    {
+      "name": "payload/vendor/0015.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1006632960,
+      "sha256": "207dc26a0b22c6846ea3d39543b990f197b389344485c53dbbece688a17eb16b"
+    },
+    {
+      "name": "payload/vendor/0016.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1073741824,
+      "sha256": "59e95d50c5dda41bbd0355c7db33ccc6b4c7d9c0c05325cee7046a3c7487ca6b"
+    },
+    {
+      "name": "payload/vendor/0017.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1140850688,
+      "sha256": "3b6a07d0d404fab4e23b6d34bc6696a6a312dd92821332385e5af7c01c421351"
+    },
+    {
+      "name": "payload/vendor/0018.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1207959552,
+      "sha256": "25cb05f6b43d61d771c92bdb48566904cbe88446a570cf3000b74c78bd87e366"
+    },
+    {
+      "name": "payload/vendor/0019.img",
+      "bytes": 67108864,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1275068416,
+      "sha256": "3b6a07d0d404fab4e23b6d34bc6696a6a312dd92821332385e5af7c01c421351"
+    },
+    {
+      "name": "payload/vendor/0020.img",
+      "bytes": 37748736,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 1342177280,
+      "sha256": "d4d77915154843d612e41c6a72645b31766b8f0d9d53c4980d8b31bacb90c8f3"
+    },
+    {
+      "name": "rom/vendor.chunks",
+      "bytes": 2247,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "02d728acd2e1d5300939c9cb8a3a8674e13024135298e258efd11a27c74f60d1"
+    },
+    {
+      "name": "payload/dtbo/0000.img",
+      "bytes": 10485760,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 0,
+      "sha256": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec"
+    },
+    {
+      "name": "rom/dtbo.chunks",
+      "bytes": 100,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "33858837d46546916a9018ff1a8386f12c245856f1b3d35f7ad6d869303b2e50"
+    },
+    {
+      "name": "payload/vbmeta/0000.img",
+      "bytes": 65536,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "offset": 0,
+      "sha256": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54"
+    },
+    {
+      "name": "rom/vbmeta.chunks",
+      "bytes": 99,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "50784c86b3ad40d49c2a3030d40307cd24f43fa3ac9c294118bdad381d662e94"
+    },
+    {
+      "name": "rom/upgrade.tsv",
+      "bytes": 730,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "4707566b4e6d06a1adfba9f9fd97c88b2d59c7bccd4bd0cf761420697dbc8b96"
+    },
+    {
+      "name": "rom/manifest.json",
+      "bytes": 17988,
+      "date_time": [
+        2008,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "create_system": 3,
+      "external_attr": 2175008768,
+      "sha256": "33a3743f7bbbf5cbc913a98dffb00d4acbd938bc3b928521e328cc99af1f3ff9"
+    }
+  ],
+  "zip_format": "ZIP32_NO_ZIP64",
+  "installer_library_sha256": "9904fbe2fef1e87c776063035f786ffa649916f2852b685996e6c19da6d4677c",
+  "schema": 1,
+  "partitions": {
+    "system": {
+      "path": "system.raw.img",
+      "bytes": 6534725632,
+      "sha256": "c2c249d94e4028ba3c550bb4a51fe2c3397bf80f4f8b9f82ad8236f3ed2340a8"
+    },
+    "product": {
+      "path": "product.raw.img",
+      "bytes": 1048576000,
+      "sha256": "bd1e4f1598ccfc8b24890e97b3562e1941ebd27c17b284491c8965981db45aa7"
+    },
+    "boot": {
+      "path": "boot.raw.img",
+      "bytes": 67108864,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+    },
+    "vendor": {
+      "path": "vendor.raw.img",
+      "bytes": 1379926016,
+      "sha256": "609f5098f0bc469bf3377555beef3ed7e64be6df61dbc260d42f2f4d6f6a0e18"
+    },
+    "dtbo": {
+      "path": "dtbo.raw.img",
+      "bytes": 10485760,
+      "sha256": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec"
+    },
+    "vbmeta": {
+      "path": "vbmeta.raw.img",
+      "bytes": 65536,
+      "sha256": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54"
+    }
+  },
+  "compression_level": 9,
+  "payload_encoder": {
+    "version": "7-Zip 26.01",
+    "options": [
+      "-tzip",
+      "-mm=Deflate",
+      "-mx=9",
+      "-mfb=258",
+      "-mpass=1",
+      "-mmt=1"
+    ],
+    "format": "STANDARD_DEFLATE_METHOD_8"
+  },
+  "producer_python": "3.14.4 Linux aarch64",
+  "recipe_export_zlib_version": "1.3.1",
+  "recipe_export_zlib_runtime_version": "1.3.1"
+}

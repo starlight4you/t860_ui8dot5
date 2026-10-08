@@ -1,0 +1,10 @@
+--- a/system_ext/etc/selinux/system_ext_property_contexts
++++ b/system_ext/etc/selinux/system_ext_property_contexts
+@@ -1006,7 +1006,6 @@
+ ril.uart_baudrate                    u:object_r:exported_radio_prop:s0
+ 
+ # https://jira-mx.sec.samsung.net/browse/SEANDROID-12930
+-init.svc.vendor.wvkprov_server_hal                           u:object_r:wvkprov_prop:s0
+ 
+ # https://jira-mx.sec.samsung.net/browse/SEANDROID-12934
+ ro.meta.app.attribution                    u:object_r:csc_prop:s0

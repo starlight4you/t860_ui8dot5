@@ -1,0 +1,156 @@
+--- a/system/etc/init/hw/init.rc
++++ b/system/etc/init/hw/init.rc
+@@ -757,14 +757,7 @@
+     start vold
+ 
+ on post-fs
+-    # A55: S6 has CACHE but no metadata partition; establish persistent backing.
+-    mkdir /cache/t860-metadata 0755 root root
+-    mount none /cache/t860-metadata /metadata bind
+-    restorecon_recursive /metadata
+-
+     start iod
+-
+-    exec - system system -- /system/bin/vdc checkpoint markBootAttempt
+ 
+     # Once everything is setup, no need to modify /.
+     # The bind+remount combination allows this to work in containers.
+@@ -835,6 +828,41 @@
+ 
+     # create the lost+found directories, so as to enforce our permissions
+     mkdir /cache/lost+found 0770 root root
++
++
++on late-fs
++    # Ensure that tracefs has the correct permissions.
++    # This does not work correctly if it is called in post-fs.
++    chmod 0755 /sys/kernel/tracing
++    chmod 0755 /sys/kernel/debug/tracing
++
++    # HALs required before storage encryption can get unlocked (FBE)
++    class_start early_hal
++
++# Only enable the bootreceiver tracing instance for kernels 5.10 and above.
++on late-fs && property:ro.kernel.version=4.19
++    setprop bootreceiver.enable 0
++on late-fs && property:ro.kernel.version=5.4
++    setprop bootreceiver.enable 0
++
++on property:ro.product.cpu.abilist64=* && property:bootreceiver.enable=1
++    # Set up a tracing instance for system_server to monitor error_report_end events.
++    # These are sent by kernel tools like KASAN and KFENCE when a memory corruption
++    # is detected. This is only needed for 64-bit systems.
++    mkdir /sys/kernel/tracing/instances/bootreceiver 0700 system system
++    restorecon_recursive /sys/kernel/tracing/instances/bootreceiver
++    write /sys/kernel/tracing/instances/bootreceiver/buffer_size_kb 1
++    write /sys/kernel/tracing/instances/bootreceiver/trace_options disable_on_free
++    write /sys/kernel/tracing/instances/bootreceiver/events/error_report/error_report_end/enable 1
++
++on post-fs-data
++
++    # A82: private non-CE DATA backing; CACHE wiping cannot remove metadata.
++    # Requires S6 ICE fstab without metadata-encryption or userdata checkpoints.
++    mkdir /data/unencrypted 0700 root root encryption=None
++    mkdir /data/unencrypted/t860-metadata 0755 root root encryption=None
++    mount none /data/unencrypted/t860-metadata /metadata bind
++    restorecon_recursive /metadata
+ 
+     restorecon_recursive /metadata
+     mkdir /metadata/vold
+@@ -864,32 +892,15 @@
+ 
+     mkdir /metadata/staged-install 0770 root system
+ 
+-on late-fs
+-    # Ensure that tracefs has the correct permissions.
+-    # This does not work correctly if it is called in post-fs.
+-    chmod 0755 /sys/kernel/tracing
+-    chmod 0755 /sys/kernel/debug/tracing
+-
+-    # HALs required before storage encryption can get unlocked (FBE)
+-    class_start early_hal
+-
+-# Only enable the bootreceiver tracing instance for kernels 5.10 and above.
+-on late-fs && property:ro.kernel.version=4.19
+-    setprop bootreceiver.enable 0
+-on late-fs && property:ro.kernel.version=5.4
+-    setprop bootreceiver.enable 0
+-
+-on property:ro.product.cpu.abilist64=* && property:bootreceiver.enable=1
+-    # Set up a tracing instance for system_server to monitor error_report_end events.
+-    # These are sent by kernel tools like KASAN and KFENCE when a memory corruption
+-    # is detected. This is only needed for 64-bit systems.
+-    mkdir /sys/kernel/tracing/instances/bootreceiver 0700 system system
+-    restorecon_recursive /sys/kernel/tracing/instances/bootreceiver
+-    write /sys/kernel/tracing/instances/bootreceiver/buffer_size_kb 1
+-    write /sys/kernel/tracing/instances/bootreceiver/trace_options disable_on_free
+-    write /sys/kernel/tracing/instances/bootreceiver/events/error_report/error_report_end/enable 1
+-
+-on post-fs-data
++    exec - system system -- /system/bin/vdc checkpoint markBootAttempt
++
++    # Bootstrap platform flags before apexd and mainline aconfig initialization.
++    mkdir /metadata/aconfig 0775 root system
++    mkdir /metadata/aconfig/flags 0770 root system
++    mkdir /metadata/aconfig/maps 0775 root system
++    mkdir /metadata/aconfig/boot 0775 root system
++    exec_start early_system_aconfigd_platform_init
++    exec_start system_aconfigd_platform_init
+ 
+     # Start checkpoint before we touch data
+     exec - system system -- /system/bin/vdc checkpoint prepareCheckpoint
+--- a/system/etc/init/aconfigd.rc
++++ b/system/etc/init/aconfigd.rc
+@@ -23,12 +23,4 @@
+     file /dev/kmsg w
+     socket aconfigd_system stream 666 system system
+ 
+-# A55: initialize after S6 CACHE-backed metadata is mounted in root post-fs.
+-
+-on post-fs
+-    mkdir /metadata/aconfig 0775 root system
+-    mkdir /metadata/aconfig/flags 0770 root system
+-    mkdir /metadata/aconfig/maps 0775 root system
+-    mkdir /metadata/aconfig/boot 0775 root system
+-    exec_start early_system_aconfigd_platform_init
+-    exec_start system_aconfigd_platform_init
++# A82: root post-fs-data runs both platform initializers after the private DATA bind.
+--- a/system/etc/init/gsid.rc
++++ b/system/etc/init/gsid.rc
+@@ -5,7 +5,7 @@
+     user root
+     group root system media_rw
+ 
+-on post-fs
++on post-fs-data
+     mkdir /metadata/gsi 0771 root system
+     mkdir /metadata/gsi/dsu 0771 root system
+     mkdir /metadata/gsi/ota 0771 root system
+--- a/system/etc/selinux/plat_file_contexts
++++ b/system/etc/selinux/plat_file_contexts
+@@ -787,3 +787,25 @@
+ /cache/t860-metadata/tradeinmode(/.*)?    u:object_r:tradeinmode_metadata_file:s0
+ /cache/t860-metadata/prefetch(/.*)?    u:object_r:prefetch_metadata_file:s0
+ /cache/t860-metadata/libprocessgroup(/.*)?    u:object_r:libprocessgroup_metadata_file:s0
++
++# A82: match all canonical metadata labels in private DATA backing.
++/data/unencrypted/t860-metadata(/.*)?           u:object_r:metadata_file:s0
++/data/unencrypted/t860-metadata/apex(/.*)?      u:object_r:apex_metadata_file:s0
++/data/unencrypted/t860-metadata/vold(/.*)?      u:object_r:vold_metadata_file:s0
++/data/unencrypted/t860-metadata/gsi(/.*)?       u:object_r:gsi_metadata_file:s0
++/data/unencrypted/t860-metadata/gsi/dsu/active  u:object_r:gsi_public_metadata_file:s0
++/data/unencrypted/t860-metadata/gsi/dsu/booted  u:object_r:gsi_public_metadata_file:s0
++/data/unencrypted/t860-metadata/gsi/dsu/lp_names  u:object_r:gsi_public_metadata_file:s0
++/data/unencrypted/t860-metadata/gsi/dsu/[^/]+/metadata_encryption_dir u:object_r:gsi_public_metadata_file:s0
++/data/unencrypted/t860-metadata/gsi/ota(/.*)?   u:object_r:ota_metadata_file:s0
++/data/unencrypted/t860-metadata/password_slots(/.*)?    u:object_r:password_slot_metadata_file:s0
++/data/unencrypted/t860-metadata/ota(/.*)?       u:object_r:ota_metadata_file:s0
++/data/unencrypted/t860-metadata/bootstat(/.*)?  u:object_r:metadata_bootstat_file:s0
++/data/unencrypted/t860-metadata/staged-install(/.*)?    u:object_r:staged_install_file:s0
++/data/unencrypted/t860-metadata/watchdog(/.*)?    u:object_r:watchdog_metadata_file:s0
++/data/unencrypted/t860-metadata/repair-mode(/.*)?    u:object_r:repair_mode_metadata_file:s0
++/data/unencrypted/t860-metadata/aconfig(/.*)?    u:object_r:aconfig_storage_metadata_file:s0
++/data/unencrypted/t860-metadata/aconfig/flags(/.*)?    u:object_r:aconfig_storage_flags_metadata_file:s0
++/data/unencrypted/t860-metadata/tradeinmode(/.*)?    u:object_r:tradeinmode_metadata_file:s0
++/data/unencrypted/t860-metadata/prefetch(/.*)?    u:object_r:prefetch_metadata_file:s0
++/data/unencrypted/t860-metadata/libprocessgroup(/.*)?    u:object_r:libprocessgroup_metadata_file:s0

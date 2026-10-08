@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A70: register only the reviewed S6 SystemUI rounded-corner resource overlay. -->
+<config>
+    <allowed-system-preload package="com.android.systemui.t860_rounded_corners_rro_system_ext"/>
+</config>

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "A55-S6-METADATA-ACONFIG",
+  "reason_record": "docs/ACONFIG_METADATA_REBASE_A55.md",
+  "baseline_inventory_sha256": "89ecf42375287b0d9b58605fee5882ad853502bf45e8f8ce701512cb5a800ee2",
+  "classification": [
+    "DEVICE_REQUIRED",
+    "VERSION_SPECIFIC"
+  ],
+  "hardware_boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "hardware_vendor_sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af",
+  "cache_bytes": 419430400,
+  "backing_path": "/cache/t860-metadata",
+  "native": {
+    "input_sha256": "2a5ccfc68412418da9ec1771abd7ceddedd7691511cbe8c67889382e4f4602d8",
+    "output_sha256": "83715f0ce921e5ba7f1c8e1af7e9d0a294d51da1b9a68c5c04f779391c6c8eef",
+    "bytes": 189704,
+    "function": {
+      "va": 83916,
+      "file_offset": 83916,
+      "size": 4260,
+      "sha256": "8aff855068338807c5ad61b23129ec39d2f384549e3053be559e8a0f7e0b801f",
+      "fde_va": 43228,
+      "cie_va": 36176,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+    },
+    "va": 86580,
+    "before_word": "d503201f",
+    "after_word": "14000009",
+    "target_va": 86616,
+    "vendor_source_must_be_absent": true
+  },
+  "files": [
+    {
+      "path": "system/etc/init/hw/init.rc",
+      "source_name": "init.rc",
+      "before_sha256": "3f8e5dbd60ba99e1c520fd55eddb5f5e52a580b31a31bd5512b2c4142315c67b",
+      "desired_metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_file:s0"
+      },
+      "sha256": "c8520ad8bd8ea9c4fdcd40630a990add252c6146d312d8dbd0ebb4acca2e9bf2",
+      "size": 181598
+    },
+    {
+      "path": "system/etc/init/aconfigd.rc",
+      "source_name": "aconfigd.rc",
+      "before_sha256": "78d6bb311aa7126384da4b59780d4a87d9b321c4fd211d04e1339fbd8975447b",
+      "desired_metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_file:s0"
+      },
+      "sha256": "d82ec599ff109fa5e175c273fcc741957338ef367637dbe50666df6dbcea7feb",
+      "size": 1081
+    },
+    {
+      "path": "system/etc/selinux/plat_file_contexts",
+      "source_name": "plat_file_contexts",
+      "before_sha256": "5c53c96290dd9d51539ec27cf7fea764ddc502e55b0dd8b1e1cfb22f0dafd0c3",
+      "desired_metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:file_contexts_file:s0"
+      },
+      "sha256": "88eca410b4a60335136189a1b785ec405210602e643c89ea88e9f08b6f5f2ef7",
+      "size": 53171
+    },
+    {
+      "path": "system/lib64/libaconfigd_rust.dylib.so",
+      "source_name": "libaconfigd_rust.dylib.so",
+      "before_sha256": "2a5ccfc68412418da9ec1771abd7ceddedd7691511cbe8c67889382e4f4602d8",
+      "desired_metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_lib_file:s0"
+      },
+      "sha256": "83715f0ce921e5ba7f1c8e1af7e9d0a294d51da1b9a68c5c04f779391c6c8eef",
+      "size": 189704
+    }
+  ]
+}

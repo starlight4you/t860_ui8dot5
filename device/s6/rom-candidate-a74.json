@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "candidate_id": "A74-X710-EZH3-T860-UI85-FCM4-SDK30",
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "stage": "/var/tmp/ui85-a73-fcm4-stage-v1/stage",
+  "inventory_sha256": "bf2f94d72b890db7397605f518800169cd9680424d0c366722f6db7a42fb4931",
+  "policy_report_sha256": "22566eb3d56b7aee19ef60860f7342e25b3716a2803343cc64f0e1262b972207",
+  "runtime_new_rom": "PROCESS_LOCAL_VINTF_CANDIDATE_PASS_NOT_INSTALLED",
+  "full_checkvintf": "NOT_PASSED",
+  "preserved_hardware": {
+    "boot": {
+      "block": "/dev/block/sda20",
+      "bytes": 67108864,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+    },
+    "vendor": {
+      "block": "/dev/block/sda25",
+      "bytes": 1379926016,
+      "sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af"
+    }
+  },
+  "known_unresolved": [
+    "Process-local FCM4+SDK30 diagnostic passed; installed full VINTF remains NOT_PASSED. No SDK28 declaration or compatibility bypass.",
+    "CACHE-backed metadata lifecycle remains NOT_PASSED.",
+    "Mainline automatic activation recurred in A70; session 410951224 reverted after targeted recovery quarantine. Updated tethering/ART/netd stack compatibility remains NOT_PASSED.",
+    "QCC ANR and FabricCrypto/Fkeymaster daemon restart loop remain unresolved; services retained pending consumer audit.",
+    "Physical touch, S Pen, audio output, auto-brightness, DeX, multiwindow, keyboard and licensed DRM playback remain incompletely verified.",
+    "A66 fingerprint and face are user-reported functional; A68 sketch-to-image and weather fetch, A69 English/Chinese Notes summary passed on the live diagnostic system. Full NEW package dirty upgrade and rollback remain NOT_TESTED.",
+    "A70 rounded-corner RRO and exact package registration are staged; runtime validation is currently pending.",
+    "Official Clock system preinstall is staged, but system-preinstall runtime/alarm wakeup remain NOT_TESTED.",
+    "Personal diagnostic public key is excluded; final release diagnostic cleanup and complete installer integration remain necessary."
+  ],
+  "reason_document": "docs/DEVICE_SDK_CONTRACT_A74.md",
+  "inventory_entries": 8097,
+  "vendor_adaptation": {
+    "profiles": [
+      "device/s6/media-c2-seccomp-ui85.json",
+      "device/s6/vendor-system-sdk30-ui85-a74.json"
+    ],
+    "scope": "TWO_EXISTING_S6_TEXT_CONFIGS_ONLY",
+    "full_donor_vendor_replacement": false,
+    "normal_upgrade_states": [
+      "SDK28_BASELINE",
+      "SDK28_ADAPTED",
+      "SDK30_BASELINE",
+      "SDK30_ADAPTED"
+    ],
+    "full_guard_entries": 2768,
+    "new_install_runtime": "NOT_TESTED"
+  },
+  "included_incremental_adaptations": [
+    "A50-A61 boot and SDK28 device compatibility fixes",
+    "A66 S6 optical fingerprint software illumination",
+    "A68 Wi-Fi telephony capability RRO and official Clock preinstall",
+    "A69 actual XAR US country property",
+    "A70 stock S6 corner geometry and SystemUI resource gate, exact Samsung preload registration",
+    "A73 FCM4 system XML + A74 fixed-vendor SDK30 config transaction; process-local diagnostic only"
+  ]
+}

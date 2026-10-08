@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "id": "B04-VINTF30",
+  "kind": "reviewed_vndk30_vintf_declaration",
+  "classification": "DEVICE_REQUIRED",
+  "runtime": "NOT_TESTED",
+  "flashable": false,
+  "file": "system/system_ext/etc/vintf/manifest/t860-vndk30.xml",
+  "sha256": "47362c78e7f75a23105d8464ea87576f9a017f3b10302b951e0ab506577603a8",
+  "metadata": {
+    "uid": 0,
+    "gid": 0,
+    "mode": "0644",
+    "selinux": "u:object_r:system_file:s0"
+  },
+  "input_sha256": {
+    "system/system_ext/etc/vintf/manifest.xml": "aaa3564d092c73000f844090c8d9d2b488a748c1756bb7c94359682edbb1899e",
+    "system/system/etc/vintf/manifest.xml": "6e282cadc62d5ec7c74cf4ae4c7da5f45a6e756b557c3ed0988b9f9ea29dd245",
+    "system/system_ext/apex/com.android.vndk.v30.apex": "d0db25222a3ce6f6ad53a965398ffd60d1adcb281905a23a40ca1248fee2eb0e"
+  },
+  "fixture_evidence_sha256": "32b2a2a226e6960e82b7472db2bbb41608889d8e7a0f4c51d9452565ac06e8b3",
+  "baseline_inventory_sha256": "8855c8ac498bf824eb484bb307caa6211e58297466c7a8972d49e3d87131dc03",
+  "helper_sha256": "9dba3310b9c60734fd65554f119293ab569bdc6344269990341f1961cb1ca712"
+}

@@ -1,0 +1,42 @@
+{
+  "source_build": "X710XXS6EZH3",
+  "source_sha256": "8c932aaa4befc3a10ebac8082f9f505faa7c75c355e1fa052d1f1568023a7be6",
+  "basis": "T860XXS5DWH1 stock system/etc/floating_feature.xml",
+  "changes": {
+    "SEC_FLOATING_FEATURE_BIOAUTH_CONFIG_FINGERPRINT_FEATURES": {
+      "from": "optical_display_tablet",
+      "to": "optical_display_phone",
+      "reason": "T860 ET713 optical UDFPS class; old UI8 enrollment and unlock validated"
+    },
+    "SEC_FLOATING_FEATURE_COMMON_CONFIG_MDNIE_MODE": {
+      "from": "65303",
+      "to": "57137",
+      "reason": "T860 native mDNIe RGB control mode"
+    },
+    "SEC_FLOATING_FEATURE_FRAMEWORK_CONFIG_SPEN_GARAGE_SPEC": {
+      "from": "type=attach, bundled=true, unbundled_spec=remote",
+      "to": "type=attach, position=right, tip_direction=bottom, bundled=true, unbundled_spec=remote",
+      "reason": "T860 stock S Pen attachment geometry"
+    },
+    "SEC_FLOATING_FEATURE_SETTINGS_CONFIG_BRAND_NAME": {
+      "from": "Galaxy Tab S9",
+      "to": "Galaxy Tab S6",
+      "reason": "Physical product identity"
+    },
+    "SEC_FLOATING_FEATURE_SETTINGS_CONFIG_ELECTRIC_RATED_VALUE": {
+      "from": "DC 10 V; 4.5 A",
+      "to": "DC 9 V; 1.67 A",
+      "reason": "T860 stock rated input"
+    },
+    "SEC_FLOATING_FEATURE_SETTINGS_CONFIG_FCC_ID": {
+      "from": "A3LSMX710",
+      "to": "A3LSMT860",
+      "reason": "T860 stock FCC ID"
+    },
+    "SEC_FLOATING_FEATURE_SETTINGS_CONFIG_SPEN_FCC_ID": {
+      "from": "A3LEJPX710",
+      "to": "A3LEJPT860",
+      "reason": "T860 stock S Pen FCC ID"
+    }
+  }
+}

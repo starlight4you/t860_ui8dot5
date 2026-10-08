@@ -1,0 +1,1612 @@
+{
+  "schema": 1,
+  "id": "F03-DVFS-STAGE",
+  "stage": "/var/tmp/t860-ui85-capacity-draft-app-preopt",
+  "baseline_inventory_sha256": "7cf4263715bde058c4e6252eb79d972f466c53b36384294eeff7dda70f3c7e7f",
+  "baseline_entries": 8246,
+  "baseline_framework_sha256": "5230a89df3ad887d0454627fb5daf26017b978a6badaf6691fc48ab746caa42c",
+  "output_framework_sha256": "3d1c5787d39a066bf20db2962ec917422128658d3ce277529d24bde75330e805",
+  "output_size": 53998780,
+  "probe_manifest_sha256": "d6bd08e571b5731ef785e9415b099d9be63c50dac41dfd97bca82bb2aff82955",
+  "device_contract_sha256": "943b1d2382049c6bff2f193352ba12737bad35821a3a2e5eb3938ab211fd4796",
+  "bytecode_verification_sha256": "4a938dda16785b20f6bd734fa110d8937bda13dba564d324d2e4c9cbdc73b040",
+  "cache_plan_sha256": "1f62fbd9bea0984bc034db9d70f9ebb1d217e6c5b1b36e3ba57c539e657d87cd",
+  "reason_record": "docs/DVFS_REBASE_AUDIT.md A41: new policy normalization and original boot graph checksum/cache dependencies",
+  "cache_entries": {
+    "system/system/framework/arm/boot-QPerformance.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "4eccea1d568437a7fff206a1f7758b2c1658f6c6e2662ecf1017f91b5cad15bb"
+    },
+    "system/system/framework/arm/boot-QPerformance.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 19716,
+      "sha256": "fa6376d43f60a7e69cc7b14e579cabec85a979be4ebc3ccde4f29299d2824135"
+    },
+    "system/system/framework/arm/boot-QPerformance.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-QPerformance.vdex"
+    },
+    "system/system/framework/boot-QPerformance.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 280,
+      "sha256": "370b8fbcfa2ac80605078f40ae91b20fd2902c9bb2af2a7919c2c33b931eda55"
+    },
+    "system/system/framework/arm/boot-UxPerformance.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "3409054887472cffa080d7b142ef99243f840969355bf2d23a23f13f698a70a3"
+    },
+    "system/system/framework/arm/boot-UxPerformance.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17056,
+      "sha256": "b0f436f9e149c2cbe2a0c0cf332055e760820346661cfc864b3eb99bf1fe0580"
+    },
+    "system/system/framework/arm/boot-UxPerformance.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-UxPerformance.vdex"
+    },
+    "system/system/framework/boot-UxPerformance.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 212,
+      "sha256": "38fc40ad36c9da331686a41ead4c30ff9242c3d7107c0e1bb3e9dc8429a18560"
+    },
+    "system/system/framework/arm/boot-apache-xml.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16416,
+      "sha256": "feee9ee172f0b2c257f2258dfecdb72620484389e8b4fb1f01faa9130dd414ff"
+    },
+    "system/system/framework/arm/boot-apache-xml.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17060,
+      "sha256": "c3a494c77f3c496563d447cb7d63b02d141e1acb3ca4827475a7f679760d3fa3"
+    },
+    "system/system/framework/arm/boot-apache-xml.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-apache-xml.vdex"
+    },
+    "system/system/framework/boot-apache-xml.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17680,
+      "sha256": "a9c56f4f105d794aa3d248832c4469b912d3ea31b1dc65d56c575661d0a29533"
+    },
+    "system/system/framework/arm/boot-bouncycastle.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 100656,
+      "sha256": "4362f7e250d37fb248b3accc32b2fd04f8ef7c025bb1ff71d0d1989c6400463c"
+    },
+    "system/system/framework/arm/boot-bouncycastle.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 81744,
+      "sha256": "9e828f5aeef22a1131d3a801b0210c6a86bf8773292656b0eb70dff3938c743e"
+    },
+    "system/system/framework/arm/boot-bouncycastle.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-bouncycastle.vdex"
+    },
+    "system/system/framework/boot-bouncycastle.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 21228,
+      "sha256": "4d1d606781bb8dc0ddc404afd4a7ae373b0d0e746fea46b900f5bc2d4ee92424"
+    },
+    "system/system/framework/arm/boot-core-icu4j.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 485152,
+      "sha256": "571186308c4356cc69f8664f94f5b798193c4a734d6bebf22bb9ab6b7c3c1b71"
+    },
+    "system/system/framework/arm/boot-core-icu4j.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 854628,
+      "sha256": "56d2332f4579de6e48a19cffb339e90b059c1dfb2f6116b2a8d41d6d155b99b7"
+    },
+    "system/system/framework/arm/boot-core-icu4j.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-core-icu4j.vdex"
+    },
+    "system/system/framework/boot-core-icu4j.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 34428,
+      "sha256": "acf1fa91bb8e16140a3329d8c1a6b2ba242f18b6978557184c65ab4e344d0ea5"
+    },
+    "system/system/framework/arm/boot-core-libart.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 99856,
+      "sha256": "4ed8f2c8478e8aff77a3ef7cc21a4cfd72dd723033dbdece526d1520f57e0345"
+    },
+    "system/system/framework/arm/boot-core-libart.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 279436,
+      "sha256": "234debdd3c570d6cca6f3c53230f204ba8b2add4adccab1ba1d5b377b40a22b2"
+    },
+    "system/system/framework/arm/boot-core-libart.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-core-libart.vdex"
+    },
+    "system/system/framework/boot-core-libart.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 13068,
+      "sha256": "77eef63d833d528ae2eaaec110c020f6632b6ea179ae6c8c8fec7c6d23007ecc"
+    },
+    "system/system/framework/arm/boot-esecomm.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "719f34924519173ba274260aece092b84c69bc86447097ed40837dd2e1b05cf9"
+    },
+    "system/system/framework/arm/boot-esecomm.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 18128,
+      "sha256": "955327bf324b947db6e2e15e9618fe6fec7979a5c1d5bc1ca70fdea58077c7ed"
+    },
+    "system/system/framework/arm/boot-esecomm.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-esecomm.vdex"
+    },
+    "system/system/framework/boot-esecomm.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 204,
+      "sha256": "47dfdbf035be33ebef875eaa807f1dabff1c0b4b0d6f2f89e883473e56a01ece"
+    },
+    "system/system/framework/arm/boot-ext.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 83504,
+      "sha256": "5ee1f6ab1a5bbac7e4f080e6686f6809dbd077f1d4811c9a14740c4989bda974"
+    },
+    "system/system/framework/arm/boot-ext.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 94112,
+      "sha256": "1ab2800fe47502c4b1295687cb64b8da3a18a1b5fc7fe46aa3e06af85040d271"
+    },
+    "system/system/framework/arm/boot-ext.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-ext.vdex"
+    },
+    "system/system/framework/boot-ext.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 2176,
+      "sha256": "a6435104597525a92c592fa7faa070ac9ab88c6a78a83e9b39491b333d1c38e1"
+    },
+    "system/system/framework/arm/boot-framework-adservices.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 2415024,
+      "sha256": "f011c1800330422f5348dcdd7517fc2e37629db7a41f49280ce286b1febffe0e"
+    },
+    "system/system/framework/arm/boot-framework-adservices.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 115368,
+      "sha256": "0dde374115ff62d1dbab6ba767d3ea1aa96eccbdc335784841d1f18b4da5e0b4"
+    },
+    "system/system/framework/arm/boot-framework-adservices.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-adservices.vdex"
+    },
+    "system/system/framework/boot-framework-adservices.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 215896,
+      "sha256": "7c2175ad340f4618ec3a705e8e3151354345ca7a094301a6d2f2b44e40cff43c"
+    },
+    "system/system/framework/arm/boot-framework-graphics.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "7ed0d7c1fc923b752ab47cc195e33e4f053869427dcd4c7b5458f45618afc56f"
+    },
+    "system/system/framework/arm/boot-framework-graphics.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17056,
+      "sha256": "113666239e565dd6a672829d6ed44cb95089cf94d06d005e402f46da02cbe39d"
+    },
+    "system/system/framework/arm/boot-framework-graphics.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-graphics.vdex"
+    },
+    "system/system/framework/boot-framework-graphics.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 124,
+      "sha256": "0aac0f2d23721916be9382533256d63e800312d45fa3582e1d53e828843ba5de"
+    },
+    "system/system/framework/arm/boot-framework-location.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16464,
+      "sha256": "edd2d076efc888c38e748eeabe2a60078b90af90910c8dbec2fbb74a091b0450"
+    },
+    "system/system/framework/arm/boot-framework-location.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 18096,
+      "sha256": "c89d566a691b027dd405a273747f93583a29961b33d986f4d2a2853a95386e65"
+    },
+    "system/system/framework/arm/boot-framework-location.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-location.vdex"
+    },
+    "system/system/framework/boot-framework-location.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 11048,
+      "sha256": "5c179bb4cac3b461fb7596728a29aa3f02789b582e20cacba77a27d7cc2765a6"
+    },
+    "system/system/framework/arm/boot-framework-nfc.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 66848,
+      "sha256": "a061d12c8839c827ebb39cc210e8bab48698d56bf352cde046935abbb3e767dd"
+    },
+    "system/system/framework/arm/boot-framework-nfc.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17060,
+      "sha256": "d7c33f34677804fa0f04ca0662c1350cd0a69b17f193e2ff32fe875e7fa5b4c8"
+    },
+    "system/system/framework/arm/boot-framework-nfc.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-nfc.vdex"
+    },
+    "system/system/framework/boot-framework-nfc.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 11240,
+      "sha256": "6cfdd5d8d7fe69805fa41e6ee82150a74c1bcc6dd972953a64e25805ca143953"
+    },
+    "system/system/framework/arm/boot-framework-ondeviceintelligence-platform.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "2e3d604473f61c86cb789488b6873f9c3386b9d97e0ddfb612888a62bbfc20ce"
+    },
+    "system/system/framework/arm/boot-framework-ondeviceintelligence-platform.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17060,
+      "sha256": "6cdc8f46a5bb7511d05b32e6c4c1f3fc8723b40cdcc0a0b4cb53ace820307b2d"
+    },
+    "system/system/framework/arm/boot-framework-ondeviceintelligence-platform.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-ondeviceintelligence-platform.vdex"
+    },
+    "system/system/framework/boot-framework-ondeviceintelligence-platform.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 3508,
+      "sha256": "d8d3f011bdc6d125b1a42d9917a2ab88b1dcac06d5031e81dc84d45e11f072e8"
+    },
+    "system/system/framework/arm/boot-framework-platformcrashrecovery.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "7ded11ebe4cf163d2bce2e27ef4d63b4ef63aa64834db54741d83ee26420a287"
+    },
+    "system/system/framework/arm/boot-framework-platformcrashrecovery.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17060,
+      "sha256": "a4b36e7ea051d643c7886af6b281085b5c96040c06ea1c6a2bb9326d9807f188"
+    },
+    "system/system/framework/arm/boot-framework-platformcrashrecovery.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-platformcrashrecovery.vdex"
+    },
+    "system/system/framework/boot-framework-platformcrashrecovery.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 524,
+      "sha256": "84042b0bf07b6d7e4416f1bb8737f0f024e3dca3c7fc32cde617f6d9bb75c4e1"
+    },
+    "system/system/framework/arm/boot-framework.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 4504688,
+      "sha256": "4f1500afa40b6183c46ebe7a8620224794fb0492b668452b4c7afe73a68836af"
+    },
+    "system/system/framework/arm/boot-framework.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 8217676,
+      "sha256": "b6a8fc07440d6a53d16f4627b8bd0e6301a3f9862f7e0d0735abc8b37e34e100"
+    },
+    "system/system/framework/arm/boot-framework.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework.vdex"
+    },
+    "system/system/framework/boot-framework.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 774504,
+      "sha256": "1437f757da0ede331c23760daf8d55759d4f5f9a14759199ad313cd6677efa93"
+    },
+    "system/system/framework/arm/boot-ims-common.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 83168,
+      "sha256": "ade8b85a0a584730e0b8f39c2f1b1b9c98d500412da82a42181a2c856d748fb8"
+    },
+    "system/system/framework/arm/boot-ims-common.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17060,
+      "sha256": "42540cb4632e2f01f324df54ebe8e155dc27f9a2290309a1b30407e1bd602e3d"
+    },
+    "system/system/framework/arm/boot-ims-common.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-ims-common.vdex"
+    },
+    "system/system/framework/boot-ims-common.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 6760,
+      "sha256": "2e22b93919a69f53334ad02a7b23bfc7f6802dd59c8ed0c3f66bb369d82691f5"
+    },
+    "system/system/framework/arm/boot-knoxsdk.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16416,
+      "sha256": "36f1b41da48c40242e45fd19d5183022e54d878e65e8e89cc7d7bce8f627e92b"
+    },
+    "system/system/framework/arm/boot-knoxsdk.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17908,
+      "sha256": "f198b29bb1eda7ace69c9de2a56bbd61d606afe91512c8c1a864bf54d6930f31"
+    },
+    "system/system/framework/arm/boot-knoxsdk.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-knoxsdk.vdex"
+    },
+    "system/system/framework/boot-knoxsdk.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 24132,
+      "sha256": "0024aafb44900af954cdcda54795e17215dbab795b475a2daa42e63fe86a3343"
+    },
+    "system/system/framework/arm/boot-okhttp.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 66448,
+      "sha256": "3858413d624f4d688da6f8ba4758cbfb9e084c71c8599cbe4e25f6da502fa6d4"
+    },
+    "system/system/framework/arm/boot-okhttp.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 216836,
+      "sha256": "0be089c48ea65eb2ced75192be32046294ad959b449119013d01b46b84fbe9d1"
+    },
+    "system/system/framework/arm/boot-okhttp.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-okhttp.vdex"
+    },
+    "system/system/framework/boot-okhttp.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 4876,
+      "sha256": "6ab9f5667a2a8fd1c8571e065368f21379347202c11e2512ea71cb60602af8a4"
+    },
+    "system/system/framework/arm/boot-tcmiface.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "2e11966de267c7e7fe6b2e7e981dae020b776efe24b3a28a62573c27fa26be82"
+    },
+    "system/system/framework/arm/boot-tcmiface.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17056,
+      "sha256": "db3eec6804b23e0b3ef2afb9638aad39f5f936101efb8b22a12df53e847842e2"
+    },
+    "system/system/framework/arm/boot-tcmiface.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-tcmiface.vdex"
+    },
+    "system/system/framework/boot-tcmiface.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 92,
+      "sha256": "f076cecee5c8622600a74b44f49c1d477b5abc286ae5a22f6b2a6ca2ab04ee8d"
+    },
+    "system/system/framework/arm/boot-telephony-common.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 416080,
+      "sha256": "7ebfc34b804c174d5236fadfde1e1fb97944fe7ae4f0ce15397cc86ab343e736"
+    },
+    "system/system/framework/arm/boot-telephony-common.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 33444,
+      "sha256": "e11136ad250005af9d59de284e40e37bf3d926cabef226ebe28fe904626b3688"
+    },
+    "system/system/framework/arm/boot-telephony-common.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-telephony-common.vdex"
+    },
+    "system/system/framework/boot-telephony-common.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 72320,
+      "sha256": "4c89f2871aa5116e25c752ede8c3111967b5625d28062cd6801a35fb853d6e9f"
+    },
+    "system/system/framework/arm/boot-telephony-ext.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "dc55e72c23905e7a5c999b33e39f9771f375f12139adadac7154e1102946994a"
+    },
+    "system/system/framework/arm/boot-telephony-ext.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17060,
+      "sha256": "c2145c435c1fe42e73336b633aa48d2b1e258935e3c8567757c81315b9048e72"
+    },
+    "system/system/framework/arm/boot-telephony-ext.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-telephony-ext.vdex"
+    },
+    "system/system/framework/boot-telephony-ext.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 736,
+      "sha256": "03326eb1d8bba33641a2ef149f66878514e2050ea07df884742c525958345975"
+    },
+    "system/system/framework/arm/boot-voip-common.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 150432,
+      "sha256": "cf1ba2d9d20ac28060ad8eb75aed61f88ac9ae2160315e6e61a987f19f622a0b"
+    },
+    "system/system/framework/arm/boot-voip-common.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17960,
+      "sha256": "f5cb94284967e1bfadb1520ff8d01c716e3d40eaaeb9b25043b81873bb01ce98"
+    },
+    "system/system/framework/arm/boot-voip-common.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-voip-common.vdex"
+    },
+    "system/system/framework/boot-voip-common.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 18080,
+      "sha256": "6ac549a207f58269ab5f2ce3b728eaab441f4fa21eba937ffddaa1c5131ccd3f"
+    },
+    "system/system/framework/arm/boot.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 917856,
+      "sha256": "d5230b2a41d418f0df87abbc7b7e5d7456af1d41bef01a9c5b000e91cbbc4cb7"
+    },
+    "system/system/framework/arm/boot.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 2714532,
+      "sha256": "a4c7af005e8e9cc91185db1c080616393d76c9fd01c07bef2cd145ba25bff07a"
+    },
+    "system/system/framework/arm/boot.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot.vdex"
+    },
+    "system/system/framework/boot.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 112908,
+      "sha256": "b9e037b4db19f197dc3617bc413f9c5e93f7aa0ea13f82de049e7cb543db0c61"
+    },
+    "system/system/framework/arm64/boot-QPerformance.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "3c721bc5b8f8457b144e99994b8ab960eac6726cdee34eb21abee92ce130b16c"
+    },
+    "system/system/framework/arm64/boot-QPerformance.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 20296,
+      "sha256": "6c8a8422e4cec171fe5b5ccbe9dc46bb272205cd63fc3ea963447bbb3200eaf3"
+    },
+    "system/system/framework/arm64/boot-QPerformance.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-QPerformance.vdex"
+    },
+    "system/system/framework/arm64/boot-UxPerformance.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "3869fcc0dc6e012a59e3f640addef8d61f0cb0bce364f802c1b486f04974ea4a"
+    },
+    "system/system/framework/arm64/boot-UxPerformance.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17328,
+      "sha256": "f927ff0d7f2d794e64407d60f30ecd04313f611eff72d6a7bdbe509989ad0a19"
+    },
+    "system/system/framework/arm64/boot-UxPerformance.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-UxPerformance.vdex"
+    },
+    "system/system/framework/arm64/boot-apache-xml.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16416,
+      "sha256": "b20eb8c52bba33174a97710455abe77f8492abf213e69906aa6a1e89967c8c49"
+    },
+    "system/system/framework/arm64/boot-apache-xml.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17328,
+      "sha256": "c55766890ee02f48ed950f8e6e3ecac8244715d53751a66f1a4bfce6aad214e2"
+    },
+    "system/system/framework/arm64/boot-apache-xml.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-apache-xml.vdex"
+    },
+    "system/system/framework/arm64/boot-bouncycastle.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 101040,
+      "sha256": "02376c04da5bf1d463b707b497d3fe4ddc90a7d9659eeec3236311fb938debd5"
+    },
+    "system/system/framework/arm64/boot-bouncycastle.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 94264,
+      "sha256": "c3a323367e894bcd2d752e63b4cf8b801b81bafae13fa7a8e101f524625e76e6"
+    },
+    "system/system/framework/arm64/boot-bouncycastle.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-bouncycastle.vdex"
+    },
+    "system/system/framework/arm64/boot-core-icu4j.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 503520,
+      "sha256": "5e0ba75401e0d8273d2e185f722184d8384b924d05acf403add37c935bd9ed59"
+    },
+    "system/system/framework/arm64/boot-core-icu4j.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 1034272,
+      "sha256": "74c3aa117a39b9844b3a5a766b1bf7c66b457682a3d76b51fe2a3244cfad3b0a"
+    },
+    "system/system/framework/arm64/boot-core-icu4j.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-core-icu4j.vdex"
+    },
+    "system/system/framework/arm64/boot-core-libart.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 100304,
+      "sha256": "f4fbb2893b8234a7b3231eb5e659c35d58888b2df18d0c81b53d45eab9bae9f0"
+    },
+    "system/system/framework/arm64/boot-core-libart.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 329544,
+      "sha256": "2aeee38975ab4e8a4e50c8315b31dfbb9d166878f5243494d677414812bb636d"
+    },
+    "system/system/framework/arm64/boot-core-libart.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-core-libart.vdex"
+    },
+    "system/system/framework/arm64/boot-esecomm.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "91081d6d78d34615389950643dc60104a45ea25ce41f5ccf5009e8442c7dbe4c"
+    },
+    "system/system/framework/arm64/boot-esecomm.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 18808,
+      "sha256": "1b7bafbbf6b0038dc66e9874dc04cd32a61b37662c471a703cc14a41a3eadbf7"
+    },
+    "system/system/framework/arm64/boot-esecomm.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-esecomm.vdex"
+    },
+    "system/system/framework/arm64/boot-ext.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 83648,
+      "sha256": "85c3b1439cf7f7929b51d1158dafe33d5b591c9228c5666bca3651d9ad14e1b6"
+    },
+    "system/system/framework/arm64/boot-ext.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 128264,
+      "sha256": "62622e1b6c18728a80aa5e0e612d4956a98ade7c75d792d1504ec58421ea1041"
+    },
+    "system/system/framework/arm64/boot-ext.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-ext.vdex"
+    },
+    "system/system/framework/arm64/boot-framework-adservices.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 2495120,
+      "sha256": "8edd525da35ae8f2a807bb3fd428c95a2ab7f51dcc6dfa5e28dec74564e56370"
+    },
+    "system/system/framework/arm64/boot-framework-adservices.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 115632,
+      "sha256": "7f6b7f7afec71c075567d1ec274f38c4ac15b44123408cba35cf4ff81655a3d5"
+    },
+    "system/system/framework/arm64/boot-framework-adservices.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-adservices.vdex"
+    },
+    "system/system/framework/arm64/boot-framework-graphics.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "44cce40a744bd52a4db3fa1730ef793f6e9d635287188e03e49b618d1d5d7499"
+    },
+    "system/system/framework/arm64/boot-framework-graphics.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17328,
+      "sha256": "011ab3038e103ddc6e4ef58b56eda161faadc9cf0a58d1d915390c13adc53579"
+    },
+    "system/system/framework/arm64/boot-framework-graphics.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-graphics.vdex"
+    },
+    "system/system/framework/arm64/boot-framework-location.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16496,
+      "sha256": "8054c44886890f6838723ea605e1f0f2858d3d9d1a2170d9366c66cc098e7deb"
+    },
+    "system/system/framework/arm64/boot-framework-location.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 18576,
+      "sha256": "c7740940e3755357b39d306585aac1b81dc6a7e5315ab4810518096913014781"
+    },
+    "system/system/framework/arm64/boot-framework-location.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-location.vdex"
+    },
+    "system/system/framework/arm64/boot-framework-nfc.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 67280,
+      "sha256": "63475338f86ba01b0f01b61305fbb7a2149724ac58f2d721954dfe16cc2d6364"
+    },
+    "system/system/framework/arm64/boot-framework-nfc.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17328,
+      "sha256": "7a7baab5459344788ea3d1f4ecda581336ecdb621b8446171f66e57dbb1a307b"
+    },
+    "system/system/framework/arm64/boot-framework-nfc.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-nfc.vdex"
+    },
+    "system/system/framework/arm64/boot-framework-ondeviceintelligence-platform.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "5a1bac9a29882c9f4aac51236613b901413f62e77e9702930b168b87f423f30d"
+    },
+    "system/system/framework/arm64/boot-framework-ondeviceintelligence-platform.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17328,
+      "sha256": "5cf85b37c0ed0b9c635c8d59ff7a6427dd8f37e525a2c1b940c3e9fc0620cfeb"
+    },
+    "system/system/framework/arm64/boot-framework-ondeviceintelligence-platform.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-ondeviceintelligence-platform.vdex"
+    },
+    "system/system/framework/arm64/boot-framework-platformcrashrecovery.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "49dad516219c47ff888dce9ad5390b2c83018e7701c15434611e2f48765184a6"
+    },
+    "system/system/framework/arm64/boot-framework-platformcrashrecovery.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17328,
+      "sha256": "dec252436e8c7b7650a85adfe2bae8abf1305e0c80f2e7ec4b191b166ca881f7"
+    },
+    "system/system/framework/arm64/boot-framework-platformcrashrecovery.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework-platformcrashrecovery.vdex"
+    },
+    "system/system/framework/arm64/boot-framework.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 4677600,
+      "sha256": "c18206745caf4e71930c4a65879c770260a42ade84c17c60a53b0ae84034b9a0"
+    },
+    "system/system/framework/arm64/boot-framework.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 9493824,
+      "sha256": "9fe816016c4468551f392463b55b87fda62ee2ddc3b3c8980ce89440843c6416"
+    },
+    "system/system/framework/arm64/boot-framework.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-framework.vdex"
+    },
+    "system/system/framework/arm64/boot-ims-common.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 83552,
+      "sha256": "fad120095ff4854c8425370f2bf41189da026cdf1c31e6b3f17d8fb7a37ac256"
+    },
+    "system/system/framework/arm64/boot-ims-common.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17328,
+      "sha256": "2211f81a99c68c63d4e97081975db0d93f544c6195c3b6488dbb4b28315cbb6a"
+    },
+    "system/system/framework/arm64/boot-ims-common.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-ims-common.vdex"
+    },
+    "system/system/framework/arm64/boot-knoxsdk.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16416,
+      "sha256": "a47078e874992b6cbf489ea56db8ec841d714e1e9ea1433429cde0238a1a30b1"
+    },
+    "system/system/framework/arm64/boot-knoxsdk.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 18488,
+      "sha256": "ae6c3f2b5d2c7907622878bce7adc0d055c644a4d46f7317f801ab5b76bc53dd"
+    },
+    "system/system/framework/arm64/boot-knoxsdk.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-knoxsdk.vdex"
+    },
+    "system/system/framework/arm64/boot-okhttp.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 66656,
+      "sha256": "9d018e4145f79334a5fb34f0759dd740f824b0c4770f11d2ef5bf7a1700da8e1"
+    },
+    "system/system/framework/arm64/boot-okhttp.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 269000,
+      "sha256": "58a9222193d7010409488347ed3aacf0d25b5dd6172dc93b3e464dd65c786e8a"
+    },
+    "system/system/framework/arm64/boot-okhttp.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-okhttp.vdex"
+    },
+    "system/system/framework/arm64/boot-tcmiface.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "50f662039feaccb66efee2fca455e2ca3d8b5e25d28fee4730407082a7ee2e13"
+    },
+    "system/system/framework/arm64/boot-tcmiface.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17328,
+      "sha256": "7baf53588e358edfcb29152538600a2e1c1cb6245d1de483daf5a2acdf948499"
+    },
+    "system/system/framework/arm64/boot-tcmiface.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-tcmiface.vdex"
+    },
+    "system/system/framework/arm64/boot-telephony-common.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 434848,
+      "sha256": "deffe5e5460e83ced5a32e3d91d4fda9b40a8225fc7920961dbfae99d9017ede"
+    },
+    "system/system/framework/arm64/boot-telephony-common.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 33712,
+      "sha256": "0007e8ac553a1ea4e07561e0fd3af057ab1aaedb07934bcaad28cf3c527d4495"
+    },
+    "system/system/framework/arm64/boot-telephony-common.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-telephony-common.vdex"
+    },
+    "system/system/framework/arm64/boot-telephony-ext.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 16400,
+      "sha256": "dbff46cad26f0dd4aa311660958051ce6a8a908b42b5dea62a03e439fbbdb33b"
+    },
+    "system/system/framework/arm64/boot-telephony-ext.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 17328,
+      "sha256": "e397dcdeaaa2d7d8accbdcd3a97f19455c17e52a15f40eeacb497a957cd04b7b"
+    },
+    "system/system/framework/arm64/boot-telephony-ext.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-telephony-ext.vdex"
+    },
+    "system/system/framework/arm64/boot-voip-common.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 151744,
+      "sha256": "21e4c1780a257441dddbcfa41bff0d6e05bf6564424aa2dd27e726cf32c1d778"
+    },
+    "system/system/framework/arm64/boot-voip-common.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 18552,
+      "sha256": "b2bf0aac89d2064e1ced63798e0e57e406cc2b638fb0df31a94dca69066c65ce"
+    },
+    "system/system/framework/arm64/boot-voip-common.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot-voip-common.vdex"
+    },
+    "system/system/framework/arm64/boot.art": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 938688,
+      "sha256": "5995b7f73bb5b2303afd55c061fa280534fde10cffb0ef72ddd98d9129c99fe4"
+    },
+    "system/system/framework/arm64/boot.oat": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 3170680,
+      "sha256": "06324cf0d193d951a15a06862ab80a0307e2a9522c36c5423caec3f7fe649bdb"
+    },
+    "system/system/framework/arm64/boot.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 41471,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "link": "../boot.vdex"
+    },
+    "system/system/priv-app/SamsungDeviceHealthManagerService/oat/arm64/SamsungDeviceHealthManagerService.odex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 50096,
+      "sha256": "200f8ec18bb8af948f94e93c05e3eccdc55de28ee153bbf58775c8bac91b3cfa"
+    },
+    "system/system/priv-app/SamsungDeviceHealthManagerService/oat/arm64/SamsungDeviceHealthManagerService.vdex": {
+      "uid": 0,
+      "gid": 0,
+      "mode": 33188,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      },
+      "size": 59864,
+      "sha256": "e03078ae0a976a468181db698c9550b9a71ca7bae1e79bc48277495a6add5e54"
+    }
+  },
+  "cache_regular_bytes": 48683696,
+  "signed_sdhms_sha256": "19bff31c081c9b3a08ee550a6d5be15d3c8e2f53cdc0d98a96539615f570126f",
+  "floating_feature_sha256": "2b34cd66c344805006b3efe2e656dcd98af0064df12d3992322ef06d26b4a3fd",
+  "expected_regular_byte_delta": -48543749,
+  "device_writes": false,
+  "runtime": "NOT_TESTED",
+  "limits": [
+    "One new-donor framework adaptation; exact SYSTEM/SDHMS compiled-cache invalidation only.",
+    "No APK/JAR provider, native/ART binary/APEX or user DATA/BOOT/VENDOR/ODM deletion.",
+    "First-boot recompilation, HAL units, thermal behavior, full VINTF, new runtime and dirty upgrade remain untested."
+  ]
+}

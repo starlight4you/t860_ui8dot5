@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "F07-BRIGHTNESS-STAGE",
+  "stage": "/var/tmp/t860-ui85-capacity-draft-app-preopt",
+  "before_inventory_sha256": "8b9cc0c4badea1ca46a1a1cbc095a5cbdc320bfcf08cea345658fba166acf358",
+  "before_entries": 8083,
+  "bundle_manifest_sha256": "1e69f660587bdb333c8a36cd6afa7f4905c0ef50a361e0f21dc749dbb1ce10b0",
+  "device_profile_sha256": "25542952cfe8e8328db3eded02b7582341bc7770de5b17ebc0b3ad7bec8f56be",
+  "idmap_report_sha256": "64b1892684edaf76d97c2f8f92b10170a09055b3c53bc876772b529cf9189b83",
+  "source_audit_sha256": "69ab8a79c87ccfb127d480580a841be8ba9e9ac4890df496f62c5710c0291b94",
+  "reason_record": "docs/BRIGHTNESS_REBASE_AUDIT.md A42 before E2 integration",
+  "outputs": [
+    {
+      "group": "fingerprint",
+      "package": "android.t860_fingerprint_brightness_rro_system_ext",
+      "output_name": "T860FingerprintBrightnessOverlay.apk",
+      "stage_path": "system/system_ext/overlay/T860FingerprintBrightnessOverlay.apk",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0644",
+      "selinux": "u:object_r:vendor_overlay_file:s0",
+      "sha256": "25169159a9b9b01010a8b2cc8b128ff675863c28048111b86356b791492f1d3c",
+      "size": 24922,
+      "certificate_sha256": "9b8ecdeb843eb18d9e4d6ba63d1c7709604ae308294ede206f3edc34f3e380a5",
+      "resource_count": 2,
+      "linked_resources_match_stock_xml": true
+    },
+    {
+      "group": "panel",
+      "package": "android.t860_panel_brightness_rro_system_ext",
+      "output_name": "T860PanelBrightnessOverlay.apk",
+      "stage_path": "system/system_ext/overlay/T860PanelBrightnessOverlay.apk",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0644",
+      "selinux": "u:object_r:vendor_overlay_file:s0",
+      "sha256": "eeed3d8f691dc6f5205890e663e72c4c5a4495397710a26b34dc5ba04afe6539",
+      "size": 20826,
+      "certificate_sha256": "9b8ecdeb843eb18d9e4d6ba63d1c7709604ae308294ede206f3edc34f3e380a5",
+      "resource_count": 6,
+      "linked_resources_match_stock_xml": true
+    }
+  ],
+  "net_regular_bytes": 45748,
+  "new_rom_runtime": "NOT_TESTED",
+  "device_writes": false
+}

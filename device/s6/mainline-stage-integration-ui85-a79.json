@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "A79_MAINLINE_AND_FABRIC_STAGE_REPLAY",
+  "kind": "reviewed_cow_stage_integration",
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "source_stage": "/var/tmp/ui85-a73-fcm4-stage-v1/stage",
+  "source_inventory_sha256": "bf2f94d72b890db7397605f518800169cd9680424d0c366722f6db7a42fb4931",
+  "source_inventory_entries": 8097,
+  "candidate_report_sha256": "2a1b592dd1138344e23b588dd515704d8a6bb6b0cb3840f16255b6e0c215efa2",
+  "fabric_manifest_sha256": "f9e2e373ff3329315fc76e0ceb7a8b254def77a1ff0fdaad053f8eff39d9fdd4",
+  "inventory_helper_sha256": "9dba3310b9c60734fd65554f119293ab569bdc6344269990341f1961cb1ca712",
+  "reason": "docs/MAINLINE_NATIVE_REBASE_A78.md",
+  "existing_files": {
+    "system/etc/init/hw/init.rc": "c8520ad8bd8ea9c4fdcd40630a990add252c6146d312d8dbd0ebb4acca2e9bf2",
+    "system/etc/init/t860-tethering-guard.rc": "39ed33b01551be633ede67c78c1163a6418dc12984e10c5c993dcc3684249a23",
+    "system/etc/selinux/plat_property_contexts": "fad3301ee2729bb5a890e9eb01e5b03af9abe6537f2384833aa18b437c306061",
+    "system/bin/t860-tethering-guard": "f92fb9aebf2f37fc650b32f2dd4fe921c52f692567f3039d031eb36ffa14d9b4",
+    "system/etc/init/fabric_crypto.rc": "130d12f9e7ca0871c692f334a72d04a2611ccfd52a7977fded613b5c3698f989"
+  },
+  "new_files": 28,
+  "new_directories": 4,
+  "device_mutations": false,
+  "actual_updated_pair": "NOT_RETESTED_AFTER_A79",
+  "release": "NOT_PASSED"
+}

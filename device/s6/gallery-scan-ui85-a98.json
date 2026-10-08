@@ -1,0 +1,17 @@
+{
+  "id": "A98_GALLERY_SCAN_CAPABILITY",
+  "source_size": 35256,
+  "source_sha256": "a51ddcda4fed0305d797a3da060d783e4ef322fa42e8ba4120df5e83d84bc58c",
+  "gallery_apk_sha256": "033e234f6eabe520b6fe877b76c6e1958401a1c2f8b5b5670a13b8f71117f544",
+  "smartscan_sha256": "54b83897673c62c6490272ab64d84b136dc1b92eee532dadc6ab17baf0be3e87",
+  "reason": "docs/GALLERY_OCR_AI_A98.md",
+  "classification": [
+    "DEVICE_REQUIRED",
+    "DONOR_SPECIFIC"
+  ],
+  "status": "LAB_JPEG_OCR_SKETCH_AND_ROTATE_CLOUD_PASS",
+  "ui9": "Reinspect capability gate and actual compatible model/backend before reapplying",
+  "candidate_sha256": "81d9eaa54326e26de4ff69c31ffca7cd07cb75298fe50b15d258cb40d48e4071",
+  "lab_system_raw_sha256": "c2c249d94e4028ba3c550bb4a51fe2c3397bf80f4f8b9f82ad8236f3ed2340a8",
+  "qa_report": "out/audit-probes/A98-gallery-ocr-ai-v1/qa-result.json"
+}

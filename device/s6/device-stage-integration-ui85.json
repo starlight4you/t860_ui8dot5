@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "kind": "reviewed_device_stage_integration",
+  "id": "A37-DEVICE-INTEGRATION",
+  "donor_build": "X710XXS6EZH3",
+  "flashable": false,
+  "runtime": "NOT_TESTED",
+  "files": [
+    {
+      "path": "system/bin/surfaceflinger",
+      "source": "B05-SELECTOR/system/bin/surfaceflinger",
+      "original_sha256": "09477ec76e0a5056f407efc31ba128de1eaf9515cdc722f80db4ce8d171081ed",
+      "output_sha256": "ac471fca160754aafbb306182ca49d6aa9c705d40d8ab394f4db69090e33466f",
+      "size": 10081976,
+      "metadata": {
+        "uid": 0,
+        "gid": 2000,
+        "mode": "0755",
+        "selinux": "u:object_r:surfaceflinger_exec:s0"
+      }
+    },
+    {
+      "path": "system/etc/init/t860-display-compat.rc",
+      "source": "B05-SELECTOR/system/etc/init/t860-display-compat.rc",
+      "original_sha256": null,
+      "output_sha256": "2e2b76bd3092c3eb85b3e90b07ba5d74a676d31b4af89564cb163dcb36a5e4a7",
+      "size": 214,
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_file:s0"
+      }
+    },
+    {
+      "path": "system/framework/services.jar",
+      "source": "F01-F02-bundle/system/framework/services.jar",
+      "original_sha256": "ac871c762353dc26953574830545a1872cc716b51c9529fe522a6536c4edafdd",
+      "output_sha256": "d47261aa9913d8013dc876210dba48c2c4eab924390acaf8dbd8e10290f6d3e6",
+      "size": 26490060,
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_file:s0"
+      }
+    },
+    {
+      "path": "system/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so",
+      "source": "F01-F02-bundle/system/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so",
+      "original_sha256": "2a66e7f992ee325085386365efe28cfa17ba74b460608d1ab2388797a4263417",
+      "output_sha256": "ffb6b7e972457b71ca1c6c32bc97a58855f5aa5f8c6a2602ad8ffd5b0422882e",
+      "size": 102792,
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_lib_file:s0"
+      }
+    },
+    {
+      "path": "system/etc/floating_feature.xml",
+      "source": "A37-hardware-xml-v1/system/etc/floating_feature.xml",
+      "original_sha256": "8c932aaa4befc3a10ebac8082f9f505faa7c75c355e1fa052d1f1568023a7be6",
+      "output_sha256": "2b34cd66c344805006b3efe2e656dcd98af0064df12d3992322ef06d26b4a3fd",
+      "size": 35256,
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_file:s0"
+      }
+    },
+    {
+      "path": "system/cameradata/camera-feature.xml",
+      "source": "A37-hardware-xml-v1/system/cameradata/camera-feature.xml",
+      "original_sha256": "06857feaf9d1b6fcb51f3d2a83030500568027d0f0f2715eedb35767cc5dd17b",
+      "output_sha256": "53d3fdd0ba22ba17ecd42c59858358c5dbbacf7d9cdb01e6c43577382cb9bfd4",
+      "size": 11143,
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_file:s0"
+      }
+    }
+  ],
+  "remove_services_cache": [
+    {
+      "path": "system/framework/services.jar.prof",
+      "sha256": "ef8bde71747a52d42d1302354f6c2d6d014488f5790e63a087c82fb1a3394398",
+      "size": 32656,
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_file:s0"
+      }
+    },
+    {
+      "path": "system/framework/oat/arm64/services.art",
+      "sha256": "a10e17769a76075306b5d725c0607975fdef2fe74d1d5972f6d6fc8a3ee724bc",
+      "size": 183088,
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_file:s0"
+      }
+    },
+    {
+      "path": "system/framework/oat/arm64/services.odex",
+      "sha256": "f0be5d69a4da62a62ba5f10db7e516f6b7b4129e4857029b190e882be5bb3c5e",
+      "size": 4366488,
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_file:s0"
+      }
+    },
+    {
+      "path": "system/framework/oat/arm64/services.vdex",
+      "sha256": "454e6fce884fc5801b4fb7b141a55481a1fc704b6e09e3462fac5922ac4c5213",
+      "size": 427184,
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0644",
+        "selinux": "u:object_r:system_file:s0"
+      }
+    }
+  ],
+  "bundle_manifests": {
+    "B05-SELECTOR": "d97335e020e7b9530784f39e1f842c2e5c06c67dedb086785ee0896ad2ae4daa",
+    "F01-F02-bundle": "08296aab663483eeea09af7c35197f2ed37379df7090b6c33e57a007bf56d1a0"
+  },
+  "evidence_sha256": {
+    "device-integration-inputs-ui85.json": "d29dccca90761fabe66b6670b491472405a1f028ac44a758ffba3b3be3ebf333",
+    "services-profile-identity-ui85.json": "23f413294f430cfc506a14a64a36b2ff88c9bcd60d9c2e700068b975002ea581",
+    "surfaceflinger-display-ui85-verification.json": "5d00cc6ff6301d4779ef601ee36a40e3f365eaf1e30e4888bb152aa8e989c9b4",
+    "iccc-ui85-F02-input-verification.json": "bd1ea65de133e0c2197a97a0887c25d3c4639be5e825536bcbfb6a81c9febb44",
+    "iccc-ui85-wire-verification.json": "52e31e70357cdc96e331e7a702a2480a10cc615ee3775d3ee022c5e8bcce188d",
+    "services-ce-unlock-ui85-verification.json": "3d7c9cd5f20f1f3d7636a0d3a52268a4969b107c5d3a72efdcfaeef05dca42ae",
+    "iccc-ce-probe-replay-ui85.json": "d7f4bede0e878e76869626f8b4c681b726748745f581186ac88e6b57c41c1319"
+  },
+  "stage_guards": {
+    "system/system/etc/init/hw/init.rc": "3f8e5dbd60ba99e1c520fd55eddb5f5e52a580b31a31bd5512b2c4142315c67b",
+    "system/system/etc/init/t860-tethering-guard.rc": "39ed33b01551be633ede67c78c1163a6418dc12984e10c5c993dcc3684249a23",
+    "system/system/etc/selinux/plat_property_contexts": "fad3301ee2729bb5a890e9eb01e5b03af9abe6537f2384833aa18b437c306061",
+    "system/system/etc/selinux/plat_file_contexts": "5c53c96290dd9d51539ec27cf7fea764ddc502e55b0dd8b1e1cfb22f0dafd0c3",
+    "system/system/etc/selinux/plat_sepolicy.cil": "aa9d31eef9e3785ec4f659faf917aaa5ad0f3cbee51af9a5cccb676a3719ae40",
+    "system/system/bin/t860-tethering-guard": "ce3d7bc56ec8a5505f5943516af8582c1725159d3bf36c7b8532c2d77dceebda"
+  },
+  "hardware_tools_sha256": {
+    "patches/apply_floating_feature.py": "3971473e18e93a9be96f742f6192f0c4b19c231df3ac5766724f28fd83f1d008",
+    "patches/apply_camera_feature.py": "3ad6e9bbdc1618efede2b632aa4fcba21fcf8b4c2858a43fe8c82e039201259e",
+    "device/s6/floating_feature_values.json": "712173177fa2a4471d34155ecea237ad0f840b26c1e5a64a6da27ed2b2a5855e",
+    "device/s6/camera_feature_values.json": "e8c8fa520d69384e01a77d8ed8466fa9410f6666a46db80724908d42ae31076f",
+    "scripts/audit_services_profile_identity_ui85.py": "029d3a3a93e0f9a61eb3dfa6d8e54e3af78ab7e09b1fc18c08fc46ebedbd7a7a"
+  }
+}

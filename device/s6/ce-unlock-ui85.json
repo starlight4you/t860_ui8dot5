@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "F02",
+  "classification": "VERSION_SPECIFIC",
+  "status": "PREPARED_NOT_APPLIED_NOT_RUNTIME_TESTED",
+  "donor_build": "X710XXS6EZH3",
+  "path": "system/framework/services.jar",
+  "input_sha256": "ac871c762353dc26953574830545a1872cc716b51c9529fe522a6536c4edafdd",
+  "output_sha256": "29363c609bb0d85269f7f0569c5ed1deddd02ec5af2eef5386864465d91ecc71",
+  "target_class": "Lcom/android/server/locksettings/LockSettingsService;",
+  "target_method": "unlockCeStorage",
+  "target_descriptor": "(ILcom/android/server/locksettings/SyntheticPasswordManager$SyntheticPassword;)V",
+  "storage_class": "Lcom/android/server/StorageManagerService$StorageManagerInternalImpl;",
+  "storage_method": "unlockCeStorage",
+  "storage_descriptor": "(I[B[B)V",
+  "change": "one if-eqz instruction becomes equal-width goto/16 to existing null-HAT branch; user/FBE secret unchanged",
+  "basis": "docs/CE_UPGRADE_AUDIT.md; first_api=28; old runtime non-empty HAT rejection; new adapter forwards non-empty HAT and X710 vold retains rejection text",
+  "owner": 0,
+  "group": 0,
+  "mode": "0644",
+  "selinux": "u:object_r:system_file:s0",
+  "rollback": "use unchanged X710 services.jar from pinned donor, never the old UI8 jar"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "A97",
+  "classification": "WORKAROUND",
+  "reason": "Samsung catalog rejects SM-T860/SDK36 with error 9909; donor-model-only Store configuration passes A/B/A/B and real installation.",
+  "physical_model": "SM-T860",
+  "sdk": "36",
+  "oneui": "80500",
+  "catalog_model": "SM-X710",
+  "package": "com.sec.android.app.samsungapps",
+  "store_version": "4.6.11.4",
+  "store_apk_sha256": "08d319503576c750a1c334355f36560e6850d2d817eda5e45d441d9143b66367",
+  "store_certificate_sha256": "fba3af4e7757d9016e953fb3ee4671ca2bd9af725f9a53d52ed4a38eaaa08901",
+  "target": "/sdcard/Android/obb/com.sec.android.app.samsungapps/saconfig.ini",
+  "content": "#12=SM-X710\n",
+  "config_sha256": "a9d4763d9f804dce1123ba04563aa4fb1bc6ec638cb66a02881ad7f22fb69c7b",
+  "side_effects": [
+    "Built-in config flag enables additional Store OBB AutoUpdate.txt/SystemUpdate.txt diagnostics.",
+    "Watch factory can use Fake Galaxy Watch3/4 labels in fallback paths; wearable flows untested.",
+    "OBB config can disappear after uninstall or storage cleanup; reapply explicitly after preflight.",
+    "Catalog accepts donor model; this does not prove every offered app supports S6 hardware."
+  ],
+  "future_donor_rule": "UI9, factory Store 4.6.06.8 and any new Store APK require fresh decoder/parser/flag audit and catalog/install test. No automatic hash relaxation."
+}

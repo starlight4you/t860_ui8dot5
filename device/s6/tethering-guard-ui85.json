@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "B06-BOOT-INTEGRATION",
+  "status": "PREPARED_NOT_RUNTIME_TESTED",
+  "reason_record": "docs/TETHERING_BOOT_INTEGRATION.md",
+  "inputs": {
+    "init.rc": "295a76911e61e10213be1cc28f0d7c0d4947b79693a7412051c693382746ff79",
+    "plat_property_contexts": "43954f454c147665682b12be0b3a7ea298ab676f7640f689af46791532fd8a6c",
+    "plat_file_contexts": "24b3d7e47bb1d7ae083f529e6e6812d4f6d42390505fb13db54e90c7da71dc05",
+    "plat_sepolicy.cil": "ebce484182f38f70dbc1269ad9ba24b8c78c94dba1b55c955f574f5c8b712138"
+  },
+  "native_bundle_sha256": "1d1d2696e4e590a7799ac736b4e32552de63c2969d8dd344133629b1fe049827",
+  "guard_source_sha256": "e2956643c7228e0acc50ee40207bfbcf34b56227fc3ea7425e6a48432db776b3",
+  "guard_rc_sha256": "39ed33b01551be633ede67c78c1163a6418dc12984e10c5c993dcc3684249a23",
+  "guard_cil_sha256": "b60f3d0d81cfad528a3d6361bda6dd0cf957e6b597274104742b74a0ba418692",
+  "apex_manifest_sha256": "9d996f1e0d54e06934537687221d3967ea99266189a8fb8cead645aed9cdd788",
+  "apex_manifest_bytes": 664,
+  "apex_version": 361153320,
+  "hardware_boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "classification": [
+    "DEVICE_REQUIRED",
+    "VERSION_SPECIFIC"
+  ],
+  "guard_property_type": "bpf_progs_loaded_prop",
+  "runtime": "NOT_TESTED"
+}

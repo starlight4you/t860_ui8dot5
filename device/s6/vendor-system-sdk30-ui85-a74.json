@@ -1,0 +1,32 @@
+{
+  "id": "A74-VENDOR-SYSTEM-SDK30",
+  "kind": "fixed_s6_vendor_java_contract_rebase_candidate",
+  "file": "etc/vintf/compatibility_matrix.xml",
+  "source_sha256": "da6aa90c2c2bdc06208ec8f3342735df0358836ddddb72d6e183b49bff8a79ee",
+  "target_sha256": "d3b80d5fa526f1cf005e0dcfd3c1747bb10e351664d648cc3c18690134129258",
+  "bytes": 3435,
+  "source_system_sdk": 28,
+  "target_system_sdk": 30,
+  "vendor_ndk": 30,
+  "hal_count": 12,
+  "metadata": {
+    "uid": 0,
+    "gid": 0,
+    "mode": "0644",
+    "selinux": "u:object_r:vendor_configs_file:s0"
+  },
+  "evidence": {
+    "docs/audit/vendor-system-sdk30-contract-ui85-a74.json": "df8308d3167440bffcfa8862f8b58b62764766e3cc3a166c8eb9f0fcffd4fb01",
+    "docs/audit/vendor-sdk30-compiler-metadata-ui85-a74.json": "0695dd4a79648aa323d3f8192db2aea0f17fa588e6356ea42d4eb9b551667369",
+    "docs/audit/live-vendor-sdk30-definitions-ui85-a74.json": "4bc8a1f98ab4385125c3b915185b17bc7c31ebf1b50c6b39d0fff589499c53e3"
+  },
+  "state": "CANDIDATE_NOT_INSTALLED",
+  "classification": ["DEVICE_REQUIRED", "VERSION_SPECIFIC"],
+  "reason": "Fixed retained S6 code APKs compile/min API30; all 154 platform members and 68 non-metadata platform type references match official System SDK30, and all 79 platform type references exist in actual current BOOT. Preserve all HAL/VNDK requirements and migrate the device Java contract; do not declare SDK28 or restore unused legacy APIs.",
+  "limits": [
+    "Direct reference/definition proof does not validate every API behavior, reflective/native callback or certificate operation.",
+    "CACert service started but HIDL registration is NOT_PROVEN through current shell observation.",
+    "No installer vendor guard or full vendor hash has been changed for this candidate.",
+    "Future donor must repeat actual provider/access/runtime evidence before reusing this contract."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "id": "A73-FCM4",
+  "kind": "s6_fcm4_4_14_additive_candidate",
+  "classification": "DEVICE_REQUIRED",
+  "file": "system/system/etc/vintf/compatibility_matrix.4.xml",
+  "sha256": "5a1474b0c84998bbc3331de7f1434db897c89dde7e645942b5238d19875f7ac4",
+  "bytes": 49951,
+  "baseline_inventory_sha256": "e21e7efaaa1e1d06154cda4dc63ae31c1e6d5f887f9b8929c0535304607f6df7",
+  "helper_sha256": "9dba3310b9c60734fd65554f119293ab569bdc6344269990341f1961cb1ca712",
+  "live_evidence_sha256": "f31332a023e6a2c8e12ab760fa9fc97c7fa96493a0851f6710b5a0dd74b37c90",
+  "metadata": {
+    "uid": 0,
+    "gid": 0,
+    "mode": "0644",
+    "selinux": "u:object_r:system_file:s0"
+  },
+  "purpose": "Restore frozen hardware-era FCM4 contracts and verified 4.14 kernel conditions for preserved S6 hardware.",
+  "provenance": {
+    "fcm4-aosp-android12.xml": "240607d8806d90674ffd8b976d9a1bac67956ebf11a5fa65158907c41fe8cb1f",
+    "t860-stock-compatibility_matrix.4.xml": "884b3efcc2dfba9b65f3e7a2f2bba83d2063f3d81df7af82dbeb5919149788c8",
+    "fcm4-android-base-4.14.config": "c81361c73240f28814c9530813e896175293599c6431bfa9e6176a15cbabe0d0",
+    "fcm4-android-base-4.14-conditional.xml": "5182fc7687f7ac6fd86cea6f477645ed05ebfa26a701884f60c8a9f7d5adc009"
+  },
+  "runtime_scope": "PROCESS_LOCAL_KERNEL_CHECK_GOOD_NOT_INSTALLED",
+  "full_checkvintf": "NOT_PASSED",
+  "release": "NOT_PASSED"
+}

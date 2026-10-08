@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "B06-GATES",
+  "classification": [
+    "VERSION_SPECIFIC",
+    "WORKAROUND"
+  ],
+  "status": "PREPARED_NOT_APPLIED_NOT_RUNTIME_TESTED",
+  "scope": "Partial native gate candidate; not a complete BPF/network adaptation",
+  "hardware_boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "kernel_version": "4.14.190",
+  "sdk_full": "36.1",
+  "reason_document": "docs/BPF_REBASE_AUDIT.md",
+  "files": [
+    {
+      "name": "netbpfload",
+      "apex_path": "bin/netbpfload",
+      "input_sha256": "7b77a7ac01d01b6787544f2a01a77f4fd929ec6da0625c6f413764e8622ff2a2",
+      "output_sha256": "3e03cf1f639d06348065590cdd5a05d20be265cd6e91421329b06e609c2563a1",
+      "size": 102656,
+      "functions": [
+        {
+          "va": 51112,
+          "file_offset": 51112,
+          "size": 4588,
+          "sha256": "b5c74723b596c1e3d03566ca9acbfe5c2300a9abd907aa0bc6340857a4421dc9",
+          "fde_va": 18240,
+          "cie_va": 16672,
+          "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+        },
+        {
+          "va": 69356,
+          "file_offset": 69356,
+          "size": 828,
+          "sha256": "ec0e54726702f555755d64f2db3df5a0d005b0d004b0c1ef7aae995e4349cb82",
+          "fde_va": 19560,
+          "cie_va": 16672,
+          "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+        }
+      ],
+      "patches": [
+        {
+          "va": "0xce14",
+          "file_offset": 52756,
+          "original_word": "0x54000148",
+          "replacement_word": "0x1400000a",
+          "target_va": "0xce3c",
+          "reason": "Permit the pinned 4.14 kernel at the existing continuation"
+        },
+        {
+          "va": "0xce48",
+          "file_offset": 52808,
+          "original_word": "0x54000168",
+          "replacement_word": "0x1400000b",
+          "target_va": "0xce74",
+          "reason": "Permit the pinned 4.14 kernel at the existing continuation"
+        },
+        {
+          "va": "0xce78",
+          "file_offset": 52856,
+          "original_word": "0x54000228",
+          "replacement_word": "0x14000011",
+          "target_va": "0xcebc",
+          "reason": "Permit the pinned 4.14 kernel at the existing continuation"
+        },
+        {
+          "va": "0x110e8",
+          "file_offset": 69864,
+          "original_word": "0x5400086b",
+          "replacement_word": "0x14000043",
+          "target_va": "0x111f4",
+          "reason": "Permit zero JIT length after successful info queries on the pinned interpreter kernel"
+        }
+      ]
+    },
+    {
+      "name": "libnetd_updatable.so",
+      "apex_path": "lib64/libnetd_updatable.so",
+      "input_sha256": "b15352158c8633d3a3b743331ce149daa29c6b7d656eed014392da082cf187cc",
+      "output_sha256": "bce0068c9153ec268e5b4f757ec150b7eab7ed5a16a8920ae310ed17ff55db76",
+      "size": 69936,
+      "functions": [
+        {
+          "va": 18664,
+          "file_offset": 18664,
+          "size": 4460,
+          "sha256": "f787fbaa568df6f11878ebb12646b44fcaed2852fd181cd3f10e5584429640a2",
+          "fde_va": 10516,
+          "cie_va": 10304,
+          "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+        }
+      ],
+      "patches": [
+        {
+          "va": "0x4e48",
+          "file_offset": 20040,
+          "original_word": "0x54000108",
+          "replacement_word": "0x14000008",
+          "target_va": "0x4e68",
+          "reason": "Permit the pinned 4.14 kernel at the existing continuation"
+        },
+        {
+          "va": "0x4e70",
+          "file_offset": 20080,
+          "original_word": "0x540005c8",
+          "replacement_word": "0x1400002e",
+          "target_va": "0x4f28",
+          "reason": "Permit the pinned 4.14 kernel at the existing continuation"
+        }
+      ]
+    }
+  ],
+  "modifications_to_runtime_sdk": false,
+  "apex_metadata_status": "INSTALLATION_OWNER_MODE_SELINUX_NOT_VERIFIED",
+  "complete_network_compatibility": false
+}

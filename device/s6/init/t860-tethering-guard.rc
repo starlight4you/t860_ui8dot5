@@ -1,0 +1,19 @@
+# Identity checks only. The original APEX bpfloader service remains responsible
+# for loading BPF and publishing bpf.progs_loaded with its real exit status.
+service t860-tethering-check /system/bin/t860-tethering-guard check
+    disabled
+    oneshot
+    user root
+    group root system
+    capabilities
+    file /dev/kmsg w
+    reboot_on_failure reboot,t860-tethering-check-failed
+
+service t860-tethering-verify /system/bin/t860-tethering-guard bound
+    disabled
+    oneshot
+    user root
+    group root system
+    capabilities
+    file /dev/kmsg w
+    reboot_on_failure reboot,t860-tethering-bind-failed

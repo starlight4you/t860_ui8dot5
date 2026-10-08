@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "B06-JNI",
+  "classification": [
+    "WORKAROUND",
+    "VERSION_SPECIFIC"
+  ],
+  "status": "PREPARED_NOT_APPLIED_NOT_RUNTIME_TESTED",
+  "hardware_boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "sdk_full": "36.1",
+  "input_sha256": "36e30c139070252efbe71e618aca31144c76e4ef0bff5aa3ec7c30d5d1c03120",
+  "output_sha256": "631a30f6b9a3da74c90b9b0dd623c9c799a033ca976e8139a1f62bbd593a440d",
+  "size": 68776,
+  "function": {
+    "va": 20500,
+    "file_offset": 20500,
+    "size": 732,
+    "sha256": "a6fe7c3462ccd978264104fe6fbef40798380ae96ebd5bfbc51338b0e275c7e7",
+    "fde_va": 8384,
+    "cie_va": 7696,
+    "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+  },
+  "window_va": "0x521c",
+  "window_offset": 21020,
+  "original_hex": "df0a0071c0030054880240f91f2003d5",
+  "replacement_hex": "df320871c41a427aa0030054880240f9",
+  "review_source": "patches/bpf-jni-next-key-ui85.S",
+  "review_source_sha256": "06ae1fa3bd1e111c8b744a93e1415afe123b023bf77444541c0f18daef56cc12",
+  "accepted_errornos": [
+    2,
+    524
+  ],
+  "jni_table": "0xc008",
+  "jni_slot": 3,
+  "reason_document": "docs/BPF_REBASE_AUDIT.md",
+  "complete_network_compatibility": false
+}

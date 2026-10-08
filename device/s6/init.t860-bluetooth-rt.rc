@@ -1,0 +1,8 @@
+# T860 kernel CONFIG_RT_GROUP_SCHED: Bluetooth uses cpu:/foreground.
+# Root budget is 950000; child default 0 rejects SCHED_FIFO despite CAP_SYS_NICE.
+# Run after main init creates the child group; reassert before Bluetooth startup.
+on init
+    write /dev/cpuctl/foreground/cpu.rt_runtime_us 950000
+
+on zygote-start
+    write /dev/cpuctl/foreground/cpu.rt_runtime_us 950000

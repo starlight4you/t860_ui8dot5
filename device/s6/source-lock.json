@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "target": "SM-T860/gts6lwifi",
+  "donor": "SM-X710/X710XXS6EZH3/Android16/OneUI80500",
+  "physical_partition_bytes": {
+    "system": 6534725632,
+    "product": 1048576000,
+    "vendor": 1379926016
+  },
+  "sources": {
+    "t860_boot": {
+      "path": "t860-ui8/inputs/t860-dwh1/boot.img",
+      "sha256": "714ae657b927ba64c8ee58cc03d16370ad2f05a9c020086df5b2d73488a9ed1f"
+    },
+    "t860_dtbo": {
+      "path": "t860-ui8/inputs/t860-dwh1/dtbo.img",
+      "sha256": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec"
+    },
+    "t860_vendor_sparse": {
+      "path": "t860-ui8/inputs/t860-dwh1/vendor.img.ext4",
+      "sha256": "1c95ab7b8d1da0a00bebb330d6ea532f1a32cbb5de0ea0fd1bad848326210041",
+      "magic_hex": "3aff26ed"
+    },
+    "t860_vndk30_apex": {
+      "path": "t860-ui8/inputs/compat/com.android.vndk.v30.arm64.apex",
+      "sha256": "d0db25222a3ce6f6ad53a965398ffd60d1adcb281905a23a40ca1248fee2eb0e"
+    },
+    "x710_super_sparse": {
+      "path": "t860-ui8/inputs/x710-ezh3/super.img",
+      "sha256": "3a2be2357c6c315b60bbdf6bded6666f8c3f5eeb12aeaa35732cf76640f23bc6",
+      "magic_hex": "3aff26ed"
+    },
+    "x700_super_sparse_audit_only": {
+      "path": "t860-ui8/inputs/x700-eze1/super.img",
+      "sha256": "498aa809e63bcb4f2f0b18ed723637c7b694cdb247dacc633f8ba65d86f6eda4",
+      "magic_hex": "3aff26ed"
+    },
+    "ui8_working_system_audit_only": {
+      "path": "t860-ui8/out/v0.48/system.img",
+      "sha256": "7b319d15758f71cbdcaa205b6145e56cce1709a60e3136963465778f98846955",
+      "magic_hex": "3aff26ed"
+    },
+    "ui8_working_product_audit_only": {
+      "path": "t860-ui8/out/v0.48/product.img",
+      "sha256": "b725de98e77ddb063d457c98bbb17f33063902fbbd5bff390f76c27b9a9329a8",
+      "magic_hex": "3aff26ed"
+    },
+    "ui8_working_vendor_audit_only": {
+      "path": "t860-ui8/out/v0.48/vendor.img",
+      "sha256": "a81d69ffc461fe9b08f73f8fa36e518023603de902ba145dd6b41651f906e66a",
+      "magic_hex": "3aff26ed"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "target_framework_sha256": "05c3b99b144b3567fb4cff81f54e2e21d1d9575177f61e044f2393b4076ed3b1",
+  "aapt2_sha256": "a8844d4089b442b034aed8953deee1893253053c900e03141ae7173e3edd8157",
+  "apksigner_sha256": "b47549e373b895ce6ca620d0c7887e674d9615ffa837a86ac601dcfd04adb0f0",
+  "certificate_sha256": "9b8ecdeb843eb18d9e4d6ba63d1c7709604ae308294ede206f3edc34f3e380a5",
+  "schema": 1,
+  "id": "A68-WIFI-TELEPHONY-RRO",
+  "classification": "DEVICE_REQUIRED / VERSION_SPECIFIC",
+  "reason_record": "docs/APP_REPAIRS_UI85_A68.md",
+  "target": "SM-T860 Wi-Fi only",
+  "donor_build": "X710XXS6EZH3",
+  "stage_path": "system/system_ext/overlay/T860WifiTelephonyOverlay.apk",
+  "sources": {
+    "AndroidManifest.xml": "4e1f5ef9010f7b27c9818bba9095d580ea3e5df36baf0cc222ca489ad9aaa73a",
+    "res/values/bools.xml": "9804003a376d3395a764c0b15bd05a1ac4c3b22899a676653df749c7a4f3d544"
+  }
+}

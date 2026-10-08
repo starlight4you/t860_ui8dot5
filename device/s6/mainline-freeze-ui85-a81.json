@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "id": "A81",
+  "classification": "WORKAROUND",
+  "status": "OPTIONAL_OFFLINE_CANDIDATE_NOT_DEPLOYED",
+  "reason": "User requested research into pausing Google Play system updates after native network module boot failures.",
+  "donor_build": "X710XXS6EZH3",
+  "path": "product/etc/sysconfig/google-staged-installer-whitelist.xml",
+  "input_sha256": "aad8746f264ba133ac38de7c0207e3275e8397a2070d2b90291677d6d7da4fa8",
+  "input_size": 309,
+  "remove_package": "com.android.vending",
+  "retain_package": "com.sec.android.app.samsungapps",
+  "required_metadata": {
+    "uid": 0,
+    "gid": 0,
+    "mode": "0644",
+    "selinux": "u:object_r:system_file:s0"
+  },
+  "reviewed_services_sha256": "91e2a7ce17f25a84c36e70a958aa523274eb394c7f3da4f30051364871f23d22",
+  "expected_effect": "Reject new Play Store staged sessions and non-staged APEX installation through the platform allowlist.",
+  "limits": [
+    "No device changes, reboot, session cancellation, or APEX removal is performed by the generator.",
+    "Existing READY sessions require a fresh audit before any deployment.",
+    "Ordinary non-staged APK module updates and download attempts are not guaranteed to stop.",
+    "Root, system, shell and privileged bypass paths are outside this selective Play installer restriction.",
+    "Runtime verification of rejection and ordinary Play application updates is still required.",
+    "Future donor firmware requires renewed framework and configuration review."
+  ]
+}

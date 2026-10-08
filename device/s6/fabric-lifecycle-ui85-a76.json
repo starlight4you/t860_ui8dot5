@@ -1,0 +1,17 @@
+{
+  "id": "A76_FABRIC_S6_LIFECYCLE",
+  "classification": [
+    "DEVICE_REQUIRED",
+    "WORKAROUND"
+  ],
+  "scope": "Only class autostart of unsupported Fabric daemon on pinned SM-T860; original daemon/libs/clients preserved",
+  "input_sha256": "130d12f9e7ca0871c692f334a72d04a2611ccfd52a7977fded613b5c3698f989",
+  "output_sha256": "f4014bf4990297a5323b5fdcdadaf2d76a7673653d472759a7543e2de09ff84b",
+  "hardware_backend": "vendor.samsung.hardware.security.fkeymaster.ISehFkeymaster/default",
+  "backend_present": false,
+  "live_normal_fabric_service_present": false,
+  "updated_module_compatibility": "NOT_PASSED",
+  "kmx_error_propagation": "NOT_FIXED",
+  "runtime_tested": false,
+  "reason_document": "docs/FABRIC_MAINLINE_LIFECYCLE_A76.md"
+}

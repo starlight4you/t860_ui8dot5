@@ -1,0 +1,166 @@
+{
+  "source_build": "X710XXS6EZH3",
+  "source_sha256": "06857feaf9d1b6fcb51f3d2a83030500568027d0f0f2715eedb35767cc5dd17b",
+  "basis": "T860 UI7 D19 camera feature map, T860 stock sensor sizes, UI8 v0.26 real hardware, live media.camera",
+  "status": "prepared_not_runtime_validated_on_ui85",
+  "replacements": [
+    {
+      "name": "FRONT_CAMERA_PICTURE_DEFAULT_RESOLUTION",
+      "attribute": "value",
+      "from": "4000x3000",
+      "to": "3264x2448",
+      "basis": "T860 UI7 D19 hardware map; UI8 v0.26 physical validation"
+    },
+    {
+      "name": "FRONT_CAMERA_RESOLUTION_4BY3_LARGE",
+      "attribute": "value",
+      "from": "4000x3000",
+      "to": "3264x2448",
+      "basis": "T860 UI7 D19 hardware map; UI8 v0.26 physical validation"
+    },
+    {
+      "name": "FRONT_CAMERA_RESOLUTION_16BY9_LARGE",
+      "attribute": "value",
+      "from": "4000x2252",
+      "to": "3264x1836",
+      "basis": "T860 UI7 D19 hardware map; UI8 v0.26 physical validation"
+    },
+    {
+      "name": "FRONT_CAMERA_RESOLUTION_1BY1_LARGE",
+      "attribute": "value",
+      "from": "2992x2992",
+      "to": "2448x2448",
+      "basis": "T860 UI7 D19 hardware map; UI8 v0.26 physical validation"
+    },
+    {
+      "name": "FRONT_CAMERA_RESOLUTION_FULL_RATIO",
+      "attribute": "value",
+      "from": "4000x2500",
+      "to": "3264x2040",
+      "basis": "T860 UI7 D19 hardware map; UI8 v0.26 physical validation"
+    },
+    {
+      "name": "FRONT_CAMERA_SENSOR_CROP_RESOLUTION_4BY3_LARGE",
+      "attribute": "value",
+      "from": "2032x1524",
+      "to": "2608x1956",
+      "basis": "T860 UI7 D19 hardware map; UI8 v0.26 physical validation"
+    },
+    {
+      "name": "FRONT_CAMERA_SENSOR_CROP_RESOLUTION_16BY9_LARGE",
+      "attribute": "value",
+      "from": "2032x1144",
+      "to": "2608x1468",
+      "basis": "T860 UI7 D19 hardware map; UI8 v0.26 physical validation"
+    },
+    {
+      "name": "FRONT_CAMERA_SENSOR_CROP_RESOLUTION_1BY1_LARGE",
+      "attribute": "value",
+      "from": "1524x1524",
+      "to": "1968x1968",
+      "basis": "T860 UI7 D19 hardware map; UI8 v0.26 physical validation"
+    },
+    {
+      "name": "FRONT_CAMERA_SENSOR_CROP_RESOLUTION_FULL_RATIO",
+      "attribute": "value",
+      "from": "2032x1270",
+      "to": "2608x1630",
+      "basis": "T860 UI7 D19 hardware map; UI8 v0.26 physical validation"
+    },
+    {
+      "name": "FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1440",
+      "attribute": "snapshot-size",
+      "from": "4000x3000",
+      "to": "3264x2448",
+      "basis": "T860 UI7 D19 front snapshot map"
+    },
+    {
+      "name": "FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080",
+      "attribute": "snapshot-size",
+      "from": "4000x2252",
+      "to": "3264x1836",
+      "basis": "T860 UI7 D19 front snapshot map"
+    },
+    {
+      "name": "FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1280X720",
+      "attribute": "snapshot-size",
+      "from": "4000x2252",
+      "to": "3264x1836",
+      "basis": "T860 UI7 D19 front snapshot map"
+    },
+    {
+      "name": "FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1440X1440",
+      "attribute": "snapshot-size",
+      "from": "2992x2992",
+      "to": "2448x2448",
+      "basis": "T860 UI7 D19 front snapshot map"
+    },
+    {
+      "name": "FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1728X1080",
+      "attribute": "snapshot-size",
+      "from": "4000x2500",
+      "to": "3264x2040",
+      "basis": "T860 UI7 D19 front snapshot map"
+    },
+    {
+      "name": "FRONT_NORMAL_CAMERA_ID",
+      "attribute": "value",
+      "from": "2",
+      "to": "1",
+      "basis": "T860 live media.camera: public front ID 1; ID 2 is rear ultrawide"
+    },
+    {
+      "name": "FRONT_CROP_FOV_CAMERA_ID",
+      "attribute": "value",
+      "from": "2",
+      "to": "1",
+      "basis": "T860 live media.camera: public front ID 1; ID 2 is rear ultrawide"
+    },
+    {
+      "name": "FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_3840X2160",
+      "attribute": "value",
+      "from": "true",
+      "to": "false",
+      "basis": "T860 front maximum 3264x2448 is below 3840x2160; not present in validated UI7 map"
+    },
+    {
+      "name": "FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_3840X2160",
+      "attribute": "snapshot-size",
+      "from": "4000x2252",
+      "to": "3264x1836",
+      "basis": "T860 front sensor 3264x2448; mode disabled because 4K exceeds sensor dimensions"
+    }
+  ],
+  "insertions": [
+    {
+      "name": "BACK_WIDE_CAMERA_RESOLUTION_4BY3_LARGE",
+      "value": "2576x1932",
+      "basis": "T860 UI7 D19 hardware map and UI8 v0.26 physical validation"
+    },
+    {
+      "name": "BACK_WIDE_CAMERA_RESOLUTION_16BY9_LARGE",
+      "value": "2560x1440",
+      "basis": "T860 UI7 D19 hardware map and UI8 v0.26 physical validation"
+    },
+    {
+      "name": "BACK_WIDE_CAMERA_RESOLUTION_FULL_RATIO",
+      "value": "2560x1600",
+      "basis": "T860 UI7 D19 hardware map and UI8 v0.26 physical validation"
+    },
+    {
+      "name": "BACK_WIDE_CAMERA_RESOLUTION_1BY1_LARGE",
+      "value": "1920x1920",
+      "basis": "T860 UI7 D19 hardware map and UI8 v0.26 physical validation"
+    },
+    {
+      "name": "BACK_WIDE_CAMERA_ID",
+      "value": "2",
+      "basis": "T860 UI7 D19 hardware map and UI8 v0.26 physical validation"
+    },
+    {
+      "name": "SUPPORT_WIDE_LENS_CORRECTION",
+      "value": "true",
+      "basis": "T860 UI7 D19 hardware map and UI8 v0.26 physical validation"
+    }
+  ]
+}

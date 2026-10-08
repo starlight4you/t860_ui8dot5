@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "candidate_id": "A45-X710-EZH3-T860-UI85-DIAGNOSTIC",
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "stage": "/var/tmp/t860-ui85-capacity-draft-app-preopt",
+  "inventory_sha256": "c805a7ad8412d0218b6e4d42dc6e00575a82ffb149fd520c53bbedbe0854545d",
+  "policy_report_sha256": "c9c7759d87f49f23086eb453c48481e99473735a6edc06fc0d78d55541c7d70f",
+  "runtime_new_rom": "NOT_TESTED",
+  "full_checkvintf": "NOT_PASSED",
+  "preserved_hardware": {
+    "boot": {
+      "block": "/dev/block/sda20",
+      "bytes": 67108864,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+    },
+    "vendor": {
+      "block": "/dev/block/sda25",
+      "bytes": 1379926016,
+      "sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af"
+    }
+  },
+  "known_unresolved": [
+    "VINTF system SDK28 requirement remains unsatisfied; it is not declared or bypassed.",
+    "FCM4/deprecation metadata and real runtime/kernel/APEX compatibility checks remain incomplete.",
+    "New Android boot/system_server/SystemUI/Enforcing and retained APEX sessions have not been tested.",
+    "Real FP/HWC/brightness, HIDL wire/CFI/linker namespace/lifecycle have not been tested.",
+    "Face, SamsungCamera SceneDetector/FastAEC/portrait, RGB/sysinput and audio routing still require new-donor/runtime verification.",
+    "Wi-Fi/Bluetooth/audio/USB/storage/sleep/charging/battery/sensors/camera/DRM/video/S Pen/input/DeX/Settings/Account/Knox require new-ROM regression.",
+    "Existing DATA/PIN/CE/DE/Keystore/Samsung accounts upgrade readability has not been tested."
+  ],
+  "reason_document": "docs/TWRP_UPGRADE.md"
+}

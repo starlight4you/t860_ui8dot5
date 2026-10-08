@@ -1,0 +1,689 @@
+{
+  "id": "A99_MAINLINE_GUARD_TESTS",
+  "all_passed": true,
+  "scope": "pinned TWRP ARM64 userspace on Linux VM kernel; no real partitions",
+  "binary_sha256": "4f3f04af10250a0522b4bf2805fe0567fef975da1aea9e24024d86eba8ca8176",
+  "factory_table_sha256": "3db9c6be68d3310e1cad7af3848a675dfef9a225504ad93c830e3ecbffb3c02a",
+  "recovery_sha256": "cbc6e03563a9229b7034dd775964ef412af94a7074f50b519ce1ccc1fd4f2e16",
+  "test_source_sha256": "6b22ce1e8041d9fdb542e8a206aa5e77b48b7c9344f22fe2a32c6fe97c4277d3",
+  "cases": [
+    {
+      "case": "empty-active-and-sessions",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: 42 factory identities; no active APEX files; 0 non-staged sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "terminal-or-non-staged-state-1",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: 42 factory identities; no active APEX files; 1 non-staged sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "terminal-or-non-staged-state-3",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: 42 factory identities; no active APEX files; 1 non-staged sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "terminal-or-non-staged-state-4",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: 42 factory identities; no active APEX files; 1 non-staged sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "terminal-or-non-staged-state-5",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: 42 factory identities; no active APEX files; 1 non-staged sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "terminal-or-non-staged-state-7",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: 42 factory identities; no active APEX files; 1 non-staged sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "unknown-staged-or-unresolved-state-0",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "unknown-staged-or-unresolved-state-2",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "unknown-staged-or-unresolved-state-6",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "unknown-staged-or-unresolved-state-8",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "unknown-staged-or-unresolved-state-9",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "missing-state-field",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "duplicate-state-field",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "truncated-varint",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "overflow-varint",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "wrong-state-wire",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "unsupported-wire",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "truncated-unknown-field",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "empty-state",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "oversized-state",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "unknown-fields-skipped",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: 42 factory identities; no active APEX files; 1 non-staged sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "fifo-state-refused-without-blocking",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "symlink-state",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "symlink-session",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: session unavailable/unsafe: 123"
+    },
+    {
+      "case": "non-numeric-session",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: invalid session name: bad"
+    },
+    {
+      "case": "session-id-overflow",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: invalid session name: 2147483648"
+    },
+    {
+      "case": "regular-file-session",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: session unavailable/unsafe: 123"
+    },
+    {
+      "case": "filename-older-does-not-prove-content",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: active APEX content not verified; resolve updates before upgrade: com.android.tethering@1.apex"
+    },
+    {
+      "case": "filename-equal",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: active APEX content not verified; resolve updates before upgrade: com.android.tethering@361153320.apex"
+    },
+    {
+      "case": "filename-newer",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: active APEX content not verified; resolve updates before upgrade: com.android.tethering@372038420.apex"
+    },
+    {
+      "case": "unknown-active-module",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: active APEX content not verified; resolve updates before upgrade: unknown.module@1.apex"
+    },
+    {
+      "case": "unversioned-active",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: unversioned active APEX: com.android.tethering.apex"
+    },
+    {
+      "case": "duplicate-version-delimiter",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: unversioned active APEX: com.android.tethering@1@2.apex"
+    },
+    {
+      "case": "retained-not-apex-suffix",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: 42 factory identities; no active APEX files; 0 non-staged sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "symlink-active-file",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: invalid active APEX: com.android.tethering@1.apex"
+    },
+    {
+      "case": "directory-active-file",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: invalid active APEX: com.android.tethering@1.apex"
+    },
+    {
+      "case": "symlink-active-directory",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: active directory unavailable/unsafe: /tmp/a71-mainline-test-pz1mqncn/symlink-active-directory/active"
+    },
+    {
+      "case": "symlink-sessions-directory",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: session directory unavailable/unsafe: /tmp/a71-mainline-test-pz1mqncn/symlink-sessions-directory/sessions"
+    },
+    {
+      "case": "second-session-root-staged",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 456"
+    },
+    {
+      "case": "duplicate-table",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: malformed or duplicate factory identity: /tmp/a71-mainline-test-pz1mqncn/duplicate-table/factory.tsv"
+    },
+    {
+      "case": "unterminated-table",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: malformed or duplicate factory identity: /tmp/a71-mainline-test-pz1mqncn/unterminated-table/factory.tsv"
+    },
+    {
+      "case": "zero-version-table",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: malformed or duplicate factory identity: /tmp/a71-mainline-test-pz1mqncn/zero-version-table/factory.tsv"
+    },
+    {
+      "case": "empty-table",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: invalid factory table: /tmp/a71-mainline-test-pz1mqncn/empty-table/factory.tsv"
+    },
+    {
+      "case": "invalid-name-table",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: malformed or duplicate factory identity: /tmp/a71-mainline-test-pz1mqncn/invalid-name-table/factory.tsv"
+    },
+    {
+      "case": "reinstall-empty",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: identical-SYSTEM reinstall session checks; active contents preserved, not read/verified; 0 sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "reinstall-exact-observed-set",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: identical-SYSTEM reinstall session checks; active contents preserved, not read/verified; 0 sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "reinstall-partial-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: partial retained active set: /tmp/a71-mainline-test-pz1mqncn/reinstall-partial-refused/active"
+    },
+    {
+      "case": "reinstall-size-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: unreviewed active entry; preserve-mode refused: com.android.adservices@372038020.apex"
+    },
+    {
+      "case": "reinstall-owner-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: unreviewed active entry; preserve-mode refused: com.android.adservices@372038020.apex"
+    },
+    {
+      "case": "reinstall-mode-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: unreviewed active entry; preserve-mode refused: com.android.adservices@372038020.apex"
+    },
+    {
+      "case": "reinstall-unknown-file-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: unreviewed active entry; preserve-mode refused: unknown"
+    },
+    {
+      "case": "reinstall-symlink-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: unreviewed active entry; preserve-mode refused: com.android.adservices@372038020.apex"
+    },
+    {
+      "case": "reinstall-pending-session-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "reinstall-terminal-session",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: identical-SYSTEM reinstall session checks; active contents preserved, not read/verified; 1 sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "reinstall-secondary-pending-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 456"
+    },
+    {
+      "case": "ui8-upgrade-empty-preflight",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: 0 old active entries eligible for inode-preserving backup; no content validation or writes.",
+      "stderr": ""
+    },
+    {
+      "case": "ui8-upgrade-opaque-module-preflight",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: 1 old active entries eligible for inode-preserving backup; no content validation or writes.",
+      "stderr": ""
+    },
+    {
+      "case": "user-state-sentinel",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": false,
+      "inode_preserving_module_backup": true,
+      "stdout": "Preserved 1 old active module inodes with .A99-held suffix; no module content or user data deleted.",
+      "stderr": ""
+    },
+    {
+      "case": "sessions",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": false,
+      "inode_preserving_module_backup": true,
+      "stdout": "Preserved 4 old active module inodes with .A99-held suffix; no module content or user data deleted.",
+      "stderr": ""
+    },
+    {
+      "case": "ui8-upgrade-unknown-module-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: unreviewed upgrade active entry: unknown.module@1.apex"
+    },
+    {
+      "case": "ui8-upgrade-staged-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: staged, unresolved rollback, or unreadable session; resolve before upgrade: 123"
+    },
+    {
+      "case": "ui8-upgrade-backup-collision-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: backup collision: com.android.tethering@372038420.apex.A99-held"
+    },
+    {
+      "case": "ui8-upgrade-symlink-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: unreviewed upgrade active entry: com.android.tethering@1.apex"
+    },
+    {
+      "case": "ui8-upgrade-wrong-owner-refused",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: unreviewed upgrade active entry: com.android.tethering@372038420.apex"
+    },
+    {
+      "case": "user-state-sentinel",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": false,
+      "inode_preserving_module_backup": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "case": "reinstall-old-backup-retained",
+      "pass": true,
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "PASS: identical-SYSTEM reinstall session checks; active contents preserved, not read/verified; 0 sessions. No writes.",
+      "stderr": ""
+    },
+    {
+      "case": "fifo-table-refused-without-blocking",
+      "pass": true,
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "fixture_unchanged": true,
+      "inode_preserving_module_backup": false,
+      "stdout": "",
+      "stderr": "t860-mainline-preflight: invalid factory table: /tmp/a71-mainline-test-pz1mqncn/fifo-table-refused-without-blocking/factory.tsv"
+    }
+  ],
+  "case_count": 67,
+  "device_writes": false,
+  "real_recovery_runtime": "NOT_TESTED",
+  "limits": [
+    "Caller must verify real DATA/CACHE mounts before interpreting absent directories.",
+    "First installation refuses active APEX; identical-system mode preserves only the observed four-entry set without claiming content validation.",
+    "Does not prevent future automatic module updates or validate dirty-upgrade boot."
+  ]
+}

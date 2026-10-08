@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "F01-ICCC",
+  "classification": ["DONOR_SPECIFIC", "WORKAROUND"],
+  "status": "PREPARED_NOT_APPLIED_NOT_RUNTIME_TESTED",
+  "donor_build": "X710XXS6EZH3",
+  "path": "system/framework/services.jar",
+  "inputs": {
+    "X710-stock": "ac871c762353dc26953574830545a1872cc716b51c9529fe522a6536c4edafdd",
+    "X710-F02": "29363c609bb0d85269f7f0569c5ed1deddd02ec5af2eef5386864465d91ecc71"
+  },
+  "outputs": {
+    "X710-stock": "ebe3fb8336285b10d7411856f6af8cb4dfa9c5e4600d77520d9afe6f231e87cc",
+    "X710-F02": "d47261aa9913d8013dc876210dba48c2c4eab924390acaf8dbd8e10290f6d3e6"
+  },
+  "target_class": "Lcom/android/server/IcccManagerService;",
+  "permission_method": "checkCallerPermissionFor",
+  "permission_descriptor": "(Ljava/lang/String;)V",
+  "methods": [
+    {"name": "getBldpData", "descriptor": "()[B", "native_name": "iccc_get_bldp_data", "registers": 2, "invoke_word": 113, "argument_word": 0, "result_register": 0, "code_sha256": "0338dfd84b2e8200a92fa8a02a965ca716bffbd166ad54967fc0c6fe1a157dca"},
+    {"name": "getDeviceInfo", "descriptor": "([B)[B", "native_name": "iccc_device_info", "registers": 3, "invoke_word": 4209, "argument_word": 2, "result_register": 2, "code_sha256": "43b2d7116e4ad6518a9e42f9f1eb718337c8fe79cdec72388a4770514d86783c"},
+    {"name": "getDeviceStatus", "descriptor": "(I[B)[B", "native_name": "iccc_device_status", "registers": 4, "invoke_word": 8305, "argument_word": 50, "result_register": 2, "code_sha256": "796370583096d4d337df73ffe39109589cb1fd5f4e694b0ce0fcc5d5f4848234"}
+  ],
+  "change": "replace three unsupported native invoke+move-result-object pairs by equal-width empty byte array allocation; preserve permissions/monitors/exception tables and all other operations",
+  "basis": "docs/ICCC_REBASE_AUDIT.md; pinned proxy ABI mismatches; old BAD_VALUE unchecked transport abort",
+  "owner": 0,
+  "group": 0,
+  "mode": "0644",
+  "selinux": "u:object_r:system_file:s0",
+  "rollback": "regenerate services.jar from unchanged X710 donor and the separately required patches"
+}

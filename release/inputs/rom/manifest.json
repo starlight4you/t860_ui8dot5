@@ -1,0 +1,387 @@
+{
+  "rom_manifest": {
+    "schema": 1,
+    "kind": "rom_candidate",
+    "candidate_id": "A99-SM-T860-S9-UI85-PHASE-20261008",
+    "target": "SM-T860",
+    "donor_build": "X710XXS6EZH3",
+    "version": "v1.0.0",
+    "partitions": {
+      "system": {
+        "path": "system.raw.img",
+        "bytes": 6534725632,
+        "sha256": "c2c249d94e4028ba3c550bb4a51fe2c3397bf80f4f8b9f82ad8236f3ed2340a8"
+      },
+      "product": {
+        "path": "product.raw.img",
+        "bytes": 1048576000,
+        "sha256": "bd1e4f1598ccfc8b24890e97b3562e1941ebd27c17b284491c8965981db45aa7"
+      },
+      "boot": {
+        "path": "boot.raw.img",
+        "bytes": 67108864,
+        "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+      },
+      "vendor": {
+        "path": "vendor.raw.img",
+        "bytes": 1379926016,
+        "sha256": "609f5098f0bc469bf3377555beef3ed7e64be6df61dbc260d42f2f4d6f6a0e18"
+      },
+      "dtbo": {
+        "path": "dtbo.raw.img",
+        "bytes": 10485760,
+        "sha256": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec"
+      },
+      "vbmeta": {
+        "path": "vbmeta.raw.img",
+        "bytes": 65536,
+        "sha256": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54"
+      }
+    },
+    "release_status": "RELEASE",
+    "system_files_changed": false,
+    "product_factory_apex_changed": false,
+    "data_policy": "PRESERVE_NO_FORMAT_NO_DELETE",
+    "hardware_policy": "CLEAN_BOOTSTRAPS_S6_ONLY_UI8_UPGRADE_PRESERVES_HARDWARE_WITH_TWO_TEXT_CONFIG_TRANSACTION",
+    "source_inventory_sha256": "bb1029223fe18751e97723f6d895b688be3d94cc9c199523e43eac5fed77f0b9",
+    "image_audits": {
+      "system": {
+        "bytes": 6534725632,
+        "sha256": "c2c249d94e4028ba3c550bb4a51fe2c3397bf80f4f8b9f82ad8236f3ed2340a8",
+        "free_bytes": 104722432,
+        "phase_minimum_free_bytes": 67108864,
+        "stable_minimum_free_bytes": 268435456,
+        "stable_capacity_pass": false,
+        "e2fsck_exit": 0,
+        "e2fsck_log": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\n/: 7890/32928 files (1.1% non-contiguous), 1569825/1595392 blocks\ne2fsck 1.47.2 (1-Jan-2025)\n",
+        "ext4_features": [
+          "ext_attr",
+          "dir_index",
+          "filetype",
+          "extent",
+          "flex_bg",
+          "sparse_super",
+          "large_file",
+          "huge_file",
+          "uninit_bg",
+          "dir_nlink",
+          "extra_isize"
+        ]
+      },
+      "product": {
+        "bytes": 1048576000,
+        "sha256": "bd1e4f1598ccfc8b24890e97b3562e1941ebd27c17b284491c8965981db45aa7",
+        "free_bytes": 126050304,
+        "phase_minimum_free_bytes": 104857600,
+        "stable_minimum_free_bytes": 104857600,
+        "stable_capacity_pass": true,
+        "e2fsck_exit": 0,
+        "e2fsck_log": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\nproduct: 330/64000 files (1.2% non-contiguous), 225226/256000 blocks\ne2fsck 1.47.2 (1-Jan-2025)\n",
+        "ext4_features": [
+          "ext_attr",
+          "dir_index",
+          "filetype",
+          "extent",
+          "flex_bg",
+          "sparse_super",
+          "large_file",
+          "huge_file",
+          "uninit_bg",
+          "dir_nlink",
+          "extra_isize"
+        ]
+      },
+      "boot": {
+        "bytes": 67108864,
+        "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+        "source": "EXACT_CURRENT_AND_V0481_S6_HARDWARE"
+      },
+      "vendor": {
+        "bytes": 1379926016,
+        "sha256": "609f5098f0bc469bf3377555beef3ed7e64be6df61dbc260d42f2f4d6f6a0e18",
+        "free_bytes": 496029696,
+        "phase_minimum_free_bytes": 104857600,
+        "stable_minimum_free_bytes": 67108864,
+        "stable_capacity_pass": true,
+        "e2fsck_exit": 0,
+        "e2fsck_log": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\nvendor: 2777/84304 files (0.5% non-contiguous), 215795/336896 blocks\ne2fsck 1.47.2 (1-Jan-2025)\n",
+        "ext4_features": [
+          "ext_attr",
+          "dir_index",
+          "filetype",
+          "extent",
+          "flex_bg",
+          "sparse_super",
+          "large_file",
+          "huge_file",
+          "uninit_bg",
+          "dir_nlink",
+          "extra_isize"
+        ]
+      },
+      "dtbo": {
+        "bytes": 10485760,
+        "sha256": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec",
+        "source": "EXACT_CURRENT_AND_V0481_S6_HARDWARE"
+      },
+      "vbmeta": {
+        "bytes": 65536,
+        "sha256": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54",
+        "source": "EXACT_CURRENT_AND_V0481_S6_HARDWARE"
+      }
+    },
+    "runtime_evidence": "A98 JPEG OCR, sketch generation and rotate outpainting passed",
+    "new_complete_package_flash_test": "NOT_PERFORMED",
+    "first_install": "S6_DWH1_STOCK_PLUS_TWRP_OR_AUDITED_S6_PROJECT_HARDWARE_CLEAN_DATA",
+    "data_preserving_reinstall": "EXACT_SAME_TARGET_SYSTEM_ONLY",
+    "data_preserving_ui8_upgrade": "SUPPORTED_V0481_ICE_FBE_WITH_OLD_MODULE_INODE_BACKUP",
+    "upgrade_runtime_user_report": "USER_CONFIRMED_PASSED_20261008",
+    "clean_flash_on_device": "PROHIBITED_BY_USER",
+    "known_limits": [
+      "SYSTEM below 256MiB stable margin; above 64MiB phase margin",
+      "Document edge detection and perspective correction unavailable",
+      "Full AI/portrait and full hardware validation matrix incomplete",
+      "Galaxy Store application-scoped catalog configuration is DATA state, not included",
+      "Clean-install execution validated only with isolated fixtures; no device DATA format performed"
+    ],
+    "support_source_sha256": {
+      "device/s6/native/mainline_reinstall_guard_a99.c": "7219a4c25eaf553219451138be7e2440feff91b8115e1649fd3a81020b8fee94",
+      "device/s6/native/metadata_fscrypt_probe_a82.c": "8b31702d5e74e9f07b52116d8fafbdd342ace9e7024ce35e52c1a834653ddd42",
+      "device/s6/native/mainline_upgrade_guard.c": "37a1fe9ca71b4399488b4559a0b204f4b809811bc3e841836aaf30173c438d92"
+    }
+  },
+  "image_audits": {
+    "system": {
+      "bytes": 6534725632,
+      "sha256": "c2c249d94e4028ba3c550bb4a51fe2c3397bf80f4f8b9f82ad8236f3ed2340a8",
+      "free_bytes": 104722432,
+      "phase_minimum_free_bytes": 67108864,
+      "stable_minimum_free_bytes": 268435456,
+      "stable_capacity_pass": false,
+      "e2fsck_exit": 0,
+      "e2fsck_log": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\n/: 7890/32928 files (1.1% non-contiguous), 1569825/1595392 blocks\ne2fsck 1.47.2 (1-Jan-2025)\n",
+      "ext4_features": [
+        "ext_attr",
+        "dir_index",
+        "filetype",
+        "extent",
+        "flex_bg",
+        "sparse_super",
+        "large_file",
+        "huge_file",
+        "uninit_bg",
+        "dir_nlink",
+        "extra_isize"
+      ]
+    },
+    "product": {
+      "bytes": 1048576000,
+      "sha256": "bd1e4f1598ccfc8b24890e97b3562e1941ebd27c17b284491c8965981db45aa7",
+      "free_bytes": 126050304,
+      "phase_minimum_free_bytes": 104857600,
+      "stable_minimum_free_bytes": 104857600,
+      "stable_capacity_pass": true,
+      "e2fsck_exit": 0,
+      "e2fsck_log": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\nproduct: 330/64000 files (1.2% non-contiguous), 225226/256000 blocks\ne2fsck 1.47.2 (1-Jan-2025)\n",
+      "ext4_features": [
+        "ext_attr",
+        "dir_index",
+        "filetype",
+        "extent",
+        "flex_bg",
+        "sparse_super",
+        "large_file",
+        "huge_file",
+        "uninit_bg",
+        "dir_nlink",
+        "extra_isize"
+      ]
+    },
+    "boot": {
+      "bytes": 67108864,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+      "source": "EXACT_CURRENT_AND_V0481_S6_HARDWARE"
+    },
+    "vendor": {
+      "bytes": 1379926016,
+      "sha256": "609f5098f0bc469bf3377555beef3ed7e64be6df61dbc260d42f2f4d6f6a0e18",
+      "free_bytes": 496029696,
+      "phase_minimum_free_bytes": 104857600,
+      "stable_minimum_free_bytes": 67108864,
+      "stable_capacity_pass": true,
+      "e2fsck_exit": 0,
+      "e2fsck_log": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\nvendor: 2777/84304 files (0.5% non-contiguous), 215795/336896 blocks\ne2fsck 1.47.2 (1-Jan-2025)\n",
+      "ext4_features": [
+        "ext_attr",
+        "dir_index",
+        "filetype",
+        "extent",
+        "flex_bg",
+        "sparse_super",
+        "large_file",
+        "huge_file",
+        "uninit_bg",
+        "dir_nlink",
+        "extra_isize"
+      ]
+    },
+    "dtbo": {
+      "bytes": 10485760,
+      "sha256": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec",
+      "source": "EXACT_CURRENT_AND_V0481_S6_HARDWARE"
+    },
+    "vbmeta": {
+      "bytes": 65536,
+      "sha256": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54",
+      "source": "EXACT_CURRENT_AND_V0481_S6_HARDWARE"
+    }
+  },
+  "profile": {
+    "schema": 1,
+    "target": "SM-T860",
+    "donor_build": "X710XXS6EZH3",
+    "source_sdk": "36",
+    "source_oneui": "80000",
+    "source_system_raw_sha256": "b3545d22d995d5ced10686e93a64883ab58ba68fe0d4b39453f0caf79747fbf0",
+    "tested_recovery_sha256": "cbc6e03563a9229b7034dd775964ef412af94a7074f50b519ce1ccc1fd4f2e16",
+    "target_sdk": "36",
+    "target_oneui": "80500",
+    "chunk_bytes": 67108864,
+    "partitions": {
+      "system": {
+        "block": "/dev/block/sda24",
+        "bytes": 6534725632
+      },
+      "product": {
+        "block": "/dev/block/sda26",
+        "bytes": 1048576000
+      }
+    },
+    "preserved_hardware": {
+      "boot": {
+        "block": "/dev/block/sda20",
+        "bytes": 67108864,
+        "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+      },
+      "vendor": {
+        "block": "/dev/block/sda25",
+        "bytes": 1379926016,
+        "sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af"
+      }
+    },
+    "data_policy": "PRESERVE_NO_MOUNT_NO_FORMAT_NO_DELETE",
+    "hardware_basis": "v0.48.1 release IMAGE-SHA256SUMS.txt for BOOT; v0.48 vendor full raw hash rechecked 2026-09-30; same seven v0.48 images per v0.48.1 packaging audit",
+    "source_rom": "User-confirmed v0.48.1; release uses v0.48 images",
+    "compatibility_status": "v0.48.1 hardware baseline pinned; UI8.5 dirty-upgrade runtime not yet verified",
+    "scope": "SYSTEM+PRODUCT upgrade; hardware mismatch requires a separately audited hardware migration, never automatic replacement"
+  },
+  "chunk_bytes": 67108864,
+  "dirty_upgrade_runtime": "NOT_TESTED",
+  "hardware_runtime": "NOT_TESTED",
+  "installer_library_sha256": "9904fbe2fef1e87c776063035f786ffa649916f2852b685996e6c19da6d4677c",
+  "operation": "upgrade",
+  "installer_adaptation_profile": {
+    "schema": 1,
+    "id": "A99_UNIFIED_STOCK_CLEAN_UI8_UPGRADE",
+    "candidate_id": "A74-X710-EZH3-T860-UI85-FCM4-SDK30",
+    "format": "3",
+    "adaptation": "A74_TWO_S6_CONFIGS",
+    "support": {
+      "vendor-guard-sdk28": {
+        "path": "device/s6/prebuilts/installer-a74/vendor-guard-sdk28",
+        "bytes": 2694200,
+        "sha256": "db7da35d2f1a7450cf255fe1e1400ba4328a8d8eee054b3636f7ff992180a7cf"
+      },
+      "vendor-guard-sdk30": {
+        "path": "device/s6/prebuilts/installer-a74/vendor-guard-sdk30",
+        "bytes": 2694200,
+        "sha256": "b53e4e4da577f416c7c4892b93e97f391c0b675c57edcbed43c187c9712e5ccc"
+      },
+      "vendor-config-recovery-guard": {
+        "path": "device/s6/prebuilts/installer-a74/vendor-config-recovery-guard",
+        "bytes": 2695456,
+        "sha256": "dd9ff7512f202c85beaf0056ce8639bcf8958f3c95e80ab02db6e4f745744a7d"
+      },
+      "mainline-guard": {
+        "path": "device/s6/prebuilts/installer-a74/mainline-guard",
+        "bytes": 2237192,
+        "sha256": "402e84d1c6e60087db2c78ab6869581e51dd3bdf7a5adcca3a521d57dd7b4081"
+      },
+      "vendor-before-policy": {
+        "path": "device/s6/prebuilts/installer-a74/vendor-before-policy",
+        "bytes": 1869,
+        "sha256": "e529d80729976c2ef41f6831820da5f387b7cdbd44f8b1b33d0e7cf9cd1462b8"
+      },
+      "vendor-after-policy": {
+        "path": "device/s6/prebuilts/installer-a74/vendor-after-policy",
+        "bytes": 1882,
+        "sha256": "efae1217c1fd598fb80f390a510c857d7adc3ff8018dc3a2571c7d32e7e3bfcc"
+      },
+      "vendor-matrix28": {
+        "path": "device/s6/prebuilts/installer-a74/vendor-matrix28",
+        "bytes": 3435,
+        "sha256": "da6aa90c2c2bdc06208ec8f3342735df0358836ddddb72d6e183b49bff8a79ee"
+      },
+      "vendor-matrix30": {
+        "path": "device/s6/prebuilts/installer-a74/vendor-matrix30",
+        "bytes": 3435,
+        "sha256": "d3b80d5fa526f1cf005e0dcfd3c1747bb10e351664d648cc3c18690134129258"
+      },
+      "apex-factory.tsv": {
+        "path": "device/s6/prebuilts/installer-a74/apex-factory.tsv",
+        "bytes": 1349,
+        "sha256": "3db9c6be68d3310e1cad7af3848a675dfef9a225504ad93c830e3ecbffb3c02a"
+      }
+    },
+    "source_inventory_sha256": "bf2f94d72b890db7397605f518800169cd9680424d0c366722f6db7a42fb4931",
+    "evidence": {
+      "docs/audit/vendor-sdk-guard-pair-build-ui85-a74.json": "15359ca262a32b05677b9ffe27ad5a2ee2e702c621b695a0a4ef81c4cc21868e",
+      "docs/audit/vendor-sdk-guard-pair-tests-ui85-a74.json": "5a40bad3e2d3584212bac3c4ba1e62508dcf9b5ae7df6b823b6fe05b64c2a198",
+      "docs/audit/vendor-config-recovery-guard-build-ui85-a74.json": "e3cf426c95c9b511c3bbe99ed74965067236de3648deb566b47578b3e6376adc",
+      "docs/audit/vendor-config-transaction-ui85-a74.json": "bf4f46a81e37a825aadc6174376c5abbddb2725f7a47e7595cc8c13a7015a087",
+      "docs/audit/native-target-retry-ui85-a71-v2.json": "de0c9cf7f4c7d90a5dc6248696cd11360b016b1550e9080f9bf7adbecd3eb5df",
+      "docs/audit/sdk30-matrix-live-shadow-ui85-a74.json": "91e89d2f6330fa273c59c3d30434c7296befe6dcc0af32f136454e66a441f944",
+      "docs/audit/fcm4-remount-ui85-a74.json": "5b10dd46eec18abd888148e96634150203afc221ee60dd0d24995ca612376c61"
+    },
+    "library_sources": {
+      "installer/libupgrade.sh": "d6f291730c8604f1a3e28d5f71bc5b3b58fcbd98e82a17de4d5028c3593862b7",
+      "installer/libupgrade-a71.sh": "498d72fd8b751d3e7696ee5daba7bca30b5a8c579b9e8a2cfaf737dcfdf5c35d",
+      "installer/libvendor-a74.sh": "021c4f51bb7c2e84343f130e074613059902b721fb337e70bc76a87d713ec554",
+      "installer/librestore-a70.sh": "303f61d08d6174fee1bf9d0c7ede87f03378039a935c5df1b882f9f8de89c27f",
+      "scripts/render_twrp_release_a99.py": "050b967603f2eb1fc417ad1434fcc9aaf6306ed54a29f9b6a74fa86b9fc26d13",
+      "scripts/render_twrp_full_release_a99.py": "0c4036007b8bcb36ffa9a96ed85774d844abc0fec45c591e528980b0bad99585"
+    },
+    "mainline_policy": "REFUSE_ALL_UNVERIFIED_ACTIVE_APEX_OR_STAGED_SESSIONS",
+    "data_policy": "PRESERVE_NO_MOUNT_NO_FORMAT_NO_DELETE",
+    "recovery_guard_role": "INDEPENDENT_RESTORE_ONLY_FOR_TWO_CONFIG_CONTENTS; never accepted as normal upgrade source",
+    "full_vendor_guard_entries": 2768,
+    "whole_zip_entry_tests": "NOT_TESTED",
+    "actual_device_upgrade": "NOT_TESTED",
+    "release": "NOT_PASSED",
+    "first_install": "CLEAN_INSTALL_OR_AUDITED_UI8_DATA_PRESERVING_UPGRADE",
+    "dirty_reinstall": "EXACT_SAME_SYSTEM_ONLY",
+    "dirty_upgrade": "AUDITED_UI8_ICE_FBE_INODE_PRESERVING_MODULE_BACKUP",
+    "active_apex_content_validation": "NOT_CLAIMED_IN_IDENTICAL_SYSTEM_REINSTALL",
+    "hardware_bootstrap": "CLEAN_INSTALL_ONLY_S6_BOOT_VENDOR_DTBO_VBMETA"
+  },
+  "support_member_sha256": {
+    "rom/support/vendor-guard-sdk28": "db7da35d2f1a7450cf255fe1e1400ba4328a8d8eee054b3636f7ff992180a7cf",
+    "rom/support/vendor-guard-sdk30": "b53e4e4da577f416c7c4892b93e97f391c0b675c57edcbed43c187c9712e5ccc",
+    "rom/support/vendor-config-recovery-guard": "dd9ff7512f202c85beaf0056ce8639bcf8958f3c95e80ab02db6e4f745744a7d",
+    "rom/support/mainline-guard": "4f3f04af10250a0522b4bf2805fe0567fef975da1aea9e24024d86eba8ca8176",
+    "rom/support/vendor-before-policy": "e529d80729976c2ef41f6831820da5f387b7cdbd44f8b1b33d0e7cf9cd1462b8",
+    "rom/support/vendor-after-policy": "efae1217c1fd598fb80f390a510c857d7adc3ff8018dc3a2571c7d32e7e3bfcc",
+    "rom/support/vendor-matrix28": "da6aa90c2c2bdc06208ec8f3342735df0358836ddddb72d6e183b49bff8a79ee",
+    "rom/support/vendor-matrix30": "d3b80d5fa526f1cf005e0dcfd3c1747bb10e351664d648cc3c18690134129258",
+    "rom/support/apex-factory.tsv": "3db9c6be68d3310e1cad7af3848a675dfef9a225504ad93c830e3ecbffb3c02a",
+    "rom/support/fscrypt-readonly-probe": "575f5670928c27118139e43a21163c675e56049708390b0c4c1767f2f5663d22"
+  },
+  "library_sources": {
+    "installer/libupgrade.sh": "d6f291730c8604f1a3e28d5f71bc5b3b58fcbd98e82a17de4d5028c3593862b7",
+    "installer/libupgrade-a71.sh": "498d72fd8b751d3e7696ee5daba7bca30b5a8c579b9e8a2cfaf737dcfdf5c35d",
+    "installer/libvendor-a74.sh": "021c4f51bb7c2e84343f130e074613059902b721fb337e70bc76a87d713ec554",
+    "installer/librestore-a70.sh": "303f61d08d6174fee1bf9d0c7ede87f03378039a935c5df1b882f9f8de89c27f",
+    "scripts/render_twrp_release_a99.py": "050b967603f2eb1fc417ad1434fcc9aaf6306ed54a29f9b6a74fa86b9fc26d13",
+    "scripts/render_twrp_full_release_a99.py": "0c4036007b8bcb36ffa9a96ed85774d844abc0fec45c591e528980b0bad99585"
+  }
+}

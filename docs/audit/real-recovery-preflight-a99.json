@@ -1,0 +1,18 @@
+{
+  "kind": "A99_REAL_RECOVERY_FULL_UPDATER_READONLY_PREFLIGHT",
+  "zip_sha256": "8128e7e9d42ae8b5d1071d04721d1bce52ffaf2b502f25598bd792a86ddde91a",
+  "zip_bytes": 4242041251,
+  "installer_library_sha256": "9904fbe2fef1e87c776063035f786ffa649916f2852b685996e6c19da6d4677c",
+  "partition_raw_sha_before_after_equal": true,
+  "partition_count": 6,
+  "payload_chunks_checked": 138,
+  "fourth_argument": "--preflight-only",
+  "installed": false,
+  "userdata_formatted": false,
+  "process_exit": 0,
+  "temporary_archive_removed": true,
+  "source_mode": "IDENTICAL_REINSTALL",
+  "limits": [
+    "Real Recovery checks the current matching system and data state. No clean installation or UI8 upgrade is executed."
+  ]
+}

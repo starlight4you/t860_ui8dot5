@@ -1,0 +1,410 @@
+{
+  "id": "A78_EXACT_NEW_NATIVE_LOGIC_CANDIDATES",
+  "reason": "docs/MAINLINE_NATIVE_REBASE_A78.md",
+  "source_payload_sha256": "da15d29e221c3863caf69f71a10905029062a3df9eb2b10bb7c9e804759a94d0",
+  "files": {
+    "bin/netbpfload": {
+      "path": "bin/netbpfload",
+      "size": 102400,
+      "input_sha256": "775d705134ac47146a536d31e76af3d439d0e29d48087bc6c64d04c102c4bed6",
+      "output_sha256": "bcf38bda702154024bf8370603c41979ab805fb08a408e682192d712f3a6db3d",
+      "functions": [
+        {
+          "va": 40664,
+          "file_offset": 40664,
+          "size": 4792,
+          "sha256": "94d66940f3f76b2031d37889bd84a6e5061a2017615c701289f289ecaf2bc7cd",
+          "fde_va": 17652,
+          "cie_va": 16736,
+          "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+        },
+        {
+          "va": 58668,
+          "file_offset": 58668,
+          "size": 848,
+          "sha256": "2a98c6134afb25a4a78cea1ec4f38fbc4d851234bd4a03cf5ef2e639efc9d1d7",
+          "fde_va": 18756,
+          "cie_va": 16736,
+          "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+        }
+      ],
+      "edits": [
+        {
+          "va": 42292,
+          "target_va": 42332,
+          "file_offset": 42292,
+          "old_word": 1409286472,
+          "new_word": 335544330
+        },
+        {
+          "va": 42344,
+          "target_va": 42388,
+          "file_offset": 42344,
+          "old_word": 1409286504,
+          "new_word": 335544331
+        },
+        {
+          "va": 42392,
+          "target_va": 42428,
+          "file_offset": 42392,
+          "old_word": 1409286440,
+          "new_word": 335544329
+        },
+        {
+          "va": 59192,
+          "target_va": 59460,
+          "file_offset": 59192,
+          "old_word": 1409288299,
+          "new_word": 335544387
+        }
+      ],
+      "changed_bytes": [
+        42292,
+        42293,
+        42295,
+        42344,
+        42345,
+        42347,
+        42392,
+        42393,
+        42395,
+        59192,
+        59193,
+        59195
+      ]
+    },
+    "lib64/libnetd_updatable.so": {
+      "path": "lib64/libnetd_updatable.so",
+      "size": 103000,
+      "input_sha256": "26f236bcb2ad24a8f34de7372b7859aac3a34a4bbe27d698d413f17086284a40",
+      "output_sha256": "642d73260d1a15f1c140da9d50513bc5638346ac313ecb9ff38299e3a2f28add",
+      "functions": [
+        {
+          "va": 35040,
+          "file_offset": 35040,
+          "size": 12448,
+          "sha256": "c58ba1f3065483969c11aeb4d538c0c6a73dfa92a1a289440d0e2d6d4eb112db",
+          "fde_va": 12852,
+          "cie_va": 12656,
+          "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+        }
+      ],
+      "edits": [
+        {
+          "va": 37324,
+          "target_va": 37604,
+          "file_offset": 37324,
+          "old_word": 1409288392,
+          "new_word": 335544390
+        },
+        {
+          "va": 37612,
+          "target_va": 38536,
+          "file_offset": 37612,
+          "old_word": 1409293544,
+          "new_word": 335544551
+        }
+      ],
+      "changed_bytes": [
+        37324,
+        37325,
+        37327,
+        37612,
+        37613,
+        37615
+      ]
+    },
+    "lib64/libandroid_net_connectivity_com_android_net_module_util_jni.so": {
+      "function": {
+        "va": 20192,
+        "file_offset": 20192,
+        "size": 660,
+        "sha256": "52322184124119d44113a33caf45c839af6b75a89b3eda975f1641a4dce1fe86",
+        "fde_va": 8696,
+        "cie_va": 7888,
+        "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+      },
+      "inserted_ccmp_va": 20724,
+      "removed_original_nop_va": 20828,
+      "registration_unchanged": true,
+      "accepted_errornos": [
+        2,
+        524
+      ],
+      "relocations": [
+        {
+          "from": 20260,
+          "to": 20260,
+          "old_target": 20292,
+          "new_target": 20292
+        },
+        {
+          "from": 20288,
+          "to": 20288,
+          "old_target": 20408,
+          "new_target": 20408
+        },
+        {
+          "from": 20308,
+          "to": 20308,
+          "old_target": 20328,
+          "new_target": 20328
+        },
+        {
+          "from": 20356,
+          "to": 20356,
+          "old_target": 20408,
+          "new_target": 20408
+        },
+        {
+          "from": 20408,
+          "to": 20408,
+          "old_target": 20508,
+          "new_target": 20508
+        },
+        {
+          "from": 20428,
+          "to": 20428,
+          "old_target": 35168,
+          "new_target": 35168
+        },
+        {
+          "from": 20464,
+          "to": 20464,
+          "old_target": 20572,
+          "new_target": 20572
+        },
+        {
+          "from": 20504,
+          "to": 20504,
+          "old_target": 20600,
+          "new_target": 20600
+        },
+        {
+          "from": 20560,
+          "to": 20560,
+          "old_target": 34848,
+          "new_target": 34848
+        },
+        {
+          "from": 20568,
+          "to": 20568,
+          "old_target": 20708,
+          "new_target": 20708
+        },
+        {
+          "from": 20656,
+          "to": 20656,
+          "old_target": 34848,
+          "new_target": 34848
+        },
+        {
+          "from": 20668,
+          "to": 20668,
+          "old_target": 20708,
+          "new_target": 20708
+        },
+        {
+          "from": 20684,
+          "to": 20684,
+          "old_target": 20708,
+          "new_target": 20708
+        },
+        {
+          "from": 20708,
+          "to": 20708,
+          "old_target": 34752,
+          "new_target": 34752
+        },
+        {
+          "from": 20712,
+          "to": 20712,
+          "old_target": 20816,
+          "new_target": 20820
+        },
+        {
+          "from": 20724,
+          "to": 20728,
+          "old_target": 20828,
+          "new_target": 20832
+        },
+        {
+          "from": 20732,
+          "to": 20736,
+          "old_target": 20764,
+          "new_target": 20768
+        },
+        {
+          "from": 20776,
+          "to": 20780,
+          "old_target": 20848,
+          "new_target": 20848
+        },
+        {
+          "from": 20820,
+          "to": 20824,
+          "old_target": 20736,
+          "new_target": 20740
+        },
+        {
+          "from": 20824,
+          "to": 20828,
+          "old_target": 20764,
+          "new_target": 20768
+        },
+        {
+          "from": 20840,
+          "to": 20840,
+          "old_target": 21412,
+          "new_target": 21412
+        },
+        {
+          "from": 20844,
+          "to": 20844,
+          "old_target": 20728,
+          "new_target": 20732
+        },
+        {
+          "from": 20848,
+          "to": 20848,
+          "old_target": 35184,
+          "new_target": 35184
+        }
+      ],
+      "input_sha256": "8ebc439e51b79d4dffdd14f9214e3bfa3d752eca60f2def793d579a462727a4b",
+      "output_sha256": "11e7d5f97b4f34dba9d24f301430968a2c0e836351a0c7156cad32c809c8e847",
+      "size": 68896,
+      "changed_bytes": [
+        20712,
+        20721,
+        20722,
+        20724,
+        20725,
+        20726,
+        20727,
+        20728,
+        20730,
+        20731,
+        20732,
+        20733,
+        20734,
+        20735,
+        20736,
+        20737,
+        20738,
+        20739,
+        20740,
+        20741,
+        20742,
+        20743,
+        20744,
+        20746,
+        20748,
+        20750,
+        20752,
+        20754,
+        20755,
+        20756,
+        20757,
+        20758,
+        20759,
+        20760,
+        20762,
+        20763,
+        20764,
+        20765,
+        20766,
+        20767,
+        20768,
+        20769,
+        20770,
+        20771,
+        20772,
+        20773,
+        20774,
+        20775,
+        20776,
+        20777,
+        20778,
+        20779,
+        20780,
+        20781,
+        20782,
+        20783,
+        20784,
+        20785,
+        20786,
+        20787,
+        20788,
+        20789,
+        20790,
+        20791,
+        20792,
+        20793,
+        20794,
+        20796,
+        20797,
+        20798,
+        20800,
+        20801,
+        20802,
+        20804,
+        20805,
+        20806,
+        20807,
+        20808,
+        20809,
+        20810,
+        20811,
+        20812,
+        20813,
+        20814,
+        20815,
+        20816,
+        20817,
+        20818,
+        20819,
+        20820,
+        20821,
+        20822,
+        20823,
+        20824,
+        20825,
+        20827,
+        20828,
+        20829,
+        20830,
+        20831,
+        20844
+      ]
+    },
+    "lib64/libservice-connectivity.so": {
+      "va": 18455,
+      "old_label": "u:object_r:fs_bpf_net_shared:s0",
+      "new_label": "u:object_r:fs_bpf:s0",
+      "input_sha256": "69677de192a63bb6d5409f141c6495a27a4b5e71a50507758246bb893fe67b2f",
+      "output_sha256": "7bbd78e5c9f88cb48698df750ca2f676994002514ced18c1ffef75e4791393a4",
+      "size": 119600,
+      "changed_bytes": [
+        18472,
+        18473,
+        18474,
+        18475,
+        18476,
+        18477,
+        18478,
+        18479,
+        18480,
+        18481,
+        18482,
+        18483,
+        18484,
+        18485
+      ]
+    }
+  },
+  "runtime": "NOT_TESTED",
+  "native_dependency_closure": "NOT_APPROVED",
+  "installed": false,
+  "candidate_report_sha256": "c936f55008712faf4f23e0f1cb5fb9b70490076cdc8b71b6631f2ce28d972971"
+}

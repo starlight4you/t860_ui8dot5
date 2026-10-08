@@ -1,0 +1,67 @@
+{
+  "id": "S6_UI85_A88_OPTIONAL_QCC_CLIENT_ISOLATION",
+  "classification": "DONOR_SPECIFIC",
+  "reason": "The S9 persistent QCC telemetry client waits for HIDL1.2 unavailable on the retained S6 hardware layer, causing repeated startup ANRs. Disable-user was experimentally ineffective. Keep-data user removal is the validated runtime implementation.",
+  "scope": "CURRENT_LAB_DEVICE_RUNTIME_ONLY",
+  "device": {
+    "model": "SM-T860",
+    "serial": "DEVICE_SERIAL",
+    "sdk": 36,
+    "oneui": "80500",
+    "users": [
+      0
+    ]
+  },
+  "package": {
+    "name": "com.qti.qcc",
+    "version_code": 6,
+    "apk": "/system_ext/app/QCC/QCC.apk",
+    "sha256": "44315310e814f2294789cca3b7b9b6e5d484d88b186c35b7e32101784a94f00e",
+    "distinct_app_id": 10316
+  },
+  "apply": {
+    "script": "scripts/quarantine_qcc_a88.py",
+    "operation": "apply",
+    "command": "pm uninstall -k --user 0 --versionCode 6 com.qti.qcc",
+    "persistence_wait_seconds": 30,
+    "normal_reboot": true
+  },
+  "restore": {
+    "script": "scripts/quarantine_qcc_a88.py",
+    "operation": "restore",
+    "commands": [
+      "pm install-existing --user 0 com.qti.qcc",
+      "pm default-state --user 0 com.qti.qcc"
+    ],
+    "normal_reboot": true,
+    "original_enabled": 0,
+    "warning": "Restoring the incompatible client can restore the known ANR loop; not exercised solely to repeat a known failure."
+  },
+  "validation": {
+    "script": "scripts/collect_qcc_optimization_a88.py",
+    "duration_seconds": 60,
+    "fresh_boot_passed": true,
+    "qcc_absent": true,
+    "qcc_anrs_after": 0,
+    "qcc_hal_waits_after": 0,
+    "active_apex_identity_count": 42,
+    "common_app_ui_and_recents": "PENDING_MANUAL_UNLOCK"
+  },
+  "preserve": [
+    "system APK",
+    "QCC app data/cache via -k",
+    "S6 BOOT/vendor/odm/firmware/HAL",
+    "native QCC libraries",
+    "init/VINTF/permission XML",
+    "framework/SystemUI/ART",
+    "other user apps/data"
+  ],
+  "limitations": [
+    "No byte-level read of protected QCC data; original recorded CE/DE inodes retained.",
+    "Current source images A84 still contain QCC and do not automatically apply this runtime policy.",
+    "Full ROM upgrade integration and clean-data boot remain pending.",
+    "No quantified FPS, power or memory improvement.",
+    "App UID is lab-specific; do not reuse it as a generic installer assumption."
+  ],
+  "future_ui9": "Review the new QCC manifest/permissions/provider consumers and actual S6 service registration again; select the new donor APK identity. Reuse the capability isolation logic rather than the old binary or fixed app UID."
+}

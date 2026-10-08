@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "A82_PRIVATE_DATA_METADATA_COW",
+  "status": "COW_STAGE_WHOLE_TREE_VERIFIED",
+  "stage": "/var/tmp/ui85-a82-metadata-stage-v1/stage",
+  "before_inventory_sha256": "fe2db1a7dd4b777f6c644b2527f18177a5e308d67ae512376b7aed06a9713424",
+  "after_inventory_sha256": "4bbbef4b6c8e7ce2820bb71f68ac6c58dbf205ec79b2279cfa3185fd335054fc",
+  "entries": 8129,
+  "candidate_report_sha256": "0fa61c20bc46e0e4b05ceb6995bc9fe1fc44d60c67cae8680237d56b710338f7",
+  "script_sha256": "a7208118621e48e2244dca2d627e9307792d5c1899f2f15bd7c18bf710972554",
+  "overlay_options": "lowerdir=/var/tmp/ui85-a81-mainline-freeze-stage-v1/upper:/var/tmp/ui85-a80-native-product-stage-v2/upper:/var/tmp/ui85-a79-mainline-stage-v1/upper:/var/tmp/ui85-a73-fcm4-stage-v1/upper:/var/tmp/t860-ui85-capacity-draft-app-preopt,upperdir=/var/tmp/ui85-a82-metadata-stage-v1/upper,workdir=/var/tmp/ui85-a82-metadata-stage-v1/work",
+  "changed_existing_files": [
+    "system/system/etc/init/hw/init.rc",
+    "system/system/etc/init/aconfigd.rc",
+    "system/system/etc/init/gsid.rc",
+    "system/system/etc/selinux/plat_file_contexts"
+  ],
+  "files_added": 0,
+  "files_removed": 0,
+  "original_a81_unchanged": true,
+  "all_other_content_links_metadata_identical": true,
+  "classification": "DEVICE_REQUIRED_VERSION_SPECIFIC_METADATA_PERSISTENCE",
+  "device_mutations": false,
+  "flashable": false,
+  "release": "NOT_PASSED",
+  "limits": [
+    "DATA format removes backing; ordinary app/cache clears do not",
+    "DSU/future donor require renewed fstab and boot-stage review",
+    "Installer must handle new DATA metadata before full ROM release"
+  ],
+  "host_independent_expected_inventory_matches": true
+}

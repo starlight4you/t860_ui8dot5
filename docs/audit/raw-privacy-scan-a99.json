@@ -1,0 +1,32 @@
+{
+  "vbmeta.raw.img": {
+    "device_serial": false,
+    "personal_home": false,
+    "personal_adb_pubkey": false
+  },
+  "vendor.raw.img": {
+    "device_serial": false,
+    "personal_home": false,
+    "personal_adb_pubkey": false
+  },
+  "dtbo.raw.img": {
+    "device_serial": false,
+    "personal_home": false,
+    "personal_adb_pubkey": false
+  },
+  "boot.raw.img": {
+    "device_serial": false,
+    "personal_home": false,
+    "personal_adb_pubkey": false
+  },
+  "product.raw.img": {
+    "device_serial": false,
+    "personal_home": false,
+    "personal_adb_pubkey": false
+  },
+  "system.raw.img": {
+    "device_serial": false,
+    "personal_home": false,
+    "personal_adb_pubkey": false
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "F03-DVFS",
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "classification": "DEVICE_REQUIRED logic with DONOR_SPECIFIC policy aliases",
+  "reason": "Keep new signed SDHMS policies, expose only their reviewed CPU/GPU aliases and normalize actual positive cap requests to dynamic S6 HAL points.",
+  "input_jar_sha256": "5230a89df3ad887d0454627fb5daf26017b978a6badaf6691fc48ab746caa42c",
+  "input_dex_sha256": "9aea0dd194baecadc9b46a195d63ed69de0f7735326bad5fe4b8927df96b46bf",
+  "dex_member": "classes6.dex",
+  "input_dex_magic": "039",
+  "output_dex_magic": "040",
+  "input_dex_classes": 6796,
+  "sdhms_apk_sha256": "19bff31c081c9b3a08ee550a6d5be15d3c8e2f53cdc0d98a96539615f570126f",
+  "floating_feature_sha256": "2b34cd66c344805006b3efe2e656dcd98af0064df12d3992322ef06d26b4a3fd",
+  "siop_selector": "siop_gts9wifi_sm8550",
+  "policy_audit_sha256": "dc0efaf52f843cc0809e617d8412473d5b8b18d848e8c800268029b6c66d1d8e",
+  "aliases": {
+    "CPUFreqMax": [
+      2726400,
+      2476800,
+      2227200,
+      1977600,
+      1843200,
+      1593600,
+      1478400,
+      1248000
+    ],
+    "GPUFreqMax": [
+      615,
+      550,
+      475,
+      348,
+      295,
+      220
+    ]
+  },
+  "resource_types": {
+    "CPUFreqMax": "0x12001002",
+    "GPUFreqMax": "0x20001002"
+  },
+  "methods": [
+    {
+      "owner": "Lcom/samsung/android/os/SemDvfsManager;",
+      "name": "getSupportedFrequencyForSsrm",
+      "descriptor": "()[I",
+      "access_flags": 1,
+      "registers": 3,
+      "tries": 0,
+      "code_sha256": "dec3118e920a4103ed1e66f115bcb78048102c72827666ce82d97836d9bf12e9"
+    },
+    {
+      "owner": "Lcom/samsung/android/os/SemDvfsManager;",
+      "name": "getSupportedFrequencyForSsrm",
+      "descriptor": "(I)[I",
+      "access_flags": 1,
+      "registers": 3,
+      "tries": 0,
+      "code_sha256": "5b046da6153bb0c9dc5a17eaa8a0d983ef8f19ded9efdc6cdd8be8b29fbf74e1"
+    },
+    {
+      "owner": "Lcom/samsung/android/os/SemDvfsHyPerManager;",
+      "name": "setDvfsValue",
+      "descriptor": "(I)V",
+      "access_flags": 1,
+      "registers": 4,
+      "tries": 0,
+      "code_sha256": "1973f8c9b664dd683cbb06398b26bb28008992327429fd83d05923fa6b7f6b0c"
+    }
+  ],
+  "helper_template_sha256": "fc2a5ec46c1146ed17de2784023b0f595789f55a2079bb0c6e7a881cdcdfb8dd",
+  "reference_logic_source": "t860-ui8/scripts/patch-framework-jar-v0.21-sdhms-dvfs.py",
+  "reference_logic_sha256": "f20e9c9af65d2cefb0e619b7c326e5c2572c104a7f5c9fa429799af8f4a850d5",
+  "template_changes_from_reference": [
+    "Aliases are derived from actual S9 policy, not S8 arrays.",
+    "Null/empty/no-positive native table stays original; do not manufacture available hardware.",
+    "Non-positive native points ignored during cap normalization.",
+    "Minimum uses zero sentinel after filtering positive points; INT_MAX remains a valid positive point."
+  ],
+  "owner": 0,
+  "group": 0,
+  "mode": "0644",
+  "selinux": "u:object_r:system_file:s0",
+  "output_jar_sha256": "3d1c5787d39a066bf20db2962ec917422128658d3ce277529d24bde75330e805",
+  "runtime": "NOT_TESTED",
+  "limits": [
+    "Only CPU_MAX/GPU_MAX resource types; OverLimit/thermal calibration and other resources remain separate.",
+    "Sysfs tables not substituted for HAL query; below-minimum cap is clamped to hardware minimum.",
+    "Rebuild only classes6.dex; all old class/member metadata and unchanged class code must verify before applying."
+  ],
+  "output_dex_sha256": "811e922441a68775ae8020c34ceb688f685ad3550a0c6965d3af6deba473f035"
+}

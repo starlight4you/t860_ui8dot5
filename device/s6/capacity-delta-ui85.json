@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "status": "candidate_only_nonflash",
+  "reason": "B04 VNDK30 leaves only 235843584 bytes free in T860 SYSTEM, below the 256 MiB gate",
+  "precondition_vndk30_sha256": "d0db25222a3ce6f6ad53a965398ffd60d1adcb281905a23a40ca1248fee2eb0e",
+  "move": {
+    "from": "system/system/app/SamsungWeather",
+    "to": "product/app/SamsungWeather",
+    "apk": "SamsungWeather.apk",
+    "apk_sha256": "fe24c5160e953973fff50b2f3fecfb4a5cecd554d5044e2d236a96c4c9338b46",
+    "discard_oat": true,
+    "reason": "Keep X710 Weather, its providers and package ID while moving a non-privileged system app to PRODUCT"
+  },
+  "remove": [
+    {
+      "path": "product/priv-app/HotwordEnrollmentOKGoogleEx4HEXAGON",
+      "apk": "HotwordEnrollmentOKGoogleEx4HEXAGON.apk",
+      "apk_sha256": "cdc15eb657e70878277b76f87891e0e00560af8808caba1b0136fcf05de8a37e",
+      "reason": "Optional Google hotword enrollment preload; Assistant packages are already absent in base capacity draft"
+    },
+    {
+      "path": "product/priv-app/HotwordEnrollmentXGoogleEx4HEXAGON",
+      "apk": "HotwordEnrollmentXGoogleEx4HEXAGON.apk",
+      "apk_sha256": "2281af93c61e127aab359ea6c2c8feacc6e6a458b67a00801c90633eeffb29d0",
+      "reason": "Optional Google hotword enrollment preload; Assistant packages are already absent in base capacity draft"
+    }
+  ]
+}

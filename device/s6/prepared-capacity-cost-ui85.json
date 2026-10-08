@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "kind": "prepared_capacity_cost",
+  "flashable": false,
+  "runtime": "NOT_TESTED",
+  "reason_record": "docs/CAPACITY_DECISIONS.md#A35 / E2",
+  "manifest_sha256": {
+    "B06-native-bundle": "1d1d2696e4e590a7799ac736b4e32552de63c2969d8dd344133629b1fe049827",
+    "B06-CPU-v2": "60e4c4d713b64400cec99608b3e0ae52d62c67e24c5190ee3885cd01f211ce91",
+    "B06-network-stack-policy-v1": "de73bf7cf78d41e8d166978dd771d9a2f804b0a8d2468f87225f82e7345928eb"
+  }
+}

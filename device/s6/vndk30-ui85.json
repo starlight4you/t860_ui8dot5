@@ -1,0 +1,13 @@
+{
+  "patch_id": "B04",
+  "classification": "DEVICE_REQUIRED",
+  "reason": "T860 stock vendor uses VNDK 30; X710 SYSTEM_EXT only ships VNDK 33",
+  "donor": "SM-X710 X710XXS6EZH3 One UI 8.5",
+  "apex_sha256": "d0db25222a3ce6f6ad53a965398ffd60d1adcb281905a23a40ca1248fee2eb0e",
+  "mapping_input_sha256": "653f07d0ea3d442db1457d44cba0a666fb1f300410152eb9593a59acba13676e",
+  "mapping_output_sha256": "a27434d2ca6e1ce53238912c196a5a978bd4f254a016609a0b54680fc68fcd4b",
+  "missing_typeattributes": 264,
+  "file_mode": "0644",
+  "owner": "0:0",
+  "selinux_context": "u:object_r:system_file:s0"
+}

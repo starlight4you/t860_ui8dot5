@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "source_sdk": "36",
+  "source_oneui": "80000",
+  "source_system_raw_sha256": "b3545d22d995d5ced10686e93a64883ab58ba68fe0d4b39453f0caf79747fbf0",
+  "tested_recovery_sha256": "cbc6e03563a9229b7034dd775964ef412af94a7074f50b519ce1ccc1fd4f2e16",
+  "target_sdk": "36",
+  "target_oneui": "80500",
+  "chunk_bytes": 67108864,
+  "partitions": {
+    "system": {
+      "block": "/dev/block/sda24",
+      "bytes": 6534725632
+    },
+    "product": {
+      "block": "/dev/block/sda26",
+      "bytes": 1048576000
+    }
+  },
+  "preserved_hardware": {
+    "boot": {
+      "block": "/dev/block/sda20",
+      "bytes": 67108864,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+    },
+    "vendor": {
+      "block": "/dev/block/sda25",
+      "bytes": 1379926016,
+      "sha256": "86cae6db076dea2e5c07506c2ca4f51c04ff4583aff1c1a46c71f5873a07ee36"
+    }
+  },
+  "data_policy": "PRESERVE_NO_MOUNT_NO_FORMAT_NO_DELETE",
+  "hardware_basis": "v0.48.1 release IMAGE-SHA256SUMS.txt for BOOT; v0.48 vendor full raw hash rechecked 2026-09-30; same seven v0.48 images per v0.48.1 packaging audit",
+  "source_rom": "User-confirmed v0.48.1; release uses v0.48 images",
+  "compatibility_status": "v0.48.1 hardware baseline pinned; UI8.5 dirty-upgrade runtime not yet verified",
+  "scope": "READONLY_CURRENT_A70_SNAPSHOT_ONLY; not installation authorization or new upgrade source allowlist",
+  "reason_record": "docs/TWRP_INSTALLER_A71.md",
+  "vendor_full_guard_proof": "docs/audit/vendor-guard-recovery-ui85-a64.json"
+}

@@ -1,0 +1,4 @@
+# T860's preserved HWC needs the donor's Null SurfaceFlinger extension.
+# The paired selector patch lets first API 28 reach this property check.
+on early-init
+    setprop vendor.display.enable_display_extensions 0

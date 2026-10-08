@@ -1,0 +1,32 @@
+{
+  "target_framework_sha256": "05c3b99b144b3567fb4cff81f54e2e21d1d9575177f61e044f2393b4076ed3b1",
+  "aapt2_sha256": "a8844d4089b442b034aed8953deee1893253053c900e03141ae7173e3edd8157",
+  "apksigner_sha256": "b47549e373b895ce6ca620d0c7887e674d9615ffa837a86ac601dcfd04adb0f0",
+  "certificate_sha256": "9b8ecdeb843eb18d9e4d6ba63d1c7709604ae308294ede206f3edc34f3e380a5",
+  "schema": 1,
+  "id": "A70-ROUNDED-CORNERS-RRO",
+  "classification": "DEVICE_REQUIRED / VERSION_SPECIFIC",
+  "reason_record": "docs/ROUNDED_CORNERS_UI85_A70.md",
+  "target": "SM-T860 primary panel screen corner mask",
+  "donor_build": "X710XXS6EZH3",
+  "stage_path": "system/system_ext/overlay/T860RoundedCornersOverlay.apk",
+  "sources": {
+    "AndroidManifest.xml": "196be07e89353a47e69f3fba816f8a559dfd163d8aff4d97dce041a4dc461832",
+    "res/drawable/rounded_corner.xml": "87967e61852b864c9695632b779c56b260d9beb7adb1f74283e4e1bf2afff666",
+    "res/values/bools.xml": "a4347be3d4f09a8a0d7745d63706634a571e29d23a9a7cccad044a4a1c6fdd66"
+  },
+  "target_systemui_sha256": "3ba83240daaeb8e8a26ed9208693c4cf7908e60d99a6f31cb5bdb016d57a9916",
+  "radius": "2mm",
+  "stock_curve": "M8,0H0v8C0,3.0,3.0,0,8,0z",
+  "baseline_inventory_sha256": "60781b040f0c9507800a5114dff3c5c788ac2b0cd8409fdd8f30571a85f4b15a",
+  "baseline_entries": 8094,
+  "registration": {
+    "source": "device/s6/rounded-corners-allowed-preload.xml",
+    "stage_path": "system/system_ext/etc/sysconfig/t860-rounded-corners.xml",
+    "sha256": "0d20565bb336b4d40c4dd6ee2e80d6e6ed090ebc2f2adb8925a99a8330f2d278",
+    "bytes": 241,
+    "baseline_inventory_sha256": "2f6feeb00aecfcd3d9d040d36d2500eb49a3b94d06cff6be4e2d199acb33d34e",
+    "entries": 8095,
+    "reason": "Samsung system preload registration; exact one package, no wildcard/privilege grant."
+  }
+}

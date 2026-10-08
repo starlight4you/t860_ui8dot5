@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "candidate_id": "A71-X710-EZH3-T860-UI85-REPAIRED",
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "stage": "/var/tmp/t860-ui85-capacity-draft-app-preopt",
+  "inventory_sha256": "e21e7efaaa1e1d06154cda4dc63ae31c1e6d5f887f9b8929c0535304607f6df7",
+  "policy_report_sha256": "22566eb3d56b7aee19ef60860f7342e25b3716a2803343cc64f0e1262b972207",
+  "runtime_new_rom": "PARTIAL_LIVE_A69_A70_PENDING",
+  "full_checkvintf": "NOT_PASSED",
+  "preserved_hardware": {
+    "boot": {
+      "block": "/dev/block/sda20",
+      "bytes": 67108864,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+    },
+    "vendor": {
+      "block": "/dev/block/sda25",
+      "bytes": 1379926016,
+      "sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af"
+    }
+  },
+  "known_unresolved": [
+    "Full VINTF SDK28 compatibility remains NOT_PASSED; no fake declaration or compatibility bypass.",
+    "CACHE-backed metadata lifecycle remains NOT_PASSED.",
+    "Mainline automatic activation recurred in A70; session 410951224 reverted after targeted recovery quarantine. Updated tethering/ART/netd stack compatibility remains NOT_PASSED.",
+    "QCC ANR and FabricCrypto/Fkeymaster daemon restart loop remain unresolved; services retained pending consumer audit.",
+    "Physical touch, S Pen, audio output, auto-brightness, DeX, multiwindow, keyboard and licensed DRM playback remain incompletely verified.",
+    "A66 fingerprint and face are user-reported functional; A68 sketch-to-image and weather fetch, A69 English/Chinese Notes summary passed on the live diagnostic system. Full NEW package dirty upgrade and rollback remain NOT_TESTED.",
+    "A70 rounded-corner RRO and exact package registration are staged; runtime validation is currently pending.",
+    "Official Clock system preinstall is staged, but system-preinstall runtime/alarm wakeup remain NOT_TESTED.",
+    "Personal diagnostic public key is excluded; final release diagnostic cleanup and complete installer integration remain necessary."
+  ],
+  "reason_document": "docs/TWRP_REPAIRED_CANDIDATE_A71.md",
+  "inventory_entries": 8096,
+  "vendor_adaptation": {
+    "profile": "device/s6/media-c2-seccomp-ui85.json",
+    "scope": "ONE_ORIGINAL_S6_POLICY_ONLY",
+    "full_donor_vendor_replacement": false,
+    "runtime_proof": "docs/audit/media-c2-seccomp-live-ui85-a61.json"
+  },
+  "included_incremental_adaptations": [
+    "A50-A61 boot and SDK28 device compatibility fixes",
+    "A66 S6 optical fingerprint software illumination",
+    "A68 Wi-Fi telephony capability RRO and official Clock preinstall",
+    "A69 actual XAR US country property",
+    "A70 stock S6 corner geometry and SystemUI resource gate, exact Samsung preload registration"
+  ]
+}

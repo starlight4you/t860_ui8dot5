@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "candidate_id": "A82-X710-EZH3-T860-UI85-FCM4-SDK30-PRIVATE-DATA-METADATA",
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "stage": "/var/tmp/ui85-a82-metadata-stage-v1/stage",
+  "inventory_sha256": "4bbbef4b6c8e7ce2820bb71f68ac6c58dbf205ec79b2279cfa3185fd335054fc",
+  "policy_report_sha256": "22566eb3d56b7aee19ef60860f7342e25b3716a2803343cc64f0e1262b972207",
+  "runtime_new_rom": "COMPOSED_SOURCE_NOT_IMAGE_BOOT_TESTED",
+  "full_checkvintf": "NOT_PASSED",
+  "preserved_hardware": {
+    "boot": {
+      "block": "/dev/block/sda20",
+      "bytes": 67108864,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+    },
+    "vendor": {
+      "block": "/dev/block/sda25",
+      "bytes": 1379926016,
+      "sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af"
+    }
+  },
+  "known_unresolved": [
+    "A80 PRODUCT path binding/actual updated pair and complete image capacity/runtime remain untested at profile creation.",
+    "A79 updated-loader JIT initialization patch is installed and factory boot observed; actual updated pair activation/BPF/DNS/traffic/second reboot remain NOT_PASSED.",
+    "Samsung platform 600-second rollback was observed; independent 900-second Recovery fallback remains NOT_EXERCISED.",
+    "New composed full images/ZIP have not been generated, installed, restored or boot tested.",
+    "Initial v0.48.1 UI8 DATA upgrade remains NOT_PASSED; current migrated UI85 DATA cannot substitute.",
+    "FCM4/SDK30 actual installed major VINTF checks passed on A74; full release checkvintf and new composed-image verification remain NOT_PASSED.",
+    "Physical touch/S Pen/audio output/automatic brightness/DeX/multiwindow/keyboard/licensed DRM playback and complete Samsung feature matrix remain incompletely verified.",
+    "Fabric daemon unsupported autostart is disabled with daemon/clients retained; full Kmx error propagation and security feature validation remain incomplete.",
+    "Stable release cleanup and full installer integration remain necessary.",
+    "A81 selective installer freeze does not guarantee ordinary module APK updates or downloads stop; actual Google backend refusal and ordinary app upgrade are unverified.",
+    "A82 full installer must preserve/audit current DATA metadata and legacy CACHE sessions; clean DATA, original UI8 DATA upgrade, postruntime coordinated rollback and credential/biometric QA remain unverified."
+  ],
+  "reason_document": "docs/METADATA_PERSISTENCE_A82.md",
+  "inventory_entries": 8129,
+  "vendor_adaptation": {
+    "profiles": [
+      "device/s6/media-c2-seccomp-ui85.json",
+      "device/s6/vendor-system-sdk30-ui85-a74.json"
+    ],
+    "scope": "TWO_EXISTING_S6_TEXT_CONFIGS_ONLY",
+    "full_donor_vendor_replacement": false,
+    "normal_upgrade_states": [
+      "SDK28_BASELINE",
+      "SDK28_ADAPTED",
+      "SDK30_BASELINE",
+      "SDK30_ADAPTED"
+    ],
+    "full_guard_entries": 2768,
+    "new_install_runtime": "NOT_TESTED"
+  },
+  "included_incremental_adaptations": [
+    "A50-A61 boot and SDK28 device compatibility fixes",
+    "A66 S6 optical fingerprint software illumination",
+    "A68 Wi-Fi telephony capability RRO and official Clock preinstall",
+    "A69 actual XAR US country property",
+    "A70 stock S6 corner geometry and SystemUI resource gate, exact Samsung preload registration",
+    "A73 FCM4 system XML + A74 fixed-vendor SDK30 config transaction; process-local diagnostic only",
+    "A75 CACHE capture and Mainline failure recovery window",
+    "A76 unsupported Fabric daemon lifecycle only",
+    "A77 full native capture before bind",
+    "A78 exact paired factory/update native views and actual loader supervisor",
+    "A79 S6 interpreter JIT initialization purpose reapplied to signed update loader itself",
+    "A80 new updated native view located in PRODUCT; factory view retained in SYSTEM; exact guard source selector adjusted",
+    "A81 user-selected selective Google Mainline installer freeze; one PRODUCT XML element",
+    "A82 private non-CE DATA metadata backing with explicit platform flags ordering; four existing SYSTEM texts"
+  ],
+  "a79_integration": {
+    "baseline_inventory_sha256": "bf2f94d72b890db7397605f518800169cd9680424d0c366722f6db7a42fb4931",
+    "report_sha256": "ff1575c20a05bd6d2072cf22073154d2271fb183997029f5ea53c9d9b473aceb",
+    "profile_sha256": "58dbecac69cf7b4cf0a0709504eb2dcb72482a67697a103a49c86aaa779bb3bc",
+    "candidate_report_sha256": "2a1b592dd1138344e23b588dd515704d8a6bb6b0cb3840f16255b6e0c215efa2",
+    "fabric_manifest_sha256": "f9e2e373ff3329315fc76e0ceb7a8b254def77a1ff0fdaad053f8eff39d9fdd4",
+    "stage_builder_sha256": "d14bb752f7f73eea7e8326fde15f72dafb0263b1ffe3fdcebc1c3cece7ba1b56",
+    "inventory_helper_sha256": "9dba3310b9c60734fd65554f119293ab569bdc6344269990341f1961cb1ca712",
+    "legacy_image_helper_sha256": "724012dfe113f6328c154be71fa94f52d35aae2ffcaddfd97e473f180dc7e16e"
+  },
+  "a80_layout": {
+    "integration_report_sha256": "145accc5fecaf444f344064aa099a7c741e0ddb516f30498be73ef6378334d15",
+    "a79_profile_sha256": "0a8b5f1627de5feb731dc3c237f99c5d87eccbbab8e1abfda934dda28a1467aa",
+    "image_engine_sha256": "a464c2748fbd33c39b6f09402012f5ddf0bcd785058440f16bdf322619b85d30",
+    "candidate_report_sha256": "0134ed398e1e05d1510cf60f7bbb36176dabd8f3da838e1d412660683d068fdf",
+    "guard_evidence_sha256": "4fce8a5f4a6252a7bf66ef2e72409ca96204665b1dbafad53a539b9fac2797ce",
+    "stage_builder_sha256": "3f2c15bf23aef184723b125d0ab9b17380bd2aafc16c08a6edf3526d0633cf3b",
+    "guard_sha256": "abd73519e87ad8d2589459547da5648732a896efe652764d28e21ae84fdae0d1",
+    "native_view_source": "/product/etc/t860-tethering-native-372038420",
+    "native_contents_changed": false
+  },
+  "a81_freeze": {
+    "classification": "WORKAROUND_USER_AUTHORIZED",
+    "integration_report_sha256": "3fd7f585479bb14a6412fd9f72c689d31e6082b01706e3bbfe4fceaad1d24b72",
+    "candidate_report_sha256": "67c36d886aa2d621641c12ac16865ff59a0708813a53f0341d10b9e5322bb6a5",
+    "stage_builder_sha256": "454d0b7f3b89ac06bcb77a35ee323587bc90a80367d8be53494cb43f596245ec",
+    "parent_profile_sha256": "ad0468bac0bf5807cc29a824b89aef2608f31d19f4b6df87b364e904aaf60b15",
+    "parent_builder_sha256": "f83d6c24fe48e223c72dc33cc13c87a5bae722ffd29448d981525cd9f9ec9520",
+    "existing_file": "product/etc/sysconfig/google-staged-installer-whitelist.xml",
+    "source_sha256": "aad8746f264ba133ac38de7c0207e3275e8397a2070d2b90291677d6d7da4fa8",
+    "candidate_sha256": "86b8601c4b02e20342f570172cd4000517cc08ed8ec2b05ef2cbfe81a4561f45",
+    "reviewed_services_sha256": "91e2a7ce17f25a84c36e70a958aa523274eb394c7f3da4f30051364871f23d22",
+    "freeze_scope": "Play staged and non-staged APEX installer gates only",
+    "ordinary_module_apk_updates_frozen": false,
+    "google_backend_refusal": "NOT_TESTED",
+    "updated_network_module_compatibility": "NOT_PASSED",
+    "future_donor_reaudit_required": true
+  },
+  "a82_metadata": {
+    "classification": [
+      "DEVICE_REQUIRED",
+      "VERSION_SPECIFIC"
+    ],
+    "integration_report_sha256": "e632f711178fd5a9e4b951c154aa6afcde438aec917f5e197074e121494fbb4f",
+    "candidate_report_sha256": "0fa61c20bc46e0e4b05ceb6995bc9fe1fc44d60c67cae8680237d56b710338f7",
+    "stage_builder_sha256": "a7208118621e48e2244dca2d627e9307792d5c1899f2f15bd7c18bf710972554",
+    "parent_profile_sha256": "f52a5d656319dad73e967777d7d6dabfa927ab0a6c3d50655971d492afebdaa7",
+    "parent_builder_sha256": "796efaf577af351209c3221a799008b6389c3c0bad44e23542364ec5895979df",
+    "canonical_path": "/metadata",
+    "backing_path": "/data/unencrypted/t860-metadata",
+    "source_fstab_sha256": "cae5e60aada5b9e7e7abaf028fda9d6730ea95cb8d256709a2d1135a083d3c94",
+    "migration_required_before_existing_data_boot": true,
+    "full_data_format_removes_backing": true,
+    "ordinary_cache_clear_removes_backing": false,
+    "future_donor_fstab_and_boot_stage_reaudit_required": true,
+    "full_rom_installer_metadata_contract": "NOT_PASSED"
+  }
+}

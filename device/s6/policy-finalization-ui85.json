@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "stage": "/var/tmp/t860-ui85-capacity-draft-app-preopt",
+  "baseline_inventory_sha256": "ecfc537a560b34c93b280e2933f0587289b6035227cfc7a3e54d86cfe93c4d62",
+  "baseline_entries": 8085,
+  "vendor": "/var/tmp/t860-ui85-upgrade-source-vendor.raw.img",
+  "vendor_sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af",
+  "current_mapping": "202504.cil",
+  "source_recipe_sha256": "cef111533b761048f10a53bd968cd02e0641bf1f009db4a8aa380ccff10a8b2d",
+  "expected_ids": {
+    "plat": "c3ff485c0166537cf89f1c4095baed6602d1d92c3e161c8efaf385f62ae65209",
+    "system_ext": "b81b4e5e0fa4b60525c23bb8874cd79e9e695b1c691bf6c63eff91ae2b576bb4",
+    "product": "5588a0fecc9757e7ba0bbb24e74b4a10d286095e8f4bec7996c982614d762692"
+  },
+  "changed_path": "system/system/etc/selinux/plat_sepolicy_and_mapping.sha256",
+  "compiler_options": [
+    "-m",
+    "-M",
+    "true",
+    "-G",
+    "-N",
+    "-c",
+    "30"
+  ],
+  "reason_document": "docs/SELINUX_REBASE_AUDIT.md"
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "stage": "/var/tmp/t860-ui85-capacity-draft-app-preopt",
+  "target": "system/system/bin/surfaceflinger",
+  "before_target": {
+    "gid": 2000,
+    "mode": 33261,
+    "sha256": "ac471fca160754aafbb306182ca49d6aa9c705d40d8ab394f4db69090e33466f",
+    "size": 10081976,
+    "uid": 0,
+    "xattrs": {
+      "security.selinux": "753a6f626a6563745f723a73757266616365666c696e6765725f657865633a7330"
+    }
+  },
+  "candidate_size": 10308840,
+  "reason_document": "docs/FINGERPRINT_HIDL_REBASE_AUDIT.md",
+  "runtime_new_rom": "NOT_TESTED",
+  "baseline_sha256": "0dff8bba188ccddc302b1ad9d74b1a91e1b6353addd9bf8b8f4e2f4e40c490b6",
+  "static_sha256": "f3038d0143d25495933e2ab4fdaecea92ffc4c0d9e0ba6a53dbe9d66081516c5",
+  "native_sha256": "59020ce15e379f1a0aef443df5f239e68040eb43c961d856b695a6c2fcbc7fcd",
+  "linker_sha256": "558d758ca317e880c09eefd8b0e63be1d46c735e2a5f647d7a6f10df4ab4a083",
+  "candidate_sha256": "73f98756b7882529233a02c7a971148bf8413fb4ce8c907a756a71c5449a3b89"
+}

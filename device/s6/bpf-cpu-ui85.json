@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "patch": "B06-CPU",
+  "classification": ["DEVICE_REQUIRED", "VERSION_SPECIFIC"],
+  "reason": "Preserved S6 kernel accepts ordinary tracepoint type5, not raw tracepoint type17/helper113. Preserve new donor process-free PID cleanup via the live event pid field and its existing normal attach helper.",
+  "boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "event_format_sha256": "cdda6388a380831302eecc2dad8729116a9a13c20d61844cd177c41015feb61b",
+  "event": {"name": "sched/sched_process_free", "pid_offset": 24, "pid_bytes": 4, "context_bytes": 32, "hardcoded_event_id": false},
+  "native": {"caller_va": "0x3710", "caller_size": 2164, "caller_sha256": "fb5d18cfe2112e312ac08c0c9791a625d2f1d39acce423780a19efb054e2857c", "call_va": "0x3d44", "old_target": "0x50f8", "new_target": "0x5094", "old_instruction": "ed040094", "new_instruction": "d4040094"},
+  "files": {
+    "system/etc/bpf/cputimeinstate/timeInState.bpf": {"input_sha256": "78b9006398a3f52d7ecca3509b7b0015d98575ebe0f6075212edd06e9d1aca28", "output_sha256": "597eacb2e3fabc587e16db3fbf5fc3e46fbcab9c89bc45d6b4241aeb43a2999d", "uid": 0, "gid": 0, "mode": "0644", "selinux": "u:object_r:system_file:s0"},
+    "system/lib64/libtimeinstate.so": {"input_sha256": "76bc0c26bef19856990b5b345a117c50687516b0c725270718355943121cb20c", "output_sha256": "eb68810c901abffafbcde7125c1c5609cca7f00ff5be1be3aa40e90b5fad54f8", "uid": 0, "gid": 0, "mode": "0644", "selinux": "u:object_r:system_lib_file:s0"}
+  },
+  "limits": ["Compatibility probe only; do not install either file alone.", "Global libbpf feature/BTF/map flags and actual kernel verifier/perf attach remain untested.", "Model checks are not proof of live map lifecycle, BatteryStats, CPU accounting or PID reuse correctness.", "No BOOT/VENDOR/ODM/DATA, old binary, framework or deletion list is a build output."]
+}

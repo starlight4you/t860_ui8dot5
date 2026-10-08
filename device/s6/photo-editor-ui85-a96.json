@@ -1,0 +1,325 @@
+{
+  "id": "A96_S9_PHOTO_EDITOR_CORE_RESTORE",
+  "status": "LAB_DEPLOYED_BASIC_EDITOR_VERIFIED_FULL_AI_PORTRAIT_PENDING",
+  "reason_record": "docs/PHOTO_EDITOR_RESTORE_A96.md",
+  "package": "com.sec.android.mimage.photoretouching",
+  "version_name": "3.8.24.20",
+  "version_code": 382420100,
+  "apk_sha256": "e02149bd0e5b0e6ff7e0ead3166dbfc775cae9773df82006ed90c57f6428d348",
+  "apk_size": 113207164,
+  "certificate_sha256": "34df0e7a9f1cf1892e45c056b4973cd81ccf148a4050d11aea4ac5a65f900a42",
+  "source_firmware": "SM-X710 X710XXS6EZH3 One UI 8.5",
+  "source_image": "t860-ui8/work/rebase/s9/system.img",
+  "source_path": "system/priv-app/PhotoEditor_AIFull/PhotoEditor_AIFull.apk",
+  "stage_dir": "system/system/priv-app/PhotoEditor_AIFull",
+  "system_relative_dir": "priv-app/PhotoEditor_AIFull",
+  "native_libraries": {
+    "libAutoEnhancePE.so": {
+      "sha256": "03a5acaa2c953722d397686aef80584a804f8431604e568a73f82957c98e669e",
+      "size": 185792
+    },
+    "libDiagMonKey.so": {
+      "sha256": "bd196a405ba0e5a89c4b010deb2b8d821e9b8557ae7469152c0e56075168e3eb",
+      "size": 4776
+    },
+    "libFaceOffWrapper.camera.samsung.so": {
+      "sha256": "b730bfda318aa37eb0ad0d4b9c3493fd2e6b4016754339e0f8ed89c4648b7b8f",
+      "size": 765440
+    },
+    "libGaussianInterface.so": {
+      "sha256": "009f62659912a575c595611ce7b4d9075160234c4863d9270608558a8f32a4af",
+      "size": 900720
+    },
+    "libHS_Segmenter_v1.camera.samsung.so": {
+      "sha256": "fce77f02c9831885cf1f7e28a2ec06423768b503ca53693bce96795902d70070",
+      "size": 256416
+    },
+    "libPetDetector_v1.camera.samsung.so": {
+      "sha256": "fe991a9bee4f72e97c5872618342db0c8a97c74c3710567e2cf5212199e33783",
+      "size": 398384
+    },
+    "libPhotoEditorBeauty.so": {
+      "sha256": "39f31c0c42d3e510500a5871962ee5c52150dcee4d555cb8871353bf758b27d1",
+      "size": 7280
+    },
+    "libSPenBase.so": {
+      "sha256": "8bc548c8ca3c2f285b58ed7fcadaddd963c7f71aafd2dfe70e6752d34936aa24",
+      "size": 918240
+    },
+    "libSPenContent.so": {
+      "sha256": "66d0a6063ebde9479cbddad53203c48f773954c241e7fc7ea37af5ef946e6373",
+      "size": 88656
+    },
+    "libSPenDefaultPen.so": {
+      "sha256": "71424b96f0a5f22e2969cb79936cec94137607ea74ec3eb5672a1c7900bede1c",
+      "size": 118528
+    },
+    "libSPenDrawing.so": {
+      "sha256": "f966e478d31737d811c4eceff775af02fee97ca4ef72ecc85ac94310ea060f81",
+      "size": 187648
+    },
+    "libSPenEngine.so": {
+      "sha256": "2b26967a61a199322513218eaf30b251e90ba05a79c5636695881f1199e0a777",
+      "size": 1348384
+    },
+    "libSPenGestureModel.so": {
+      "sha256": "702bf8c4d76a9e206c9b139a89faee5cd803f1451cbb3a3d1c989930b361cc71",
+      "size": 31424
+    },
+    "libSPenGlowPen.so": {
+      "sha256": "792b85903a2cbda122b2423d318af9a0fc55b99921dbb0d6630b86a0813b3ef9",
+      "size": 143224
+    },
+    "libSPenGraphics.so": {
+      "sha256": "86b340e94305efeb23ce1a6fcd1d0325970c6f1a1cc17999dd8695cd91231da2",
+      "size": 839136
+    },
+    "libSPenHwuiCompat.so": {
+      "sha256": "880bda2bc2c4682ce8bff4fdc1a54f1d4604fb874a240f6fd4ce520c0656ef47",
+      "size": 37536
+    },
+    "libSPenInit.so": {
+      "sha256": "f0a90191d5a182dfafd560b97cf4458a038f656d76c462673b008fae0440175b",
+      "size": 58856
+    },
+    "libSPenInkPen2.so": {
+      "sha256": "84b7e6aad73c6718adceeb3390d1226ce40783c5832d59698af20aeeee88c30c",
+      "size": 180128
+    },
+    "libSPenLibjpeg.so": {
+      "sha256": "3462bdf4f741615a2816c149417cd34dacc08a109ac03c1d900a30932654237f",
+      "size": 293504
+    },
+    "libSPenLibpng.so": {
+      "sha256": "898abcc6ddbe3a4ad7e076484df666b732913db95a7abc7d6e99bfd835f555eb",
+      "size": 197064
+    },
+    "libSPenMarker4.so": {
+      "sha256": "190d63ff83981b3e37106255d572b539d6fcbe24ce087f94cf2487af3fba229d",
+      "size": 200136
+    },
+    "libSPenModel.so": {
+      "sha256": "f1d6e9089404a44f89c5de92976830476cc3ddaa9447481386dee1f5372291ca",
+      "size": 3763144
+    },
+    "libSPenMosaicPen.so": {
+      "sha256": "8e6879921bcce064c69cea81274f03cc9259026eaa4552c33b7a2cb603fec53c",
+      "size": 171328
+    },
+    "libSPenObjectControl.so": {
+      "sha256": "646ee81aaed33d129f751122acbc992d2648bb7bfaef8822c6e882fe2108589e",
+      "size": 574048
+    },
+    "libSPenObliquePen.so": {
+      "sha256": "43430270dc67bc86db5b932d5235f540931351ec075b0ac5a96e93c0ef4f22fc",
+      "size": 220328
+    },
+    "libSPenPenCommon.so": {
+      "sha256": "844176b001133b7ea21ebd7a3102325065c505ccda5bbb19f873cdfa4f06ee51",
+      "size": 462024
+    },
+    "libSPenPluginFW.so": {
+      "sha256": "6b58cf090135cbdeef0f28e9ac07a64441000480b29c41fa115ba035b628f153",
+      "size": 62656
+    },
+    "libSPenPredictor.so": {
+      "sha256": "d51dcf189a7f9cc2ea43129695b6d979c3a9d9e46a53706646f21a3690832c67",
+      "size": 1087232
+    },
+    "libSPenRecognizerShape.so": {
+      "sha256": "27733d91e471c305e0a712ea48e6b6f452cb873a0e8761c99e51170310103c86",
+      "size": 949384
+    },
+    "libSPenRenderer.so": {
+      "sha256": "6998749371b33a2296d4e0918b89a1242fe62b5070fe484d415e2a7b43e4645d",
+      "size": 438800
+    },
+    "libSPenTFLite.so": {
+      "sha256": "bc992a062708c2bbcefb67e6a426cd0d92ea3fc09e3d9bd0271a017b3935eaae",
+      "size": 1857736
+    },
+    "libSPenUuid.so": {
+      "sha256": "2f489b54e0a6376c0f74c68b335bc1459636b7677df2f1974e21bf13f1df8926",
+      "size": 41624
+    },
+    "libSPenView.so": {
+      "sha256": "16d08c907610639ef6e445b1a640d05034ca49b72fc94a98d13fbf9804ee6154",
+      "size": 638328
+    },
+    "libSPenZlib.so": {
+      "sha256": "7796339a9c41c3218bef47c17bc1573c544bc431a8d312da390dce40c64adcd7",
+      "size": 23896
+    },
+    "libSRIBLVMUtilityInterface.so": {
+      "sha256": "35fe00e95d6b4aff70268ba68d3b008494dd4b2377a1048ab622bbdc9b3283ab",
+      "size": 114232
+    },
+    "libWatermarkKey.so": {
+      "sha256": "9f9a50541dcc0ab4e5368befae59aa7583ebf3f6a8012fb7885ada76a0008b56",
+      "size": 5912
+    },
+    "libaisf_picbest_processor.so": {
+      "sha256": "1b02c6d7a3efd462aa7efcd638ac6e4a8d80b6f18e321434a279e7e53cbee899",
+      "size": 433136
+    },
+    "libbgpsegmenter.samsung.so": {
+      "sha256": "d2a349e8b92777d62cf1bfca4c2b3a400cde4db2feb9c92a393060b49cd58756",
+      "size": 103312
+    },
+    "libc++.so": {
+      "sha256": "d02129f5b3d89694a7741abbf14a8f290fd5a2854432fe116ad994e7021b3cdd",
+      "size": 1073728
+    },
+    "libc++_shared.so": {
+      "sha256": "92ee8da641b969254cc8723f64aa115d36c8ffa87115e38bc9cb89e3eefee839",
+      "size": 1292896
+    },
+    "libgraphics-core.so": {
+      "sha256": "d16e179a7f6217591e8253627ef87ed4e459beabd075e0f00c1dce7b61f50f13",
+      "size": 212112
+    },
+    "liblightbalance.so": {
+      "sha256": "f12f406fdd5707e13148a25c4a021d8337826ad58f39a8ed1acecd330e29f198",
+      "size": 98608
+    },
+    "liblvm_utility.samsung.so": {
+      "sha256": "5ca41f98752574d0af8fa17c147d6f92880c2901b79c3f62be4579f3d4500197",
+      "size": 359120
+    },
+    "libmpbase.so": {
+      "sha256": "b58b867b9c1c07e751691a9898df08eafbd3193e3f41aaf5224fbb28b434a1fe",
+      "size": 6528
+    },
+    "libomp.so": {
+      "sha256": "1532d31fd8c9bbf0e33e9d6de3c8e69c36b68b7a53d34821854030603a3a6419",
+      "size": 965024
+    },
+    "libpatchmatchlib-native.so": {
+      "sha256": "160c51208c4b425ea5eb2c2d45479b611ff7dfd4338620709a5ebc8de20ffdac",
+      "size": 243776
+    },
+    "libphotoeditorEngine.so": {
+      "sha256": "b4cb57dba32f94e49ac7ab04e50e05a27952b0d48e054d44b49bc33b8ac25f3f",
+      "size": 350960
+    },
+    "libphotoeditorEnginePortrait.so": {
+      "sha256": "5fe3782ef7eb31a2fa4ff16f2a4047c9056fdafc778a7fbc986d2af759d0103a",
+      "size": 1254512
+    },
+    "libpostprocess-native.so": {
+      "sha256": "3269e447b21e220c983b363d0fabc98383b410fde7b697af08826695fbd3b711",
+      "size": 272440
+    },
+    "libraw_XMPCore.so": {
+      "sha256": "81f1527a946bda21552a62d32660afe390982d5fa5507df105a1cc8b2927a415",
+      "size": 1974176
+    },
+    "libraw_XMPFiles.so": {
+      "sha256": "5e2b9c43bbc20b2e24e5b565c559b97a79e9cb4f9f3d6a35a5506ba4cd9861d1",
+      "size": 1711800
+    },
+    "libraw_brotlicommon.so": {
+      "sha256": "abbef530c22d0230df5e43a3049dedd68e216e6387a4843033e4f18bc67a54f0",
+      "size": 199080
+    },
+    "libraw_brotlidec.so": {
+      "sha256": "a35da999598ace7753ec22428b273fdac8dabfddc43a8490716521f7a15a2ee5",
+      "size": 134416
+    },
+    "libraw_brotlienc.so": {
+      "sha256": "471789ee152e9911aeaec26886e329c7ac8766f77bdc8511632f6e5ff8ade3db",
+      "size": 855568
+    },
+    "libraw_dngsdk_v170.so": {
+      "sha256": "22c04f4eba18177b970f42fb08dc7336f02ac0916bf8e90c2472ae573e4fd38a",
+      "size": 2181512
+    },
+    "libraw_jpeg.so": {
+      "sha256": "5a0aabdc62eeda3b1d5b81e1a146b545228cc4231b36c9ed5348f414ae0a04cd",
+      "size": 267544
+    },
+    "libraw_jxl.so": {
+      "sha256": "317490e43cdbf9b631acc922d736b1d7674e95c6370c0fd0cab8c8396ab31813",
+      "size": 2235256
+    },
+    "libraw_jxl_cms.so": {
+      "sha256": "1191491eb8e5e3ced1b2ee7a4d4d4abd347f9192d4f39011bc030192c713b5c6",
+      "size": 558408
+    },
+    "libraw_jxl_threads.so": {
+      "sha256": "3ea96965ee748659fd6f96abf1ed7e2dc7cffddc2042ef996bbf34b6343341ac",
+      "size": 340784
+    },
+    "libraw_masteringnet_engine.so": {
+      "sha256": "1f8cf75be0860a2558d24b891db9fe7d9134e02aab2c7acc827f1bc4dc9fab42",
+      "size": 1910736
+    },
+    "libraw_masteringnet_jni.so": {
+      "sha256": "2e0f154f9df0095ca9ceca52ca7dec0e122e469ce0b35b1ba4236607e17e409a",
+      "size": 85200
+    },
+    "libreshape.so": {
+      "sha256": "07ed82698eebd07df9ccd49aa1c593f854747cbfc5cf106dfa895ce8043b1d06",
+      "size": 240640
+    },
+    "libshadowreflection-removal-native-lib.so": {
+      "sha256": "9b2c8b17cfaeb57fba172c55e95fb93d193afe7d88dfd06172dd25a431b4c4ff",
+      "size": 34504
+    },
+    "libslimFigureEngine.so": {
+      "sha256": "92271cbfb1bb5fd8eeab5635001588c5fe7761794c4dca92d5b89be2423d2fe7",
+      "size": 314648
+    },
+    "libspsolver.so": {
+      "sha256": "0fdc90b201766a9c6fa66610b799ba0ab7417c8ac3d0e33fcac9ba5a07e8984d",
+      "size": 199704
+    },
+    "libtensorflowlite_gpu_jni.so": {
+      "sha256": "deb1816376c15c248c539694ecae2dd548e9aa117909a6059c2edafecd55d2e4",
+      "size": 2025848
+    },
+    "libtensorflowlite_jni.so": {
+      "sha256": "ee651a768008df0da5fd7db20cba23a3f436d60c96f348dfcadd398003b92880",
+      "size": 3549376
+    },
+    "libtiltEngine.so": {
+      "sha256": "504cf47716a7283397cb538ad6afaf6fc6c6f2aff347f3f6b0c54de61cf1b2ba",
+      "size": 243184
+    }
+  },
+  "net_regular_bytes": 156507644,
+  "system_permissions_existing": true,
+  "required_libraries": [
+    "saiv",
+    "libagifencoder.quram.so",
+    "libimagecodec.quram.so"
+  ],
+  "missing_optional_portrait_libraries": {
+    "libdualcam_portraitlighting_gallery_360.so": {
+      "size": 117577424,
+      "sha256": "a2d65207de32541cb7d4745ede57d5250afbdc5307970acbaeb1c6d18f30bfe4"
+    },
+    "libdualcam_refocus_gallery_59.so": {
+      "size": 50783040,
+      "sha256": "18d5a386a936f2243ee420a071ab1b55209213b47510c9fc858e5f895d89d120"
+    }
+  },
+  "lab_minimum_system_free_after_bytes": 67108864,
+  "release_minimum_system_free_after_bytes": 268435456,
+  "runtime": {
+    "boot_id": "a3b2fa8c-d467-4340-b255-124cf73f319f",
+    "boot_completed_observed_seconds": 24.53,
+    "system_server_pid": 1798,
+    "systemui_pid": 2681,
+    "editor_pid": 10432,
+    "selinux": "Enforcing",
+    "gallery_to_editor_activity_result": 0,
+    "rotation_save_copy_verified": true,
+    "original_test_image_unchanged": true,
+    "full_ai_portrait_verified": false,
+    "new_full_rom_built": false,
+    "system_free_kib": 102268
+  },
+  "gallery_images": "Only newly created test image/copy may be modified",
+  "classification": "VERSION_SPECIFIC / core donor feature retention; not a hardware HAL patch"
+}

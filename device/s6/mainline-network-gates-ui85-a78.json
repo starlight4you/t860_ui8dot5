@@ -1,0 +1,105 @@
+{
+  "id": "A78_NETWORK_GATES_372038420",
+  "classification": [
+    "DEVICE_REQUIRED",
+    "VERSION_SPECIFIC",
+    "WORKAROUND"
+  ],
+  "reason": "docs/MAINLINE_NATIVE_REBASE_A78.md",
+  "signed_apex_sha256": "8d0585f4a97ce2bcfad249210af9ff3ef52c2a344f5448203df4036342a54ee0",
+  "boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "kernel": "4.14.190",
+  "files": [
+    {
+      "path": "bin/netbpfload",
+      "size": 102400,
+      "input_sha256": "775d705134ac47146a536d31e76af3d439d0e29d48087bc6c64d04c102c4bed6",
+      "output_sha256": "bcf38bda702154024bf8370603c41979ab805fb08a408e682192d712f3a6db3d",
+      "functions": [
+        {
+          "va": 40664,
+          "file_offset": 40664,
+          "size": 4792,
+          "sha256": "94d66940f3f76b2031d37889bd84a6e5061a2017615c701289f289ecaf2bc7cd",
+          "fde_va": 17652,
+          "cie_va": 16736,
+          "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+        },
+        {
+          "va": 58668,
+          "file_offset": 58668,
+          "size": 848,
+          "sha256": "2a98c6134afb25a4a78cea1ec4f38fbc4d851234bd4a03cf5ef2e639efc9d1d7",
+          "fde_va": 18756,
+          "cie_va": 16736,
+          "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+        }
+      ],
+      "edits": [
+        {
+          "va": 42292,
+          "target_va": 42332,
+          "file_offset": 42292,
+          "old_word": 1409286472,
+          "new_word": 335544330
+        },
+        {
+          "va": 42344,
+          "target_va": 42388,
+          "file_offset": 42344,
+          "old_word": 1409286504,
+          "new_word": 335544331
+        },
+        {
+          "va": 42392,
+          "target_va": 42428,
+          "file_offset": 42392,
+          "old_word": 1409286440,
+          "new_word": 335544329
+        },
+        {
+          "va": 59192,
+          "target_va": 59460,
+          "file_offset": 59192,
+          "old_word": 1409288299,
+          "new_word": 335544387
+        }
+      ]
+    },
+    {
+      "path": "lib64/libnetd_updatable.so",
+      "size": 103000,
+      "input_sha256": "26f236bcb2ad24a8f34de7372b7859aac3a34a4bbe27d698d413f17086284a40",
+      "output_sha256": "642d73260d1a15f1c140da9d50513bc5638346ac313ecb9ff38299e3a2f28add",
+      "functions": [
+        {
+          "va": 35040,
+          "file_offset": 35040,
+          "size": 12448,
+          "sha256": "c58ba1f3065483969c11aeb4d538c0c6a73dfa92a1a289440d0e2d6d4eb112db",
+          "fde_va": 12852,
+          "cie_va": 12656,
+          "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+        }
+      ],
+      "edits": [
+        {
+          "va": 37324,
+          "target_va": 37604,
+          "file_offset": 37324,
+          "old_word": 1409288392,
+          "new_word": 335544390
+        },
+        {
+          "va": 37612,
+          "target_va": 38536,
+          "file_offset": 37612,
+          "old_word": 1409293544,
+          "new_word": 335544551
+        }
+      ]
+    }
+  ],
+  "runtime": "NOT_TESTED",
+  "installed": false
+}

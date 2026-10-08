@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "base_system_sha256": "cfba53dd36d9180faafafe87bd730b549cf475c6008dc69afe85a28e00175462",
+  "target_path": "/system_ext/etc/selinux/system_ext_property_contexts",
+  "source_sha256": "91944f05dcfdcc64222b8afe65a44dff2a1edbc0daa0767b00c1e43dd1a92877",
+  "patched_sha256": "c119e0507b24de1d7207055e7a42160946a0dbe434187ff7ca0a91e7b55eefa1",
+  "removed_property": "init.svc.vendor.wvkprov_server_hal",
+  "removed_context": "u:object_r:wvkprov_prop:s0",
+  "retained_vendor_context": "u:object_r:vendor_wvkprov_prop:s0",
+  "classification": "DONOR_SPECIFIC",
+  "reason": "New donor system_ext redeclares a retained T860 vendor-owned init status prefix; real init aborts property serialization before services. Preserve vendor definition; remove only donor duplicate.",
+  "context_inputs": {
+    "a45-system-system_ext_property_contexts": "91944f05dcfdcc64222b8afe65a44dff2a1edbc0daa0767b00c1e43dd1a92877",
+    "a45-product-product_property_contexts": "3c7d2db743dbf8ecce542fccc0c6c19f46a1cddcf053924f8ead96213b1c07f3",
+    "a45-system-plat_property_contexts": "fad3301ee2729bb5a890e9eb01e5b03af9abe6537f2384833aa18b437c306061",
+    "vendor_property_contexts": "74144d2a7833405b21b917c99ff8730a2a93472b3ed5e818334a093dc8625cf1"
+  },
+  "hardware_boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "hardware_vendor_sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af",
+  "failed_boot_system_sha256": "d1d4753bd5ae1172f9cced7e894bae0699265b98cd0bc2a009f952d3f6722f99",
+  "expected_selinux_label": "u:object_r:property_contexts_file:s0"
+}

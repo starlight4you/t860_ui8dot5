@@ -1,0 +1,9 @@
+{
+  "kind": "existing_system_reboot_after_readonly_preflight",
+  "sys_boot_completed": "1",
+  "model": "SM-T860",
+  "oneui": "80500",
+  "selinux": "Enforcing",
+  "rom_installed_during_release_validation": false,
+  "userdata_formatted": false
+}

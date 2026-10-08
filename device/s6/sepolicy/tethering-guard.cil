@@ -1,0 +1,2 @@
+(allow bpfloader clatd_exec (file (open read getattr)))
+(allow bpfloader ot_daemon_exec (file (open read getattr)))

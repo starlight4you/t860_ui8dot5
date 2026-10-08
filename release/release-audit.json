@@ -1,0 +1,63 @@
+{
+  "zip_sha256": "8128e7e9d42ae8b5d1071d04721d1bce52ffaf2b502f25598bd792a86ddde91a",
+  "zip_bytes": 4242041251,
+  "partition_sha256": {
+    "system": "c2c249d94e4028ba3c550bb4a51fe2c3397bf80f4f8b9f82ad8236f3ed2340a8",
+    "product": "bd1e4f1598ccfc8b24890e97b3562e1941ebd27c17b284491c8965981db45aa7",
+    "boot": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+    "vendor": "609f5098f0bc469bf3377555beef3ed7e64be6df61dbc260d42f2f4d6f6a0e18",
+    "dtbo": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec",
+    "vbmeta": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54"
+  },
+  "payload_chunks": 138,
+  "entries": 159,
+  "zip_format": "ZIP32_NO_ZIP64",
+  "installer_library_sha256": "9904fbe2fef1e87c776063035f786ffa649916f2852b685996e6c19da6d4677c",
+  "version": "v1.0.0",
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "all_zip_crc_pass": true,
+  "native_twrp_payload_chunks_pass": 138,
+  "support_members_pass": 10,
+  "real_recovery_readonly_preflight_pass": true,
+  "real_recovery_partition_count_unchanged": 6,
+  "clean_install_device_test_performed": false,
+  "userdata_formatted": false,
+  "upgrade_runtime": "USER_REPORTED_PASSED",
+  "isolated_full_installer_cases_pass": 50,
+  "native_mainline_cases_pass": 67,
+  "byte_identical_public_rebuild_pass": true,
+  "existing_system_reboot_pass": true,
+  "split_archive": {
+    "kind": "release_split_archive_round_trip",
+    "encoder": "7-Zip 26.01",
+    "options": [
+      "-t7z",
+      "-mx=1",
+      "-mmt=2",
+      "-v1536m"
+    ],
+    "volumes": [
+      {
+        "name": "TabS6-S9-OneUI8.5-v1.0.0-TWRP.7z.001",
+        "bytes": 1610612736,
+        "sha256": "ad1a562018be95accfe74efd846a14d02a3c804200643fa80ae7ed3fef6b35de"
+      },
+      {
+        "name": "TabS6-S9-OneUI8.5-v1.0.0-TWRP.7z.002",
+        "bytes": 1610612736,
+        "sha256": "e385af14f9528e46e252d3c7ce7384d85534bf2df2063e3e87ebb0420f11110a"
+      },
+      {
+        "name": "TabS6-S9-OneUI8.5-v1.0.0-TWRP.7z.003",
+        "bytes": 996617524,
+        "sha256": "1e04187b3ee731a467808bcaf18a6d0af01b6d7740f3326f15a4777f298a5fea"
+      }
+    ],
+    "decompressed_zip_bytes": 4242041251,
+    "decompressed_zip_sha256": "8128e7e9d42ae8b5d1071d04721d1bce52ffaf2b502f25598bd792a86ddde91a",
+    "extract_exit": 0,
+    "all_assets_below_2gib": true,
+    "complete_zip_identical": true
+  }
+}

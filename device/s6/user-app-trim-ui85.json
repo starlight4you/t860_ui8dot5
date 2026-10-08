@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "status": "candidate_only_nonflash",
+  "reason": "User requested removal of redownloadable Google and third-party preloads after reviewing the original capacity list",
+  "remove": [
+    {
+      "path": "system/system/preload/GoodNotes",
+      "file": "GoodNotes.apk",
+      "sha256": "c941e49b296dbe9e2d26403005e5e47595ae4e02ba90745947db2d1cc385a666",
+      "apparent_bytes": 1497356
+    },
+    {
+      "path": "product/app/DuoStub",
+      "file": "DuoStub.apk",
+      "sha256": "d4a4e4ffd86aaa8136f1310edf24666f676794c2e2b601d7f261e325e5b34a97",
+      "apparent_bytes": 69080
+    },
+    {
+      "path": "system/system/etc/spotify.conf",
+      "file": null,
+      "sha256": "9bee7f538ce6d8da608c680810ac2b31299619a903ca56a65f5b57a30950986c",
+      "apparent_bytes": 916
+    }
+  ],
+  "absent": [
+    "system/system/preload/NoteShelf"
+  ]
+}

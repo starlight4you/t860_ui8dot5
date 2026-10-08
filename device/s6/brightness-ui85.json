@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "F07-BRIGHTNESS-RRO",
+  "target": "SM-T860",
+  "donor_build": "X710XXS6EZH3",
+  "classification": "DEVICE_REQUIRED curves with VERSION_SPECIFIC resource linkage",
+  "reason_record": "docs/BRIGHTNESS_REBASE_AUDIT.md A42",
+  "source_audit_sha256": "69ab8a79c87ccfb127d480580a841be8ba9e9ac4890df496f62c5710c0291b94",
+  "target_framework_sha256": "05c3b99b144b3567fb4cff81f54e2e21d1d9575177f61e044f2393b4076ed3b1",
+  "stock_rro_sha256": "0dc4c5ba0c906d11ae0cfa9462f02eb04ee33cf5776f7482842dd7c7fbd9c1cd",
+  "source_files_sha256": {
+    "fingerprint/AndroidManifest.xml": "61783bf06dcd60f40c86bda03b1486080b53c514b2d38826d0fae1fc2f4e919b",
+    "fingerprint/res/values/arrays.xml": "2bae76a7ab42bf1eece515000e00ac1e9684440e0067e9e0ff7dcf16f8dcfe17",
+    "panel/AndroidManifest.xml": "a1339c7bfcd6fef2a451548a2dce06be47dedcc7f6a587980d5d6d8aa8726621",
+    "panel/res/values/arrays.xml": "3297a32ddbbfb439619fd360ce1cba9a1733d99702ca449556a9491e49a281e9"
+  },
+  "aapt2_sha256": "a8844d4089b442b034aed8953deee1893253053c900e03141ae7173e3edd8157",
+  "apksigner_sha256": "b47549e373b895ce6ca620d0c7887e674d9615ffa837a86ac601dcfd04adb0f0",
+  "certificate_sha256": "9b8ecdeb843eb18d9e4d6ba63d1c7709604ae308294ede206f3edc34f3e380a5",
+  "packages": [
+    {
+      "group": "fingerprint",
+      "package": "android.t860_fingerprint_brightness_rro_system_ext",
+      "output_name": "T860FingerprintBrightnessOverlay.apk",
+      "stage_path": "system/system_ext/overlay/T860FingerprintBrightnessOverlay.apk",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0644",
+      "selinux": "u:object_r:vendor_overlay_file:s0"
+    },
+    {
+      "group": "panel",
+      "package": "android.t860_panel_brightness_rro_system_ext",
+      "output_name": "T860PanelBrightnessOverlay.apk",
+      "stage_path": "system/system_ext/overlay/T860PanelBrightnessOverlay.apk",
+      "uid": 0,
+      "gid": 0,
+      "mode": "0644",
+      "selinux": "u:object_r:vendor_overlay_file:s0"
+    }
+  ],
+  "runtime": "NOT_TESTED",
+  "device_writes": false,
+  "firmware_stage_modified": false,
+  "limits": [
+    "RRO only; HAL raw backlight units and FP native output dispatch are separate.",
+    "Compile/dump/signature does not prove idmap/OverlayManager/runtime selection."
+  ]
+}

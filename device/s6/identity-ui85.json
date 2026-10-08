@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "B07-SPLIT-IDENTITY",
+  "kind": "reviewed_split_identity",
+  "donor_build": "X710XXS6EZH3",
+  "flashable": false,
+  "files": [
+    {
+      "path": "system/system/build.prop",
+      "input_sha256": "15e45d5b1e38390d8cd3c89dcd68e51d6307e30e834aa929d32af753573a6fe8",
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0600",
+        "selinux": "u:object_r:system_file:s0"
+      },
+      "changes": {
+        "ro.product.system.model": {
+          "from": "SM-X710",
+          "to": "SM-T860"
+        },
+        "ro.product.system.name": {
+          "from": "gts9wifixx",
+          "to": "gts6lwifixx"
+        }
+      }
+    },
+    {
+      "path": "system/system_ext/etc/build.prop",
+      "input_sha256": "25d3dd4c75da1b81cc5946ae21d29a99b12ee65048b3ea1aae0936fff8c7685f",
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0600",
+        "selinux": "u:object_r:system_file:s0"
+      },
+      "changes": {
+        "ro.product.system_ext.model": {
+          "from": "SM-X710",
+          "to": "SM-T860"
+        },
+        "ro.product.system_ext.name": {
+          "from": "gts9wifixx",
+          "to": "gts6lwifixx"
+        }
+      }
+    },
+    {
+      "path": "product/etc/build.prop",
+      "input_sha256": "bbe2fdbbd2c4a6bd4d5c6f3a2f0cd0b18bd873ac6d94627f61033a03e84c130d",
+      "metadata": {
+        "uid": 0,
+        "gid": 0,
+        "mode": "0600",
+        "selinux": "u:object_r:system_file:s0"
+      },
+      "changes": {
+        "ro.product.product.model": {
+          "from": "SM-X710",
+          "to": "SM-T860"
+        },
+        "ro.product.product.name": {
+          "from": "gts9wifixx",
+          "to": "gts6lwifixx"
+        }
+      }
+    }
+  ],
+  "stage_guards": {
+    "system/system/etc/init/hw/init.rc": "3f8e5dbd60ba99e1c520fd55eddb5f5e52a580b31a31bd5512b2c4142315c67b",
+    "system/system/etc/init/t860-tethering-guard.rc": "39ed33b01551be633ede67c78c1163a6418dc12984e10c5c993dcc3684249a23",
+    "system/system/etc/selinux/plat_property_contexts": "fad3301ee2729bb5a890e9eb01e5b03af9abe6537f2384833aa18b437c306061",
+    "system/system/etc/selinux/plat_file_contexts": "5c53c96290dd9d51539ec27cf7fea764ddc502e55b0dd8b1e1cfb22f0dafd0c3",
+    "system/system/etc/selinux/plat_sepolicy.cil": "aa9d31eef9e3785ec4f659faf917aaa5ad0f3cbee51af9a5cccb676a3719ae40",
+    "system/system/bin/t860-tethering-guard": "ce3d7bc56ec8a5505f5943516af8582c1725159d3bf36c7b8532c2d77dceebda",
+    "system/system/bin/surfaceflinger": "ac471fca160754aafbb306182ca49d6aa9c705d40d8ab394f4db69090e33466f",
+    "system/system/etc/init/t860-display-compat.rc": "2e2b76bd3092c3eb85b3e90b07ba5d74a676d31b4af89564cb163dcb36a5e4a7",
+    "system/system/framework/services.jar": "d47261aa9913d8013dc876210dba48c2c4eab924390acaf8dbd8e10290f6d3e6",
+    "system/system/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so": "ffb6b7e972457b71ca1c6c32bc97a58855f5aa5f8c6a2602ad8ffd5b0422882e",
+    "system/system/etc/floating_feature.xml": "2b34cd66c344805006b3efe2e656dcd98af0064df12d3992322ef06d26b4a3fd",
+    "system/system/cameradata/camera-feature.xml": "53d3fdd0ba22ba17ecd42c59858358c5dbbacf7d9cdb01e6c43577382cb9bfd4"
+  },
+  "helper_sha256": "9dba3310b9c60734fd65554f119293ab569bdc6344269990341f1961cb1ca712",
+  "init_sha256": "3f8e5dbd60ba99e1c520fd55eddb5f5e52a580b31a31bd5512b2c4142315c67b",
+  "property_source_order": "odm,vendor,product,system_ext,system",
+  "preserved_hardware_ro_hardware": "qcom",
+  "evidence_sha256": {
+    "identity-init-stage-ui85-v1.json": "d2fb6ad0f95f08fa3fb3496d25983883c8ff556d5ca48f32fb52eb9e02bad8ff",
+    "identity-init-preserved-vendor-v1.json": "9e4922464eb0a93b2fd1b62ecc52f13b53db340385d386c42f56517364235d41",
+    "identity-init-live-ui8-v1.json": "0cfa06268945f7051f2572578dd8ca8e8635977253942f45746cb17521a23e6a"
+  },
+  "runtime": "NOT_TESTED"
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "B05-SELECTOR",
+  "classification": "VERSION_SPECIFIC",
+  "status": "PREPARED_NOT_APPLIED_NOT_RUNTIME_TESTED",
+  "donor_build": "X710XXS6EZH3",
+  "path": "system/bin/surfaceflinger",
+  "input_sha256": "09477ec76e0a5056f407efc31ba128de1eaf9515cdc722f80db4ce8d171081ed",
+  "input_bytes": 10081976,
+  "output_sha256": "ac471fca160754aafbb306182ca49d6aa9c705d40d8ab394f4db69090e33466f",
+  "hardware_first_api": 28,
+  "old_threshold": 34,
+  "new_threshold": 28,
+  "function": {
+    "va": 5672216,
+    "file_offset": 5672216,
+    "size": 276,
+    "sha256": "3d3e5bd4a296dc902bf47fd16e4ebede8cbce4dc267621d771dbf7b6b30319b8",
+    "fde_va": 1401804,
+    "cie_va": 1017376,
+    "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+  },
+  "comparison_va": 5672304,
+  "comparison_file_offset": 5672304,
+  "original_word": "0x71008a9f",
+  "owner": 0,
+  "group": 2000,
+  "mode": "0755",
+  "selinux": "u:object_r:surfaceflinger_exec:s0",
+  "init": {
+    "source": "device/s6/init/t860-display-compat.rc",
+    "path": "system/etc/init/t860-display-compat.rc",
+    "sha256": "2e2b76bd3092c3eb85b3e90b07ba5d74a676d31b4af89564cb163dcb36a5e4a7",
+    "owner": 0,
+    "group": 0,
+    "mode": "0644",
+    "selinux": "u:object_r:system_file:s0"
+  },
+  "basis": "docs/DISPLAY_REBASE_AUDIT.md; old live HWC private command failure; new selector still forces QTI below API34",
+  "rollback": "regenerate SF from unchanged X710 plus other required patches, withdraw paired init; never substitute old SF"
+}

@@ -1,0 +1,12 @@
+{
+  "sha256": {
+    "mainline-guard": "4f3f04af10250a0522b4bf2805fe0567fef975da1aea9e24024d86eba8ca8176",
+    "fscrypt-readonly-probe": "575f5670928c27118139e43a21163c675e56049708390b0c4c1767f2f5663d22"
+  },
+  "source_sha256": {
+    "device/s6/native/mainline_reinstall_guard_a99.c": "7219a4c25eaf553219451138be7e2440feff91b8115e1649fd3a81020b8fee94",
+    "device/s6/native/metadata_fscrypt_probe_a82.c": "8b31702d5e74e9f07b52116d8fafbdd342ace9e7024ce35e52c1a834653ddd42",
+    "device/s6/native/mainline_upgrade_guard.c": "37a1fe9ca71b4399488b4559a0b204f4b809811bc3e841836aaf30173c438d92"
+  },
+  "compiler_sha256": "c0e2e0373d192a8f9339e3148b2c56d41f60286ea5ff6ed3920c767be8090857"
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "kind": "real_complete_rom_twrp_native_payload_preflight",
+  "zip_sha256": "8128e7e9d42ae8b5d1071d04721d1bce52ffaf2b502f25598bd792a86ddde91a",
+  "zip_bytes": 4242041251,
+  "script_sha256": "e8c86c230de0e472b6a0729f747999886ee08d658c1fc7a58f7a3e55d489d8e5",
+  "recovery_sha256": "cbc6e03563a9229b7034dd775964ef412af94a7074f50b519ce1ccc1fd4f2e16",
+  "tools_manifest_sha256": "88e5d75478e28437bec4f4caecdd68f37ca3f1495c9d83b1bffaadfacaed4716",
+  "installer_library_sha256": "9904fbe2fef1e87c776063035f786ffa649916f2852b685996e6c19da6d4677c",
+  "payload_chunks_checked": 138,
+  "support_members_checked": [
+    "rom/support/apex-factory.tsv",
+    "rom/support/fscrypt-readonly-probe",
+    "rom/support/mainline-guard",
+    "rom/support/vendor-after-policy",
+    "rom/support/vendor-before-policy",
+    "rom/support/vendor-config-recovery-guard",
+    "rom/support/vendor-guard-sdk28",
+    "rom/support/vendor-guard-sdk30",
+    "rom/support/vendor-matrix28",
+    "rom/support/vendor-matrix30"
+  ],
+  "operation": "upgrade",
+  "last_payload_header_offset": 4242021156,
+  "process_exit": 0,
+  "table_sizes_checked": {
+    "system": 6534725632,
+    "product": 1048576000,
+    "boot": 67108864,
+    "vendor": 1379926016,
+    "dtbo": 10485760,
+    "vbmeta": 65536
+  },
+  "temporary_archive_copy_removed": true,
+  "device_writes": false,
+  "update_binary_executed": false,
+  "block_device_nodes_available": false,
+  "hardware_runtime": "NOT_TESTED",
+  "dirty_upgrade_runtime": "NOT_TESTED",
+  "limits": [
+    "Actual TWRP sh/awk/unzip/hash tools execute on Linux kernel against every real ZIP payload block.",
+    "Only table and payload preflight functions run; mount/block/source-ROM/real flashing do not.",
+    "Linux userspace success cannot prove T860 recovery kernel or encrypted-data upgrade."
+  ]
+}

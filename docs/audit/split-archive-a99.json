@@ -1,0 +1,32 @@
+{
+  "kind": "release_split_archive_round_trip",
+  "encoder": "7-Zip 26.01",
+  "options": [
+    "-t7z",
+    "-mx=1",
+    "-mmt=2",
+    "-v1536m"
+  ],
+  "volumes": [
+    {
+      "name": "TabS6-S9-OneUI8.5-v1.0.0-TWRP.7z.001",
+      "bytes": 1610612736,
+      "sha256": "ad1a562018be95accfe74efd846a14d02a3c804200643fa80ae7ed3fef6b35de"
+    },
+    {
+      "name": "TabS6-S9-OneUI8.5-v1.0.0-TWRP.7z.002",
+      "bytes": 1610612736,
+      "sha256": "e385af14f9528e46e252d3c7ce7384d85534bf2df2063e3e87ebb0420f11110a"
+    },
+    {
+      "name": "TabS6-S9-OneUI8.5-v1.0.0-TWRP.7z.003",
+      "bytes": 996617524,
+      "sha256": "1e04187b3ee731a467808bcaf18a6d0af01b6d7740f3326f15a4777f298a5fea"
+    }
+  ],
+  "decompressed_zip_bytes": 4242041251,
+  "decompressed_zip_sha256": "8128e7e9d42ae8b5d1071d04721d1bce52ffaf2b502f25598bd792a86ddde91a",
+  "extract_exit": 0,
+  "all_assets_below_2gib": true,
+  "complete_zip_identical": true
+}

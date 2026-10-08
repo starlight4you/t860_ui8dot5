@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "id": "A81_SELECTIVE_MAINLINE_FREEZE_SOURCE_INTEGRATION",
+  "classification": "WORKAROUND",
+  "reason": "User authorized disabling Google Mainline installer after repeated update activation boot failures",
+  "source_stage": "/var/tmp/ui85-a80-native-product-stage-v2/stage",
+  "source_inventory_sha256": "9cc35ef78d6a75150bbcbec194f6bb3587e1880bb5f70e2fd197581d3c44a259",
+  "integrated_stage": "/var/tmp/ui85-a81-mainline-freeze-stage-v1/stage",
+  "integrated_inventory_sha256": "fe2db1a7dd4b777f6c644b2527f18177a5e308d67ae512376b7aed06a9713424",
+  "entries": 8129,
+  "existing_file_changes": [
+    {
+      "path": "product/etc/sysconfig/google-staged-installer-whitelist.xml",
+      "before_sha256": "aad8746f264ba133ac38de7c0207e3275e8397a2070d2b90291677d6d7da4fa8",
+      "after_sha256": "86b8601c4b02e20342f570172cd4000517cc08ed8ec2b05ef2cbfe81a4561f45"
+    }
+  ],
+  "candidate_report_sha256": "67c36d886aa2d621641c12ac16865ff59a0708813a53f0341d10b9e5322bb6a5",
+  "generator_sha256": "454d0b7f3b89ac06bcb77a35ee323587bc90a80367d8be53494cb43f596245ec",
+  "required_services_sha256": "91e2a7ce17f25a84c36e70a958aa523274eb394c7f3da4f30051364871f23d22",
+  "future_donor_reaudit_required": true,
+  "limitations": [
+    "Does not prove Google backend refusal or freeze ordinary module APK updates",
+    "Does not certify A79 updated network module compatibility",
+    "Future donor requires renewed framework and XML review"
+  ],
+  "flashable": false,
+  "full_rom_release": "NOT_PASSED",
+  "patch_path": "patches/s6/a81-mainline-installer-freeze.patch",
+  "patch_sha256": "2e45ae57bb37496f240f0a5ab310f41d922a26399ec26b60911fa2595e6a3426"
+}

@@ -1,0 +1,520 @@
+{
+  "id": "A78_PAIRED_VERSION_NATIVE_AND_FAILSAFE_CANDIDATE",
+  "status": "INSTALLED_REAL_UPDATED_PAIR_FAILED_AUTOMATIC_ROLLBACK_OBSERVED",
+  "flashable": false,
+  "reason": "docs/MAINLINE_NATIVE_REBASE_A78.md",
+  "native_files": [
+    {
+      "path": "lib64/android.hardware.threadnetwork-V1-ndk.so",
+      "bytes": 68904,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "78d05b7234fbe08dc182222f27720973ba61357d377be40b320a412d1537c56c",
+      "after": "78d05b7234fbe08dc182222f27720973ba61357d377be40b320a412d1537c56c"
+    },
+    {
+      "path": "lib64/libaconfig_storage_read_api_cc.so",
+      "bytes": 190768,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "e803302e1574059a32159afae1daeba57be31f8289817ba2caf7c19d024bc2d3",
+      "after": "e803302e1574059a32159afae1daeba57be31f8289817ba2caf7c19d024bc2d3"
+    },
+    {
+      "path": "lib64/libandroid_net_connectivity_com_android_net_module_util_jni.so",
+      "bytes": 68896,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "8ebc439e51b79d4dffdd14f9214e3bfa3d752eca60f2def793d579a462727a4b",
+      "after": "11e7d5f97b4f34dba9d24f301430968a2c0e836351a0c7156cad32c809c8e847"
+    },
+    {
+      "path": "lib64/libandroid_net_connectivity_com_android_net_module_util_jni_CommonConnectivityJni.so",
+      "bytes": 35872,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "8b40d27ac222cf288050f15939b14eaba8f494a63d27fe6e7ea9c3a81f0b6f91",
+      "after": "8b40d27ac222cf288050f15939b14eaba8f494a63d27fe6e7ea9c3a81f0b6f91"
+    },
+    {
+      "path": "lib64/libbase.so",
+      "bytes": 218512,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "620a566e131f28928c479a94cdf45b7526c1731ac057b6767d973b8c00a494ae",
+      "after": "620a566e131f28928c479a94cdf45b7526c1731ac057b6767d973b8c00a494ae"
+    },
+    {
+      "path": "lib64/libbpf.so",
+      "bytes": 974264,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "71eede6490d54686679edd19c0aef79447cdc1ea0fd180baec9e2485c12c9b8a",
+      "after": "71eede6490d54686679edd19c0aef79447cdc1ea0fd180baec9e2485c12c9b8a"
+    },
+    {
+      "path": "lib64/libc++.so",
+      "bytes": 1152760,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "cb118e98c74d3454858921123b9b51ba13df9cad7dfa141dd892c453661a4d78",
+      "after": "cb118e98c74d3454858921123b9b51ba13df9cad7dfa141dd892c453661a4d78"
+    },
+    {
+      "path": "lib64/libcom.android.tethering.connectivity_native.so",
+      "bytes": 68856,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "f1589686c04bf74ff0602826625ffcbadcd85bdbbe5fbf361add827cb979e089",
+      "after": "f1589686c04bf74ff0602826625ffcbadcd85bdbbe5fbf361add827cb979e089"
+    },
+    {
+      "path": "lib64/libcrypto.so",
+      "bytes": 1965928,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "300930a0990f40755daf03a71b0d1f8dde65529253ba2566a7cd674b80eb5133",
+      "after": "300930a0990f40755daf03a71b0d1f8dde65529253ba2566a7cd674b80eb5133"
+    },
+    {
+      "path": "lib64/libcrypto_httpengine.so",
+      "bytes": 888808,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "ad9d48efb4e9ef2f051d62d34f182d72e27cbb5d3e6b3e41f0cc2d4f7d24abac",
+      "after": "ad9d48efb4e9ef2f051d62d34f182d72e27cbb5d3e6b3e41f0cc2d4f7d24abac"
+    },
+    {
+      "path": "lib64/libcutils.so",
+      "bytes": 118336,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "9d0b456b4ad5ef4ec46596ea78e0e8611f759dac7a62049c90a0904bec52ceba",
+      "after": "9d0b456b4ad5ef4ec46596ea78e0e8611f759dac7a62049c90a0904bec52ceba"
+    },
+    {
+      "path": "lib64/libframework-connectivity-jni.so",
+      "bytes": 52192,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "3db437bbccbbd1740bcabc1b324d6b32e1ab707e5e0134a338f0df79ffaade3d",
+      "after": "3db437bbccbbd1740bcabc1b324d6b32e1ab707e5e0134a338f0df79ffaade3d"
+    },
+    {
+      "path": "lib64/libframework-connectivity-tiramisu-jni.so",
+      "bytes": 35712,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "534410208e1d035e042872bda2647fe66f32041d78a8b10b11458503b2c826ec",
+      "after": "534410208e1d035e042872bda2647fe66f32041d78a8b10b11458503b2c826ec"
+    },
+    {
+      "path": "lib64/libhttpengine.so",
+      "bytes": 6974296,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "389070f2338aa868c1a17a57ea4c1dcba962c9a5656cc1870928a22ab9449d55",
+      "after": "389070f2338aa868c1a17a57ea4c1dcba962c9a5656cc1870928a22ab9449d55"
+    },
+    {
+      "path": "lib64/libnetd_resolv.so",
+      "bytes": 2390752,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "c14c4b1c3d1b5e04a8ca85698369058aefdfe8124ab17af1ff3497e6cd2f33b6",
+      "after": "c14c4b1c3d1b5e04a8ca85698369058aefdfe8124ab17af1ff3497e6cd2f33b6"
+    },
+    {
+      "path": "lib64/libnetd_updatable.so",
+      "bytes": 103000,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "26f236bcb2ad24a8f34de7372b7859aac3a34a4bbe27d698d413f17086284a40",
+      "after": "642d73260d1a15f1c140da9d50513bc5638346ac313ecb9ff38299e3a2f28add"
+    },
+    {
+      "path": "lib64/libnetdutils.so",
+      "bytes": 119840,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "1d1300bebc2c44a4784848623373a37b44de7b814f4452fb6a8c39bdfed5abdb",
+      "after": "1d1300bebc2c44a4784848623373a37b44de7b814f4452fb6a8c39bdfed5abdb"
+    },
+    {
+      "path": "lib64/libnetworkstats.so",
+      "bytes": 606336,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "a1efabb889edeadd4a82ff2f1829840f4a593640d56a0815eeb63cac544bb36e",
+      "after": "a1efabb889edeadd4a82ff2f1829840f4a593640d56a0815eeb63cac544bb36e"
+    },
+    {
+      "path": "lib64/libservice-connectivity.so",
+      "bytes": 119600,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "69677de192a63bb6d5409f141c6495a27a4b5e71a50507758246bb893fe67b2f",
+      "after": "7bbd78e5c9f88cb48698df750ca2f676994002514ced18c1ffef75e4791393a4"
+    },
+    {
+      "path": "lib64/libservice-thread-jni.so",
+      "bytes": 35984,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "891fadce703574e0eeb969a44fef7f00b29b921b283d81d8a401e63430a3bec4",
+      "after": "891fadce703574e0eeb969a44fef7f00b29b921b283d81d8a401e63430a3bec4"
+    },
+    {
+      "path": "lib64/libssl.so",
+      "bytes": 539856,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "11eba50548a41f5ac81def50186f118d26f9b2fe3f1241359aeedda2ce805d60",
+      "after": "11eba50548a41f5ac81def50186f118d26f9b2fe3f1241359aeedda2ce805d60"
+    },
+    {
+      "path": "lib64/libthreadflags.so",
+      "bytes": 51568,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "e4fd6acbf2875f0a99e03a113665b6fbff7ccf82f80afb93e201a3a8edcca128",
+      "after": "e4fd6acbf2875f0a99e03a113665b6fbff7ccf82f80afb93e201a3a8edcca128"
+    },
+    {
+      "path": "lib64/libutils.so",
+      "bytes": 168768,
+      "uid": 1000,
+      "gid": 1000,
+      "mode": "0644",
+      "selinux": "u:object_r:system_lib_file:s0",
+      "before": "b8d311763372adadd3569fb6d3d2eef72a4b59892103bd10835183d37fc04cf4",
+      "after": "b8d311763372adadd3569fb6d3d2eef72a4b59892103bd10835183d37fc04cf4"
+    },
+    {
+      "path": "bin/ethtool",
+      "bytes": 284640,
+      "uid": 0,
+      "gid": 2000,
+      "mode": "0755",
+      "selinux": "u:object_r:system_file:s0",
+      "before": "162a9ef0af441b21c411e692d902232e491f9dc0814dd954eecc736ce2b38f33",
+      "after": "162a9ef0af441b21c411e692d902232e491f9dc0814dd954eecc736ce2b38f33"
+    },
+    {
+      "path": "bin/for-system/clatd",
+      "bytes": 51984,
+      "uid": 1029,
+      "gid": 1029,
+      "mode": "6755",
+      "selinux": "u:object_r:clatd_exec:s0",
+      "before": "7f9d1bfa7d8eee3a664b66d753cf3fd5e9ad50cb366bae05821d1a26089d7f0e",
+      "after": "7f9d1bfa7d8eee3a664b66d753cf3fd5e9ad50cb366bae05821d1a26089d7f0e"
+    },
+    {
+      "path": "bin/netbpfload",
+      "bytes": 102400,
+      "uid": 0,
+      "gid": 0,
+      "mode": "0750",
+      "selinux": "u:object_r:bpfloader_exec:s0",
+      "before": "775d705134ac47146a536d31e76af3d439d0e29d48087bc6c64d04c102c4bed6",
+      "after": "bcf38bda702154024bf8370603c41979ab805fb08a408e682192d712f3a6db3d"
+    },
+    {
+      "path": "bin/ot-daemon",
+      "bytes": 2353584,
+      "uid": 0,
+      "gid": 2000,
+      "mode": "0755",
+      "selinux": "u:object_r:ot_daemon_exec:s0",
+      "before": "23cc1d69e4b42610534478d09a8f043a7689651dda74a61ff1426f3a32d0e088",
+      "after": "23cc1d69e4b42610534478d09a8f043a7689651dda74a61ff1426f3a32d0e088"
+    }
+  ],
+  "native_directories": [
+    {
+      "path": "lib64",
+      "uid": 0,
+      "gid": 2000,
+      "mode": "0755",
+      "selinux": "u:object_r:system_file:s0"
+    },
+    {
+      "path": "bin",
+      "uid": 0,
+      "gid": 2000,
+      "mode": "0755",
+      "selinux": "u:object_r:system_file:s0"
+    },
+    {
+      "path": "bin/for-system",
+      "uid": 1029,
+      "gid": 1000,
+      "mode": "0750",
+      "selinux": "u:object_r:system_file:s0"
+    }
+  ],
+  "files": {
+    "system/bin/t860-bpf-loader-supervisor": {
+      "sha256": "a217d09707af717876f6da2a869a3c81fa720a0cf1023e881ef516d7f70651e7",
+      "bytes": 8264
+    },
+    "system/bin/t860-tethering-guard": {
+      "sha256": "e76b01c87a6376be240da51e0099185a98e6f2372a71315c91bec63f72e5fec2",
+      "bytes": 30192
+    },
+    "system/etc/init/hw/init.rc": {
+      "sha256": "07ec56fea68a373cae3eceb212cdcb8cfdce2e173e5788b88acac7171a0adc41",
+      "bytes": 182474
+    },
+    "system/etc/init/t860-tethering-guard.rc": {
+      "sha256": "254301f51f7fa638e10f3c2f4fb00a742126dd37925afd9628c4dff3cef14f37",
+      "bytes": 4806
+    },
+    "system/etc/selinux/plat_property_contexts": {
+      "sha256": "3695b293d53d7fe2e5a81647a7591e56ba41b8b34dab317f69f96f9278ee057e",
+      "bytes": 124460
+    },
+    "system/etc/t860-tethering-native-372038420/bin/ethtool": {
+      "sha256": "162a9ef0af441b21c411e692d902232e491f9dc0814dd954eecc736ce2b38f33",
+      "bytes": 284640
+    },
+    "system/etc/t860-tethering-native-372038420/bin/for-system/clatd": {
+      "sha256": "7f9d1bfa7d8eee3a664b66d753cf3fd5e9ad50cb366bae05821d1a26089d7f0e",
+      "bytes": 51984
+    },
+    "system/etc/t860-tethering-native-372038420/bin/netbpfload": {
+      "sha256": "bcf38bda702154024bf8370603c41979ab805fb08a408e682192d712f3a6db3d",
+      "bytes": 102400
+    },
+    "system/etc/t860-tethering-native-372038420/bin/ot-daemon": {
+      "sha256": "23cc1d69e4b42610534478d09a8f043a7689651dda74a61ff1426f3a32d0e088",
+      "bytes": 2353584
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/android.hardware.threadnetwork-V1-ndk.so": {
+      "sha256": "78d05b7234fbe08dc182222f27720973ba61357d377be40b320a412d1537c56c",
+      "bytes": 68904
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libaconfig_storage_read_api_cc.so": {
+      "sha256": "e803302e1574059a32159afae1daeba57be31f8289817ba2caf7c19d024bc2d3",
+      "bytes": 190768
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libandroid_net_connectivity_com_android_net_module_util_jni.so": {
+      "sha256": "11e7d5f97b4f34dba9d24f301430968a2c0e836351a0c7156cad32c809c8e847",
+      "bytes": 68896
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libandroid_net_connectivity_com_android_net_module_util_jni_CommonConnectivityJni.so": {
+      "sha256": "8b40d27ac222cf288050f15939b14eaba8f494a63d27fe6e7ea9c3a81f0b6f91",
+      "bytes": 35872
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libbase.so": {
+      "sha256": "620a566e131f28928c479a94cdf45b7526c1731ac057b6767d973b8c00a494ae",
+      "bytes": 218512
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libbpf.so": {
+      "sha256": "71eede6490d54686679edd19c0aef79447cdc1ea0fd180baec9e2485c12c9b8a",
+      "bytes": 974264
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libc++.so": {
+      "sha256": "cb118e98c74d3454858921123b9b51ba13df9cad7dfa141dd892c453661a4d78",
+      "bytes": 1152760
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libcom.android.tethering.connectivity_native.so": {
+      "sha256": "f1589686c04bf74ff0602826625ffcbadcd85bdbbe5fbf361add827cb979e089",
+      "bytes": 68856
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libcrypto.so": {
+      "sha256": "300930a0990f40755daf03a71b0d1f8dde65529253ba2566a7cd674b80eb5133",
+      "bytes": 1965928
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libcrypto_httpengine.so": {
+      "sha256": "ad9d48efb4e9ef2f051d62d34f182d72e27cbb5d3e6b3e41f0cc2d4f7d24abac",
+      "bytes": 888808
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libcutils.so": {
+      "sha256": "9d0b456b4ad5ef4ec46596ea78e0e8611f759dac7a62049c90a0904bec52ceba",
+      "bytes": 118336
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libframework-connectivity-jni.so": {
+      "sha256": "3db437bbccbbd1740bcabc1b324d6b32e1ab707e5e0134a338f0df79ffaade3d",
+      "bytes": 52192
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libframework-connectivity-tiramisu-jni.so": {
+      "sha256": "534410208e1d035e042872bda2647fe66f32041d78a8b10b11458503b2c826ec",
+      "bytes": 35712
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libhttpengine.so": {
+      "sha256": "389070f2338aa868c1a17a57ea4c1dcba962c9a5656cc1870928a22ab9449d55",
+      "bytes": 6974296
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libnetd_resolv.so": {
+      "sha256": "c14c4b1c3d1b5e04a8ca85698369058aefdfe8124ab17af1ff3497e6cd2f33b6",
+      "bytes": 2390752
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libnetd_updatable.so": {
+      "sha256": "642d73260d1a15f1c140da9d50513bc5638346ac313ecb9ff38299e3a2f28add",
+      "bytes": 103000
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libnetdutils.so": {
+      "sha256": "1d1300bebc2c44a4784848623373a37b44de7b814f4452fb6a8c39bdfed5abdb",
+      "bytes": 119840
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libnetworkstats.so": {
+      "sha256": "a1efabb889edeadd4a82ff2f1829840f4a593640d56a0815eeb63cac544bb36e",
+      "bytes": 606336
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libservice-connectivity.so": {
+      "sha256": "7bbd78e5c9f88cb48698df750ca2f676994002514ced18c1ffef75e4791393a4",
+      "bytes": 119600
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libservice-thread-jni.so": {
+      "sha256": "891fadce703574e0eeb969a44fef7f00b29b921b283d81d8a401e63430a3bec4",
+      "bytes": 35984
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libssl.so": {
+      "sha256": "11eba50548a41f5ac81def50186f118d26f9b2fe3f1241359aeedda2ce805d60",
+      "bytes": 539856
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libthreadflags.so": {
+      "sha256": "e4fd6acbf2875f0a99e03a113665b6fbff7ccf82f80afb93e201a3a8edcca128",
+      "bytes": 51568
+    },
+    "system/etc/t860-tethering-native-372038420/lib64/libutils.so": {
+      "sha256": "b8d311763372adadd3569fb6d3d2eef72a4b59892103bd10835183d37fc04cf4",
+      "bytes": 168768
+    }
+  },
+  "signed_manifests": {
+    "tethering/factory.apex": {
+      "bytes": 664,
+      "sha256": "9d996f1e0d54e06934537687221d3967ea99266189a8fb8cead645aed9cdd788"
+    },
+    "tethering/updated.apex": {
+      "bytes": 598,
+      "sha256": "9632594122a93b5bba12b9853c5a354abb1934442e10e592d5e1f1a4db0dd7bd"
+    },
+    "resolver/updated.apex": {
+      "bytes": 26,
+      "sha256": "936728ac480f4eafb4e4a5c447800a93642fc17e2638df6bbcc0b71034db99bb"
+    },
+    "resolver/factory.apex": {
+      "bytes": 161,
+      "sha256": "328fc77c3e93ca73a63f13d32ebbad17d2a94da34b976a56470180abb0e14eef"
+    }
+  },
+  "factory_view_changed": false,
+  "target_metadata": {
+    "system/etc/init/hw/init.rc": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0644",
+      "selinux": "u:object_r:system_file:s0"
+    },
+    "system/etc/init/t860-tethering-guard.rc": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0644",
+      "selinux": "u:object_r:system_file:s0"
+    },
+    "system/etc/selinux/plat_property_contexts": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0644",
+      "selinux": "u:object_r:property_contexts_file:s0"
+    },
+    "system/bin/t860-tethering-guard": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0750",
+      "selinux": "u:object_r:bpfloader_exec:s0"
+    },
+    "system/bin/t860-bpf-loader-supervisor": {
+      "uid": 0,
+      "gid": 0,
+      "mode": "0755",
+      "selinux": "u:object_r:bpfloader_exec:s0"
+    }
+  },
+  "updated_view_source": "/system/etc/t860-tethering-native-372038420",
+  "source_payload_sha256": "da15d29e221c3863caf69f71a10905029062a3df9eb2b10bb7c9e804759a94d0",
+  "apex_contents_modified": false,
+  "real_bpf_property_written": false,
+  "new_selinux_allow_rules": [],
+  "paired_profile_property_type": "bpf_progs_loaded_prop",
+  "supervisor_actual_child": "/apex/com.android.tethering/bin/netbpfload",
+  "supervisor_exit_zero_only_after_child_exit_zero": true,
+  "failure_recovery_deadline_seconds": 900,
+  "native_compatibility": "NOT_PASSED",
+  "script_sha256": "d1d57566304cff05f7b34fd7de27ea659064ebef1a1fb8b5b26f3e4821699e4c",
+  "source_sha256": {
+    "tethering_guard_versions_a78.c": "2f2a2926c582f9e4baaa98727c516c20f7fef7c210b0a4f5a6f5ecde3a2328bf",
+    "bpf_loader_supervisor_a78.c": "0b82c8aea5a9ae0c92c4ccc9c4573cfc488f469bfaeb760e790e62057451324b"
+  },
+  "limits": "Actual A78 installed; factory core boots. Real Google session 78887815 failed BootTimeout and apexd reverted at 614.8s; factory network and four other updates recovered. New-version failure stage unknown pending full diagnostic logs. Frozen A74 ZIP excludes A78.",
+  "host_validation": "docs/audit/mainline-version-native-candidate-ui85-a78.json",
+  "installed": true,
+  "runtime": "REAL_UPDATED_PAIR_BOOT_TIMEOUT_FACTORY_RECOVERED",
+  "network_route_validation": "docs/audit/mainline-linkerconfig-network-route-ui85-a78.json",
+  "replay_same_32_file_contents": true,
+  "candidate_directory": "out/patch-probes/A78-version-views-v4",
+  "candidate_report_sha256": "346dd06f81b8e971c4b04b7aba7b1bbb612caf4755f0317204d23c53efedeae4",
+  "transaction": "out/patch-probes/A78-live-transaction-v2/report.json",
+  "rollback_validation": "docs/audit/mainline-transaction-rollback-ui85-a78.json",
+  "metadata_corrected_against_actual_recovery": "out/audit-probes/A78-live-transaction-v1/labels-observed.txt",
+  "installed_raw_sha256": "2c1b664dfbc61480283a674a6735633861da0265ef1c7262a25ae78ec6831736",
+  "actual_init_parser": "FACTORY_BOOT_OWN_SERVICE_REGISTERED_AND_CORE_RUN_OBSERVED",
+  "live_verification": "docs/audit/mainline-version-native-live-ui85-a78.json",
+  "independent_restore_directory": "out/patch-probes/A78-live-transaction-restore-v1",
+  "independent_restore_readonly_preflight": true,
+  "independent_restore_executed": false,
+  "factory_boot_id": "629bd045-a7ef-4ea2-868e-837655560ee4",
+  "candidate_build_status": "PREPARED_NOT_INSTALLED_NOT_RUNTIME_APPROVED",
+  "actual_update_session": 78887815,
+  "activation_evidence": "out/audit-probes/A78-real-update-activation-v1",
+  "superseded_by": "device/s6/mainline-interpreter-ui85-a79.json",
+  "currently_installed_exact_A78": false
+}

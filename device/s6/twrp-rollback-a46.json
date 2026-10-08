@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "kind": "exact_live_ui8_restore_profile",
+  "target": "SM-T860",
+  "source_snapshot_report_sha256": "d7129a88bf96250082f5ec1886381dba5ada02af1f68956856fcaac7a52951c2",
+  "partitions": {
+    "system": {
+      "path": "system.raw.img",
+      "block": "/dev/block/sda24",
+      "bytes": 6534725632,
+      "sha256": "b086ec97a5180832b033934e8fe2ac7c5972feec38580e7bb8b244526105dab3"
+    },
+    "product": {
+      "path": "product.raw.img",
+      "block": "/dev/block/sda26",
+      "bytes": 1048576000,
+      "sha256": "9055370f86dd9dadc24342374f90d9c37c06c86838ebad45b8c7cd493e8d2e0d"
+    }
+  },
+  "preserved_hardware": {
+    "boot": {
+      "block": "/dev/block/sda20",
+      "bytes": 67108864,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9"
+    },
+    "vendor": {
+      "block": "/dev/block/sda25",
+      "bytes": 1379926016,
+      "sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af"
+    }
+  },
+  "scope": "Explicit manual restoration of the exact A46 current SYSTEM/PRODUCT; not S9 adaptation and not a user data backup",
+  "shared_upgrade_library_sha256": "d6f291730c8604f1a3e28d5f71bc5b3b58fcbd98e82a17de4d5028c3593862b7"
+}

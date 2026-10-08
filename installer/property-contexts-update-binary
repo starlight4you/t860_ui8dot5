@@ -1,0 +1,98 @@
+#!/sbin/sh
+# A50 diagnostic correction for a measured A45 early-init failure.
+# One donor text file only. No BOOT/VENDOR/PRODUCT/DATA writes or reboot.
+set -eu
+API=${1:-}
+OUTFD=${2:-}
+ZIP=${3:-}
+case "$OUTFD" in ''|*[!0-9]*) exit 1 ;; esac
+ui_print() { printf 'ui_print %s\nui_print\n' "$*" >"/proc/self/fd/$OUTFD"; }
+abort() { ui_print "ERROR: $*"; exit 1; }
+hash_file() { sha256sum "$1" | awk '{print $1}'; }
+[ "$API" = 3 ] || abort 'Unsupported API'
+[ "$(getprop ro.product.model)" = SM-T860 ] || abort 'Wrong hardware'
+[ -n "$(getprop ro.twrp.version)" ] || abort 'TWRP required'
+(set -o pipefail) 2>/dev/null || abort 'pipefail required'
+set -o pipefail
+[ "$(readlink -f /dev/block/by-name/system)" = /dev/block/sda24 ] || abort 'SYSTEM alias mismatch'
+[ "$(readlink -f /dev/block/by-name/vendor)" = /dev/block/sda25 ] || abort 'VENDOR alias mismatch'
+[ "$(readlink -f /dev/block/by-name/product)" = /dev/block/sda26 ] || abort 'PRODUCT alias mismatch'
+[ "$(readlink -f /dev/block/by-name/boot)" = /dev/block/sda20 ] || abort 'BOOT alias mismatch'
+[ "$(blockdev --getsize64 /dev/block/sda24)" = 6534725632 ] || abort 'SYSTEM size mismatch'
+for node in sda24 sda25 sda26; do
+    for holder in /sys/class/block/$node/holders/*; do
+        [ ! -e "$holder" ] || abort 'Active device mapper holder'
+    done
+done
+# Do not unmount underneath other users or mutate an unknown image.
+awk '$1 ~ /^\/dev\/block\// {print $1}' /proc/mounts > /tmp/t860-a50-mount-sources-$$
+while read -r src; do
+    resolved=$(readlink -f "$src")
+    case "$resolved" in /dev/block/sda24|/dev/block/sda25|/dev/block/sda26) abort 'Target is already mounted' ;; esac
+done < /tmp/t860-a50-mount-sources-$$
+rm /tmp/t860-a50-mount-sources-$$
+[ "$(hash_file /dev/block/sda20)" = @@BOOT_SHA@@ ] || abort 'BOOT changed'
+[ "$(hash_file /dev/block/sda25)" = @@VENDOR_SHA@@ ] || abort 'VENDOR changed'
+ui_print 'Checking complete A45 SYSTEM and hardware baseline...'
+base_sha=$(hash_file /dev/block/sda24)
+case "$base_sha" in @@BASE_SHA@@|@@FAILED_BOOT_SHA@@) ;; *) abort 'Not the qualified A45 SYSTEM; use a complete audited ROM' ;; esac
+WORK=/tmp/t860-a50-contexts-$$
+(umask 077; mkdir "$WORK")
+for part in system vendor product; do mkdir "$WORK/$part"; done
+WRITING=0
+cleanup() {
+    status=$?
+    # If the write/check failed, restore only this same source text file.
+    if [ "$WRITING" = 1 ] && [ -f "$WORK/source" ]; then
+        mount -o remount,rw "$WORK/system" 2>/dev/null || true
+        if cat "$WORK/source" > "$WORK/system/system_ext/etc/selinux/system_ext_property_contexts"; then
+            sync || true
+            ui_print 'Restored original context file after correction failure; remain in Recovery.'
+        else
+            ui_print 'Source restore failed; use the original full SYSTEM/PRODUCT rollback package.'
+        fi
+    fi
+    for part in product vendor system; do umount "$WORK/$part" 2>/dev/null || true; done
+    rm -rf "$WORK"
+    exit "$status"
+}
+trap cleanup EXIT
+trap 'abort "Interrupted; remain in Recovery"' HUP INT TERM
+unzip -p "$ZIP" patch/system_ext_property_contexts > "$WORK/patched"
+[ "$(hash_file "$WORK/patched")" = @@PATCHED_SHA@@ ] || abort 'Patch hash mismatch'
+mount -t ext4 -o ro,noload /dev/block/sda24 "$WORK/system"
+mount -t ext4 -o ro,noload /dev/block/sda25 "$WORK/vendor"
+mount -t ext4 -o ro,noload /dev/block/sda26 "$WORK/product"
+FILE=$WORK/system/system_ext/etc/selinux/system_ext_property_contexts
+[ -f "$FILE" ] && [ ! -L "$FILE" ] || abort 'Wrong file layout'
+[ "$(hash_file "$FILE")" = @@SOURCE_SHA@@ ] || abort 'Source context file differs'
+[ "$(hash_file "$WORK/system/system/etc/selinux/plat_property_contexts")" = @@PLAT_SHA@@ ] || abort 'Platform contexts differ'
+[ "$(hash_file "$WORK/vendor/etc/selinux/vendor_property_contexts")" = @@VENDOR_CONTEXT_SHA@@ ] || abort 'Vendor contexts differ'
+[ "$(hash_file "$WORK/product/etc/selinux/product_property_contexts")" = @@PRODUCT_CONTEXT_SHA@@ ] || abort 'Product contexts differ'
+[ ! -e "$WORK/vendor/odm/etc/selinux/odm_property_contexts" ] || abort 'Unreviewed ODM contexts'
+metadata=$(stat -c '%a %u %g' "$FILE")
+[ "$metadata" = '644 0 0' ] || abort 'Source permissions differ'
+context=$(ls -Zd "$FILE" | awk '{print $1}')
+[ "$context" = u:object_r:property_contexts_file:s0 ] || abort 'Source SELinux label differs'
+cat "$FILE" > "$WORK/source"
+umount "$WORK/product"
+umount "$WORK/vendor"
+ui_print 'Removing only the conflicting donor property context; preserving vendor definition...'
+mount -o remount,rw "$WORK/system"
+WRITING=1
+cat "$WORK/patched" > "$FILE"
+sync
+[ "$(hash_file "$FILE")" = @@PATCHED_SHA@@ ] || abort 'Context write verification failed'
+[ "$(stat -c '%a %u %g' "$FILE")" = "$metadata" ] || abort 'Permissions changed'
+[ "$(ls -Zd "$FILE" | awk '{print $1}')" = "$context" ] || abort 'SELinux label changed'
+umount "$WORK/system"
+# Read the persisted file again without replaying or writing anything.
+mount -t ext4 -o ro,noload /dev/block/sda24 "$WORK/system"
+[ "$(hash_file "$FILE")" = @@PATCHED_SHA@@ ] || abort 'Persistent context readback failed'
+[ "$(stat -c '%a %u %g' "$FILE")" = "$metadata" ] || abort 'Persistent metadata changed'
+[ "$(ls -Zd "$FILE" | awk '{print $1}')" = "$context" ] || abort 'Persistent label changed'
+WRITING=0
+umount "$WORK/system"
+[ "$(hash_file /dev/block/sda20)" = @@BOOT_SHA@@ ] || abort 'BOOT changed after correction'
+[ "$(hash_file /dev/block/sda25)" = @@VENDOR_SHA@@ ] || abort 'VENDOR changed after correction'
+ui_print 'A50 property context correction verified. DATA preserved. No automatic reboot.'

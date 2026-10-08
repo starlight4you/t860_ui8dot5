@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "A58",
+  "kind": "restore_donor_shared_uid_dependency",
+  "reason_record": "docs/ROUTINES_SYSTEMUI_REBASE_A58.md",
+  "baseline_inventory_sha256": "6bc4228733ea410e6b3be8536211ffece59555a8f404f234cc09373a94656c8a",
+  "donor_build": "X710XXS6EZH3",
+  "stage": "/var/tmp/t860-ui85-capacity-draft-app-preopt",
+  "restore": {
+    "path": "system/system/priv-app/Routines",
+    "apk": "Routines.apk",
+    "sha256": "ba59736439e6f29e8b01749d1db1274d0b98ed1b4d5d3e4863010c2e7d2db369",
+    "bytes": 77892948,
+    "certificate_sha256": "34df0e7a9f1cf1892e45c056b4973cd81ccf148a4050d11aea4ac5a65f900a42",
+    "shared_uid": "android.uid.systemui",
+    "permission": "com.samsung.android.launcher.permission.READ_SETTINGS"
+  },
+  "retain_apk": {
+    "path": "system/system/priv-app/Telecom/Telecom.apk",
+    "metadata": {
+      "gid": 0,
+      "mode": 33188,
+      "sha256": "21b88470b0288e3f7308e7f717bf6505c481f11f863b5b1eb65cea400188b5a9",
+      "size": 9796064,
+      "uid": 0,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      }
+    }
+  },
+  "remove_preopt": {
+    "system/system/priv-app/Telecom/oat": {
+      "gid": 0,
+      "mode": 16877,
+      "uid": 0,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      }
+    },
+    "system/system/priv-app/Telecom/oat/arm64": {
+      "gid": 0,
+      "mode": 16877,
+      "uid": 0,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      }
+    },
+    "system/system/priv-app/Telecom/oat/arm64/Telecom.odex": {
+      "gid": 0,
+      "mode": 33188,
+      "sha256": "a214b14f0d1e3e8ef5fbab8a2327cc6a4474cbf911a67acf42f49adfbb307b87",
+      "size": 12806816,
+      "uid": 0,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      }
+    },
+    "system/system/priv-app/Telecom/oat/arm64/Telecom.vdex": {
+      "gid": 0,
+      "mode": 33188,
+      "sha256": "49d7952c91d256aac7853f328cc75c4157182d51c9712b2fef074b20da129cbf",
+      "size": 111048,
+      "uid": 0,
+      "xattrs": {
+        "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+      }
+    }
+  },
+  "xml_guards": {
+    "system/system/etc/default-permissions/default-permissions-com.samsung.android.app.routines.xml": "619135b4594da59f237d6d6bab92f8ad3926c48b5c6c943c80d3c8c6f02355d5",
+    "system/system/etc/permissions/privapp-permissions-com.samsung.android.app.routines.xml": "1551775c2d61f8ae69c9075c2112c1945971f19fc4609e833fbbde7cea3de066"
+  },
+  "runtime": "NOT_TESTED",
+  "full_checkvintf": "NOT_PASSED",
+  "flashable": false
+}

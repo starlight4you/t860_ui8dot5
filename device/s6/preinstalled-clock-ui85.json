@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "A68-OFFICIAL-CLOCK-PREINSTALL",
+  "reason_record": "docs/APP_REPAIRS_UI85_A68.md",
+  "classification": "DONOR_SPECIFIC optional official app packaging",
+  "source_apk": "device/s6/prebuilts/clock/SamsungClock-12.5.00.46.apk",
+  "source_url": "https://play.google.com/store/apps/details?id=com.sec.android.app.clockpackage",
+  "installed_by_user": true,
+  "runtime": "PASS_USER_REPORTED_DATA_INSTALL",
+  "package": "com.sec.android.app.clockpackage",
+  "version_name": "12.5.00.46",
+  "version_code": 1250046100,
+  "min_sdk": 36,
+  "target_sdk": 36,
+  "apk_sha256": "aa45cc04dd70861fd016b57a63dd47575300b5a941bf57ba67ed99e649228119",
+  "apk_size": 38943891,
+  "certificate_sha256": "34df0e7a9f1cf1892e45c056b4973cd81ccf148a4050d11aea4ac5a65f900a42",
+  "stage_dir": "system/system/app/ClockPackage",
+  "primary_abi": "arm64-v8a",
+  "native_libraries": {
+    "libDiagMonKey.so": {
+      "sha256": "bd196a405ba0e5a89c4b010deb2b8d821e9b8557ae7469152c0e56075168e3eb",
+      "size": 4776
+    },
+    "libSgi.so": {
+      "sha256": "acfd66cbaa80fbf94dc9038157ea6566a0f948c92d864befae648dcc3128e492",
+      "size": 10174880
+    },
+    "libSgiPlatformProxy.so": {
+      "sha256": "1c03c37131ffa27afba716e2fac50aa22b6e6b65ede9dc7b9f8737d848f93752",
+      "size": 268992
+    },
+    "libandroidx.graphics.path.so": {
+      "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6",
+      "size": 10096
+    },
+    "libdatastore_shared_counter.so": {
+      "sha256": "d3e48717c9aa147e0ab21063ba0e8e0211cabf8bf40b222640829519edbf58e1",
+      "size": 7112
+    }
+  },
+  "net_regular_bytes": 49409747,
+  "system_preinstall_runtime": "NOT_TESTED",
+  "capacity": "PASS_APPROVED_MKE2FS_RECIPE_COMPLETE_READBACK",
+  "retrieval_audit_apk": "out/audit-probes/A68-app-repair-initial/SamsungClock-12.5.00.46.apk",
+  "stage_evidence": "docs/audit/official-clock-stage-ui85-a68.json",
+  "capacity_evidence": "docs/audit/official-clock-capacity-ui85-a68.json",
+  "capacity_margin_above_reserve_bytes": {
+    "system": 12836864,
+    "product": 21192704
+  },
+  "stage_inventory_sha256": "5a5157766b0552d0d1c202c9be1fbeb9db49861f788169fdca02aaed3d53db91"
+}

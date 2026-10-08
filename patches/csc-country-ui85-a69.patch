@@ -1,0 +1,9 @@
+--- a/system/build.prop
++++ b/system/build.prop
+@@ -313,3 +313,6 @@
+ ro.build.backported_fixes.alias_bitset.long_list=18
+ # end of file
+ 
++
++# S6 XAR country, verified against official XAR CSC and working ROM.
++ro.csc.countryiso_code=US

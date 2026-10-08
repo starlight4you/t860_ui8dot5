@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "id": "B06-NETWORK-STACK-POLICY",
+  "classification": ["DEVICE_REQUIRED", "VERSION_SPECIFIC", "WORKAROUND"],
+  "reason_document": "docs/SELINUX_REBASE_AUDIT.md#a34networkstack-generic-bpffs-窄权限修改前决定",
+  "donor_build": "X710XXS6EZH3",
+  "hardware_boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "input_sha256": "f208e23c6c58c037ba22ee171e8b3a3c8a48a7078cdcb5e4993e67a617f2c188",
+  "input_size": 3011800,
+  "output_sha256": "ebce484182f38f70dbc1269ad9ba24b8c78c94dba1b55c955f574f5c8b712138",
+  "output_size": 3011871,
+  "path": "system/etc/selinux/plat_sepolicy.cil",
+  "generic_neverallow": "(neverallow base_typeattr_323 fs_bpf (file (read getattr)))",
+  "source_attribute": "base_typeattr_323",
+  "original_attribute": "(typeattributeset base_typeattr_323 (and (domain ) (not (bpfloader gpuservice lmkd netd netutils_wrapper system_server mediaprovider_app ))))",
+  "replacement_attribute": "(typeattributeset base_typeattr_323 (and (domain ) (not (bpfloader gpuservice lmkd netd netutils_wrapper network_stack system_server mediaprovider_app ))))",
+  "device_cil": "device/s6/sepolicy/network-stack-bpf.cil",
+  "added_allow": "(allow network_stack fs_bpf (file (read write getattr)))",
+  "install_metadata": {"uid": 0, "gid": 0, "mode": "0644", "selinux": "u:object_r:sepolicy_file:s0"},
+  "kernel_label_audit_sha256": "190d078fb4f7354d882562b87f02f7c8298422c8b09517009ec76d1a241ebc75",
+  "limits": "Candidate for the retained 4.14 ordinary bpffs label mechanism. No live child pin labels or new-ROM SELinux/network/runtime approval. Re-evaluate when a new kernel supports path-specific labels."
+}

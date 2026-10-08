@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "A71_INSTALLER_SUPPORT_V2",
+  "candidate_id": "A71-X710-EZH3-T860-UI85-REPAIRED",
+  "source_inventory_sha256": "e21e7efaaa1e1d06154cda4dc63ae31c1e6d5f887f9b8929c0535304607f6df7",
+  "source_system_raw_sha256": "b3545d22d995d5ced10686e93a64883ab58ba68fe0d4b39453f0caf79747fbf0",
+  "format": "2",
+  "adaptation": "A71_ONE_S6_CODEC2_POLICY",
+  "support": {
+    "vendor-guard": {
+      "path": "device/s6/prebuilts/installer-a71/vendor-guard",
+      "sha256": "eb740a25e0e70f2304656fc5e6b6ddc9e269bd07b3fcf3de58026cf629ee89e4",
+      "bytes": 2693984
+    },
+    "mainline-guard": {
+      "path": "device/s6/prebuilts/installer-a71/mainline-guard",
+      "sha256": "402e84d1c6e60087db2c78ab6869581e51dd3bdf7a5adcca3a521d57dd7b4081",
+      "bytes": 2237192
+    },
+    "vendor-before-policy": {
+      "path": "device/s6/prebuilts/installer-a71/vendor-before-policy",
+      "sha256": "e529d80729976c2ef41f6831820da5f387b7cdbd44f8b1b33d0e7cf9cd1462b8",
+      "bytes": 1869
+    },
+    "vendor-after-policy": {
+      "path": "device/s6/prebuilts/installer-a71/vendor-after-policy",
+      "sha256": "efae1217c1fd598fb80f390a510c857d7adc3ff8018dc3a2571c7d32e7e3bfcc",
+      "bytes": 1882
+    },
+    "apex-factory.tsv": {
+      "path": "device/s6/prebuilts/installer-a71/apex-factory.tsv",
+      "sha256": "3db9c6be68d3310e1cad7af3848a675dfef9a225504ad93c830e3ecbffb3c02a",
+      "bytes": 1349
+    }
+  },
+  "vendor_inventory_entries": 2768,
+  "data_policy": "PRESERVE_NO_MOUNT_NO_FORMAT_NO_DELETE",
+  "mainline_policy": "REFUSE_ALL_UNVERIFIED_ACTIVE_APEX_OR_STAGED_SESSIONS",
+  "runtime": "NOT_TESTED",
+  "reason_record": "docs/TWRP_INSTALLER_A71.md",
+  "provenance": {
+    "vendor_guard": "docs/audit/vendor-guard-recovery-ui85-a64.json",
+    "mainline_guard_tests": "docs/audit/mainline-guard-tests-ui85-a71-v2.json",
+    "factory_table": "docs/audit/apex-factory-table-ui85-a71.json",
+    "vendor_policy": "docs/audit/media-c2-seccomp-live-ui85-a61.json"
+  },
+  "audited_source_snapshot": {
+    "report": "docs/audit/live-twrp-readonly-preflight-a46.json",
+    "report_sha256": "5d5eeefa088a9b3c15c7c084fe3bb07f24bbf1faebbbf549f7248ba7ccb30cfb",
+    "original_report_sha256": "d7129a88bf96250082f5ec1886381dba5ada02af1f68956856fcaac7a52951c2",
+    "system_sha256": "b086ec97a5180832b033934e8fe2ac7c5972feec38580e7bb8b244526105dab3",
+    "scope": "Exact A46 user v0.48.1 snapshot; diagnostic key not included in new package"
+  },
+  "audited_experimental_source": {
+    "id": "A70_EXACT_STABLE_SOURCE",
+    "system_sha256": "226ac43e6d2bb9b504c1459ee074a31eb7f0ea752772793d099e6f1c9db1817b",
+    "product_sha256": "3131ac9d1d7080731952d47d7abb11ee2feaeb63a3446858313917caaf1e4b29",
+    "reports": {
+      "current-stable-source-readonly-ui85-a71.json": "1a8d508713d9258ea9ea929e9971e62e1e96492456ab31d392cb62393e5361a8",
+      "current-stable-source-vs-stage-ui85-a71.json": "5a50a0b9c19e6fc6855b3e3995c84cef61bb3d1e5ef8dcc23e39b70b892a17d1",
+      "current-stable-source-fsck-ui85-a71.json": "fcd1f9bd9e9726bbc13e96285ed0594dc6e928f2077144c7bf6ffd0751936e54",
+      "twrp-real-readonly-guards-ui85-a71.json": "ca047b7f7cd1cb8ed8ec715a871c6b3e1f998b96397fba1c8da5d8abc0533cd9"
+    },
+    "scope": "Exact audited A70 diagnostic build only; does not prove new full ZIP upgrade from UI8"
+  }
+}

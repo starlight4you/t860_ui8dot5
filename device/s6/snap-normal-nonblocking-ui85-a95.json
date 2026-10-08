@@ -1,0 +1,24 @@
+{
+  "id": "A95_SNAP_NORMAL_NONBLOCKING",
+  "status": "DEPLOYED_LAB_NULL_CONTRACT_AND_BOOT_PASS_FULL_MEDIA_QA_PENDING",
+  "classification": [
+    "VERSION_SPECIFIC",
+    "WORKAROUND"
+  ],
+  "purpose": "An absent ordinary SNAP AIDL service must reach the existing donor failure handler without an unbounded wait on S6",
+  "source": {
+    "path": "/system/lib64/libsnap_aidl.snap.samsung.so",
+    "sha256": "8d4d95dad671cb6be94017a11e0c9a2daf9e9089eb614be611322b14e2aa0569",
+    "size": 148368
+  },
+  "candidate_sha256": "4955b47f2ccb4c6c5741fff97df3499d0964dd64d7ff81f1ddbd441f4ee58f77",
+  "patcher": "scripts/patch_snap_normal_a95.py",
+  "reason_before_change": "docs/SNAP_NONBLOCKING_A95.md",
+  "normal_null_entry": "0x1d210",
+  "existing_post_wait_null_handler": "0x1d274",
+  "secure_wait_and_registered_normal_path": "UNCHANGED",
+  "null_result": "Original donor error proxy, not inference success, fake AIDL service, HIDL adapter or verified CPU fallback",
+  "ui9": "Semantic migration only; reject a new donor until its acquisition and failure contracts are independently analyzed",
+  "runtime_validation": "Actual installed ordinary acquire + getFeatures null-binder handling/release pass; boot and app smoke pass; complete media native path, physical biometrics and Knox secure inference unverified",
+  "audit": "docs/audit/snap-native-live-ui85-a95.json"
+}

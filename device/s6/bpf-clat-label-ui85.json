@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "B06-CLAT",
+  "reason_document": "docs/BPF_REBASE_AUDIT.md#12-b06-clat新标签校验的最小候选a28准备前决定",
+  "classification": [
+    "VERSION_SPECIFIC",
+    "WORKAROUND"
+  ],
+  "sdk_full": "36.1",
+  "hardware_boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "kernel_version": "4.14.190",
+  "input_sha256": "ab6457a5529a0142cd639e291482e18ade0e7368f1507a0dc49dcc5d25804aee",
+  "size": 85440,
+  "apex_path": "lib64/libservice-connectivity.so",
+  "window_va": "0x2d3f",
+  "window_offset": 11583,
+  "window_size": 32,
+  "original_hex": "753a6f626a6563745f723a66735f6270665f6e65745f7368617265643a733000",
+  "replacement_hex": "753a6f626a6563745f723a66735f6270663a7330000000000000000000000000",
+  "old_label": "u:object_r:fs_bpf_net_shared:s0",
+  "new_label": "u:object_r:fs_bpf:s0",
+  "xrefs": [
+    [
+      "0xb17c",
+      "0xb180"
+    ],
+    [
+      "0xb1a4",
+      "0xb1a8"
+    ]
+  ],
+  "functions": [
+    {
+      "va": 45260,
+      "file_offset": 45260,
+      "size": 712,
+      "sha256": "839f6004c16824fc36473b2d7d0b845fcf4ca13379b89c91d4513359cc76f1d1",
+      "fde_va": 15644,
+      "cie_va": 14296,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+    },
+    {
+      "va": 46584,
+      "file_offset": 46584,
+      "size": 740,
+      "sha256": "cba67e71bc0a1185bed4c04edcef2c0328f167600406a09b25e687433e3d3352",
+      "fde_va": 15816,
+      "cie_va": 14296,
+      "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+    }
+  ],
+  "output_sha256": "245d613605e3abf8531baef93e6314af4e0210b26aa34597e32460fde400a141",
+  "install_metadata": {
+    "uid": 1000,
+    "gid": 1000,
+    "mode": "0644",
+    "selinux": "u:object_r:system_lib_file:s0"
+  },
+  "kernel_label_audit": "docs/audit/bpf-preserved-kernel-bpffs-labels-ui85.json",
+  "kernel_label_audit_sha256": "190d078fb4f7354d882562b87f02f7c8298422c8b09517009ec76d1a241ebc75",
+  "pin_clat_audit_sha256": "37aff0feb980237304f5a98250a9b2289dbbb5f440ecfcd393d98f994ee72490",
+  "limits": "Fixed preserved BOOT ordinary bpffs labeling candidate. All executable code/checks/error handling unchanged. No live child labels, CLAT/network/namespace/full policy acceptance; cannot flash or approve dirty upgrade."
+}

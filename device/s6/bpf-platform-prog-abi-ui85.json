@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "A54-LEGACY-BPF-PROG-NAME",
+  "classification": [
+    "DEVICE_REQUIRED",
+    "VERSION_SPECIFIC"
+  ],
+  "reason_record": "docs/BPF_PLATFORM_PROG_ABI_A54.md",
+  "input_sha256": "6e24b8949bb2cedf4a932da889aa24a4b7a60fa0268278edd96ce5240f4ab77d",
+  "output_sha256": "46c92ea8d08a40f8b99f57f94879a95cbe81f14aaed858c7e9f8bfeed1391c34",
+  "bytes": 65384,
+  "target_path": "system/lib64/libbpf_android.so",
+  "function": {
+    "va": 19844,
+    "file_offset": 19844,
+    "size": 13040,
+    "sha256": "4582ad6e87197fa78940906fd202044870896fbc1be20520fc229e959cba9564",
+    "fde_va": 11680,
+    "cie_va": 11080,
+    "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+  },
+  "patch": {
+    "va": 30876,
+    "before_word": "94001789",
+    "after_word": "d503201f",
+    "before_import": "__strlcpy_chk"
+  },
+  "hardware_boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "hardware_vendor_sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af",
+  "baseline_inventory_sha256": "2c59e2b2c6f89f3c9c302096481a1020de47d77df455e1928fd16f4ce97b8e7d",
+  "desired_metadata": {
+    "uid": 0,
+    "gid": 0,
+    "mode": "0644",
+    "selinux": "u:object_r:system_lib_file:s0"
+  }
+}

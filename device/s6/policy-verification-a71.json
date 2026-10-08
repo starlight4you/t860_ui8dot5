@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "stage": "/var/tmp/t860-ui85-capacity-draft-app-preopt",
+  "baseline_inventory_sha256": "e21e7efaaa1e1d06154cda4dc63ae31c1e6d5f887f9b8929c0535304607f6df7",
+  "baseline_entries": 8096,
+  "vendor": "/var/tmp/t860-ui85-upgrade-source-vendor.raw.img",
+  "vendor_sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af",
+  "current_mapping": "202504.cil",
+  "source_recipe_sha256": "4de23c299b33d7e7095d2e05bba5969c217fbf5c7a63d399712d9ae4141e2f6a",
+  "expected_ids": {
+    "plat": "c3ff485c0166537cf89f1c4095baed6602d1d92c3e161c8efaf385f62ae65209",
+    "system_ext": "b81b4e5e0fa4b60525c23bb8874cd79e9e695b1c691bf6c63eff91ae2b576bb4",
+    "product": "5588a0fecc9757e7ba0bbb24e74b4a10d286095e8f4bec7996c982614d762692"
+  },
+  "changed_path": "system/system/etc/selinux/plat_sepolicy_and_mapping.sha256",
+  "compiler_options": [
+    "-m",
+    "-M",
+    "true",
+    "-G",
+    "-N",
+    "-c",
+    "30"
+  ],
+  "reason_document": "docs/TWRP_REPAIRED_CANDIDATE_A71.md",
+  "verification_mode": "VERIFY_CURRENT_WITHOUT_MUTATION"
+}

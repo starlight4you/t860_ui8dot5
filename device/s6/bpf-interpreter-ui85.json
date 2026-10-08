@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "A52-BPF-INTERPRETER",
+  "classification": [
+    "DEVICE_REQUIRED",
+    "VERSION_SPECIFIC"
+  ],
+  "reason_record": "docs/BPF_INTERPRETER_BOOT_A52.md",
+  "hardware_boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+  "hardware_vendor_sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af",
+  "input_sha256": "3e03cf1f639d06348065590cdd5a05d20be265cd6e91421329b06e609c2563a1",
+  "bytes": 102656,
+  "function": {
+    "va": 51112,
+    "file_offset": 51112,
+    "size": 4588,
+    "sha256": "ba5fdfe7d641f0b2376833f06b1c0f1211c9c4645e1dfddfcc7e10e298313a1a",
+    "fde_va": 18240,
+    "cie_va": 16672,
+    "cie_hex": "1000000000000000017a5200017c1e011b0c1f00"
+  },
+  "patch": {
+    "va": 53772,
+    "before_word": "540001a1",
+    "after_word": "1400000d",
+    "target_va": 53824
+  },
+  "baseline_inventory_sha256": "7e2df6ccc307db17b5785223ebf2608a1dbf91f47cbb43ae1f99c3b1e4cd9bbc",
+  "guard_manifest_sha256": "b63473939659103f2e29fed390c887c3221d67e88910eff0ad386dbd5d8e5db0",
+  "guard_source_sha256": "e2956643c7228e0acc50ee40207bfbcf34b56227fc3ea7425e6a48432db776b3",
+  "guard_table_sha256": "a8478f751ca20770a173c88b5cf7c21a9ca2ef35896d96ac39b91322d2dd5488",
+  "output_sha256": "ef39e0b0d6e3dccefd4bc984c707c7af97e57ceca507fd68ecb52b6ca8b6bf8b"
+}

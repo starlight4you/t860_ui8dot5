@@ -1,0 +1,906 @@
+{
+  "schema": 1,
+  "kind": "app_preopt_capacity_experiment",
+  "runtime": "NOT_TESTED",
+  "reason_record": "docs/CAPACITY_DECISIONS.md#A35 / E2",
+  "reason": "Keep all APKs in the current capacity baseline; remove only nine verified APK-local preopt directories in a fresh experiment to budget new donor compatibility files.",
+  "classification": [
+    "VERSION_SPECIFIC",
+    "CAPACITY_ONLY"
+  ],
+  "inspection": {
+    "schema": 1,
+    "kind": "app_preopt_capacity_inspection",
+    "donor_build": "X710XXS6EZH3",
+    "base_stage": "/var/tmp/t860-ui85-capacity-draft",
+    "vndk_sha256": "d0db25222a3ce6f6ad53a965398ffd60d1adcb281905a23a40ca1248fee2eb0e",
+    "stage_log_sha256": "fbe19de7004fec0599b168b8d3be2555d84a1cc57186c97699b3cac08ea2b756",
+    "apps": [
+      {
+        "path": "system/system/app/ARCore",
+        "apk": "ARCore.apk",
+        "apk_metadata": {
+          "uid": 0,
+          "gid": 0,
+          "mode": "0644",
+          "xattrs": {
+            "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+          },
+          "kind": "file",
+          "bytes": 1159816,
+          "sha256": "eecd445c4dad6e43b7b7edd357eb64dd032765866392312c8b97474fad770656"
+        },
+        "dex": {
+          "classes.dex": {
+            "bytes": 1680,
+            "sha256": "d61ad040b4c90f6760e6305003968bb4cfadfffa723b6512365932e2758f1945",
+            "version": "035",
+            "class_definitions": 4,
+            "defined_methods": 5,
+            "concrete_methods_with_code": 5,
+            "instruction_bytes": 36,
+            "checksum_and_signature_valid": true
+          },
+          "classes2.dex": {
+            "bytes": 12400,
+            "sha256": "4d1ba6a97a19156553ba57f85c2c3d509ccbf9df7d2e8000d4ce20d20e341c95",
+            "version": "035",
+            "class_definitions": 4,
+            "defined_methods": 60,
+            "concrete_methods_with_code": 60,
+            "instruction_bytes": 5260,
+            "checksum_and_signature_valid": true
+          },
+          "classes3.dex": {
+            "bytes": 2669268,
+            "sha256": "d21e68c2e49e62a963bde844e710c87164212298913ce000f426007b159aa46f",
+            "version": "035",
+            "class_definitions": 1819,
+            "defined_methods": 12971,
+            "concrete_methods_with_code": 12153,
+            "instruction_bytes": 570044,
+            "checksum_and_signature_valid": true
+          }
+        },
+        "preopt": {
+          "oat": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64/ARCore.odex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 33784,
+            "sha256": "80dc459a12c3ad99fbdde0f2449fe93fc0d52aed419cd404365685b4a9fd5eab"
+          },
+          "oat/arm64/ARCore.vdex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 2715980,
+            "sha256": "464d13b01abc1ac3e489fb63faa0138a01b32bc8081cb2f0341e8bd593911ad4"
+          }
+        },
+        "removed_apparent_bytes": 2749764
+      },
+      {
+        "path": "system/system/app/HiyaService",
+        "apk": "HiyaService.apk",
+        "apk_metadata": {
+          "uid": 0,
+          "gid": 0,
+          "mode": "0644",
+          "xattrs": {
+            "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+          },
+          "kind": "file",
+          "bytes": 2800264,
+          "sha256": "39e9cc18690bc5113b8b5c31019a67482203c864121137e52c907f8d22076730"
+        },
+        "dex": {
+          "classes.dex": {
+            "bytes": 4629868,
+            "sha256": "54f02279c0ab44b2ff20f6aa6b46d581e31f441dcfdf131808ecad4e9317d193",
+            "version": "035",
+            "class_definitions": 7009,
+            "defined_methods": 39259,
+            "concrete_methods_with_code": 36574,
+            "instruction_bytes": 1793470,
+            "checksum_and_signature_valid": true
+          }
+        },
+        "preopt": {
+          "oat": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64/HiyaService.odex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 66536,
+            "sha256": "6b9486f2bccc5cd9980f34ff6c076dace911702332384460763ceb6e97b066a3"
+          },
+          "oat/arm64/HiyaService.vdex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 4751672,
+            "sha256": "f31ed26a64c8d0bd6b6200840d350dff6b236adff4cc53d83c042b0faf364a37"
+          }
+        },
+        "removed_apparent_bytes": 4818208
+      },
+      {
+        "path": "system/system/app/HoneyBoard",
+        "apk": "HoneyBoard.apk",
+        "apk_metadata": {
+          "uid": 0,
+          "gid": 0,
+          "mode": "0644",
+          "xattrs": {
+            "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+          },
+          "kind": "file",
+          "bytes": 137588276,
+          "sha256": "a7bf284fe90afb32b4e63ba3c3bb479f17d31600533629fd3bd2989ce4e17f8e"
+        },
+        "dex": {
+          "classes.dex": {
+            "bytes": 8524272,
+            "sha256": "30aef05fa29eb206124802940df36780ce76d6cf0a330459fe6515fc1b853acd",
+            "version": "039",
+            "class_definitions": 9516,
+            "defined_methods": 57989,
+            "concrete_methods_with_code": 54873,
+            "instruction_bytes": 3028322,
+            "checksum_and_signature_valid": true
+          },
+          "classes2.dex": {
+            "bytes": 7375460,
+            "sha256": "a69205a8104dbbe61c2554ff6b7060057b5a667cf7c58c6f79d1c54efb958605",
+            "version": "039",
+            "class_definitions": 9790,
+            "defined_methods": 54772,
+            "concrete_methods_with_code": 51654,
+            "instruction_bytes": 3184318,
+            "checksum_and_signature_valid": true
+          },
+          "classes3.dex": {
+            "bytes": 9440484,
+            "sha256": "45071ba967621590526557a3060bd0bdff5b8f8f89d448a3a49ee19badb56f9c",
+            "version": "039",
+            "class_definitions": 9183,
+            "defined_methods": 56913,
+            "concrete_methods_with_code": 53175,
+            "instruction_bytes": 3354314,
+            "checksum_and_signature_valid": true
+          },
+          "classes4.dex": {
+            "bytes": 8413000,
+            "sha256": "c038d998331422e91b083f4bd89821bde2b48ca90b850453e13eced8ee918c88",
+            "version": "039",
+            "class_definitions": 9645,
+            "defined_methods": 58515,
+            "concrete_methods_with_code": 55442,
+            "instruction_bytes": 2897120,
+            "checksum_and_signature_valid": true
+          }
+        },
+        "preopt": {
+          "oat": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64/HoneyBoard.art": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 3934640,
+            "sha256": "40fe1003b216b82468eb655ff7a6763c2e466fd46fa75a6b571f79326f19fc56"
+          },
+          "oat/arm64/HoneyBoard.odex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 10227224,
+            "sha256": "ebb54d9150738c5f94dba282598c0693e8fc84d3bae2a59af9ffc395e0f13542"
+          },
+          "oat/arm64/HoneyBoard.vdex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 883696,
+            "sha256": "ee2462a7330c5bd3f9e7f9c649399dccb547e472bb114dcdca95fcbd3837882f"
+          }
+        },
+        "removed_apparent_bytes": 15045560
+      },
+      {
+        "path": "system/system/app/LiveTranscribe",
+        "apk": "LiveTranscribe.apk",
+        "apk_metadata": {
+          "uid": 0,
+          "gid": 0,
+          "mode": "0644",
+          "xattrs": {
+            "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+          },
+          "kind": "file",
+          "bytes": 27082092,
+          "sha256": "0e41d3b9af8d3a0cbb9fe06faff905feffe41d4431c635368204f787d163a32a"
+        },
+        "dex": {
+          "classes.dex": {
+            "bytes": 6674220,
+            "sha256": "3d3d2befa75a7a761c4e6c7d6a6ba796bee54da86cd0c5699330a75b7e73a2db",
+            "version": "039",
+            "class_definitions": 7792,
+            "defined_methods": 41124,
+            "concrete_methods_with_code": 38488,
+            "instruction_bytes": 3347852,
+            "checksum_and_signature_valid": true
+          },
+          "classes2.dex": {
+            "bytes": 363436,
+            "sha256": "81eedee4631ab333e5e6385e930cc8f2e235f3191f7051fe95df62ac2e105670",
+            "version": "035",
+            "class_definitions": 415,
+            "defined_methods": 3008,
+            "concrete_methods_with_code": 2793,
+            "instruction_bytes": 172748,
+            "checksum_and_signature_valid": true
+          }
+        },
+        "preopt": {
+          "oat": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64/LiveTranscribe.odex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 82936,
+            "sha256": "df43538e62f80b67a36ad760d30a68beb06d37aebd1ec3e7067d692f552e6467"
+          },
+          "oat/arm64/LiveTranscribe.vdex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 7212252,
+            "sha256": "55b247aa716c9972fbbc6ad04ede25483c81c91c8d654b25366280b4d7d6fc33"
+          }
+        },
+        "removed_apparent_bytes": 7295188
+      },
+      {
+        "path": "system/system/priv-app/SamsungCamera",
+        "apk": "SamsungCamera.apk",
+        "apk_metadata": {
+          "uid": 0,
+          "gid": 0,
+          "mode": "0644",
+          "xattrs": {
+            "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+          },
+          "kind": "file",
+          "bytes": 71120842,
+          "sha256": "d6dafc3686c0d9d8029fdf9cf37d374ebce00f4732a0d7ab24bd36803c2a3b4c"
+        },
+        "dex": {
+          "classes.dex": {
+            "bytes": 11253924,
+            "sha256": "a1c86c68ff18fe65b312d8764ea7a7e3b0c1db52d6c051baa60431976370cfaf",
+            "version": "039",
+            "class_definitions": 8977,
+            "defined_methods": 59804,
+            "concrete_methods_with_code": 57778,
+            "instruction_bytes": 3459942,
+            "checksum_and_signature_valid": true
+          },
+          "classes2.dex": {
+            "bytes": 8692924,
+            "sha256": "44ae8b3ba24f3acc24315871c537c799b084115a93fba8ab5dc55951d756bb33",
+            "version": "039",
+            "class_definitions": 7988,
+            "defined_methods": 53517,
+            "concrete_methods_with_code": 50338,
+            "instruction_bytes": 3018386,
+            "checksum_and_signature_valid": true
+          },
+          "classes3.dex": {
+            "bytes": 7699436,
+            "sha256": "7cf0f07e6a1266ab57c59ed8b012c893c67c08c3085f82f41a621fd1c8926258",
+            "version": "039",
+            "class_definitions": 7347,
+            "defined_methods": 51055,
+            "concrete_methods_with_code": 48311,
+            "instruction_bytes": 2424422,
+            "checksum_and_signature_valid": true
+          },
+          "classes4.dex": {
+            "bytes": 8650612,
+            "sha256": "a28f192b432f1a99051490670b793c5f60e8935a0534df525242f1d8ec87e2cf",
+            "version": "039",
+            "class_definitions": 6702,
+            "defined_methods": 53417,
+            "concrete_methods_with_code": 48274,
+            "instruction_bytes": 3649722,
+            "checksum_and_signature_valid": true
+          }
+        },
+        "preopt": {
+          "oat": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64/SamsungCamera.art": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 4750480,
+            "sha256": "3e2f438a30f9bf7a9cc8d291b68b114c405088fb20aec52a765d385149c78ec1"
+          },
+          "oat/arm64/SamsungCamera.odex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 13756416,
+            "sha256": "430a79f669f0ccfc10560c8526c9feaeb7de5f1ca3f3ee42c43318f02f7c667d"
+          },
+          "oat/arm64/SamsungCamera.vdex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 680264,
+            "sha256": "8266ad6044511b5997cf5ec448545a9784307ea8ea6c15ba2d0055697e899628"
+          }
+        },
+        "removed_apparent_bytes": 19187160
+      },
+      {
+        "path": "system/system/priv-app/SamsungCloudClient",
+        "apk": "SamsungCloudClient.apk",
+        "apk_metadata": {
+          "uid": 0,
+          "gid": 0,
+          "mode": "0644",
+          "xattrs": {
+            "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+          },
+          "kind": "file",
+          "bytes": 76943396,
+          "sha256": "f6248db6f2805de10172ec223c822d87d439370459d6bb8b7f487e66a32d2342"
+        },
+        "dex": {
+          "classes.dex": {
+            "bytes": 13753348,
+            "sha256": "61ef421405cf25feb546502b2d5241743d52981d480aa7eac2d4a019801a07a7",
+            "version": "039",
+            "class_definitions": 9540,
+            "defined_methods": 60529,
+            "concrete_methods_with_code": 58489,
+            "instruction_bytes": 3522756,
+            "checksum_and_signature_valid": true
+          },
+          "classes2.dex": {
+            "bytes": 9342128,
+            "sha256": "3f559b475bf100d3e9d8fa7b72fcde1fa3f00cb460869762520b5389e88b5b91",
+            "version": "039",
+            "class_definitions": 7393,
+            "defined_methods": 57136,
+            "concrete_methods_with_code": 53914,
+            "instruction_bytes": 2821524,
+            "checksum_and_signature_valid": true
+          },
+          "classes3.dex": {
+            "bytes": 8819736,
+            "sha256": "f7811725bef02d892747c758682db44b19c3b7202f7fe5641563c82faa18a34a",
+            "version": "039",
+            "class_definitions": 8749,
+            "defined_methods": 55663,
+            "concrete_methods_with_code": 53179,
+            "instruction_bytes": 2938644,
+            "checksum_and_signature_valid": true
+          },
+          "classes4.dex": {
+            "bytes": 10683004,
+            "sha256": "ad7227e7e8b9a2ca82fc483d717cae707533ab85b64dfe75aac261a474899bb1",
+            "version": "039",
+            "class_definitions": 8690,
+            "defined_methods": 58486,
+            "concrete_methods_with_code": 55903,
+            "instruction_bytes": 3464806,
+            "checksum_and_signature_valid": true
+          },
+          "classes5.dex": {
+            "bytes": 9805472,
+            "sha256": "8964c71eea24dd787df688da98693eb683b5868d73a37d1cdcc7287532283591",
+            "version": "039",
+            "class_definitions": 9032,
+            "defined_methods": 60084,
+            "concrete_methods_with_code": 57491,
+            "instruction_bytes": 3511040,
+            "checksum_and_signature_valid": true
+          },
+          "classes6.dex": {
+            "bytes": 3028488,
+            "sha256": "9387608a07bd539b0be7d63b2c67d4d32e01a22c2ea2f888d8c3386f9cbd3e6f",
+            "version": "039",
+            "class_definitions": 3382,
+            "defined_methods": 21885,
+            "concrete_methods_with_code": 21300,
+            "instruction_bytes": 1210428,
+            "checksum_and_signature_valid": true
+          }
+        },
+        "preopt": {
+          "oat": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64/SamsungCloudClient.odex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 394160,
+            "sha256": "125afc0959ec35597d9358b539ccf0c28d688aa64112373b234d4ab4476f94c3"
+          },
+          "oat/arm64/SamsungCloudClient.vdex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 1151456,
+            "sha256": "63a2652a02d6fd56a6259579923d6b324062da89f9c0e6869554017e245900b1"
+          }
+        },
+        "removed_apparent_bytes": 1545616
+      },
+      {
+        "path": "system/system/priv-app/SamsungContacts",
+        "apk": "SamsungContacts.apk",
+        "apk_metadata": {
+          "uid": 0,
+          "gid": 0,
+          "mode": "0644",
+          "xattrs": {
+            "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+          },
+          "kind": "file",
+          "bytes": 51463852,
+          "sha256": "ef371ae2426e3f802f8f271ca9fbef28e0715091ff011cb1408ec7449bc0a233"
+        },
+        "dex": {
+          "classes.dex": {
+            "bytes": 11475060,
+            "sha256": "2b9420d078d283a881f07c8d427a6c0b67444ed47cc711d3648dcc52338a8338",
+            "version": "039",
+            "class_definitions": 9715,
+            "defined_methods": 53540,
+            "concrete_methods_with_code": 51411,
+            "instruction_bytes": 6197900,
+            "checksum_and_signature_valid": true
+          },
+          "classes2.dex": {
+            "bytes": 2355584,
+            "sha256": "4cae530db0c45356cbf93b23347eaceb341edeee05c5159c36d3d9a961f4ec90",
+            "version": "039",
+            "class_definitions": 2549,
+            "defined_methods": 15772,
+            "concrete_methods_with_code": 14581,
+            "instruction_bytes": 1022148,
+            "checksum_and_signature_valid": true
+          }
+        },
+        "preopt": {
+          "oat": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64/SamsungContacts.art": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 2316896,
+            "sha256": "a9bd12d1e098a00d5a617798c688b52495548efa61173edbcd03e2ad4ab5a3ed"
+          },
+          "oat/arm64/SamsungContacts.odex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 8419152,
+            "sha256": "91cf7aff9c27e5670e70dd39ef4f0bf41b0ed9a2f1b7ca20f72dae1a893bf72c"
+          },
+          "oat/arm64/SamsungContacts.vdex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 358272,
+            "sha256": "4543628560f748c016835850066ee18961fac55f3ed2f165e645fe2861336320"
+          }
+        },
+        "removed_apparent_bytes": 11094320
+      },
+      {
+        "path": "system/system/priv-app/SamsungGallery2018",
+        "apk": "SamsungGallery2018.apk",
+        "apk_metadata": {
+          "uid": 0,
+          "gid": 0,
+          "mode": "0644",
+          "xattrs": {
+            "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+          },
+          "kind": "file",
+          "bytes": 59343888,
+          "sha256": "033e234f6eabe520b6fe877b76c6e1958401a1c2f8b5b5670a13b8f71117f544"
+        },
+        "dex": {
+          "classes.dex": {
+            "bytes": 9284272,
+            "sha256": "bf0d937232131268b025b236047f2827ca6d23fc3750bec4b4a8669f2bbdc9dd",
+            "version": "039",
+            "class_definitions": 8239,
+            "defined_methods": 53893,
+            "concrete_methods_with_code": 50944,
+            "instruction_bytes": 3359990,
+            "checksum_and_signature_valid": true
+          },
+          "classes2.dex": {
+            "bytes": 6631532,
+            "sha256": "91ab90afb5c155a579e78f502aa76f9e59e6ff874d17256b470c08da69893448",
+            "version": "039",
+            "class_definitions": 5140,
+            "defined_methods": 51815,
+            "concrete_methods_with_code": 50336,
+            "instruction_bytes": 2519998,
+            "checksum_and_signature_valid": true
+          },
+          "classes3.dex": {
+            "bytes": 8988484,
+            "sha256": "d41963db43f236879c1ed2a565a3a4916dfc8fa0791ad2066ba46a54bfae7262",
+            "version": "039",
+            "class_definitions": 7285,
+            "defined_methods": 57248,
+            "concrete_methods_with_code": 54988,
+            "instruction_bytes": 3055688,
+            "checksum_and_signature_valid": true
+          },
+          "classes4.dex": {
+            "bytes": 3405916,
+            "sha256": "3ab1fe684adf7dd2ea2ad400cffc0c90bbc0867a870bbc367c0845d0e3762039",
+            "version": "039",
+            "class_definitions": 3773,
+            "defined_methods": 22671,
+            "concrete_methods_with_code": 21228,
+            "instruction_bytes": 1342924,
+            "checksum_and_signature_valid": true
+          }
+        },
+        "preopt": {
+          "oat": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64/SamsungGallery2018.art": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 3079888,
+            "sha256": "56ceba87b447b0b6153d4d70d459e44505bed9ba9719fc1fe56a463f93421dcd"
+          },
+          "oat/arm64/SamsungGallery2018.odex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 5369976,
+            "sha256": "9e0f505cf720d42e8b75f5244979fc64647e61cba1bea96a7e9d0475016832aa"
+          },
+          "oat/arm64/SamsungGallery2018.vdex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 574080,
+            "sha256": "ce56e7d6452c7bb55989effe7bd356827b6eb62a8ab6db5fef495d14649f29c0"
+          }
+        },
+        "removed_apparent_bytes": 9023944
+      },
+      {
+        "path": "system/system/priv-app/SecMyFiles2020",
+        "apk": "SecMyFiles2020.apk",
+        "apk_metadata": {
+          "uid": 0,
+          "gid": 0,
+          "mode": "0644",
+          "xattrs": {
+            "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+          },
+          "kind": "file",
+          "bytes": 69510099,
+          "sha256": "ee1c3b9aa54eab24353aa840d8527d0cf2c5a9b6ab0fc2b056373bc25cbcbd0d"
+        },
+        "dex": {
+          "classes.dex": {
+            "bytes": 8770840,
+            "sha256": "a082e734612f5fa827ce2bf93a74d44e1b00bc6db9a452de37bf86d79f45c781",
+            "version": "039",
+            "class_definitions": 8422,
+            "defined_methods": 53154,
+            "concrete_methods_with_code": 50691,
+            "instruction_bytes": 3718222,
+            "checksum_and_signature_valid": true
+          },
+          "classes2.dex": {
+            "bytes": 9819320,
+            "sha256": "b960b4846cedd8100e0416795ab3e0e8e36fc13f241c64005ba4da1c2ec831b4",
+            "version": "039",
+            "class_definitions": 8712,
+            "defined_methods": 53174,
+            "concrete_methods_with_code": 49765,
+            "instruction_bytes": 4000260,
+            "checksum_and_signature_valid": true
+          }
+        },
+        "preopt": {
+          "oat": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0755",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "directory"
+          },
+          "oat/arm64/SecMyFiles2020.art": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 1859808,
+            "sha256": "a401ec8c2459c9859671a3a96d92906ce8cfe471e8c4e091956743f603a24520"
+          },
+          "oat/arm64/SecMyFiles2020.odex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 4368312,
+            "sha256": "75d1a6e42feee08815c6170e28f21dfcc199009a417342b67e362760a60aedf4"
+          },
+          "oat/arm64/SecMyFiles2020.vdex": {
+            "uid": 0,
+            "gid": 0,
+            "mode": "0644",
+            "xattrs": {
+              "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+            },
+            "kind": "file",
+            "bytes": 522888,
+            "sha256": "a2c240c89c837640f52535a051014a7a38fce0172018fbc1021cdd8c9014d443"
+          }
+        },
+        "removed_apparent_bytes": 6751008
+      }
+    ],
+    "removed_apparent_bytes": 77510768
+  },
+  "preserve": [
+    "all original APK and DEX bytes",
+    "ART/runtime/APEX",
+    "boot images",
+    "framework/system_server preopt",
+    "original capacity baseline",
+    "BOOT/VENDOR/ODM/DATA"
+  ],
+  "system_inodes": 32768
+}

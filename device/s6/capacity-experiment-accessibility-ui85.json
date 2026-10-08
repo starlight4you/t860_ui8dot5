@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "status": "isolated_experiment_only_nonflash",
+  "precondition_vndk30_sha256": "d0db25222a3ce6f6ad53a965398ffd60d1adcb281905a23a40ca1248fee2eb0e",
+  "reason": "Test whether a lower ext4 inode count plus reinstallable Google accessibility/AR apps and one independent creative preload can preserve OCR within the T860 SYSTEM capacity gate",
+  "remove": [
+    {
+      "path": "system/system/app/LiveTranscribe",
+      "apk": "LiveTranscribe.apk",
+      "apk_sha256": "0e41d3b9af8d3a0cbb9fe06faff905feffe41d4431c635368204f787d163a32a",
+      "apparent_bytes": 34377280,
+      "risk": "Accessibility feature absent until installed from Play; X710 Settings contains explicit download action"
+    },
+    {
+      "path": "system/system/app/VoiceAccess",
+      "apk": "VoiceAccess.apk",
+      "apk_sha256": "f4fa37ffa926db46db9da468aa8752b2fb937c61fd120b60d84c2fcfd2169e6d",
+      "apparent_bytes": 16878621,
+      "risk": "Voice control absent until installed from Play; X710 Settings routes missing service to Play"
+    },
+    {
+      "path": "system/system/app/ARCore",
+      "apk": "ARCore.apk",
+      "apk_sha256": "eecd445c4dad6e43b7b7edd357eb64dd032765866392312c8b97474fad770656",
+      "apparent_bytes": 3909580,
+      "risk": "AR apps need Play Services for AR download; Gallery/Camera AR entry points require runtime validation"
+    },
+    {
+      "path": "system/system/preload/LumaFusion",
+      "apk": "LumaFusion.apk",
+      "apk_sha256": "e88132da5d29357d34977f140317e06aa478cd9c2b0e559e1bec13e4f3ac340b",
+      "apparent_bytes": 2844191,
+      "risk": "Independent third-party video editor preload removed"
+    }
+  ]
+}

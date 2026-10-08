@@ -1,0 +1,13 @@
+roms/
+work/
+out/
+*.img
+*.zip
+*.7z*
+*.apk
+*.jar
+*.pyc
+__pycache__/
+adbkey*
+*.heic
+*.HEIC

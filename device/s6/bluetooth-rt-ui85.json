@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "A60",
+  "kind": "s6_bluetooth_rt_group",
+  "reason_record": "docs/BLUETOOTH_RT_REBASE_A60.md",
+  "baseline_inventory_sha256": "676aee45a84194f39a51a4958558bac4613094ae8787e1b48de06a67b87160ea",
+  "payload_sha256": "61e32d5fd8e77bc3552809a61b3473798c159cc75826c00b483404368b698068",
+  "path": "system/system/etc/init/init.t860-bluetooth-rt.rc",
+  "payload_bytes": 374,
+  "metadata": {
+    "uid": 0,
+    "gid": 0,
+    "mode": 33188,
+    "xattrs": {
+      "security.selinux": "753a6f626a6563745f723a73797374656d5f66696c653a7330"
+    }
+  },
+  "hardware": {
+    "boot_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+    "vendor_sha256": "adcd83034b123edb28f5799e7baff9004fa03f5bb9ec0ff82d911add81c1f7af"
+  },
+  "guards": {
+    "system/system/etc/init/hw/init.rc": "c8520ad8bd8ea9c4fdcd40630a990add252c6146d312d8dbd0ebb4acca2e9bf2",
+    "system/system/framework/services.jar": "91e2a7ce17f25a84c36e70a958aa523274eb394c7f3da4f30051364871f23d22"
+  },
+  "evidence_sha256": {
+    "out/audit-probes/A60-bluetooth-rt/before-runtime.txt": "45a10db1280679b61167c164caf1c47d2e748d014fdf86437bbc9013d4b64762",
+    "out/audit-probes/A60-bluetooth-rt/start-process.txt": "52b808c09d17d58cfe9f28b05d2a85a7e391315f7b88625b8abaa32dd9a82809"
+  },
+  "runtime": "NOT_TESTED",
+  "release": "NOT_PASSED"
+}

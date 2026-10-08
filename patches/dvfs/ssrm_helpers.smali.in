@@ -1,0 +1,227 @@
+
+.method private static blacklist addS6SsrmAliases([II)[I
+    .registers 7
+
+    if-eqz p0, :cond_return
+
+    array-length v0, p0
+
+    const/4 v1, 0x0
+
+    :scan_native_positive
+    if-ge v1, v0, :cond_return
+
+    aget v2, p0, v1
+
+    if-gtz v2, :has_native_positive
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :scan_native_positive
+
+    :has_native_positive
+
+    const v0, 0x12001002
+
+    if-eq p1, v0, :cond_cpu
+
+    const v0, 0x20001002
+
+    if-eq p1, v0, :cond_gpu
+
+    goto :cond_return
+
+    :cond_cpu
+    const/16 v0, @CPU_COUNT@
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_cpu
+
+    goto :goto_merge
+
+    :cond_gpu
+    const/16 v0, @GPU_COUNT@
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_gpu
+
+    :goto_merge
+    array-length v0, p0
+
+    array-length v2, v1
+
+    add-int/2addr v2, v0
+
+    invoke-static {p0, v2}, Ljava/util/Arrays;->copyOf([II)[I
+
+    move-result-object p0
+
+    const/4 v2, 0x0
+
+    :goto_append
+    array-length v3, v1
+
+    if-ge v2, v3, :cond_sort
+
+    aget v3, v1, v2
+
+    add-int v4, v0, v2
+
+    aput v3, p0, v4
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_append
+
+    :cond_sort
+    invoke-static {p0}, Ljava/util/Arrays;->sort([I)V
+
+    array-length v0, p0
+
+    const/4 v1, 0x1
+
+    if-le v0, v1, :cond_return
+
+    move v2, v1
+
+    const/4 v3, 0x0
+
+    aget v3, p0, v3
+
+    :goto_dedupe
+    if-ge v2, v0, :cond_trim
+
+    aget v4, p0, v2
+
+    if-eq v4, v3, :cond_dedupe_next
+
+    aput v4, p0, v1
+
+    add-int/lit8 v1, v1, 0x1
+
+    move v3, v4
+
+    :cond_dedupe_next
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_dedupe
+
+    :cond_trim
+    if-eq v1, v0, :cond_reverse_setup
+
+    invoke-static {p0, v1}, Ljava/util/Arrays;->copyOf([II)[I
+
+    move-result-object p0
+
+    :cond_reverse_setup
+    const/4 v0, 0x0
+
+    array-length v1, p0
+
+    add-int/lit8 v1, v1, -0x1
+
+    :goto_reverse
+    if-ge v0, v1, :cond_return
+
+    aget v2, p0, v0
+
+    aget v3, p0, v1
+
+    aput v3, p0, v0
+
+    aput v2, p0, v1
+
+    add-int/lit8 v0, v0, 0x1
+
+    add-int/lit8 v1, v1, -0x1
+
+    goto :goto_reverse
+
+    :cond_return
+    return-object p0
+
+    :array_cpu
+    .array-data 4
+@CPU_VALUES@
+    .end array-data
+
+    :array_gpu
+    .array-data 4
+@GPU_VALUES@
+    .end array-data
+.end method
+
+.method final blacklist normalizeS6SsrmFrequency(II)I
+    .registers 9
+
+    if-lez p1, :cond_original
+
+    const v0, 0x12001002
+
+    if-eq p2, v0, :cond_supported_type
+
+    const v0, 0x20001002
+
+    if-ne p2, v0, :cond_original
+
+    :cond_supported_type
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, p2, v0}, Lcom/samsung/android/os/SemDvfsManager;->getSupportedFrequency(II)[I
+
+    move-result-object p0
+
+    if-eqz p0, :cond_original
+
+    array-length p2, p0
+
+    if-lez p2, :cond_original
+
+    const/4 v0, 0x0
+
+    const/4 v1, -0x1
+
+    const/4 v2, 0x0
+
+    :goto_scan
+    if-ge v0, p2, :cond_choose
+
+    aget v3, p0, v0
+
+    if-lez v3, :cond_next
+
+    if-eqz v2, :set_minimum
+
+    if-ge v3, v2, :cond_floor
+
+    :set_minimum
+    move v2, v3
+
+    :cond_floor
+    if-gt v3, p1, :cond_next
+
+    if-le v3, v1, :cond_next
+
+    move v1, v3
+
+    :cond_next
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_scan
+
+    :cond_choose
+    if-lez v1, :cond_minimum
+
+    return v1
+
+    :cond_minimum
+    if-lez v2, :cond_original
+
+    return v2
+
+    :cond_original
+    return p1
+.end method
+

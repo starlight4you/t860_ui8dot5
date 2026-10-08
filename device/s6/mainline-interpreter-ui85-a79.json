@@ -1,0 +1,44 @@
+{
+  "id": "A79_NEW_SIGNED_LOADER_JIT_INIT_LOGIC",
+  "classification": [
+    "DEVICE_REQUIRED",
+    "VERSION_SPECIFIC"
+  ],
+  "candidate_directory": "out/patch-probes/A79-interpreter-v1",
+  "candidate_report_sha256": "2a1b592dd1138344e23b588dd515704d8a6bb6b0cb3840f16255b6e0c215efa2",
+  "source_system_sha256": "2c1b664dfbc61480283a674a6735633861da0265ef1c7262a25ae78ec6831736",
+  "candidate_changes": [
+    {
+      "path": "system/bin/t860-tethering-guard",
+      "before": "e76b01c87a6376be240da51e0099185a98e6f2372a71315c91bec63f72e5fec2",
+      "after": "c646a0d8de531fe98b7a80387f7dd8484c7429fe18f47e04d5189ceb30cd09f0"
+    },
+    {
+      "path": "system/etc/t860-tethering-native-372038420/bin/netbpfload",
+      "before": "bcf38bda702154024bf8370603c41979ab805fb08a408e682192d712f3a6db3d",
+      "after": "219998a6f58cfc1c2a1c4e10ec27eb81680ef5d5dfa20839c2661c47b639447c"
+    }
+  ],
+  "validation": "docs/audit/mainline-interpreter-candidate-ui85-a79.json",
+  "installed": true,
+  "runtime": "FACTORY_BOOT_CORE_OBSERVED_UPDATED_PAIR_NOT_RETESTED",
+  "installed_raw_sha256": "14e6a6dfe9d6ab05dc76dabd9de2591656f4500797438bd1074ff4702f9e6a17",
+  "transaction_evidence": "out/audit-probes/A79-live-transaction-v1",
+  "independent_restore": "ACTUAL_TWRP_SYNTAX_AND_FULL_READONLY_PREFLIGHT_PASSED_NOT_EXECUTED",
+  "factory_boot_id": "09ad0014-fcf9-4cba-a90d-50c373078e3f",
+  "factory_evidence": "out/audit-probes/A79-factory-boot-v1",
+  "actual_updated_pair_test": "WAITING_NORMAL_USER_UNLOCK",
+  "factory_retention": {
+    "expected": {
+      "com.android.adservices": "372038020",
+      "com.android.ondevicepersonalization": "372038020",
+      "com.android.tzdata": "372038420",
+      "com.android.os.statsd": "372040000"
+    },
+    "seconds": 61.9,
+    "status": "RETENTION_OBSERVED",
+    "device_mutations": false,
+    "script_sha256": "64b15b754d160e23258861439cef3a92662a987795d6830e074b86c6ada7b456",
+    "limits": "Specified versions and interval only; no second reboot, cryptography, hardware, network traffic or future version certification."
+  }
+}

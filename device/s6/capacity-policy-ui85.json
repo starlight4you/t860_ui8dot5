@@ -1,0 +1,669 @@
+{
+  "schema": 1,
+  "donor": "SM-X710 X710XXS6EZH3 One UI 8.5",
+  "target": "SM-T860 XAR physical PIT",
+  "status": "candidate_only_no_firmware_mutation",
+  "minimum_free_bytes": 268435456,
+  "items": [
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_ar_AE_m00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_id_ID_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_pl_PL_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_de_DE_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_fr_FR_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_pt_BR_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_es_US_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_es_ES_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/preload/ClipStudio",
+      "action": "remove_candidate",
+      "reason": "用户指定移除可重新安装的 Clip Studio Paint 预装 APK；不动 S Pen/AirCommand。",
+      "basis": "user-directed optional app; X710 APK manifest verified"
+    },
+    {
+      "partition": "system",
+      "path": "system/preload/GoodNotes",
+      "action": "remove_candidate",
+      "reason": "用户指定移除可重新安装的 GoodNotes 第三方预装 APK；与 Samsung Notes 不同。",
+      "basis": "user-directed optional app; X710 APK manifest verified"
+    },
+    {
+      "partition": "system",
+      "path": "system/preload/NoteShelf",
+      "action": "remove_candidate",
+      "reason": "用户指定移除 Noteshelf 第三方预装；X710 此路径不存在，保留显式 source_missing 记录以防与 GoodNotes 混淆。",
+      "basis": "user-directed optional app; absent from X710 donor"
+    },
+    {
+      "partition": "system",
+      "path": "system/etc/spotify.conf",
+      "action": "remove_candidate",
+      "reason": "用户指定移除 Spotify 预装；X710 无 Spotify APK，只有推广/预装国家配置，可清理该配置。",
+      "basis": "user-directed preload configuration; X710 text verified"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/OCRDataProvider",
+      "action": "keep",
+      "reason": "X710 Camera、Gallery、SmartCapture、VisionIntelligence 等保留 APK 显式引用 com.samsung.android.sdk.ocr；先保留原版，待实机验证后再评估。",
+      "basis": "retained core-app references in docs/audit/user-app-package-refs.tsv"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_zh_HK_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_th_TH_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_zh_TW_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_ru_RU_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_es_MX_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_it_IT_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_hi_IN_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_vi_VN_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_zh_CN_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_en_GB_f00",
+      "action": "remove_candidate",
+      "reason": "可选语言语音包；保留 en_US 引擎与语音包。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/AREmojiEditor",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/OneDrive_Samsung_v3",
+      "action": "remove_candidate",
+      "reason": "用户指定移除 Microsoft OneDrive；新 Gallery 已见缺包状态与商店入口，云同步/回收站和重装兼容仍需实机验证。",
+      "basis": "user-directed Microsoft app; scoped X710 call-chain review; runtime not tested"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/PhotoRemasterService",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/YourPhone_P1_5",
+      "action": "remove_candidate",
+      "reason": "用户指定移除 Microsoft Your Phone/Link to Windows 主应用；默认授权有缺包跳过，三星 MDX 配套服务仍保留并需独立审核。",
+      "basis": "user-directed Microsoft app; scoped X710 call-chain review; runtime not tested"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/SamsungSmartSuggestions",
+      "action": "move_to_product",
+      "reason": "框架仍绑定 AugmentedAutofill/ContentCapture；保留 X710 版本，沿旧工程验证过的 PRODUCT 放置模式重建 allowlist。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/PhotoEditor_AIFull",
+      "action": "keep",
+      "reason": "A96 实机证实为相册 SPEActivity 核心编辑依赖；旧裁剪误删，保留新 S9 donor 原签名 APK，并重建应用私有 native 库。",
+      "basis": "A96 Gallery -92 / package absent / Galaxy Store 9909; core photo editor restoration; release capacity remeasurement required"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/AREmoji",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/LiveEffectService",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/AvatarEmojiSticker",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/SingleTakeService",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/StickerFaceARAvatar",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/Upday",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/GameHome",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/HashTagService",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/ShareLive",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/AirCommand",
+      "action": "keep",
+      "reason": "S Pen 核心入口；旧 UI8 实机已验证。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/DynamicLockscreen",
+      "action": "keep",
+      "reason": "DailyBoard/provider 及锁屏功能；旧工程删除后曾恢复。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/DualOutFocusViewer_V",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/SamsungBilling",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/AutoDoodle",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/FacAtFunction",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/GpuWatchApp",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/VexScanner",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/GameTools_Dream",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/SamsungVideoPlayer",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/StoryService",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/PeopleStripe",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/etc/objectremoval",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 裁剪的可选 AI/相机模型；需验证新 Camera/Gallery 无引用。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/etc/reflectionremoval",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 裁剪的可选 AI/相机模型；需验证新 Camera/Gallery 无引用。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/etc/style_transfer",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 裁剪的可选 AI/相机模型；需验证新 Camera/Gallery 无引用。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/etc/mfcontents",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 裁剪的可选 AI/相机模型；需验证新 Camera/Gallery 无引用。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/etc/shadowremoval",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 裁剪的可选 AI/相机模型；需验证新 Camera/Gallery 无引用。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/etc/ailasso",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 裁剪的可选 AI/相机模型；需验证新 Camera/Gallery 无引用。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/etc/ardoodle",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 裁剪的可选 AI/相机模型；需验证新 Camera/Gallery 无引用。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/etc/ailassomatting",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 裁剪的可选 AI/相机模型；需验证新 Camera/Gallery 无引用。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/etc/inpainting",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 裁剪的可选 AI/相机模型；需验证新 Camera/Gallery 无引用。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "app/YouTube",
+      "action": "remove_candidate",
+      "reason": "用户指定优先移除可从商店重新安装的 Google 视频应用；保留 GMS/Play Store/WebView。",
+      "basis": "user-directed optional Google app; X710 APK manifest verified"
+    },
+    {
+      "partition": "product",
+      "path": "app/Gmail2",
+      "action": "remove_candidate",
+      "reason": "用户指定优先移除可从商店重新安装的 Gmail。",
+      "basis": "user-directed optional Google app; X710 APK manifest verified"
+    },
+    {
+      "partition": "product",
+      "path": "app/Maps",
+      "action": "remove_candidate",
+      "reason": "用户指定优先移除可从商店重新安装的 Google Maps。",
+      "basis": "user-directed optional Google app; X710 APK manifest verified"
+    },
+    {
+      "partition": "product",
+      "path": "app/SpeechServicesByGoogle",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "app/Chrome",
+      "action": "remove_candidate",
+      "reason": "用户指定优先移除可从商店重新安装的 Chrome；保留 WebViewGoogle 与 TrichromeLibrary。",
+      "basis": "user-directed optional Google app; X710 APK manifest verified"
+    },
+    {
+      "partition": "product",
+      "path": "app/DuoStub",
+      "action": "remove_candidate",
+      "reason": "Google Meet/Duo 的可重新安装入口 stub；与用户指定的可下载 Google 应用一致。",
+      "basis": "user-directed optional Google app; X710 APK manifest verified"
+    },
+    {
+      "partition": "product",
+      "path": "app/BardShell",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "app/GoogleLocationHistory",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "app/AssistantShell",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "priv-app/Velvet",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "priv-app/Messages",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "priv-app/AndroidSystemIntelligence",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "priv-app/AiWallpaper",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "priv-app/PrivateComputeServices",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "priv-app/Turbo",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "priv-app/SearchSelector",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "product",
+      "path": "priv-app/FamilyLinkParentalControls",
+      "action": "remove_candidate",
+      "reason": "旧 UI8 容量裁剪候选；需针对 X710 重新确认包依赖及功能损失。",
+      "basis": "UI8 legacy candidate; X710 dependency review incomplete; not release-approved"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SamsungTTSVoice_ja_JP_f00",
+      "action": "remove_candidate",
+      "reason": "可选日语 TTS 包；保留 en_US，日语离线语音会缺失。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/SketchBook",
+      "action": "remove_candidate",
+      "reason": "可选 AI 绘图预装；S Pen 基础输入与 AirCommand 另行保留。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/VideoEditorLite_Dream_N",
+      "action": "remove_candidate",
+      "reason": "可选视频编辑器；视频硬解/录像由媒体栈独立验证。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/app/BixbyWakeup",
+      "action": "remove_candidate",
+      "reason": "可选 Bixby 热词；保留基础麦克风与音频路径。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/Bixby",
+      "action": "remove_candidate",
+      "reason": "可选 Bixby 助手；Settings/Account/系统服务继续保留。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/BixbyInterpreter",
+      "action": "remove_candidate",
+      "reason": "可选解释器 AI 功能。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/BixbyVisionFramework3.5",
+      "action": "remove_candidate",
+      "reason": "可选 Bixby Vision；相机基础功能保留。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/SamsungMessages",
+      "action": "remove_candidate",
+      "reason": "Wi-Fi-only T860 上的可选短信界面；保留核心 TeleService 以免破坏系统绑定。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/TelephonyUI",
+      "action": "remove_candidate",
+      "reason": "Wi-Fi-only T860 上的可选通话界面；保留核心 TeleService。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/SamsungDialer",
+      "action": "remove_candidate",
+      "reason": "Wi-Fi-only T860 上的可选拨号界面；保留核心 TeleService。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/SamsungInCallUI",
+      "action": "remove_candidate",
+      "reason": "Wi-Fi-only T860 上的可选通话界面；保留核心 TeleService。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/CallBGProvider",
+      "action": "remove_candidate",
+      "reason": "拨号背景 provider；仅随拨号界面共同裁剪。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/CallAssistant",
+      "action": "remove_candidate",
+      "reason": "通话辅助服务；仅随拨号界面共同裁剪。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/lib64/libdualcam_portraitlighting_gallery_360.so",
+      "action": "keep",
+      "reason": "A96 恢复 PhotoEditor 后旧“无保留者引用”依据失效；正式构建保留或经专项功能验证再裁。当前实机因容量尚未恢复，标为已知可选人像依赖缺项，不能声称全部编辑能力通过。",
+      "basis": "A96 restored consumer; 168360464 bytes combined; live restoration pending capacity and portrait QA"
+    },
+    {
+      "partition": "system",
+      "path": "system/lib64/libdualcam_refocus_gallery_59.so",
+      "action": "keep",
+      "reason": "A96 恢复 PhotoEditor 后旧“无保留者引用”依据失效；正式构建保留或经专项功能验证再裁。当前实机因容量尚未恢复，标为已知可选人像依赖缺项，不能声称全部编辑能力通过。",
+      "basis": "A96 restored consumer; 168360464 bytes combined; live restoration pending capacity and portrait QA"
+    },
+    {
+      "partition": "system",
+      "path": "system/lib64/libarcsoft_dualcam_portraitlighting.so",
+      "action": "remove_candidate",
+      "reason": "X710 DEX 引用仅见旧裁剪的 DualOutFocusViewer_V；native/配置扫描无保留者引用。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/SamsungIntelliVoiceServices",
+      "action": "remove_candidate",
+      "reason": "可选 Bixby/语音智能服务；与 Bixby 助手候选一起裁剪，须确认没有系统强绑定。",
+      "basis": "X710-specific optional candidate; pending staged dependency gate"
+    },
+    {
+      "partition": "system",
+      "path": "system/priv-app/Routines",
+      "action": "keep",
+      "reason": "A57 实机证明 Routines 与 SystemUI 共享 android.uid.systemui，提供 Launcher READ_SETTINGS 权限；缺包导致 SystemUI DeX 调用崩溃。恢复未修改的 S9 原版 APK。",
+      "basis": "A57 new-build dropbox + actual PMS grants + original donor APK manifest/signature; docs/ROUTINES_SYSTEMUI_REBASE_A58.md"
+    }
+  ],
+  "dependency_review_status": "INCOMPLETE_NOT_RELEASE_APPROVED",
+  "dependency_review": "docs/audit/removed-apk-reference-review.md"
+}
