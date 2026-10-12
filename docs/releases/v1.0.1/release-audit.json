@@ -1,0 +1,242 @@
+{
+  "version": "v1.0.1-A100",
+  "date": "2026-10-12",
+  "status": "PACKAGED_AND_VERIFIED_FOR_PUBLICATION",
+  "target": "SM-T860",
+  "packages": {
+    "odin": {
+      "file": "AP_TabS6_OneUI8.5_v1.0.1_A100_Clean_Odin.tar.md5",
+      "bytes": 4959129679,
+      "sha256": "15fc234753a7825df0b604ad3741fe662adfdea7cc9a23dff30bef1c4e25c436",
+      "md5": "b506b15ca750ec5166eab82a5a1be7a7",
+      "slot": "AP",
+      "member_count": 7,
+      "raw_sparse_lz4_and_tar_readback": "PASS",
+      "full_clean_flash": "NOT_TESTED"
+    },
+    "twrp": {
+      "file": "TabS6-OneUI8.5-v1.0.1-A100-Upgrade-TWRP.zip",
+      "bytes": 3871493738,
+      "sha256": "601fc2b993bddad88344cced5c73335ed7be7e44da2cbdc6cf043a3a4e6a9bbf",
+      "format": "ZIP32_NO_ZIP64",
+      "data_policy": "PRESERVE",
+      "payload_partitions": [
+        "system",
+        "product"
+      ],
+      "vendor_transaction_file_count": 3,
+      "full_upgrade_flash": "NOT_TESTED"
+    }
+  },
+  "final_image_pins": {
+    "system": {
+      "sha256": "a3c06da5fa4091c84a1ff569e65c66a82577aedfd38b714b7726ac55c49514de",
+      "bytes": 6534725632
+    },
+    "product": {
+      "sha256": "8e6f0cfb8454789067e72f6eef37c42276abb2dd5c8951cfb71e03bbd3781404",
+      "bytes": 1048576000
+    },
+    "boot": {
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+      "bytes": 67108864
+    },
+    "vendor": {
+      "sha256": "080ba88bdf35daeb5cc2ebcc273c13329457ff7c12bf2f5fd0ea86f62da0fe51",
+      "bytes": 1379926016
+    },
+    "dtbo": {
+      "sha256": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec",
+      "bytes": 10485760
+    },
+    "vbmeta": {
+      "sha256": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54",
+      "bytes": 65536
+    }
+  },
+  "filesystem_change_closure": {
+    "system": {
+      "baseline_inventory_sha256": "d0120b29556b0998f55adc8cbd124bb4bbea364e6650e169b88ca8da0e8ef192",
+      "target_inventory_sha256": "a529c1886647f8ca7554c432e4f09b2cb9e912c52318f73954b811bb6692c22c",
+      "modified": [
+        "system/bin/vold",
+        "system/etc/floating_feature.xml",
+        "system/etc/init/hw/init.rc",
+        "system/etc/selinux/plat_sepolicy.cil",
+        "system/etc/selinux/plat_sepolicy_and_mapping.sha256",
+        "system/framework/framework.jar",
+        "system/lib64",
+        "system/lib64/libaudiopolicycomponents.so"
+      ],
+      "added": [
+        "system/lib64/t860-bluetooth-compat",
+        "system/lib64/t860-bluetooth-compat/libbluetooth_jni.so"
+      ],
+      "removed": [],
+      "factory_apex_unchanged": true,
+      "unrelated_file_and_metadata_entries_identical": true
+    },
+    "product": {
+      "baseline_inventory_sha256": "6e7e7c880b8c48213cb818cc9e4cae9baa06f58f43bfa51a3be28fca5f1fb446",
+      "target_inventory_sha256": "21439e68311b202000c01585510614eed2c10813d5534c56a5c3e9db2d13aba6",
+      "modified": [
+        "priv-app"
+      ],
+      "added": [
+        "etc/permissions/privapp-permissions-com.samsung.android.app.sharelive.xml",
+        "priv-app/ShareLive",
+        "priv-app/ShareLive/ShareLive.apk"
+      ],
+      "removed": [],
+      "factory_apex_unchanged": true,
+      "unrelated_file_and_metadata_entries_identical": true
+    },
+    "vendor": {
+      "baseline_inventory_sha256": "f9f3fe652c306086d34f4f2eff25693155b9d46febb57fcf231f195dd1aa66c6",
+      "target_inventory_sha256": "0e590ea7fce99d340e39441bd35a19f49b5e842280a27e1aeaeab3311cb6c400",
+      "modified": [
+        "lib64/libsdmextension.so"
+      ],
+      "added": [],
+      "removed": [],
+      "factory_apex_unchanged": true,
+      "unrelated_file_and_metadata_entries_identical": true
+    }
+  },
+  "factory_apex_unchanged": true,
+  "live_full_tree_match": true,
+  "original_twrp_full_payload": {
+    "zip_sha256": "601fc2b993bddad88344cced5c73335ed7be7e44da2cbdc6cf043a3a4e6a9bbf",
+    "zip_bytes": 3871493738,
+    "payload_chunks_checked": 114,
+    "support_members_checked": 20,
+    "table_sizes": {
+      "system": 6534725632,
+      "product": 1048576000
+    },
+    "process_exit": 0,
+    "source_mounts_or_device_blocks": false,
+    "device_writes": false,
+    "full_flash": "NOT_TESTED",
+    "script_sha256": "de281ead2c07574512544856c860df343f33cdcd6723c4256583cebc4c23cd10"
+  },
+  "vendor_transaction_tests": {
+    "cases": [
+      {
+        "name": "sdk28-baseline",
+        "exit": 0,
+        "pass": true
+      },
+      {
+        "name": "sdk28-adapted",
+        "exit": 0,
+        "pass": true
+      },
+      {
+        "name": "sdk30-baseline",
+        "exit": 0,
+        "pass": true
+      },
+      {
+        "name": "sdk30-adapted",
+        "exit": 0,
+        "pass": true
+      },
+      {
+        "name": "a100-idempotent",
+        "exit": 0,
+        "pass": true
+      },
+      {
+        "name": "torn-matrix-rollback",
+        "exit": 77,
+        "pass": true
+      },
+      {
+        "name": "torn-policy-rollback",
+        "exit": 77,
+        "pass": true
+      },
+      {
+        "name": "torn-sdm-rollback",
+        "exit": 77,
+        "pass": true
+      },
+      {
+        "name": "unknown-sdm-refused",
+        "exit": 77,
+        "pass": true
+      },
+      {
+        "name": "unrelated-drift-refused",
+        "exit": 77,
+        "pass": true
+      },
+      {
+        "name": "sdm-mode-refused",
+        "exit": 77,
+        "pass": true
+      },
+      {
+        "name": "sdm-symlink-refused",
+        "exit": 77,
+        "pass": true
+      }
+    ],
+    "all_passed": true,
+    "case_count": 12,
+    "native_tools": "ORIGINAL_TWRP_SH_CAT_STATIC_COMPLETE_VENDOR_GUARDS",
+    "real_device_nodes": false,
+    "source_tree_modified": false,
+    "library_sha256": "e00a71b7ec3e92a6457ffa4e229b8fec01fea903cea26ee09f7c037669b9e4b2",
+    "script_sha256": "366ef6bb9b47353af4f6e3926bb5b16e9afaeae1482e309a04182821cdc77482"
+  },
+  "real_recovery_readonly_preflight": {
+    "model": "SM-T860",
+    "real_recovery": "3.7.0_9-15_mentalmuso",
+    "update_binary_executed": true,
+    "argument": "--preflight-only",
+    "native_exit": 0,
+    "payload_source_hardware_metadata_preflight": "PASS",
+    "all_six_partition_raw_sha256_unchanged": true,
+    "data_sd_formatted": false,
+    "actual_full_flash": false,
+    "temporary_payload_location": "RECOVERY_TMPFS_ONLY",
+    "recovery_effective_payload_sha256": "cbc6e03563a9229b7034dd775964ef412af94a7074f50b519ce1ccc1fd4f2e16",
+    "live_system_product_vendor_full_tree_matches_packaging": true
+  },
+  "a99_frozen_sources_modified": false,
+  "userdata_sd_credentials_or_private_logs_packaged": false,
+  "data_state_not_transferred": [
+    "QCC_USER0_KEEP_DATA_UNINSTALL_A88_REAPPLY_AFTER_CLEAN_INSTALL",
+    "GALAXY_STORE_A97_APPLICATION_LOCAL_CATALOG_CONFIGURATION"
+  ],
+  "stable_capacity_pass": {
+    "system": false,
+    "product": false,
+    "vendor": true
+  },
+  "known_limits": [
+    "No actual new Odin clean flash or complete TWRP upgrade executed",
+    "Clean installation needs manual Format Data and QCC isolation from INSTALL.zh.md",
+    "Galaxy Store catalog workaround is not firmware state",
+    "Document scan perspective/edges unavailable; all AI/portrait and all hardware/codecs not certified",
+    "Google Play system module update pause retained"
+  ],
+  "post_preflight_android": {
+    "boot_completed": true,
+    "user_unlocked": true,
+    "selinux": "Enforcing",
+    "no_anr_since_boot": true,
+    "sd_mounted": true,
+    "surfaceflinger": "running",
+    "audioserver": "running"
+  },
+  "distribution": {
+    "tag": "v1.0.1",
+    "url": "https://github.com/starlight4you/t860_ui8dot5/releases/tag/v1.0.1",
+    "split_archive_audit": "split-archive-audit.json",
+    "english_installation": "INSTALL.en.md",
+    "chinese_installation": "INSTALL.zh.md"
+  }
+}

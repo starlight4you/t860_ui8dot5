@@ -1,0 +1,120 @@
+{
+  "zip_bytes": 3871493738,
+  "zip_sha256": "601fc2b993bddad88344cced5c73335ed7be7e44da2cbdc6cf043a3a4e6a9bbf",
+  "chunk_count": {
+    "system": 98,
+    "product": 16
+  },
+  "zip_format": "ZIP32_NO_ZIP64",
+  "contains_userdata_payload": false,
+  "runtime": "NOT_TESTED",
+  "installer_format": "3",
+  "installer_library_sha256": "e00a71b7ec3e92a6457ffa4e229b8fec01fea903cea26ee09f7c037669b9e4b2",
+  "support_members": [
+    "rom/support/a100-sdm-after",
+    "rom/support/a100-sdm-before",
+    "rom/support/a100-system-guard",
+    "rom/support/a100-vendor-guard",
+    "rom/support/a100-vendor-recovery-guard",
+    "rom/support/a99-system-guard",
+    "rom/support/apex-factory.tsv",
+    "rom/support/fscrypt-readonly-probe",
+    "rom/support/mainline-guard",
+    "rom/support/partition-probe",
+    "rom/support/stock-vendor-guard",
+    "rom/support/ui8-a46-guard",
+    "rom/support/ui8-release-guard",
+    "rom/support/vendor-after-policy",
+    "rom/support/vendor-before-policy",
+    "rom/support/vendor-config-recovery-guard",
+    "rom/support/vendor-guard-sdk28",
+    "rom/support/vendor-guard-sdk30",
+    "rom/support/vendor-matrix28",
+    "rom/support/vendor-matrix30"
+  ],
+  "image_audits": {
+    "system": {
+      "sha256": "a3c06da5fa4091c84a1ff569e65c66a82577aedfd38b714b7726ac55c49514de",
+      "bytes": 6534725632,
+      "free_bytes": 90161152,
+      "phase_minimum_free_bytes": 67108864,
+      "stable_minimum_free_bytes": 268435456,
+      "stable_capacity_pass": false,
+      "e2fsck_exit": 0,
+      "ext4_features": [
+        "ext_attr",
+        "dir_index",
+        "filetype",
+        "extent",
+        "flex_bg",
+        "sparse_super",
+        "large_file",
+        "huge_file",
+        "uninit_bg",
+        "dir_nlink",
+        "extra_isize"
+      ]
+    },
+    "product": {
+      "sha256": "8e6f0cfb8454789067e72f6eef37c42276abb2dd5c8951cfb71e03bbd3781404",
+      "bytes": 1048576000,
+      "free_bytes": 86884352,
+      "phase_minimum_free_bytes": 67108864,
+      "stable_minimum_free_bytes": 104857600,
+      "stable_capacity_pass": false,
+      "e2fsck_exit": 0,
+      "ext4_features": [
+        "ext_attr",
+        "dir_index",
+        "filetype",
+        "extent",
+        "flex_bg",
+        "sparse_super",
+        "large_file",
+        "huge_file",
+        "uninit_bg",
+        "dir_nlink",
+        "extra_isize"
+      ]
+    },
+    "boot": {
+      "bytes": 67108864,
+      "sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+      "source": "EXACT_CURRENT_AND_V0481_S6_HARDWARE"
+    },
+    "vendor": {
+      "sha256": "080ba88bdf35daeb5cc2ebcc273c13329457ff7c12bf2f5fd0ea86f62da0fe51",
+      "bytes": 1379926016,
+      "free_bytes": 496029696,
+      "phase_minimum_free_bytes": 67108864,
+      "stable_minimum_free_bytes": 67108864,
+      "stable_capacity_pass": true,
+      "e2fsck_exit": 0,
+      "ext4_features": [
+        "ext_attr",
+        "dir_index",
+        "filetype",
+        "extent",
+        "flex_bg",
+        "sparse_super",
+        "large_file",
+        "huge_file",
+        "uninit_bg",
+        "dir_nlink",
+        "extra_isize"
+      ]
+    },
+    "dtbo": {
+      "bytes": 10485760,
+      "sha256": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec",
+      "source": "EXACT_CURRENT_AND_V0481_S6_HARDWARE"
+    },
+    "vbmeta": {
+      "bytes": 65536,
+      "sha256": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54",
+      "source": "EXACT_CURRENT_AND_V0481_S6_HARDWARE"
+    }
+  },
+  "contains_boot_vendor_partition_images": false,
+  "full_flash_runtime": "NOT_TESTED"
+}

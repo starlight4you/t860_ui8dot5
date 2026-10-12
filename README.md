@@ -2,29 +2,24 @@
 
 适用于 **Galaxy Tab S6 SM-T860（Wi-Fi版）**，以 Galaxy Tab S9 SM-X710 官方 `X710XXS6EZH3` 为 donor，Android 16 / One UI 8.5。保留 Tab S6 的 kernel、firmware、HAL 和硬件基础，设备适配逻辑独立维护。
 
-## 下载和安装
+## 下载和安装 / Download and installation
 
-[下载 Release](https://github.com/starlight4you/t860_ui8dot5/releases)。当前版本 `v1.0.0`。
+当前固件版本 **v1.0.1 (A100)**：[GitHub Release](https://github.com/starlight4you/t860_ui8dot5/releases/tag/v1.0.1)。
 
-1. 下载全部 `TabS6-S9-OneUI8.5-v1.0.0-TWRP.7z.00x`、`SHA256SUMS` 和 `INSTALL.zh.md`。
-2. 分卷放在同一目录，用 7-Zip / Keka 打开 `.001` 解压，得到完整 `.zip`，核对 SHA-256。
-3. 进入 TWRP，按下面对应方式安装完整 ZIP。分卷不能直接刷入。
+- 全新安装 / Clean install：下载 `Clean-Odin-v1.0.1-A100.7z.001`–`.004`，解压得到 Odin AP `.tar.md5`。刷入后在 TWRP 手动 Format Data，清空内部存储；首次设置后执行安装文档中的 QCC 隔离步骤。
+- 保留数据升级 / Keep-data upgrade：下载 `Upgrade-TWRP-v1.0.1-A100.7z.001`–`.003`，解压得到完整 TWRP `.zip`。支持已核对的项目 UI8 v0.48.1、v1.0.0/A99 和当前 A100 来源。不要 Format Data 或预先清空 SYSTEM/PRODUCT。
 
-### 从项目 One UI 8 升级
+每组所有分卷放在同一目录，使用 7-Zip / Keka 打开 `.001` 解压，核对 SHA-256。分卷与 GitHub Source code 压缩包不能直接刷入。 / Download every volume of your selected group, extract `.001` in 7-Zip / Keka and verify SHA-256. Individual volumes and GitHub Source code archives are not flashable.
 
-支持已核对的 **v0.48.1** 基线，保留应用、账号、锁屏凭据和个人文件。备份后直接安装 ZIP，**不要清 DATA 或格式化**。安装器自动检查硬件和升级状态，并保留旧系统模块更新的备份，使用新系统的原厂模块。成功后手动重启。
+完整说明 / Full guides：[中文](INSTALL.zh.md) · [English](INSTALL.en.md)。更新日志 / Changelog：[中文](CHANGELOG.zh.md) · [English](CHANGELOG.en.md)。[发布审计 / Release audits](docs/releases/v1.0.1)。
 
-### 全新安装
-
-先备份个人数据，准备 S6 原厂系统（DWH1 硬件基础）与 TWRP。由用户在 TWRP 准备清洁 DATA / CACHE；可从原厂系统直接开始，SYSTEM 也可以已清为 ext4。随后安装同一个 ZIP，成功后手动重启。安装器不替用户自动格式化。
-
-仅支持 SM-T860；T865 / T867、其他未核对硬件基础不在此包入口内。实机核对使用 TWRP `3.7.0_9-15_mentalmuso`。同一个包包含 SYSTEM / PRODUCT / S6 BOOT / S6 VENDOR / DTBO / VBMeta。全新安装装入完整 S6 适配基础；从 UI8 升级仅更新 SYSTEM / PRODUCT 与两项 VENDOR 文本配置，保留 BOOT / DTBO / VBMeta。不会安装 S9 kernel / VENDOR 或替换 TWRP。
+实机逐项修复与完整只读预检通过；本次未在测试机执行 Odin 全新刷入或完整 TWRP 升级。 / Individual fixes and the complete read-only preflight passed on the tablet; a new Odin clean flash or full TWRP upgrade has not been performed.
 
 ## 适配与源码
 
 ```text
 patches/       S6 framework/native/resource 适配逻辑
-scripts/       离线配置生成、检查、当前发布包复现
+scripts/       离线配置生成、检查、v1.0.0 发布包复现
 device/s6/    配置、init、SELinux、overlay、native 源码
 release/       发布安装器、支持工具、固定打包清单
 docs/          四方分析、rebase 顺序与移植记录
@@ -34,7 +29,9 @@ metadata 持久 backing 位于 `/data/unencrypted/t860-metadata`，普通 CACHE 
 
 原始固件、个人 DATA、设备密钥和私人原始日志不提交仓库。历史分析路径使用占位符；Android SDK 工具由 `ANDROID_SDK_ROOT` 指定。
 
-### 复现当前 ZIP
+### 复现历史 v1.0.0 ZIP
+
+以下复现工具与 `release/` 固定输入保持 v1.0.0/A99，不适用于新 A100 包。v1.0.1 的安装说明与审计位于 `docs/releases/v1.0.1/`。
 
 需要 Python 3、7-Zip 26.01 和约 8.5 GiB 镜像空间：
 

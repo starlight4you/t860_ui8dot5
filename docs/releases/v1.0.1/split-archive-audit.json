@@ -1,0 +1,60 @@
+{
+  "version": "v1.0.1-A100",
+  "archive_format": "7z",
+  "compression": "STORE_ALREADY_COMPRESSED_PAYLOAD",
+  "volume_limit_bytes": 1610612736,
+  "seven_zip_version": "26.01",
+  "groups": [
+    {
+      "original_file": "AP_TabS6_OneUI8.5_v1.0.1_A100_Clean_Odin.tar.md5",
+      "original_bytes": 4959129679,
+      "original_sha256": "15fc234753a7825df0b604ad3741fe662adfdea7cc9a23dff30bef1c4e25c436",
+      "full_extraction_verification": "PASS",
+      "volumes": [
+        {
+          "file": "Clean-Odin-v1.0.1-A100.7z.001",
+          "bytes": 1610612736,
+          "sha256": "ad571f32e11618b349fb117a230d9bd441ed00df29f8b8a52aef1d93ef4d3124"
+        },
+        {
+          "file": "Clean-Odin-v1.0.1-A100.7z.002",
+          "bytes": 1610612736,
+          "sha256": "478fe093f82f5a8c1edada8da9bc8ee79c2ae895a9338712d74cf0f5cf25959d"
+        },
+        {
+          "file": "Clean-Odin-v1.0.1-A100.7z.003",
+          "bytes": 1610612736,
+          "sha256": "3901851471df7bd179eae09e3384a04a4c39dc1df26f32c1a72b3d817735cdb6"
+        },
+        {
+          "file": "Clean-Odin-v1.0.1-A100.7z.004",
+          "bytes": 127291673,
+          "sha256": "334c2ace9e90bb2f8a6ebbac71647c63ef2ac8f4e920f4f21453372e3ecbff83"
+        }
+      ]
+    },
+    {
+      "original_file": "TabS6-OneUI8.5-v1.0.1-A100-Upgrade-TWRP.zip",
+      "original_bytes": 3871493738,
+      "original_sha256": "601fc2b993bddad88344cced5c73335ed7be7e44da2cbdc6cf043a3a4e6a9bbf",
+      "full_extraction_verification": "PASS",
+      "volumes": [
+        {
+          "file": "Upgrade-TWRP-v1.0.1-A100.7z.001",
+          "bytes": 1610612736,
+          "sha256": "03bd4dc64f89ff5e08321b70eb427e4d8dd278917ff8cc21cab81f49c525311d"
+        },
+        {
+          "file": "Upgrade-TWRP-v1.0.1-A100.7z.002",
+          "bytes": 1610612736,
+          "sha256": "8622ac09281901361b5e8ae2121d4377cc534a6ed064d2c7e2db9a2e91fb8e2f"
+        },
+        {
+          "file": "Upgrade-TWRP-v1.0.1-A100.7z.003",
+          "bytes": 650268460,
+          "sha256": "47b9a6c40a670fe73fc3d981c193275fe4c9611ad84b984a3501b1f46b69dd8e"
+        }
+      ]
+    }
+  ]
+}
