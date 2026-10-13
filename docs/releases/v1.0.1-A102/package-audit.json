@@ -1,0 +1,25 @@
+{
+  "id": "A102_INSTALLER_HOTFIX",
+  "source_zip_sha256": "601fc2b993bddad88344cced5c73335ed7be7e44da2cbdc6cf043a3a4e6a9bbf",
+  "zip_sha256": "6561d82c14f8b38b48876414e8b1a450cbd23ec10446417275056dac32b3fd6c",
+  "zip_bytes": 3872452488,
+  "installer_library_sha256": "b7f986bbd2c0c260b9ea383fd640aa3798d6d3b87ec47b5099d9cfda98a8e3de",
+  "payload_chunks_verified": {
+    "system": 98,
+    "product": 16
+  },
+  "complete_image_sha256": {
+    "system": "a3c06da5fa4091c84a1ff569e65c66a82577aedfd38b714b7726ac55c49514de",
+    "product": "8e6f0cfb8454789067e72f6eef37c42276abb2dd5c8951cfb71e03bbd3781404"
+  },
+  "changed_existing_members": [
+    "META-INF/com/google/android/update-binary",
+    "rom/libupgrade.sh",
+    "rom/manifest.json",
+    "rom/support/mainline-guard"
+  ],
+  "added_member": "rom/support/upgrade-access-probe",
+  "data_payloads": false,
+  "source_checks_removed": false,
+  "full_flash_runtime": "NOT_TESTED"
+}

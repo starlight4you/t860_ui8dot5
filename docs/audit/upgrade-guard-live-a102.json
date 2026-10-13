@@ -1,0 +1,16 @@
+{
+  "diagnostic_exit": 0,
+  "real_recovery": true,
+  "writes": "TEMPORARY_FILES_ONLY",
+  "rom_flash": false,
+  "data_format": false,
+  "source_model": "SM-T860",
+  "output_fd_is_real_pipe": true,
+  "encrypted_system_directory_unreadable": true,
+  "unencrypted_module_directory_readable": true,
+  "old_guard_exit": 1,
+  "old_guard_reason": "invalid factory table: --upgrade-preflight",
+  "corrected_guard_exit": 0,
+  "active_module_entries": 4,
+  "module_content_or_inode_mutations": false
+}

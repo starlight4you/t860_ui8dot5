@@ -1,0 +1,21 @@
+{
+  "id": "A101_WALL_CHARGER_RESULT",
+  "date": "2026-10-13",
+  "samples": 255,
+  "wall_samples": 235,
+  "wall_elapsed_minutes": 68.6,
+  "soc_start_percent": 15,
+  "soc_end_percent": 65,
+  "charge_gain_mah": 3512.96,
+  "coulomb_average_battery_current_ma": 3072.6,
+  "sampled_median_current_ma": 2933,
+  "maximum_battery_temperature_c": 31.4,
+  "charging_type": "PDIC",
+  "all_wall_samples_fast": true,
+  "all_wall_samples_hv1": true,
+  "rated_capacity_mah": 7040,
+  "classic_afc_protocol_proven": false,
+  "adapter_input_watts_measured": false,
+  "kernel_or_charge_controls_changed": false,
+  "scope": "This charger and the observed 15-65 percent range; not full-charge taper or all chargers"
+}

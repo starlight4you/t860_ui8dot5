@@ -1,0 +1,63 @@
+{
+  "id": "A102_ORIGINAL_RECOVERY_READONLY_TESTS",
+  "passed": 9,
+  "cases": [
+    {
+      "case": "readable",
+      "exit": 0,
+      "expected_marker": "READABLE",
+      "passed": true
+    },
+    {
+      "case": "absent",
+      "exit": 0,
+      "expected_marker": "ABSENT",
+      "passed": true
+    },
+    {
+      "case": "symlink",
+      "exit": 1,
+      "expected_marker": "UNAVAILABLE",
+      "passed": true
+    },
+    {
+      "case": "regular-file",
+      "exit": 1,
+      "expected_marker": "UNAVAILABLE",
+      "passed": true
+    },
+    {
+      "case": "permission-denied",
+      "exit": 1,
+      "expected_marker": "errno=13",
+      "passed": true
+    },
+    {
+      "case": "empty-module-state",
+      "exit": 0,
+      "expected_marker": "PASS:",
+      "passed": true
+    },
+    {
+      "case": "pending-session-refused",
+      "exit": 1,
+      "expected_marker": "staged, unresolved rollback, or unreadable session",
+      "passed": true
+    },
+    {
+      "case": "applied-session-readable",
+      "exit": 0,
+      "expected_marker": "PASS:",
+      "passed": true
+    },
+    {
+      "case": "preflight-preserves-module-inode",
+      "exit": 0,
+      "expected_marker": "eligible for inode-preserving backup",
+      "passed": true
+    }
+  ],
+  "updater_and_candidate_shell_syntax": "PASS",
+  "device_blocks_present": false,
+  "module_mutations": false
+}

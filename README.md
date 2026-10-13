@@ -4,12 +4,14 @@
 
 ## 下载和安装 / Download and installation
 
-当前固件版本 **v1.0.1 (A100)**：[GitHub Release](https://github.com/starlight4you/t860_ui8dot5/releases/tag/v1.0.1)。
+当前固件版本 **v1.0.1 (A100 / A102 安装器修正)**：[GitHub Release](https://github.com/starlight4you/t860_ui8dot5/releases/tag/v1.0.1)。
 
 - 全新安装 / Clean install：下载 `Clean-Odin-v1.0.1-A100.7z.001`–`.004`，解压得到 Odin AP `.tar.md5`。刷入后在 TWRP 手动 Format Data，清空内部存储；首次设置后执行安装文档中的 QCC 隔离步骤。
-- 保留数据升级 / Keep-data upgrade：下载 `Upgrade-TWRP-v1.0.1-A100.7z.001`–`.003`，解压得到完整 TWRP `.zip`。支持已核对的项目 UI8 v0.48.1、v1.0.0/A99 和当前 A100 来源。不要 Format Data 或预先清空 SYSTEM/PRODUCT。
+- 保留数据升级 / Keep-data upgrade：下载 `Upgrade-TWRP-v1.0.1-A102.7z.001`–`.003`，解压得到完整 TWRP `.zip`。支持已核对的项目 UI8 v0.48.1、v1.0.0/A99 和当前 A100 来源。不要 Format Data 或预先清空 SYSTEM/PRODUCT。
 
 每组所有分卷放在同一目录，使用 7-Zip / Keka 打开 `.001` 解压，核对 SHA-256。分卷与 GitHub Source code 压缩包不能直接刷入。 / Download every volume of your selected group, extract `.001` in 7-Zip / Keka and verify SHA-256. Individual volumes and GitHub Source code archives are not flashable.
+
+A102 升级说明与更新日志 / Upgrade hotfix guides：[中文](docs/releases/v1.0.1-A102/HOTFIX-A102.zh.md) · [English](docs/releases/v1.0.1-A102/HOTFIX-A102.en.md)。旧 A100 升级分卷已被替代，Odin 包保持不变。
 
 完整说明 / Full guides：[中文](INSTALL.zh.md) · [English](INSTALL.en.md)。更新日志 / Changelog：[中文](CHANGELOG.zh.md) · [English](CHANGELOG.en.md)。[发布审计 / Release audits](docs/releases/v1.0.1)。
 
@@ -41,3 +43,7 @@ python3 scripts/rebuild_release.py --system images/system.raw.img --product imag
 ```
 
 脚本固定镜像和安装器输入，并验证最终 ZIP 摘要；可通过 `RELEASE_7ZZ` 指定 7-Zip 26.01 可执行文件。Python / zlib / 7-Zip 环境见 `release/packaging.json`。新 donor 需要按 [S9_REBASE_PLAN](docs/S9_REBASE_PLAN.md) 重新定位逻辑和验证接口，不能复制旧 framework 二进制或盲目批量应用历史 patch。改动分类见 [UI8_PORT_CHANGES](docs/UI8_PORT_CHANGES.md)，验证记录见 [PORTING_LOG](docs/PORTING_LOG.md)。
+
+### 复现 A102 安装器修正 / Reproduce the A102 installer hotfix
+
+A102 不改变 A100 SYSTEM/PRODUCT 载荷或历史 A99 输入。以摘要固定的原 A100 升级 ZIP 为输入，使用 `release/a102-tools/` 的工具，可通过 `scripts/repack_upgrade_a102.py` 生成修正版 ZIP；只读检查包通过 `scripts/build_upgrade_check_a102.py --source ORIGINAL_A100.zip --guard release/a102-tools/mainline-guard --ndk NDK_R27D --out NEW_OUTPUT` 构建。输出必须为新目录。原因、工具接口复现及实机只读验证见 [A102 审计](docs/UPGRADE_INSTALLER_HOTFIX_A102_20261013.md)。

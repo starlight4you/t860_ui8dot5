@@ -1,0 +1,17 @@
+{
+  "id": "A99_MAINLINE_GUARD_TESTS",
+  "all_passed": true,
+  "scope": "pinned TWRP ARM64 userspace on Linux VM kernel; no real partitions",
+  "binary_sha256": "4f3f04af10250a0522b4bf2805fe0567fef975da1aea9e24024d86eba8ca8176",
+  "factory_table_sha256": "3db9c6be68d3310e1cad7af3848a675dfef9a225504ad93c830e3ecbffb3c02a",
+  "recovery_sha256": "cbc6e03563a9229b7034dd775964ef412af94a7074f50b519ce1ccc1fd4f2e16",
+  "test_source_sha256": "6b22ce1e8041d9fdb542e8a206aa5e77b48b7c9344f22fe2a32c6fe97c4277d3",
+  "case_count": 67,
+  "device_writes": false,
+  "real_recovery_runtime": "NOT_TESTED",
+  "limits": [
+    "Caller must verify real DATA/CACHE mounts before interpreting absent directories.",
+    "First installation refuses active APEX; identical-system mode preserves only the observed four-entry set without claiming content validation.",
+    "Does not prevent future automatic module updates or validate dirty-upgrade boot."
+  ]
+}

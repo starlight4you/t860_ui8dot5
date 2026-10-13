@@ -1,0 +1,15 @@
+{
+  "zip_sha256": "6561d82c14f8b38b48876414e8b1a450cbd23ec10446417275056dac32b3fd6c",
+  "zip_bytes": 3872452488,
+  "payload_chunks_checked": 114,
+  "support_members_checked": 21,
+  "table_sizes": {
+    "system": 6534725632,
+    "product": 1048576000
+  },
+  "process_exit": 0,
+  "source_mounts_or_device_blocks": false,
+  "device_writes": false,
+  "full_flash": "NOT_TESTED",
+  "script_sha256": "3eea79950708536ed761a1f90630dd6b9c2892eda283f9f6ea67120cf65f1a09"
+}

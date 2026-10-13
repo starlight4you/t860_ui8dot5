@@ -1,0 +1,10 @@
+{
+  "id": "A102_REAL_RECOVERY_PREFLIGHT",
+  "native_exit": 0,
+  "preflight_pass": true,
+  "all_six_partition_hashes_unchanged": true,
+  "data_formatted": false,
+  "actual_full_flash": false,
+  "temporary_zip_location": "RECOVERY_TMPFS",
+  "model": "SM-T860"
+}
