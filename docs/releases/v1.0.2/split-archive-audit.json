@@ -1,0 +1,21 @@
+{
+  "volume_size_limit": 1610612736,
+  "format": "7Z_STORE_SPLIT_EXISTING_COMPRESSED_PACKAGES",
+  "groups": [
+    {
+      "first_volume": "Clean-Odin-v1.0.2-A109.7z.001",
+      "extracted_member": "AP_TabS6_OneUI8.5_v1.0.2_A109_Clean_Odin.tar.md5",
+      "bytes": 4961177679,
+      "sha256": "79826b3b6679c24e967d754b4767a10dfd31c7bff48f2f95bdd72b478f2f6d86",
+      "roundtrip_pass": true
+    },
+    {
+      "first_volume": "Upgrade-TWRP-v1.0.2-A109.7z.001",
+      "extracted_member": "TabS6-OneUI8.5-v1.0.2-A109-Upgrade-TWRP.zip",
+      "bytes": 3885494020,
+      "sha256": "f977e101705687a7acd5b1cfd8f80f45b64ee06a415aa6aa8f0ad6b5f08e1eec",
+      "roundtrip_pass": true
+    }
+  ],
+  "temporary_full_extraction_files": false
+}

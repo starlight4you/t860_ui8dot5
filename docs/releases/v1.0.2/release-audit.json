@@ -1,0 +1,128 @@
+{
+  "id": "A109_CUMULATIVE_EFFECTIVE_FIXES_RELEASE",
+  "version": "v1.0.2-A109",
+  "date": "2026-10-21",
+  "status": "COMPLETE_PACKAGES_OFFLINE_VALIDATED",
+  "withdrawn_a108_packages_deleted": true,
+  "included": [
+    "A100",
+    "A102_INSTALLER",
+    "A104_VIA_A106",
+    "A106",
+    "A107_V2",
+    "A108_QCC_POLICY"
+  ],
+  "excluded": [
+    "A105_AAC_DISABLE_SUPERSEDED",
+    "A107_V1_BOOT_FAILURE"
+  ],
+  "components": {
+    "account_and_aac_framework": {
+      "source": "A106-aac-complete-v1/framework.jar",
+      "sha256": "d7afb86daf566ecb01308f7b5f9ab67ca7bc3b0493796a88827834a3a6150b2a",
+      "includes": [
+        "A100_SIS_BLUETOOTH",
+        "A104_ACCOUNT_RECEIVER",
+        "A106_AAC_CODE_PATH"
+      ]
+    },
+    "aac_overlay": {
+      "sha256": "c9c1dbdca7b7d519e618c157585fb702461cda8a038b9cc75fcb371651771b38"
+    },
+    "aac_properties": {
+      "sha256": "d233ec0b2a6683a1dcec6fdd7a01395b78e2506dce7ee572f1584b040ac10306"
+    },
+    "vibrator_v2": {
+      "sha256": "fa8a6a553dc49035d85e6d62b134be60e39e38e385559ef9a5b38ce2b868ceb3",
+      "samsung_extension_version": 5,
+      "user_physical_confirmation": true
+    },
+    "qcc_policy": {
+      "script_sha256": "4a350e817c46f368020bf133b4e7c0927fa3ee1115f2dda05be8d2e1218a9da3",
+      "keep_data_user": 0
+    }
+  },
+  "packages": {
+    "odin": {
+      "file": "AP_TabS6_OneUI8.5_v1.0.2_A109_Clean_Odin.tar.md5",
+      "bytes": 4961177679,
+      "sha256": "79826b3b6679c24e967d754b4767a10dfd31c7bff48f2f95bdd72b478f2f6d86"
+    },
+    "twrp": {
+      "file": "TabS6-OneUI8.5-v1.0.2-A109-Upgrade-TWRP.zip",
+      "bytes": 3885494020,
+      "sha256": "f977e101705687a7acd5b1cfd8f80f45b64ee06a415aa6aa8f0ad6b5f08e1eec"
+    }
+  },
+  "validation": {
+    "image_closure": "PASS",
+    "native_target_trees": "PASS_SYSTEM_AND_VENDOR",
+    "vendor_transaction_cases": 19,
+    "vendor_transaction_all_passed": true,
+    "native_twrp_payload_chunks": 114,
+    "native_twrp_support_files": 29,
+    "new_full_flash_performed": false,
+    "historical_account_aac_vibration_device_tests_retained": true,
+    "qcc_script_cases": 20,
+    "odin_sparse_lz4_tar_md5": "PASS"
+  },
+  "privacy": {
+    "device_data_in_images": false,
+    "raw_logs_in_release": false,
+    "identifiers_in_release": false
+  },
+  "kernel_changed": false,
+  "user_vibration_preferences_changed": false,
+  "github_published": true,
+  "old_releases_modified": false,
+  "raw_staging": "REMOVED_AFTER_VERIFIED_COMPLETE_PACKAGE_OUTPUTS; exact bytes recoverable from ZIP/Odin",
+  "sources": {
+    "scripts/build_cumulative_images_a109.py": "6084aa7a56ed7912b44c2b720f52a774f417b164dd67422602e3a7a9bfe2f945",
+    "scripts/render_cumulative_a109.py": "a8f76fcfbf06f6a602cc4030a0e57bed7e1c5f60814fcb1e74437f93e9d3a131",
+    "scripts/repack_upgrade_a109.py": "6417c5b9db8f4e3d73e6f79a2a0f7f8da221fc0a68e2a184383b242ae5fef9b7",
+    "scripts/repack_odin_a109.py": "0dae536cfbfc8be9b370a19f12c71ac81db219388b081890f505e02ee9a57c1c",
+    "scripts/test_vendor_transaction_a109.py": "0576e680cfa0b5fb37c0d85eec2bf14f02535cde0dce8199b646b0a391ff2cd7",
+    "scripts/probe_twrp_upgrade_release_a109.py": "a9591a9f4d899bfb4705bb0a0a744ff02f3188aa8b5660d03bb201b62f98c947",
+    "installer/libvendor-a109.sh": "26c197b65bf4b5ee460027f1712afc976baaca0b920b5ab38183ed07b687a223"
+  },
+  "split_volumes": [
+    {
+      "file": "Clean-Odin-v1.0.2-A109.7z.001",
+      "bytes": 1610612736,
+      "sha256": "5dceef8c063bb186573cb8f68a0eb03505fb1e34ede6290ab6b47544efa2eb20"
+    },
+    {
+      "file": "Clean-Odin-v1.0.2-A109.7z.002",
+      "bytes": 1610612736,
+      "sha256": "ed00def337d49e54eed0cb997014a5bf50cc601d061cb4d00e5fc39d664f5229"
+    },
+    {
+      "file": "Clean-Odin-v1.0.2-A109.7z.003",
+      "bytes": 1610612736,
+      "sha256": "71712f5d6d9c842ed7e2f82fe67828aad44c06be4649c7587415470ba90b76c1"
+    },
+    {
+      "file": "Clean-Odin-v1.0.2-A109.7z.004",
+      "bytes": 129339673,
+      "sha256": "87e5215a41e091c554641984a1d97f569cfb6f9b146dd2b93afa1328c11a5cc1"
+    },
+    {
+      "file": "Upgrade-TWRP-v1.0.2-A109.7z.001",
+      "bytes": 1610612736,
+      "sha256": "665e04339b2b82d6db6fe69dde8e8cac099a5bf8455ac238703a6d57619bc1e5"
+    },
+    {
+      "file": "Upgrade-TWRP-v1.0.2-A109.7z.002",
+      "bytes": 1610612736,
+      "sha256": "d5ff588f48c23e4ff7cff6b750a87348ecb4f7887df0e65d36194c4a75ea37b7"
+    },
+    {
+      "file": "Upgrade-TWRP-v1.0.2-A109.7z.003",
+      "bytes": 664268742,
+      "sha256": "8564916d773e5bfc339529f9219fe3a7cd5038e0cfa2527179ec16fbe22df35d"
+    }
+  ],
+  "split_extraction_sha256_passed": true,
+  "complete_packages_and_split_volumes_retained": true,
+  "github_release_url": "https://github.com/starlight4you/t860_ui8dot5/releases/tag/v1.0.2"
+}

@@ -1,0 +1,17 @@
+{
+  "cases": [
+    {
+      "partition": "system",
+      "guard_exit": 0,
+      "pass": true
+    },
+    {
+      "partition": "vendor",
+      "guard_exit": 0,
+      "pass": true
+    }
+  ],
+  "all_passed": true,
+  "image_mounts": "ro,noload",
+  "device_writes": false
+}

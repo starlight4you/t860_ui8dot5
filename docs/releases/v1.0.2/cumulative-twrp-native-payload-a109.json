@@ -1,0 +1,16 @@
+{
+  "zip_sha256": "f977e101705687a7acd5b1cfd8f80f45b64ee06a415aa6aa8f0ad6b5f08e1eec",
+  "zip_bytes": 3885494020,
+  "payload_chunks_checked": 114,
+  "support_members_checked": 29,
+  "table_sizes": {
+    "system": 6534725632,
+    "product": 1048576000
+  },
+  "process_exit": 0,
+  "zip_staging": "READONLY_BIND_IN_ISOLATED_NAMESPACE_NO_PAYLOAD_COPY",
+  "source_mounts_or_device_blocks": false,
+  "device_writes": false,
+  "full_flash": "NOT_TESTED",
+  "script_sha256": "a9591a9f4d899bfb4705bb0a0a744ff02f3188aa8b5660d03bb201b62f98c947"
+}

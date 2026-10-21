@@ -1,0 +1,106 @@
+{
+  "cases": [
+    {
+      "name": "sdk28-baseline",
+      "exit": 0,
+      "pass": true
+    },
+    {
+      "name": "sdk28-adapted",
+      "exit": 0,
+      "pass": true
+    },
+    {
+      "name": "sdk30-baseline",
+      "exit": 0,
+      "pass": true
+    },
+    {
+      "name": "sdk30-adapted",
+      "exit": 0,
+      "pass": true
+    },
+    {
+      "name": "a100-idempotent",
+      "exit": 0,
+      "pass": true
+    },
+    {
+      "name": "a109-idempotent",
+      "exit": 0,
+      "pass": true
+    },
+    {
+      "name": "torn-vibrator-service",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "torn-vibrator-init",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "torn-vibrator-manifest",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "vibrator-metadata-failure",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "unknown-vibrator-refused",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "vibrator-symlink-refused",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "torn-matrix-rollback",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "torn-policy-rollback",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "torn-sdm-rollback",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "unknown-sdm-refused",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "unrelated-drift-refused",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "sdm-mode-refused",
+      "exit": 77,
+      "pass": true
+    },
+    {
+      "name": "sdm-symlink-refused",
+      "exit": 77,
+      "pass": true
+    }
+  ],
+  "all_passed": true,
+  "case_count": 19,
+  "native_tools": "ORIGINAL_TWRP_SH_CAT_STATIC_COMPLETE_VENDOR_GUARDS",
+  "real_device_nodes": false,
+  "source_tree_modified": false,
+  "library_sha256": "371ae95aacec25aae496e9d2796c967c8253b847e980cbbca16ce31690e61daa",
+  "script_sha256": "0576e680cfa0b5fb37c0d85eec2bf14f02535cde0dce8199b646b0a391ff2cd7"
+}

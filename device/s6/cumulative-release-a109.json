@@ -1,0 +1,57 @@
+{
+  "id": "S6_UI85_A109_CUMULATIVE",
+  "version": "v1.0.2-A109",
+  "model": "SM-T860",
+  "included": [
+    "A100",
+    "A102_INSTALLER",
+    "A104_VIA_A106",
+    "A106",
+    "A107_V2",
+    "A108_QCC_POLICY"
+  ],
+  "excluded": [
+    "A105_AAC_DISABLE_SUPERSEDED",
+    "A107_V1_BOOT_FAILURE"
+  ],
+  "components": {
+    "account_and_aac_framework": {
+      "source": "A106-aac-complete-v1/framework.jar",
+      "sha256": "d7afb86daf566ecb01308f7b5f9ab67ca7bc3b0493796a88827834a3a6150b2a",
+      "includes": [
+        "A100_SIS_BLUETOOTH",
+        "A104_ACCOUNT_RECEIVER",
+        "A106_AAC_CODE_PATH"
+      ]
+    },
+    "aac_overlay": {
+      "sha256": "c9c1dbdca7b7d519e618c157585fb702461cda8a038b9cc75fcb371651771b38"
+    },
+    "aac_properties": {
+      "sha256": "d233ec0b2a6683a1dcec6fdd7a01395b78e2506dce7ee572f1584b040ac10306"
+    },
+    "vibrator_v2": {
+      "sha256": "fa8a6a553dc49035d85e6d62b134be60e39e38e385559ef9a5b38ce2b868ceb3",
+      "samsung_extension_version": 5,
+      "user_physical_confirmation": true
+    },
+    "qcc_policy": {
+      "script_sha256": "4a350e817c46f368020bf133b4e7c0927fa3ee1115f2dda05be8d2e1218a9da3",
+      "keep_data_user": 0
+    }
+  },
+  "image_partitions": {
+    "system": {
+      "sha256": "f1a177ad169cff6630027ff774975d49b5fbed31dfd86ee89e598e32037e2353",
+      "bytes": 6534725632
+    },
+    "vendor": {
+      "sha256": "b25bc16ff3e2ca2a8d51d5b3f9bfad22cf07dab5e9aa18bac07fce9df0b7a7fa",
+      "bytes": 1379926016
+    }
+  },
+  "existing_vendor_transaction_files": 3,
+  "new_vendor_vibration_files": 3,
+  "signed_apk_apex_replaced": false,
+  "kernel_changed": false
+}

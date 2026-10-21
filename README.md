@@ -4,18 +4,20 @@
 
 ## 下载和安装 / Download and installation
 
-当前固件版本 **v1.0.1 (A100 / A102 安装器修正)**：[GitHub Release](https://github.com/starlight4you/t860_ui8dot5/releases/tag/v1.0.1)。
+当前固件版本 **v1.0.2 (A109 累计修复 / cumulative fixes)**：[GitHub Release](https://github.com/starlight4you/t860_ui8dot5/releases/tag/v1.0.2)。
 
-- 全新安装 / Clean install：下载 `Clean-Odin-v1.0.1-A100.7z.001`–`.004`，解压得到 Odin AP `.tar.md5`。刷入后在 TWRP 手动 Format Data，清空内部存储；首次设置后执行安装文档中的 QCC 隔离步骤。
-- 保留数据升级 / Keep-data upgrade：下载 `Upgrade-TWRP-v1.0.1-A102.7z.001`–`.003`，解压得到完整 TWRP `.zip`。支持已核对的项目 UI8 v0.48.1、v1.0.0/A99 和当前 A100 来源。不要 Format Data 或预先清空 SYSTEM/PRODUCT。
+- 全新安装 / Clean install：下载 `Clean-Odin-v1.0.2-A109.7z.001`–`.004`，解压得到 Odin AP `.tar.md5`。刷入后进入 TWRP 手动 Format Data，会清空内部存储。
+- 保留数据升级 / Keep-data upgrade：下载 `Upgrade-TWRP-v1.0.2-A109.7z.001`–`.003`，解压得到完整 TWRP `.zip`。使用 SD 卡或 ADB sideload；不要 Format Data 或预先清空 SYSTEM/PRODUCT。
 
-每组所有分卷放在同一目录，使用 7-Zip / Keka 打开 `.001` 解压，核对 SHA-256。分卷与 GitHub Source code 压缩包不能直接刷入。 / Download every volume of your selected group, extract `.001` in 7-Zip / Keka and verify SHA-256. Individual volumes and GitHub Source code archives are not flashable.
+每组全部分卷放在同一目录，使用 7-Zip / Keka 打开 `.001` 解压，并核对 SHA-256。分卷与 GitHub Source code 压缩包不能直接刷入。 / Download every volume of your selected group, extract `.001` in 7-Zip / Keka and verify SHA-256. Individual volumes and GitHub Source code archives are not flashable.
 
-A102 升级说明与更新日志 / Upgrade hotfix guides：[中文](docs/releases/v1.0.1-A102/HOTFIX-A102.zh.md) · [English](docs/releases/v1.0.1-A102/HOTFIX-A102.en.md)。旧 A100 升级分卷已被替代，Odin 包保持不变。
+完整说明 / Full guides：[中文](INSTALL.zh.md) · [English](INSTALL.en.md)。更新日志 / Changelog：[中文](CHANGELOG.zh.md) · [English](CHANGELOG.en.md)。[发布审计 / Release audits](docs/releases/v1.0.2)。
 
-完整说明 / Full guides：[中文](INSTALL.zh.md) · [English](INSTALL.en.md)。更新日志 / Changelog：[中文](CHANGELOG.zh.md) · [English](CHANGELOG.en.md)。[发布审计 / Release audits](docs/releases/v1.0.1)。
+保留 A100/A102，合入管理账号、完整 AAC 音频、振动 V2 和 QCC 自动隔离；不改变用户振动开关。 / Retains A100/A102 and integrates Manage accounts, full AAC audio, vibrator V2 and automatic QCC isolation while preserving user vibration preferences.
 
-实机逐项修复与完整只读预检通过；本次未在测试机执行 Odin 全新刷入或完整 TWRP 升级。 / Individual fixes and the complete read-only preflight passed on the tablet; a new Odin clean flash or full TWRP upgrade has not been performed.
+沿用此前实机验证的组件，累计包完成离线完整性、格式和事务检查。本轮未执行累计整包刷入。 / Uses previously device-validated components; cumulative package integrity, format and transaction checks passed offline. No cumulative full flash was performed in this run.
+
+历史 v1.0.0 / v1.0.1 及复现输入保留。 / Historical v1.0.0 / v1.0.1 releases and reproduction inputs are retained.
 
 ## 适配与源码
 

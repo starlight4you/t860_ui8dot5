@@ -1,0 +1,24 @@
+{
+  "id": "A109_CUMULATIVE_UPGRADE_PACKAGE",
+  "source_zip_sha256": "6561d82c14f8b38b48876414e8b1a450cbd23ec10446417275056dac32b3fd6c",
+  "zip_sha256": "f977e101705687a7acd5b1cfd8f80f45b64ee06a415aa6aa8f0ad6b5f08e1eec",
+  "zip_bytes": 3885494020,
+  "system_sha256": "f1a177ad169cff6630027ff774975d49b5fbed31dfd86ee89e598e32037e2353",
+  "changed_system_chunks": [
+    "payload/system/0000.img",
+    "payload/system/0022.img",
+    "payload/system/0023.img",
+    "payload/system/0025.img",
+    "payload/system/0026.img",
+    "payload/system/0064.img",
+    "payload/system/0095.img",
+    "payload/system/0096.img"
+  ],
+  "support_members": 29,
+  "all_chunk_and_crc_checks": "PASS",
+  "original_compressed_streams_reused_when_identical": true,
+  "product_unchanged": true,
+  "vendor_additions_with_rollback": 3,
+  "a102_guards_preserved": true,
+  "full_flash": "NOT_TESTED"
+}
