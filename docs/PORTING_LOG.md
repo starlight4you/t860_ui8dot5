@@ -23,3 +23,8 @@
 ## v1.0.0 最终验证
 
 完整 ZIP：4242041251 B，SHA256 `8128e7e9d42ae8b5d1071d04721d1bce52ffaf2b502f25598bd792a86ddde91a`。ZIP32 / CRC / 六分区138块原版TWRP工具检查通过；真实Recovery完整只读入口通过，前后六分区摘要相同。公开源码复现整包字节一致；三个7z分卷完整解压后摘要一致。现有系统正常重启、boot_completed=1、SELinux Enforcing。未执行全新实机刷入或DATA格式化；用户已确认先前升级测试通过。详细证明见 [release-audit](../release/release-audit.json) 和 [audit](audit)。
+
+
+## 2026-10-22 A111 / v1.0.3 cumulative release
+
+Integrated A109 production images and A110 S Pen compatibility; excluded local ADB root. Upgrade writes complete SYSTEM/PRODUCT/VENDOR without installed-version/tree whitelists and is documented for One UI 8.5 only. DATA/module/hardware checks retained. See CUMULATIVE_RELEASE_A111_20261022.md and docs/releases/v1.0.3 for hashes and offline validation. No device flash or DATA format in this packaging run.

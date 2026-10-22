@@ -1,0 +1,33 @@
+{
+  "id": "A110_SPEN_LEGACY_PROPERTY_BRIDGE",
+  "source_sha256": "1453878146c3ab9722b56e1dd3f11beec4edeeb5da1986d90bc182f01b7dbdb2",
+  "output_sha256": "258526250021aecfbdd2682dcd3e7008f4d5c900fac8a4358f5cf01add984e63",
+  "helper_source_sha256": "400a342cbcf522a56ffe83b49e9b237b8193836243465f82d5686d596ec58ad3",
+  "changed_class": "com/samsung/android/hardware/secinputdev/hal/SysinputHAL_V1_2.smali",
+  "changed_method": ".method public setProperty(ILcom/samsung/android/hardware/secinputdev/utils/SemInputConstants$Property;Ljava/lang/String;)I",
+  "new_class": "com/samsung/android/hardware/secinputdev/hal/T860SpenLegacy.smali",
+  "unchanged_classes": 278,
+  "kernel_changed": false,
+  "bluetooth_apk_changed": false,
+  "model": "SM-T860",
+  "hal": "1.2",
+  "device": 11,
+  "properties": {
+    "BLE_CHARGING": [
+      0,
+      8
+    ],
+    "EPEN_SAVING": [
+      0,
+      1
+    ]
+  },
+  "semantic_roundtrip": "PASS",
+  "runtime": "PASS_SYSTEM_SERVER_AND_WACOM_DRIVER_AFTER_COLD_BOOT",
+  "physical_pen_available": false,
+  "host_scope_cases": 39,
+  "host_scope_result": "PASS",
+  "driver_reference": "T860 Android12 open source drivers/input/wacom/wacom.h and wacom_i2c_sec.c",
+  "io_success_scope": "write syscall accepted; does not imply pen discovery or pairing",
+  "physical_pen_test": "REQUIRES_REPORTER_TEST"
+}

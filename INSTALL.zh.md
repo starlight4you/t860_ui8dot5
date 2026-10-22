@@ -1,32 +1,35 @@
-# Galaxy Tab S6 SM-T860 · One UI 8.5 · v1.0.2 A109
+# Galaxy Tab S6 SM-T860 · One UI 8.5 · v1.0.3 A111
 
-这是累计有效修复版本，包含 A100、A102、A104/A106、A107 V2 和 QCC 自动隔离。仅适用于 SM-T860 Wi-Fi；原 QCC-only A108 成品已撤回。
+仅适用 SM-T860 Wi-Fi。请先备份重要数据，并核对 SHA256SUMS。解锁引导程序是前提。
 
-先备份重要数据，核对 SHA256SUMS。若下载分卷，同组全部放在同一目录，用 7-Zip/Keka 打开 .7z.001 解压；不要将分卷直接交给 Odin 或 TWRP。解压后的完整文件也必须匹配摘要。
+## 下载与解压
 
-分卷下载：全新安装使用 `Clean-Odin-v1.0.2-A109.7z.001` 至 `.004`（4卷）；保数据升级使用 `Upgrade-TWRP-v1.0.2-A109.7z.001` 至 `.003`（3卷）。
+Odin 与 TWRP 分别提供一组 7z 分卷。下载所选组的全部分卷，放在同一目录，用 7-Zip 或 Keka 打开 `.7z.001` 解压，得到完整刷机文件；不要直接刷入分卷。解压后再次核对完整文件的 SHA256。
 
 ## Odin 全新安装
 
-1. 使用已解锁 Bootloader、项目 Android 12/DWH1 硬件基础的 T860，进入下载模式。
-2. Windows Odin 的 AP 选择 `AP_TabS6_OneUI8.5_v1.0.2_A109_Clean_Odin.tar.md5`。BL/CP/CSC 留空，取消 Auto Reboot；不加载 PIT，不启用 Re-Partition、Nand Erase 或 Flash Lock。
-3. 等待 PASS，按键直接进入所带 TWRP。选择 Wipe → Format Data → 输入 yes。这一步清空内部存储；请勿格式化外置 SD 卡。
-4. Reboot → System，完成首次设置。无需再刷升级包，无需手动运行 QCC 命令，也不要求 Magisk。
+1. 使用项目要求的 T860 Android 12 / DWH1 硬件底包，进入下载模式。
+2. Windows Odin 的 AP 栏选择 `AP_TabS6_OneUI8.5_v1.0.3_A111_Clean_Odin.tar.md5`。BL、CP、CSC 留空，关闭 Auto Reboot。不要加载 PIT，不要开启 Re-Partition、Nand Erase 或 Flash Lock。
+3. 出现 PASS 后直接进入内置 TWRP，执行 Wipe → Format Data → 输入 yes。此步骤清除内部存储；不要格式化外置 SD 卡。
+4. Reboot → System，完成初始化。不需要再刷升级 ZIP，也不需要 Magisk 或手动处理 QCC。
 
-AP 含 SYSTEM、PRODUCT、VENDOR、BOOT、DTBO、VBMeta 和 Recovery；不含 userdata、CACHE、PIT、Bootloader、modem、EFS 或 persist 载荷。
+AP 包含 SYSTEM、PRODUCT、VENDOR、BOOT、DTBO、VBMeta、Recovery，不包含 userdata、CACHE、PIT、引导程序、基带、EFS、persist。
 
 ## TWRP 保留数据升级
 
-1. 将完整 `TabS6-OneUI8.5-v1.0.2-A109-Upgrade-TWRP.zip` 放到 SD 卡，或使用 ADB sideload。
-2. 使用项目 TWRP 3.7.0_9-15_mentalmuso 安装。不要先清空 SYSTEM/PRODUCT，不要 Format Data。此 TWRP 不能解密内部存储，不需要为此格式化。
-3. 支持已审计的项目 UI8 v0.48.1、v1.0.0/A99、A100/A102，以及已打 A104、稳定 A105、A106/A107 和本次 A109 修复的完整来源。
-4. 等待 `A109 upgrade verified` 后手动重启。若来源/模块/硬件检查拒绝，保存 recovery.log 和具体报错，处理原因，不要绕过检查。
+**仅支持从已有 One UI 8.5 升级。不能从 One UI 8（包括 v0.48.1）、One UI 4.1、原厂系统或其他 ROM 直接使用此升级包。其他系统请使用 Odin 全新安装。**
 
-升级保留应用、账号、锁屏凭据和个人文件；写 SYSTEM/PRODUCT，事务处理三份既有 VENDOR 文件及三份新增振动文件，不刷 BOOT/DTBO/VBMeta/Recovery。中断后保留在 Recovery，按日志处理；不要重复格式化数据。
+1. 将完整的 `TabS6-OneUI8.5-v1.0.3-A111-Upgrade-TWRP.zip` 放到外置 SD 卡/USB OTG，或通过 ADB sideload 安装。
+2. 进入项目 TWRP 3.7.0_9-15_mentalmuso，直接安装 ZIP。不要先擦除 SYSTEM/PRODUCT/VENDOR，不要 Format Data。此版 TWRP 不能解密内部存储是已知限制，升级不需要为此格式化。
+3. 安装器不检查原版本号、原 SYSTEM/VENDOR 文件白名单，也不要求指定的小版本。请自行确认当前是 One UI 8.5。机型、分区布局、项目内核/DTBO/VBMeta 硬件基线、载荷完整性、DATA 访问和系统模块安全状态检查仍保留。
+4. 等待 `A111 upgrade verified` 后手动重启。
 
-## 首次启动与修复范围
+升级完整替换 SYSTEM、PRODUCT、VENDOR，保留 BOOT、DTBO、VBMeta、Recovery 以及用户数据。系统分区内自行添加的修改会被覆盖。不会清除应用、账号、锁屏凭据或个人文件，不调整用户的振动开关。断电或写入中断后留在 Recovery，重新刷入同一完整升级包；不要格式化 DATA。预检报错时保留 recovery.log 及提示的日志目录。
 
-- QCC 在开机完成后自动做保数据的主用户卸载，保留 APK/底层库，已隔离则跳过。开机完成前可能短暂出现原错误。可选状态检查：`adb shell logcat -d -s T860QccPolicy:I`。
-- 触摸反馈、手势振动和其他用户开关不主动更改；恢复马达识别不等于强行开启所有振动场景。
-- AAC、账号和振动组件沿用此前已通过实机验证的准确载荷。当前累计包完成离线载荷/格式/事务验证；本轮未执行累计整包刷入或清空 DATA。
-- 偶发双击/首笔问题仍无根因补丁；电池容量已确认7040mAh，剩余时间属历史预测，不包含虚构容量/充电修正。普通应用更新仍保留，Play 系统模块更新沿用既有暂停策略。
+## 本版说明
+
+- 累计保留此前 SD 卡、翻译语言目录、Quick Share、蓝牙配对/音频/AAC、账号管理闪退、振动及 QCC 隔离修复，并合入 A110 S Pen 旧 HAL 指令兼容。
+- 发布镜像不包含本机 ADB root 调试配置：`ro.debuggable=0`，保留 USB 调试授权，SELinux 使用生产版策略，无 permissive 调试域。
+- S Pen 修复已验证充电启动/停止命令到达原 Wacom 驱动；实际蓝牙笔配对、充电状态和遥控功能需有笔的反馈者复测。
+- QCC 在系统完成启动后自动对主用户执行保留数据的隔离。已有隔离状态会跳过，不删除系统 APK。
+- 未调整内核、快充参数、触控阈值或振动偏好。双击亮屏与首笔偶发延迟不作为本版已修复项。

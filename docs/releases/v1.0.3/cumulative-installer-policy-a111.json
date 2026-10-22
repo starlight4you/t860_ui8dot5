@@ -1,0 +1,76 @@
+{
+  "id": "A111_INSTALLER_CONTROL_FLOW",
+  "cases": [
+    {
+      "case": "normal",
+      "exit": 0,
+      "partition_write_calls": [
+        "vendor",
+        "system",
+        "product"
+      ],
+      "pass": true
+    },
+    {
+      "case": "retry_after_partial",
+      "exit": 0,
+      "partition_write_calls": [
+        "vendor",
+        "system",
+        "product"
+      ],
+      "pass": true
+    },
+    {
+      "case": "preflight",
+      "exit": 0,
+      "partition_write_calls": [],
+      "pass": true
+    },
+    {
+      "case": "wrong_model",
+      "exit": 90,
+      "partition_write_calls": [],
+      "pass": true
+    },
+    {
+      "case": "bad_payload",
+      "exit": 90,
+      "partition_write_calls": [],
+      "pass": true
+    },
+    {
+      "case": "unsafe_modules",
+      "exit": 90,
+      "partition_write_calls": [],
+      "pass": true
+    },
+    {
+      "case": "unwritable_target",
+      "exit": 90,
+      "partition_write_calls": [],
+      "pass": true
+    },
+    {
+      "case": "wrong_hardware",
+      "exit": 90,
+      "partition_write_calls": [],
+      "pass": true
+    },
+    {
+      "case": "post_hardware_failure",
+      "exit": 90,
+      "partition_write_calls": [
+        "vendor",
+        "system",
+        "product"
+      ],
+      "pass": true
+    }
+  ],
+  "source_version_or_tree_gate_calls": 0,
+  "all_passed": true,
+  "device_blocks_accessed": false,
+  "real_payload_validation": "SEPARATE_ORIGINAL_TWRP_PROBE",
+  "test_sha256": "10ee4cb65e0bfa2ec15b5c0ca615353642d582edabec0523f2b3b0769a402154"
+}

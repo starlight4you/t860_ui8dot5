@@ -1,0 +1,113 @@
+{
+  "target": "SM-T860",
+  "version": "v1.0.3-A111",
+  "odin_slot": "AP",
+  "bytes": 4961146959,
+  "sha256": "ecc1e82230cf44389302a47e788c83feec6366a304c682684bb67f9855d2b0f1",
+  "tar_bytes": 4961146880,
+  "odin_md5": "c98002eeff3549ce8f5ecb80100b7edc",
+  "format": "USTAR_PLUS_MD5SUM_ASCII_FOOTER",
+  "members": [
+    {
+      "partition": "boot",
+      "member": "boot.img.lz4",
+      "raw_bytes": 67108864,
+      "raw_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+      "sparse": false,
+      "transfer_bytes": 67108864,
+      "transfer_sha256": "523664a8caf6b403526efa6e3b77e8645cc6f84a7573ff7e39159fa9b36843e9",
+      "lz4_bytes": 20888750,
+      "lz4_sha256": "fa20c13fbf23bd140205f0c78d73ad0e68698797a242ac8986cb633261554ee5",
+      "roundtrip_pass": true
+    },
+    {
+      "partition": "recovery",
+      "member": "recovery.img.lz4",
+      "raw_bytes": 67080192,
+      "raw_sha256": "cbc6e03563a9229b7034dd775964ef412af94a7074f50b519ce1ccc1fd4f2e16",
+      "sparse": false,
+      "transfer_bytes": 67080192,
+      "transfer_sha256": "cbc6e03563a9229b7034dd775964ef412af94a7074f50b519ce1ccc1fd4f2e16",
+      "lz4_bytes": 37351356,
+      "lz4_sha256": "b1be445d84297dd0c4f81269513439d1c6a94946ce1a67b2dabe3f1e5856f826",
+      "roundtrip_pass": true
+    },
+    {
+      "partition": "system",
+      "member": "system.img.ext4.lz4",
+      "raw_bytes": 6534725632,
+      "raw_sha256": "d64361f92b777494fd81a11d1e3070a0226e40b988102b5e52a510c7b4d1871e",
+      "sparse": true,
+      "transfer_bytes": 6415388060,
+      "transfer_sha256": "8af5a3f1c4528863cdff3def3afc370ed5ae98af33001d15ca831cf0a6972095",
+      "lz4_bytes": 3889864708,
+      "lz4_sha256": "86bda999e16fb0ed28db4d1b7432b028d01d4d3aa954711b26a0153d861af2f9",
+      "roundtrip_pass": true
+    },
+    {
+      "partition": "vendor",
+      "member": "vendor.img.ext4.lz4",
+      "raw_bytes": 1379926016,
+      "raw_sha256": "b25bc16ff3e2ca2a8d51d5b3f9bfad22cf07dab5e9aa18bac07fce9df0b7a7fa",
+      "sparse": true,
+      "transfer_bytes": 843996768,
+      "transfer_sha256": "4ef23e23c64807dd38f587f315912a391fab3e684b4043d43ad220fcc162c8a5",
+      "lz4_bytes": 463684660,
+      "lz4_sha256": "b71e3aa1ad765e60898e3e4652e6837eab6650cef3ceeda641c259ea9fe52304",
+      "roundtrip_pass": true
+    },
+    {
+      "partition": "product",
+      "member": "product.img.ext4.lz4",
+      "raw_bytes": 1048576000,
+      "raw_sha256": "8e6f0cfb8454789067e72f6eef37c42276abb2dd5c8951cfb71e03bbd3781404",
+      "sparse": true,
+      "transfer_bytes": 938506504,
+      "transfer_sha256": "885c6d1ee95a128bd023fb62f3f070162300a6d39bb5a5d351a9815a3304e3aa",
+      "lz4_bytes": 549178716,
+      "lz4_sha256": "65d7a5e6e4b0b91c5ec1c12f71b92ea23586508c2a5b367f165dc4b7a564d20e",
+      "roundtrip_pass": true
+    },
+    {
+      "partition": "dtbo",
+      "member": "dtbo.img.lz4",
+      "raw_bytes": 10485760,
+      "raw_sha256": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec",
+      "sparse": false,
+      "transfer_bytes": 10485760,
+      "transfer_sha256": "864ca763a1362a77aa929c3e2f147baa70196c31401b52f76bf0f879d7eb99ec",
+      "lz4_bytes": 164623,
+      "lz4_sha256": "66a30a18b8e1665d4d4c9c47702ed9cae9ff2b019fe55ce36911706cae174fea",
+      "roundtrip_pass": true
+    },
+    {
+      "partition": "vbmeta",
+      "member": "vbmeta.img.lz4",
+      "raw_bytes": 65536,
+      "raw_sha256": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54",
+      "sparse": false,
+      "transfer_bytes": 65536,
+      "transfer_sha256": "ca34476b4becde2fb643b04040f19cd1b0e5ea4a3eb6ebeeeeff47dc97d50d54",
+      "lz4_bytes": 3567,
+      "lz4_sha256": "2bba7de63f2bca6dae9bf879a7dcc98b38eddbacb68a7cde225b2ad03b8d9257",
+      "roundtrip_pass": true
+    }
+  ],
+  "pit_reference_sha256": "de3f707d2f2ef0207341e0fd8a53b7c433423920ae1214e74454e6c618ec47b4",
+  "pit_in_archive": false,
+  "userdata_cache_efs_persist_bootloader_modem_payload": false,
+  "clean_data_step": "MANUAL_TWRP_FORMAT_DATA_AFTER_ODIN_NO_DEVICE_WIPE_EXECUTED",
+  "odin_real_flash": "NOT_TESTED",
+  "frozen_source_modified": false,
+  "source_archive_sha256": "79826b3b6679c24e967d754b4767a10dfd31c7bff48f2f95bdd72b478f2f6d86",
+  "changed_partition_payloads": [
+    "system"
+  ],
+  "cumulative_change_closure_sha256": "e11129fae9e9af781ae67c7b8152c108b73a7dc7641ac2454e00c3b31d5a92b4",
+  "sparse_expansion_sha256": {
+    "system": "d64361f92b777494fd81a11d1e3070a0226e40b988102b5e52a510c7b4d1871e",
+    "vendor": "b25bc16ff3e2ca2a8d51d5b3f9bfad22cf07dab5e9aa18bac07fce9df0b7a7fa"
+  },
+  "all_member_readback_verified": true,
+  "builder_sha256": "41394af96d9f34c68e5a4cfdebe5785192bed4308d77e07805814dee8ff6d868"
+}

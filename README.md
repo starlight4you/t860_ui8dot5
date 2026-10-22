@@ -4,20 +4,22 @@
 
 ## 下载和安装 / Download and installation
 
-当前固件版本 **v1.0.2 (A109 累计修复 / cumulative fixes)**：[GitHub Release](https://github.com/starlight4you/t860_ui8dot5/releases/tag/v1.0.2)。
+当前版本 **v1.0.3 (A111 累计修复 / cumulative fixes)**：[GitHub Release](https://github.com/starlight4you/t860_ui8dot5/releases/tag/v1.0.3)。
 
-- 全新安装 / Clean install：下载 `Clean-Odin-v1.0.2-A109.7z.001`–`.004`，解压得到 Odin AP `.tar.md5`。刷入后进入 TWRP 手动 Format Data，会清空内部存储。
-- 保留数据升级 / Keep-data upgrade：下载 `Upgrade-TWRP-v1.0.2-A109.7z.001`–`.003`，解压得到完整 TWRP `.zip`。使用 SD 卡或 ADB sideload；不要 Format Data 或预先清空 SYSTEM/PRODUCT。
+- **Odin 全新安装 / Clean install：**下载 `Clean-Odin-v1.0.3-A111.7z.001`–`.004` 共 4 卷，解压得到 AP `.tar.md5`。刷入后直接进入 TWRP 执行 Format Data，会清空内部存储。
+- **TWRP 保留数据升级 / Keep-data upgrade：**下载 `Upgrade-TWRP-v1.0.3-A111.7z.001`–`.003` 共 3 卷，解压完整 ZIP。不要 Format Data，也不要预先擦除系统分区。
 
-每组全部分卷放在同一目录，使用 7-Zip / Keka 打开 `.001` 解压，并核对 SHA-256。分卷与 GitHub Source code 压缩包不能直接刷入。 / Download every volume of your selected group, extract `.001` in 7-Zip / Keka and verify SHA-256. Individual volumes and GitHub Source code archives are not flashable.
+**升级包仅支持从已有 One UI 8.5 升级，不支持 One UI 8/v0.48.1、原厂或其他 ROM。 / The upgrade ZIP supports existing One UI 8.5 installations only; One UI 8/v0.48.1, stock and other ROMs require a clean Odin installation.**
 
-完整说明 / Full guides：[中文](INSTALL.zh.md) · [English](INSTALL.en.md)。更新日志 / Changelog：[中文](CHANGELOG.zh.md) · [English](CHANGELOG.en.md)。[发布审计 / Release audits](docs/releases/v1.0.2)。
+取消原版本号及 SYSTEM/VENDOR 来源文件白名单，保留机型、分区、项目硬件基线、载荷及系统模块检查。完整替换 SYSTEM/PRODUCT/VENDOR，保留用户数据及 BOOT/DTBO/VBMeta/Recovery。 / No installed-version or source-tree whitelist; model, partition, project hardware baseline, payload and module checks remain. SYSTEM/PRODUCT/VENDOR are replaced; user data and BOOT/DTBO/VBMeta/Recovery are retained.
 
-保留 A100/A102，合入管理账号、完整 AAC 音频、振动 V2 和 QCC 自动隔离；不改变用户振动开关。 / Retains A100/A102 and integrates Manage accounts, full AAC audio, vibrator V2 and automatic QCC isolation while preserving user vibration preferences.
+每组选定分卷必须全部下载到同一目录，用 7-Zip/Keka 打开 `.001`，核对 SHA256SUMS 后刷入解压结果。分卷与 GitHub Source code 压缩包不能直接刷入。 / Download all volumes of one set, extract `.001` and verify SHA256SUMS. Individual volumes and GitHub Source code archives are not flashable.
 
-沿用此前实机验证的组件，累计包完成离线完整性、格式和事务检查。本轮未执行累计整包刷入。 / Uses previously device-validated components; cumulative package integrity, format and transaction checks passed offline. No cumulative full flash was performed in this run.
+完整说明 / Full guides：[中文](INSTALL.zh.md) · [English](INSTALL.en.md)。更新日志 / Changelog：[中文](CHANGELOG.zh.md) · [English](CHANGELOG.en.md)。[发布审计 / Release audits](docs/releases/v1.0.3)。
 
-历史 v1.0.0 / v1.0.1 及复现输入保留。 / Historical v1.0.0 / v1.0.1 releases and reproduction inputs are retained.
+包含 A109 全部有效修复和 A110 S Pen 旧 HAL 兼容，不含本机 ADB root。原版 TWRP 离线校验覆盖全部 135 个镜像块；Odin 完成 sparse/LZ4 往返及成员回读。蓝牙笔实物配对/遥控需有笔反馈者复测。 / Includes all effective A109 fixes and A110 S Pen legacy compatibility, excludes local ADB root. Original-TWRP offline validation covers all 135 image chunks; Odin sparse/LZ4 round trips and member readback pass. Physical pen pairing/remote actions require reporter testing.
+
+历史版本保留。 / Historical releases are retained.
 
 ## 适配与源码
 

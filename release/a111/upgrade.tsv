@@ -1,0 +1,13 @@
+format	4
+target	SM-T860
+target_sdk	36
+target_oneui	80500
+donor_build	X710XXS6EZH3
+data_policy	PRESERVE
+adaptation	A111_FULL_PRODUCTION_IMAGES
+system.sha256	d64361f92b777494fd81a11d1e3070a0226e40b988102b5e52a510c7b4d1871e
+system.chunk_count	98
+product.sha256	8e6f0cfb8454789067e72f6eef37c42276abb2dd5c8951cfb71e03bbd3781404
+product.chunk_count	16
+vendor.sha256	b25bc16ff3e2ca2a8d51d5b3f9bfad22cf07dab5e9aa18bac07fce9df0b7a7fa
+vendor.chunk_count	21

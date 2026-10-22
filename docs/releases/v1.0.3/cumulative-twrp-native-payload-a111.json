@@ -1,0 +1,19 @@
+{
+  "zip_sha256": "44e2d4152e6511ea15feefce8e11b8e622ff801a552260a5c252449c7bf2d3a3",
+  "zip_bytes": 4256223778,
+  "payload_chunks_checked": 135,
+  "support_members_checked": 5,
+  "table_sizes": {
+    "system": 6534725632,
+    "product": 1048576000,
+    "vendor": 1379926016
+  },
+  "process_exit": 0,
+  "zip_staging": "VERIFIED_TEMPORARY_VM_LOCAL_COPY_READONLY_BIND",
+  "source_mounts_or_device_blocks": false,
+  "device_writes": false,
+  "full_flash": "NOT_TESTED",
+  "script_sha256": "9e382d78b217344e9467c346dac2c35adde46750da690208572f29a3f91e340c",
+  "shared_directory_attempts_failed_with_io_error": 2,
+  "final_native_payload_pass": true
+}

@@ -1,0 +1,100 @@
+{
+  "id": "A111_CUMULATIVE_EFFECTIVE_FIXES_RELEASE",
+  "version": "v1.0.3-A111",
+  "date": "2026-10-22",
+  "status": "COMPLETE_PACKAGES_OFFLINE_VALIDATED",
+  "release_url": "https://github.com/starlight4you/t860_ui8dot5/releases/tag/v1.0.3",
+  "included": [
+    "A100",
+    "A102_INSTALLER",
+    "A104_VIA_A106",
+    "A106",
+    "A107_V2",
+    "A108_QCC_POLICY",
+    "A110_SPEN_LEGACY"
+  ],
+  "excluded": [
+    "A105_AAC_DISABLE_SUPERSEDED",
+    "A107_V1_BOOT_FAILURE",
+    "A110_LOCAL_ADB_ROOT"
+  ],
+  "packages": {
+    "odin": {
+      "file": "AP_TabS6_OneUI8.5_v1.0.3_A111_Clean_Odin.tar.md5",
+      "bytes": 4961146959,
+      "sha256": "ecc1e82230cf44389302a47e788c83feec6366a304c682684bb67f9855d2b0f1"
+    },
+    "twrp": {
+      "file": "TabS6-OneUI8.5-v1.0.3-A111-Upgrade-TWRP.zip",
+      "bytes": 4256223778,
+      "sha256": "44e2d4152e6511ea15feefce8e11b8e622ff801a552260a5c252449c7bf2d3a3"
+    }
+  },
+  "split_volumes": [
+    {
+      "file": "Clean-Odin-v1.0.3-A111.7z.001",
+      "bytes": 1610612736,
+      "sha256": "f03ee7cc08f4ba7582dd75334f5d8dcf1d61745dacb095a319278f4342601534"
+    },
+    {
+      "file": "Clean-Odin-v1.0.3-A111.7z.002",
+      "bytes": 1610612736,
+      "sha256": "7f0a082940e1266ce22d26d6b055ddd88d9112b8c87ec3a9a51543975da87d63"
+    },
+    {
+      "file": "Clean-Odin-v1.0.3-A111.7z.003",
+      "bytes": 1610612736,
+      "sha256": "b25167df53da1e7c7c32917fa6ce67b8138eca61ab0823ce4d57aca064989a37"
+    },
+    {
+      "file": "Clean-Odin-v1.0.3-A111.7z.004",
+      "bytes": 129308953,
+      "sha256": "113be077bf3ece21fa11d0b6f21c2ae658317698bf9c15d224b82b3240e2c281"
+    },
+    {
+      "file": "Upgrade-TWRP-v1.0.3-A111.7z.001",
+      "bytes": 1610612736,
+      "sha256": "31ee404cb979aeed493c0cfd95cdf6772569167ada3e9a7a3ef3baf7f6511c74"
+    },
+    {
+      "file": "Upgrade-TWRP-v1.0.3-A111.7z.002",
+      "bytes": 1610612736,
+      "sha256": "1df8082aa59a794561f2d72e66529cf799751abbd7c81dc249e7f2c6b0162e1c"
+    },
+    {
+      "file": "Upgrade-TWRP-v1.0.3-A111.7z.003",
+      "bytes": 1034998500,
+      "sha256": "c83be43bc67a10357947e8c93fc2bfbdbfb18c68340867780d44474a2394deee"
+    }
+  ],
+  "supported_upgrade_source": "ONE_UI_8_5_ONLY",
+  "installed_version_check": false,
+  "system_or_vendor_source_tree_whitelist": false,
+  "partitions_written_by_upgrade": [
+    "vendor",
+    "system",
+    "product"
+  ],
+  "user_data_preserved": true,
+  "adb_root": false,
+  "production_root_exclusion_pins": {
+    "system/build.prop": "d233ec0b2a6683a1dcec6fdd7a01395b78e2506dce7ee572f1584b040ac10306",
+    "system/etc/selinux/plat_sepolicy.cil": "8ec42b82a209cb5e3b232a711d29996b4fcb8d3009fac626514c599b0fa60b11",
+    "system/etc/selinux/plat_sepolicy_and_mapping.sha256": "6c7606c0a90aa89683be75d59228cb180077d0f82dd28007b53b221c8cc1e1e2"
+  },
+  "kernel_changed": false,
+  "full_flash_in_this_packaging_run": false,
+  "validation": {
+    "complete_image_closure": "PASS",
+    "filesystem_check": "PASS",
+    "original_twrp_payload_chunks": 135,
+    "original_twrp_support_files": 5,
+    "installer_flow_cases": 9,
+    "odin_sparse_lz4_roundtrip": "PASS",
+    "odin_tar_md5_and_all_members_readback": "PASS",
+    "split_extraction_full_file_identity": "PASS"
+  },
+  "retained_historical_releases": true,
+  "private_device_data_in_packages": false,
+  "physical_bluetooth_spen_available": false
+}

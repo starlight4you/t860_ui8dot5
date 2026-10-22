@@ -1,0 +1,58 @@
+{
+  "volume_size_limit": 1610612736,
+  "format": "7Z_STORE_SPLIT_EXISTING_COMPRESSED_PACKAGES",
+  "groups": [
+    {
+      "first_volume": "Clean-Odin-v1.0.3-A111.7z.001",
+      "extracted_member": "AP_TabS6_OneUI8.5_v1.0.3_A111_Clean_Odin.tar.md5",
+      "bytes": 4961146959,
+      "sha256": "ecc1e82230cf44389302a47e788c83feec6366a304c682684bb67f9855d2b0f1",
+      "roundtrip_pass": true
+    },
+    {
+      "first_volume": "Upgrade-TWRP-v1.0.3-A111.7z.001",
+      "extracted_member": "TabS6-OneUI8.5-v1.0.3-A111-Upgrade-TWRP.zip",
+      "bytes": 4256223778,
+      "sha256": "44e2d4152e6511ea15feefce8e11b8e622ff801a552260a5c252449c7bf2d3a3",
+      "roundtrip_pass": true
+    }
+  ],
+  "volumes": [
+    {
+      "file": "Clean-Odin-v1.0.3-A111.7z.001",
+      "bytes": 1610612736,
+      "sha256": "f03ee7cc08f4ba7582dd75334f5d8dcf1d61745dacb095a319278f4342601534"
+    },
+    {
+      "file": "Clean-Odin-v1.0.3-A111.7z.002",
+      "bytes": 1610612736,
+      "sha256": "7f0a082940e1266ce22d26d6b055ddd88d9112b8c87ec3a9a51543975da87d63"
+    },
+    {
+      "file": "Clean-Odin-v1.0.3-A111.7z.003",
+      "bytes": 1610612736,
+      "sha256": "b25167df53da1e7c7c32917fa6ce67b8138eca61ab0823ce4d57aca064989a37"
+    },
+    {
+      "file": "Clean-Odin-v1.0.3-A111.7z.004",
+      "bytes": 129308953,
+      "sha256": "113be077bf3ece21fa11d0b6f21c2ae658317698bf9c15d224b82b3240e2c281"
+    },
+    {
+      "file": "Upgrade-TWRP-v1.0.3-A111.7z.001",
+      "bytes": 1610612736,
+      "sha256": "31ee404cb979aeed493c0cfd95cdf6772569167ada3e9a7a3ef3baf7f6511c74"
+    },
+    {
+      "file": "Upgrade-TWRP-v1.0.3-A111.7z.002",
+      "bytes": 1610612736,
+      "sha256": "1df8082aa59a794561f2d72e66529cf799751abbd7c81dc249e7f2c6b0162e1c"
+    },
+    {
+      "file": "Upgrade-TWRP-v1.0.3-A111.7z.003",
+      "bytes": 1034998500,
+      "sha256": "c83be43bc67a10357947e8c93fc2bfbdbfb18c68340867780d44474a2394deee"
+    }
+  ],
+  "all_roundtrips_passed": true
+}

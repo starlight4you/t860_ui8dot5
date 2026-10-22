@@ -1,0 +1,37 @@
+#!/sbin/sh
+# TWRP updater API 3. No userdata staging and no automatic reboot.
+set -eu
+API=${1:-}
+OUTFD=${2:-}
+ZIP=${3:-}
+case "$OUTFD" in ''|*[!0-9]*) exit 1 ;; esac
+ui_print() { printf 'ui_print %s\nui_print\n' "$*" >"/proc/self/fd/$OUTFD"; }
+abort() { ui_print "ERROR: $*"; exit 1; }
+[ "$API" = 3 ] || abort "Unsupported updater API"
+[ -n "$(getprop ro.twrp.version)" ] || abort "TWRP is required"
+for tool in unzip sha256sum stat blockdev readlink mount umount awk toybox df sync; do
+    command -v "$tool" >/dev/null 2>&1 || abort "Recovery tool missing: $tool"
+done
+toybox dd --help >/dev/null 2>&1 || abort "Recovery toybox dd is required"
+(set -o pipefail) 2>/dev/null || abort "Recovery shell must support pipefail"
+set -o pipefail
+ZIP=$(readlink -f "$ZIP") || abort "Cannot resolve ZIP"
+[ -f "$ZIP" ] || abort "ZIP is unavailable"
+WORK=/tmp/t860-ui85-upgrade-$$
+(umask 077; mkdir "$WORK") || abort "Cannot create temporary directory"
+SOURCE_MOUNT=$WORK/source-system
+cleanup() {
+    if [ -d "$SOURCE_MOUNT" ]; then umount "$SOURCE_MOUNT" 2>/dev/null || true; fi
+    rm -rf "$WORK"
+}
+trap cleanup EXIT
+trap 'abort "Installation interrupted; remain in Recovery"' HUP INT TERM
+for entry in upgrade.tsv system.chunks product.chunks vendor.chunks; do
+    unzip -p "$ZIP" "rom/$entry" >"$WORK/$entry" || abort "Metadata extraction failed: $entry"
+    [ "$(stat -c %s "$WORK/$entry")" -lt 1048576 ] || abort "Oversized metadata"
+done
+unzip -p "$ZIP" rom/libupgrade.sh >"$WORK/libupgrade.sh" || abort "Missing installer library"
+LIBRARY_SHA=50b99e7a8a730f80b306fc1d549b013594ac2beabc17005ba418c39b91af73e4
+[ "$(sha256sum "$WORK/libupgrade.sh" | awk '{print $1}')" = "$LIBRARY_SHA" ] || abort "Installer library hash mismatch"
+. "$WORK/libupgrade.sh"
+upgrade_main

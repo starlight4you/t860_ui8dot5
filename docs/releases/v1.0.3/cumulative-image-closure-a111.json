@@ -1,0 +1,90 @@
+{
+  "id": "A111_CUMULATIVE_IMAGE_CLOSURE",
+  "partitions": {
+    "system": {
+      "sha256": "d64361f92b777494fd81a11d1e3070a0226e40b988102b5e52a510c7b4d1871e",
+      "bytes": 6534725632
+    },
+    "vendor": {
+      "sha256": "b25bc16ff3e2ca2a8d51d5b3f9bfad22cf07dab5e9aa18bac07fce9df0b7a7fa",
+      "bytes": 1379926016
+    }
+  },
+  "closure": {
+    "system": {
+      "source_sha256": "f1a177ad169cff6630027ff774975d49b5fbed31dfd86ee89e598e32037e2353",
+      "inventory_sha256": "271e2ad7d32f5fc89ca2f3891de6d668c7fa2be5cfeb2150a37067b98bcca8c3",
+      "modified": [
+        "system/framework/secinputdev-service.jar"
+      ],
+      "added": [],
+      "removed": [],
+      "unrelated_entries_identical": 7885,
+      "free_bytes": 90083328,
+      "ext4_features": [
+        "ext_attr",
+        "dir_index",
+        "filetype",
+        "extent",
+        "flex_bg",
+        "sparse_super",
+        "large_file",
+        "huge_file",
+        "uninit_bg",
+        "dir_nlink",
+        "extra_isize"
+      ],
+      "e2fsck_exit": 0
+    },
+    "vendor": {
+      "source_sha256": "080ba88bdf35daeb5cc2ebcc273c13329457ff7c12bf2f5fd0ea86f62da0fe51",
+      "inventory_sha256": "c13d42d60e57cf0373935ec12880aa8cf100fa0d9467478e5b62170c5ef5b066",
+      "modified": [],
+      "added": [
+        "bin/hw/vendor.samsung.hardware.vibrator-service",
+        "etc/init/vendor.samsung.hardware.vibrator-default.rc",
+        "etc/vintf/manifest/t860-vibrator-aidl.xml"
+      ],
+      "removed": [],
+      "unrelated_entries_identical": 2768,
+      "free_bytes": 495329280,
+      "ext4_features": [
+        "ext_attr",
+        "dir_index",
+        "filetype",
+        "extent",
+        "flex_bg",
+        "sparse_super",
+        "large_file",
+        "huge_file",
+        "uninit_bg",
+        "dir_nlink",
+        "extra_isize"
+      ],
+      "e2fsck_exit": 0
+    }
+  },
+  "factory_apex_unchanged": true,
+  "source_images_modified": false,
+  "included": [
+    "A100",
+    "A102_INSTALLER",
+    "A104_VIA_A106",
+    "A106",
+    "A107_V2",
+    "A108_QCC_POLICY",
+    "A110_SPEN_LEGACY"
+  ],
+  "excluded": [
+    "A105_AAC_DISABLE_SUPERSEDED",
+    "A107_V1_BOOT_FAILURE",
+    "A110_LOCAL_ADB_ROOT"
+  ],
+  "data_or_sd_inputs": false,
+  "adb_root": false,
+  "root_exclusion_verified": {
+    "system/build.prop": "d233ec0b2a6683a1dcec6fdd7a01395b78e2506dce7ee572f1584b040ac10306",
+    "system/etc/selinux/plat_sepolicy.cil": "8ec42b82a209cb5e3b232a711d29996b4fcb8d3009fac626514c599b0fa60b11",
+    "system/etc/selinux/plat_sepolicy_and_mapping.sha256": "6c7606c0a90aa89683be75d59228cb180077d0f82dd28007b53b221c8cc1e1e2"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "A111_CUMULATIVE_UPGRADE_PACKAGE",
+  "zip_sha256": "44e2d4152e6511ea15feefce8e11b8e622ff801a552260a5c252449c7bf2d3a3",
+  "zip_bytes": 4256223778,
+  "changed_system_chunks": [
+    "payload/system/0000.img",
+    "payload/system/0026.img"
+  ],
+  "source_version_check": false,
+  "source_tree_whitelist": false,
+  "adb_root": false,
+  "partitions_written": [
+    "system",
+    "product",
+    "vendor"
+  ],
+  "data_preserved": true,
+  "all_chunk_and_crc_checks": "PASS",
+  "zip64": false,
+  "full_flash": "NOT_PERFORMED",
+  "legacy_profile_metadata_removed": true
+}

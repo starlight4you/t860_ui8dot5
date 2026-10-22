@@ -1,9 +1,8 @@
-# v1.0.2 A109 · Cumulative fixes · 2026-10-21
+# v1.0.3 A111 · Cumulative fixes · 2026-10-22
 
-- Retain published A99/A100 fixes: SD storage, S Pen translation/SIS catalogs, Quick Share, Bluetooth pairing keys and primary audio routing, background fs-verity, BSOH capability handling and normal GPU fallback logging.
-- Include A104 Manage accounts crash compatibility while preserving the signed Settings app and receiver security checks.
-- Include user-confirmed A106 AAC hardware audio support, which incorporates A104. Supersede the temporary A105 AAC restriction; retain the signed Bluetooth app, pairing and RT scheduling fixes.
-- Include user-confirmed A107 V2 vibrator AIDL compatibility and Samsung extension over the original C HAL. Exclude the failed V1. Preserve touch/gesture vibration preferences.
-- Automatically isolate QCC for user 0 while keeping its system APK and data; skip already-isolated devices.
-- Retain A102 module-tool fixes. Add reviewed A104/A105/A106/A107/A109 sources and transactional vibration-file additions with rollback, without bypassing source/session/hardware checks.
-- No new kernel, charging or touch-threshold changes. Intermittent double-tap/first-stroke observations remain diagnostic records, not claimed fixes.
+- Retains all effective v1.0.2/A109 fixes: SD storage, S Pen translation/SIS catalogs, Quick Share, Bluetooth pairing and audio routing, A106 AAC, A104 Manage accounts, A107 V2 vibration, QCC keep-data isolation and background compatibility handling.
+- Adds A110 S Pen legacy HAL compatibility, forwarding BLE_CHARGING / EPEN_SAVING commands to the original T860 Wacom interface without kernel changes.
+- Excludes local ADB root debugging; production debugging properties and SELinux policy are retained with USB authorization.
+- Removes installed-version checks and SYSTEM/VENDOR source-tree whitelists. The upgrade replaces all three images while preserving data. Model, partition, hardware baseline, payload and module safety checks remain.
+- **The upgrade ZIP supports One UI 8.5 only. Use a clean Odin installation for One UI 8/v0.48.1, stock firmware or other ROMs.**
+- Excludes the superseded A105 AAC restriction and failed A107 V1 vibrator. Preserves touch/gesture vibration preferences. No claim of a fix for unresolved double-tap wake, first-stroke delay or fast charging.
